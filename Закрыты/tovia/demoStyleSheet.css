@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+/*#slideshowWrapper{position:relative;width:646px;margin:auto;}*/
+#fssPrev{opacity: 0.5; position:absolute;top:44%;left:1%;outline: none; background:url(img/left-arrow.png);width:80px;height:80px;text-indent:-999999px;}
+#fssPrev:hover{opacity: 1;}
+#fssNext{opacity: 0.5; position:absolute;top:44%;right:1%;outline: none; background:url(img/right-arrow.png);width:80px;height:80px;text-indent:-999999px;}
+#fssNext:hover{opacity: 1;}
+#fssPlayPause{display: none;}
+
+
+ul#slideshow{list-style:none;width:100%;overflow:hidden;}
+p{text-align:center;}
+#fssList{list-style:none;
+    display: none;}
+#fssList li{display:inline;padding-right:10px;width:100% !important;}
+#fssList li a{color:#999;text-decoration:none;}
+#slideshow li  img{/*width:100%;height: 100%;*/}
+#fssList li.fssActive a{font-weight:bold;color:#333;}
+#slideshow li{width:100% !important;}
+#slideshow li img{display:block;margin:0 auto;width:100%;}
+#top{background:#3b5998;width:100%;height:40px;margin-bottom:20px;}
+#top h1{color:#fff;font-weight:normal;font-size:18px;padding:7px 0 0 15px}
+#top h1 span{font-size:11px;}
+#top h1 a{text-decoration:underline;color:#fff;}
+#top h1 a:hover{text-decoration:none;}
+
+small a{color:#000;}

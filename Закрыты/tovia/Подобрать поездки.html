@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подобрать поездки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+</head>
+<body>
+<div class="header">
+    <div class="container clearfix">
+        <div class="row header-top">
+            <ul class="top-nav clearfix">
+                <li><a href="#">о нас</a></li>
+                <li><a href="#">подобрать поездки</a></li>
+                <li><a href="#">отзывы</a></li>
+                <li><a href="#">блог</a></li>
+                <li><a href="#">полезная информация</a>
+                    <ul>
+                        <li><a href="#">Видео-анонсы</a></li>
+                        <li><a href="#">Полезное видео</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">контакты</a></li>
+            </ul>
+        </div>
+        <div class="header-t row">
+            <div class="top-header clearfix">
+                <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="img/FB.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="img/rss.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/vk.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="img/Twitter.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="telephone">
+                    <img src="img/Telephone.png" alt="" class="img-phone">
+                    <p>+7 (925) 518 01 24</p>
+                    <p>+7 (926) 400 04 42</p>
+                </div>
+            </div>
+            <div class="bottom-nav clearfix">
+                <a href="#" class="toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="toggle-nav" id="b-nav">
+                    <ul class="clearfix hide-nav " >
+                        <li><a href="#">паломничество <br> зарубеж</a></li>
+                        <li><a href="#">паломничество <br> по россии и снг</a></li>
+                        <li><a href="#">экскурсии</a></li>
+                        <li><a href="#">международные <br> походы и экспедиции</a></li>
+                        <li><a href="#">туристические <br> поездки</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="travel-form clearfix">
+    <div class="container">
+       <div class="row">
+           <div class="form clearfix">
+               <h1 class="show-form title">Подобрать поездки</h1>
+               <form action="#" class="hide-form">
+                   <div class="col-lg-3 col-md-4  col-sm-6">
+                       <div class="group">
+                           <input type="checkbox" class="checkbox" id="check">
+                           <label for="check">Паломнические поездки</label>
+                       </div>
+                       <div class="group">
+                           <input type="checkbox" class="checkbox" id="check2">
+                           <label for="check2">Экскурсии</label>
+                       </div>
+                       <div class="group">
+                           <input type="checkbox" class="checkbox" id="check3">
+                           <label for="check3">Международные походы <br>
+                               и экспедиции</label>
+                       </div>
+                       <div class="group">
+                           <input type="checkbox" class="checkbox" id="check4">
+                           <label for="check4">Туристические поездки</label>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4  col-sm-6">
+                       <div class="group-input  p-l clearfix">
+                           <h1>ключевые слова</h1>
+                           <img src="img/flag.png" class="flag" alt="">
+                           <input type="text" class="input">
+                       </div>
+                       <div class="group-input  p-l clearfix">
+                           <h1>ваш бюджет</h1>
+                           <input type="text" class="input left" placeholder="от" id="calendar">
+                           <input type="text" class="input right" placeholder="до">
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-6">
+                       <div class="group-input clearfix">
+                           <h1>выберите страну</h1>
+                           <select name="" id="" class="select">
+                               <option value="1">1</option>
+                               <option value="">2</option>
+                           </select>
+                       </div>
+                       <div class="group-input clearfix">
+                           <h1>выберите город</h1>
+                           <select name="" id="" class="select">
+                               <option value="1">1</option>
+                               <option value="1">2</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-4 col-sm-6">
+                       <div class="group-input clearfix">
+                           <h1>дата выезда</h1>
+                           <input type="text" class="input left" placeholder="с" id="datepicker">
+                           <input type="text" class="input right" placeholder="до" id="datepicker2">
+                           <div class="calendar-block clearfix">
+                               <!--<div id=""> </div>-->
+                           </div>
+                       </div>
+                       <input type="submit" class="submit" value="Подобрать тур">
+                   </div>
+               </form>
+           </div>
+       </div>
+    </div>
+</div>
+<div class="content-travel clearfix">
+    <div class="container">
+        <div class="side-bar col-lg-3 col-md-3 col-sm-5 col-xs-12">
+            <p class=title>Новый год и рождество <br><span>2016</span></p>
+            <div class="block clearfix">
+                <ul>
+                    <li class="title"><img src="img/icon-nav.png" alt="">Паломничество <br> за рубеж</li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li class="title"><img src="img/icon-nav2.png" alt="">Паломничество <br> по россии</li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li class="title"><img src="img/icon-nav3.png" alt="">Экскурсии</li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li class="title"><img src="img/icon-nav4.png" alt="">Индивидуальные <br>и корпоративные <br>экскурсии</li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li class="title"><img src="img/icon-nav5.png" alt="">Международные <br>походы и <br>экспедиции</li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li class="title"><img src="img/icon-nav6.png" alt="">Туристические <br>поездки</li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                    <li><a href="#">Страна</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="content col-lg-9 col-md-8 col-sm-7 col-xs-12">
+            <h1>Расписание поездок</h1>
+            <div class="top clearfix">
+                <ul>
+                    <li><a href="#">По дате</a></li>
+                    <li><a href="#" class="active">По цене</a></li>
+                </ul>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="post clearfix">
+                <div class="img">
+                    <a href="#"><img src="img/img-post2.jpg" alt=""></a>
+                </div>
+                <div class="top-post clearfix">
+                    <a href="#" class="title">Оздоровительная поездка <br>
+                        на Алтай</a>
+                </div>
+                <div class="bottom-post">
+                    <p><span>Дата выезда:</span> <br>
+                        30.09.15 / 12.12.15</p>
+                    <p class="icon"><span>Кол-во дней:</span> <br>
+                        7</p>
+                    <p class="price"><span>Цена:</span><br>
+                        12000 руб.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+<div class="footer clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="right-footer">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <p class="text">Название компании</p>
+                    <p class="copy">Copyright 2007-2015</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <p class="text">Адрес: aaa</p>
+                    <p class="copy">Тел: 999 999 99 99</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <ul class="clearfix">
+                        <li><a href="#"><img src="img/FaceBook.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/Youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/inst.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/vk.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <p class="text">Сайт разработан компанией </p>
+                    <p class="copy">SalesGeneration</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.formstyler.js"></script>
+<link rel="stylesheet" href="css/calendar.css">
+<script src="js/jquery-ui.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+       $(function() {
+            $( "#datepicker" ).datepicker({
+                monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ]
+            });
+           $( "#datepicker2" ).datepicker({
+               monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ]
+           });
+        });
+        /*$('#cal').datepicker({
+            inline: true,
+            firstDay: 1,
+            disabled: true,
+            showOtherMonths: true,
+            monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ]
+        });*/
+        $('.toggle').click(function(){
+            $("#b-nav").slideToggle();
+        });
+        (function($) {
+            $(function() {
+
+                $('.checkbox,.select').styler();
+
+            });
+        })(jQuery);
+    });
+</script>
+</body>
+</html>

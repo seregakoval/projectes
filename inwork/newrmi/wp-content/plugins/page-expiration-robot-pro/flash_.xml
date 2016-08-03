@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<setting>
+<!--target Time Text, days-hours-mins-secs-->
+	<targetTimeText>0-0-0-9</targetTimeText>
+<!--target Time Text, year-month-date-hour-min-sec-->
+	<targetDateTimeText>0000-00-00-00-00-00</targetDateTimeText>
+	<!--target Time Zone, GMT-->
+	<targetTimeZone>0</targetTimeZone>
+	<!--inner glow alpha, 1~100 -->
+	<innerGlowAlpha>100</innerGlowAlpha>
+	<!--background shadow Alpha, 1~100 -->
+	<bgShadowAlpha>100</bgShadowAlpha>
+	<!--background light Alpha, 1~100 -->
+	<bgLightAlpha>100</bgLightAlpha>
+	<!--textColor, 0x000000~0xFFFFFF-->
+    <textColor>0x000000</textColor>
+	<!--bgColor, 0x000000~0xFFFFFF-->
+	<bgColor>0xFFFFFF</bgColor>
+	<!--show or hide label, true or false-->
+	<showLabel>true</showLabel>
+	<labelColor>0xffffff</labelColor>
+	<labelShadowColor>0x262626</labelShadowColor>
+	<!--show or hide label, true or false-->
+	<showDay>true</showDay>
+	<labelDay>DAYS</labelDay>
+	<!--show or hide label, true or false-->
+	<showHour>true</showHour>
+	<labelHour>HOURS</labelHour>
+	<!--show or hide label, true or false-->
+	<showMin>true</showMin>
+	<labelMin>MINUTES</labelMin>
+	<!--show or hide label, true or false-->
+	<showSec>true</showSec>
+	<labelSec>SECONDS</labelSec>
+	<!--text space-->
+	<textSpace>15</textSpace>
+	<!-- method -->
+	<method>0</method>
+	<!-- days-->
+	<days>0</days>
+	<!-- hrs-->
+	<hrs>0</hrs>
+	<!-- mins -->
+	<mins>0</mins>
+	<!-- secs -->
+	<secs>9</secs>
+</setting>

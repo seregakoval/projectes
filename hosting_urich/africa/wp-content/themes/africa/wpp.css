@@ -1,0 +1,39 @@
+.wpp-list li{
+    float: left;
+    width: 23%;
+    margin: 0 11px;}
+.wpp-post-title{
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-align: center;
+    margin: 15px 0;
+    float:left;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #832B07;
+}
+.wpp-rating{
+    float: right;
+    margin-top: 15px;
+}
+
+@media (max-width: 1024px) {
+    .wpp-list li{text-align: center;     margin: 0 11px 15px 11px;width: 30.2%;}
+    .wpp-post-title{float:none; padding: 0 15px;margin:15px 0 5px 0;}
+    .wpp-rating{
+        margin-top: 5px;
+        clear: both;
+        width: 84px;
+        display: table;
+        margin-right:0;
+        float:none;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .wpp-list li{text-align: center;     margin: 0 11px 15px 11px;width: 46.5%;}
+}

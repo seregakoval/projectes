@@ -1,0 +1,712 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>title</title>
+    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <link href="css/ups.css" rel="stylesheet">
+    <link href="css/resp.css" rel="stylesheet">
+    <link href="css/minimal/minimal.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	 <div id="shadow"></div>
+     <header>
+    	<div class="container">
+            <nav id="topline" class="wrapper">
+                <ul id="topmenu">
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Вопросы и предложения</a></li>
+                    <li><a href="#">Стать организатором</a></li>
+                    <li><a href="#">Партнерская программа</a></li>
+                    <li><a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></li>
+                </ul>
+                <ul id="self">
+                    <li><i class="fa fa-exclamation-circle"></i><a href="#">Уведомления (0)</a></li>
+                    <li><i class="fa fa-clone"></i><a href="#">Мои заказы</a></li>
+                    <li><i class="fa fa-shopping-cart"></i><a href="#">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="i/logo.png" alt="">
+                        <p class="logo-name">za<span>kupi</span><sup>.club</sup></p>
+                        <p class="logo-slogan">совместные покупки</p>
+                    </a>
+                </div>
+                <div id="m320">
+                  <a href="#" class="close"></a>
+                  <p class="htitle">Закупки по категориям</p>
+                  <ul>
+                    <li><a href="#">Для женщин</a></li>
+                    <li><a href="#">Для мужчин</a></li>
+                    <li><a href="#">Детские товары, одежда, обувь</a></li>
+                    <li><a href="#">Красота и здоровье</a></li>
+                    <li><a href="#">Бытовая техника</a></li>
+                  </ul>
+                  <p class="htitle">Меню</p>
+                  <ul>
+                    <li><a href="#">Закупки</a></li>
+                    <li><a href="#">Пристрой</a></li>
+                    <li><a href="#">Хотелки</a></li>
+                    <li><a href="#">Хвасталки</a></li>
+                  </ul>
+                  <p class="htitle">Сервисы</p>
+                  <ul>
+                    <li><i class="fa fa-exclamation-circle"></i><a href="#">Уведомления (0)</a></li>
+                    <li><i class="fa fa-clone"></i><a href="#">Мои заказы</a></li>
+                    <li><i class="fa fa-shopping-cart"></i><a href="#">Корзина</a></li>
+                  </ul>
+                  <p class="htitle"><i class="fa fa-power-off"></i><span><a href="#">Войти</a> или <a href="#">Зарегистрироаться</a></span></p>
+                </div>
+                <div id="searchblock">
+                    <a href="#" id="goods" class="gothic">товары <i class="fa fa-bars"></i></a>
+                </div>
+                <div class="whitebox" id="allcat" rel="allcat">
+                    <div class="quarte">
+                      <h2><a href="#">Мужская одежда <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Пальто и куртки</a></li>
+                            <li><a href="#">Джинсы</a></li>
+                            <li><a href="#">Футболки</a></li>
+                            <li><a href="#">Повседневные рубашки</a></li>
+                            <li><a href="#">Свитера</a></li>
+                            <li><a href="#">Брюки</a></li>
+                            <li><a href="#">Свитера и куртки с капюшоном</a></li>
+                            <li><a href="#">Нижнее белье</a></li>
+                            <li><a href="#">Мужские сорочки</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Мужская обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Женская одежда <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte clearfix">
+                      <h2><a href="#">Женская обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                <div class="quarte">
+                      <h2><a href="#">Детская одежда,обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Пальто и куртки</a></li>
+                            <li><a href="#">Джинсы</a></li>
+                            <li><a href="#">Футболки</a></li>
+                            <li><a href="#">Повседневные рубашки</a></li>
+                            <li><a href="#">Свитера</a></li>
+                            <li><a href="#">Брюки</a></li>
+                            <li><a href="#">Свитера и куртки с капюшоном</a></li>
+                            <li><a href="#">Нижнее белье</a></li>
+                            <li><a href="#">Мужские сорочки</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Красота и здоровье <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Бытовая техника <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <div class="quarteimage">
+                            <a href="#"><img src="i/half.jpg" alt=""></a>
+                      </div>
+                    </div>
+                </div>
+                <div id="searchform">
+                    <form>
+                          <input type="text" placeholder="Найти">
+                          <div>
+                              <button value="Все категории" id="catsbutton">Все категории<i class="fa fa-angle-down"></i></button>
+                              <div class="whitebox" id="cats">
+                                <ul>
+                                    <li><a href="#">Все категории</a></li>
+                                    <li><a href="#">Женская одежда</a></li>
+                                    <li><a href="#">Женская обувь</a></li>
+                                    <li><a href="#">Мужская одежда</a></li>
+                                    <li><a href="#">Мужская обувь</a></li>
+                                    <li><a href="#">Верхняя одежда</a></li>
+                                    <li><a href="#">Детские товары</a></li>
+                                    <li><a href="#">Детская обувь</a></li>
+                                    <li><a href="#">Детская одежда</a></li>
+                                    <li><a href="#">Красота</a></li>
+                                    <li><a href="#">Здоровье</a></li>
+                                    <li><a href="#">Бытовая техника</a></li>
+                                    <li><a href="#">Пристрой</a></li>
+                                    <li><a href="#">Хотелки</a></li>
+                                    <li><a href="#">Хвасталки</a></li>
+                                    <li><a href="#">Разное</a></li>
+                                </ul>
+                              </div>
+                          </div>
+                          <input type="submit" value="Найти">
+                    </form>
+                    <p class="advsearch"><a href="#">Расширенный поиск</a></p>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <div id="secondmenu" class="container">
+    	<div class="clearfix">
+            <nav class="secondmenu">
+                <li><a href="#" class="mainlink"><span class="mainlink">Мои данные</span></a></li>
+                <li>Закупки</li>
+                <li><a href="#" class="mainlink"><span class="mainlink">Товары</span></a></li>
+            </nav>
+            <h2>Закупка № 5157</h2>
+            <nav class="secondmenu-right">
+                <li><a href="#">Главная</a></li>
+                <li>/</li>
+                <li><a href="#">Закупка № 5157</a></li>
+            </nav>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container clearfix">
+            	<div id="leftbar">
+                    <nav id="leftmenu">
+                        <ul>
+                            <li><a href="#" class="leaf">О закупке № 5157</a>
+                            	<ul>
+                                    <li><a href="#">Все</a></li>
+                                    <li><a href="#">Активные</a></li>
+                                    <li><a href="#">Прошедшие</a></li>
+                                </ul>
+                            </li>                            
+                            <li><a href="#">Хвастики</a></li>
+                            <li><a href="#">Пристрой</a></li>
+                            <li><a href="#">Мои закупки (23)</a></li>
+                            <li><a href="#">Мои подписчики (3)</a></li>
+
+                        </ul>
+                    </nav>
+                    <br>
+                    <a href="#" class="logout">Выйти из личного кабинета</a>
+                </div>
+                <div id="rightcontent">
+                    <article>
+                        <div class="widenavy">
+                        	<p>Милана <a href="#" class="edit">Редактировать</a><span class="status"><img src="i/status-online.png" alt="">on-line</span></p>
+                        </div>                        
+                        
+                        <div id="lc" class="clearfix">
+                        	<div id="llc">
+                            	<h1>закупка “платья из италии”</h1>
+                                <div class="about">
+                                    <p class="descr">Описание:</p>
+                                    <p>Я мама в декрете, занялась совместными покупками с апреля 2014 года. Сейчас активно веду продажи в соц. сетях.</p>
+                                    <p>Прошу всем обращаться ко мне на ты.. Смотрите все мои закупки и не забывайте оставлять отзывы.</p>
+                                    <p>Я решила вести лишь те закупки, где сама хочу поучаствовать. Чтобы не прибыль получать, как многие сейчас делают, а экономить вместе с вами!</p>
+                                    <p>По любым вопросам можете обращаться</p>
+                                    <br/>
+                                    <p class="descr">Веб-сайт:</p><p>shahta@list.ru</p>
+                                    <br/>
+                                    <p class="descr">Месторасположение:</p><p>Санкт-Петербург</p>
+                                    <br/>
+                                    <p class="edit"><a href="#">Читать полностью</a></p>
+                                </div>
+                                <div class="widenavy">Новости<span>15 записей <a href="#">Развернуть всё</a></span></div>
+                                <div class="action-news">
+                                	<div class="new">
+                                    	<h3><a href="#">Появилась новаяколлекция платьев из Испании!</a></h3>
+                                        <div class="meta">
+                                        	<div class="date">14.07.2015</div>
+                                        </div>
+                                        <div class="links">
+                                               <span class="ncomment">1</span> <a href="#">Комментарий</a> | <a href="#">Написать</a>
+                                        </div>
+                                    </div>
+                                    <div class="new">
+                                    	<h3><a href="#">Тренды модных платьев. Воланы, рюши, кокетка ...</a></h3>
+                                        <div class="meta">
+                                        	<div class="date">14.07.2015</div>
+                                        </div>
+                                        <div class="links">
+                                               <span class="ncomment">10</span> <a href="#">Комментариев</a> | <a href="#">Написать</a>
+                                        </div>
+                                    </div>
+                                    <div class="new">
+                                    	<h3><a href="#">Уже сегодня Подскажите когда у Вас буде новая закупка по детской одежде.</a></h3>
+                                        <div class="meta">
+                                        	<div class="date">14.07.2015</div>
+                                        </div>
+                                        <div class="links">
+                                               <span class="ncomment">0</span> <a href="#">Комментариев</a> | <a href="#">Написать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="filtr short">
+                                    <div class="widenavy">Фильтр <span class="togglefiltr"><a href="#" rel="Развернуть">Свернуть</a></span></div>
+                                    <div class="filtrbody">
+                                        <div class="search line"><input type="text" value="" placeholder="Поиск..."><input type="submit" value=""></div>
+                                        <div class="line clearfix">
+                                            <select>
+                                                <option value="Категории">Категории</option>
+                                                <option value="Категория 1">Категория 1</option>
+                                                <option value="Категория 2">Категория 2</option>
+                                            </select>
+                                            <select>
+                                                <option value="Товары">Товары</option>
+                                                <option value="Товар 1">Товар 1</option>
+                                                <option value="Товар 2">Товар 2</option>
+                                            </select>
+                                            <select>
+                                                <option value="Регион">Регион</option>
+                                                <option value="Регион 1">Регион 1</option>
+                                                <option value="Регион 2">Регион 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="line clearfix">
+                                             <select>
+                                                <option value="Статус закупки">Статус закупки</option>
+                                                <option value="Статус закупки 1">Статус закупки 1</option>
+                                                <option value="Статус закупки 2">Статус закупки 2</option>
+                                            </select>
+                                            <input type="checkbox" name="">Новые закупки
+                                            <button class="find">Найти закупку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <h3>Витрина товаров</h3>
+                                <div class="catnav">
+                                    <div class="hpager">
+                                        Товаров: <span class="gothic">713</span>
+                                        <ul>
+                                            <li><a href="#" class="active">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                        </ul>
+                                        <a href="#" class="next"><i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
+                                    <div class="hpages">
+                                    Показывать по: <span class="gothic"><a href="#" class="active">20</a></span> <span class="gothic"><a href="#">100</a></span> <span class="gothic"><a href="#">200</a></span>
+                                    </div>
+                                </div>
+                                
+                                <ul id="itemlist">
+                        
+                                    <li class="itemboard">
+                                        <div class="sale salegreen gotic"><span>-25%</span></div>
+                                        <div class="imgblock"><img src="i/doll.jpg"></div>
+                                        <p class="title"><a href="#">Платье нарядное тёмно-синие</a></p>
+                                        <p class="price gothic"><span>2 580 <i class="fa fa-rub"></i></span> 2 580 <i class="fa fa-rub"></i></p>
+                                        <a href="#" class="tocart">В корзину</a>
+                                    </li>
+                                    
+                                    <li class="itemboard">
+                                        <div class="imgblock"><img src="i/doll.jpg"></div>
+                                        <p class="title"><a href="#">Платье нарядное тёмно-синие</a></p>
+                                        <p class="price gothic"><span>2 580 <i class="fa fa-rub"></i></span> 2 580 <i class="fa fa-rub"></i></p>
+                                        <a href="#" class="tocart">В корзину</a>
+                                    </li>
+                                    
+                                    <li class="itemboard">
+                                        <div class="sale saleorange gotic"><span>-55%</span></div>
+                                        <div class="imgblock"><img src="i/tema.jpg"></div>
+                                        <p class="title"><a href="#">Платье нарядное тёмно-синие</a></p>
+                                        <p class="price gothic"><span>2 580 <i class="fa fa-rub"></i></span> 2 580 <i class="fa fa-rub"></i></p>
+                                        <a href="#" class="tocart">В корзину</a>
+                                    </li>
+                                    
+                                    <li class="itemboard">
+                                        <div class="sale salegreen gotic"><span>-25%</span></div>
+                                        <div class="imgblock"><img src="i/doll.jpg"></div>
+                                        <p class="title"><a href="#">Платье нарядное тёмно-синие</a></p>
+                                        <p class="price gothic"><span>2 580 <i class="fa fa-rub"></i></span> 2 580 <i class="fa fa-rub"></i></p>
+                                        <a href="#" class="tocart">В корзину</a>
+                                    </li>
+                                    
+                                    <li class="itemboard">
+                                        <div class="sale salegreen gotic"><span>-25%</span></div>
+                                        <div class="imgblock"><img src="i/doll.jpg"></div>
+                                        <p class="title"><a href="#">Платье нарядное тёмно-синие</a></p>
+                                        <p class="price gothic"><span>2 580 <i class="fa fa-rub"></i></span> 2 580 <i class="fa fa-rub"></i></p>
+                                        <a href="#" class="tocart">В корзину</a>
+                                    </li>
+                                    
+                                    <li class="itemboard">
+                                        <div class="sale salegreen gotic"><span>-25%</span></div>
+                                        <div class="imgblock"><img src="i/doll.jpg"></div>
+                                        <p class="title"><a href="#">Платье нарядное тёмно-синие</a></p>
+                                        <p class="price gothic"><span>2 580 <i class="fa fa-rub"></i></span> 2 580 <i class="fa fa-rub"></i></p>
+                                        <a href="#" class="tocart">В корзину</a>
+                                    </li>
+                                    
+                                    <li class="itemboard">
+                                        <div class="sale salegreen gotic"><span>-25%</span></div>
+                                        <div class="imgblock"><img src="i/doll.jpg"></div>
+                                        <p class="title"><a href="#">Платье нарядное тёмно-синие</a></p>
+                                        <p class="price gothic"><span>2 580 <i class="fa fa-rub"></i></span> 2 580 <i class="fa fa-rub"></i></p>
+                                        <a href="#" class="tocart">В корзину</a>
+                                    </li>
+                                    
+                                    <li class="itemboard">
+                                        <div class="imgblock"><img src="i/doll.jpg"></div>
+                                        <p class="title"><a href="#">Платье нарядное тёмно-синие</a></p>
+                                        <p class="price gothic"><span>2 580 <i class="fa fa-rub"></i></span> 2 580 <i class="fa fa-rub"></i></p>
+                                        <a href="#" class="tocart">В корзину</a>
+                                    </li>
+                                </ul>
+                                
+                                <a href="#" class="purchases gothic">Смотреть больше</a>
+                                
+                                <div class="catnav">
+                                    <div class="hpager">
+                                        Товаров: <span class="gothic">713</span>
+                                        <ul>
+                                            <li><a href="#" class="active">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                        </ul>
+                                        <a href="#" class="next"><i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
+                                    <div class="hpages">
+                                    Показывать по: <span class="gothic"><a href="#" class="active">20</a></span> <span class="gothic"><a href="#">100</a></span> <span class="gothic"><a href="#">200</a></span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div id="rlc">
+                            	<div class="zakupka">
+                                	<div class="label">выкуп<span>№1</span></div>
+                                	<a href="#"><img src="i/dress.png" alt=""></a>
+                                </div>
+                                <div class="subscr">
+                                	<a href="#">Подписаться</a>
+                                </div>
+                                <div class="manage short">
+                                	<ul>
+                                        <li class=""><a href="#"><span class="oman">Управление закупкой</span></a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="headman clearfix">
+                                	<div class="headmanphoto">
+                                    	<img src="i/face.jpg" alt="">
+                                    </div>
+                                    <div class="headmantext">
+                                    	<p class="status online">Милана</p>
+                                        <p class="commenttitle"><a href="#">Написать сообщение</a></p>
+                                        <div class="profilerate"><a href="#" class="toup"></a><span class="toup">87</span> <a href="#" class="todown"></a><span class="todown">2</span></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="otz clearfix">
+                                	<div class="leftblock">
+                                    	<a href="#"><span>Читать<br>отзывы</span></a>
+                                    </div>
+                                    <div class="rightblock">
+                                    	<h4>отзывы</h4>
+                                        <div class="opinions">
+                                        	<span class="good"><a href="#">(13)</a></span>
+                                            <span class="bad"><a href="#">(5)</a></span>
+                                            <span class="soso"><a href="#">(22)</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="widenavy">Участники <span><a href="#">1375 человек</a></span></div>
+                                <div class="action users">
+                                	<ul>
+                                    	<li><a href="#"><img src="i/f1.png" alt=""></a><p>Света</p></li>
+                                        <li><a href="#"><img src="i/f2.png" alt=""></a><p>Майя</p></li>
+                                        <li><a href="#"><img src="i/f3.png" alt=""></a><p>Ксения</p></li>
+                                        <li><a href="#"><img src="i/f3.png" alt=""></a><p>Ксения</p></li>
+                                        <li><a href="#"><img src="i/f2.png" alt=""></a><p>Майя</p></li>
+                                        <li><a href="#"><img src="i/f1.png" alt=""></a><p>Света</p></li>
+                                        <li><a href="#"><img src="i/f2.png" alt=""></a><p>Майя</p></li>
+                                        <li><a href="#"><img src="i/f1.png" alt=""></a><p>Ксения</p></li>
+                                        <li><a href="#"><img src="i/f3.png" alt=""></a><p>Ксения</p></li>
+                                    </ul>
+                                
+                                </div>
+                                
+                                <div class="widenavy">Закупки <span><a href="#">Все закупки</a></span></div>
+                                <div class="action gifts clearfix">
+                                	<div class="giftitem clearfix">
+                                    	<div class="label">2</div>
+                                        <div class="imageblock">
+                                            <img src="i/item0.jpg" alt="">
+                                        </div>
+                                        <div class="textblock">
+                                            <h3>Платья - новинки</h3>
+                                            <p class="date">Окончание закупки: 7.05.2015</p>
+                                            <span class="peoples gothic"><span>3</span></span><span class="gifts gothic"><span>23</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="giftitem clearfix">
+                                    	<div class="label">5</div>
+                                        <div class="imageblock">
+                                            <img src="i/item01.png" alt="">
+                                        </div>
+                                        <div class="textblock">
+                                            <h3>натуральная косметика</h3>
+                                            <p class="date">7.05.2015</p>
+                                            <span class="peoples gothic"><span>32</span></span><span class="gifts gothic"><span>183</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="giftitem clearfix">
+                                    	<div class="label">13</div>
+                                        <div class="imageblock">
+                                            <img src="i/item0.jpg" alt="">
+                                        </div>
+                                        <div class="textblock">
+                                            <h3>Платья - новинки</h3>
+                                            <p class="date">Окончание закупки: 7.05.2015</p>
+                                            <span class="peoples gothic"><span>3</span></span><span class="gifts gothic"><span>23</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="widenavy">Хвастики <span><a href="#">Вссе хвастики</a></span></div>
+                                <div class="action hvast clearfix">
+                                	<ul>
+                                      <li class="hvastsmall">
+                                        <div class="imageblock"><img src="i/smallh01.jpg" alt=""></div>
+                                        <div class="textblock">
+                                          <div class="hearts">
+                                            <a href="#" class="like">95</a>
+                                            <a href="#" class="dislike">100</a>
+                                          </div>
+                                          <div class="social">
+                                          social
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="hvastsmall">
+                                        <div class="imageblock"><img src="i/smallh02.jpg" alt=""></div>
+                                          <div class="textblock">
+                                            <div class="hearts">
+                                              <a href="#" class="like">95</a>
+                                              <a href="#" class="dislike">100</a>
+                                            </div>
+                                            <div class="social">
+                                            social
+                                            </div>
+                                        </div>
+                                      </li>
+                                      <li class="hvastsmall">
+                                        <div class="imageblock"><img src="i/smallh01.jpg" alt=""></div>
+                                        <div class="textblock">
+                                          <div class="hearts">
+                                            <a href="#" class="like">95</a>
+                                            <a href="#" class="dislike">100</a>
+                                          </div>
+                                          <div class="social">
+                                          social
+                                          </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </article>
+                </div>
+        </div><!-- /container -->
+        
+       
+        
+        
+    </div><!-- /contant -->
+    <footer id="mainfooter">
+        <div class="container">
+        	<div class="clearfix">
+            	<div class="quarte">
+                	<h3>Закупки</h3>
+                    <ul>
+                        <li><a href="#">Пристрой</a></li>
+                        <li><a href="#">Закупки</a></li>
+                        <li><a href="#">Хотелки</a></li>
+                        <li><a href="#">Хвасталки</a></li>
+                        <li><a href="#">Для женщин</a></li>
+                        <li><a href="#">Для мужчин</a></li>
+                        <li><a href="#">Детские товары, одежда, обувь</a></li>
+                        <li><a href="#">Красота и здоровье</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<h3>о zakupiclub</h3>
+                    <ul>
+                        <li><a href="#">О клубе</a></li>
+                        <li><a href="#">Стать участником</a></li>
+                        <li><a href="#">Стать организатором</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                        <li><a href="#">Новичкам</a></li>
+                        <li><a href="#">Пункты выдачи</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<h3>Справка и помощь</h3>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Вопросы и предложения</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<p>VK</p>
+                	<div class="logo">
+                        <a href="#">
+                            <img src="i/logo.png" alt="">
+                            <p class="logo-name">za<span>kupi</span><sup>.club</sup></p>
+                            <p class="logo-slogan">совместные покупки</p>
+                        </a>
+                    </div>
+                    <p class="copy">Copyright 2015 Закупиклаб</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="ppup" id="pupload">
+    	<div class="header">Прикрепить хвастик<a href="#" class="close"></a></div>
+        <div class="action"><a href="#" class="actionphoto">Загрузить фотографию</a></div>
+        <div class="upphoto">
+        	<ul>
+              <li class="hvastsmall">
+                <div class="imageblock"><img src="i/smallh01.jpg" alt=""></div>
+                <div class="textblock">
+                  <div class="hearts">
+                    <a href="#" class="like">95</a>
+                    <a href="#" class="dislike">100</a>
+                  </div>
+                  <div class="social">
+                  social
+                  </div>
+                </div>
+              </li>
+              <li class="hvastsmall">
+                <div class="imageblock"><img src="i/smallh02.jpg" alt=""></div>
+                  <div class="textblock">
+                    <div class="hearts">
+                      <a href="#" class="like">95</a>
+                      <a href="#" class="dislike">100</a>
+                    </div>
+                    <div class="social">
+                    social
+                    </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+    
+	<div class="ppup" id="pgift">
+    	<div class="header">Добавить закупку<a href="#" class="close"></a></div>
+        <div class="search"><input type="text" value="" placeholder="Поиск..."><input type="submit" value=""></div>
+        <div class="giftitem clearfix">
+        	<div class="imageblock">
+            	<img src="i/item0.jpg" alt="">
+            </div>
+            <div class="textblock">
+            	<h3>Платья - новинки</h3>
+                <p class="date">Окончание закупки: 7.05.2015</p>
+                <span class="peoples gothic"><span>3</span></span><span class="gifts gothic"><span>23</span></span>
+            </div>
+            <a href="#" class="addgift">Добавить</a>
+        </div>
+        <div class="addfromsearch"><a href="#">Добавить закупку из полного списка</a></div>
+    </div>
+    
+    <div class="ppup" id="pnew">
+    	<div class="header">Добавить новость<a href="#" class="close"></a></div>
+        <div class="newsform">
+        	<h4>Выберите аудиторию</h4>
+            <p class="radio"><input type="radio" name="au" checked>Участники</p>
+            <p class="radiotext">Поделиться новостью участниками Вашей закупки</p>
+            <p class="radio"><input type="radio" name="au">Отправить личным сообщением</p>
+            <p class="radiotext">
+            	<select>
+                	<option value=""></option>
+                    <option value="User 1">User 1</option>
+                    <option value="User 1">User 2</option>
+                    <option value="User 1">User 3</option>
+                </select>
+            </p>
+            <h4>Ваше сообщение</h4>
+            <textarea></textarea>
+            <div class="clearfix">
+	            <input type="submit" value="Поделиться новостью">
+            </div>
+        </div>
+    </div>
+    
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.jcarousellite.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/icheck.min.js"></script>
+    <script src="js/misc.js"></script>
+</body>
+</html>

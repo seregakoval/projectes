@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>title</title>
+    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <link href="css/ups.css" rel="stylesheet">
+    <link href="css/resp.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+     <header>
+    	<div class="container">
+            <nav id="topline" class="wrapper">
+                <ul id="topmenu">
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Вопросы и предложения</a></li>
+                    <li><a href="#">Стать организатором</a></li>
+                    <li><a href="#">Партнерская программа</a></li>
+                    <li><a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></li>
+                </ul>
+                <ul id="self">
+                    <li><i class="fa fa-exclamation-circle"></i><a href="#">Уведомления (0)</a></li>
+                    <li><i class="fa fa-clone"></i><a href="#">Мои заказы</a></li>
+                    <li><i class="fa fa-shopping-cart"></i><a href="#">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="i/logo.png" alt="">
+                        <p class="logo-name">za<span>kupi</span><sup>.club</sup></p>
+                        <p class="logo-slogan">совместные покупки</p>
+                    </a>
+                </div>
+                <div id="m320">
+                  <a href="#" class="close"></a>
+                  <p class="htitle">Закупки по категориям</p>
+                  <ul>
+                    <li><a href="#">Для женщин</a></li>
+                    <li><a href="#">Для мужчин</a></li>
+                    <li><a href="#">Детские товары, одежда, обувь</a></li>
+                    <li><a href="#">Красота и здоровье</a></li>
+                    <li><a href="#">Бытовая техника</a></li>
+                  </ul>
+                  <p class="htitle">Меню</p>
+                  <ul>
+                    <li><a href="#">Закупки</a></li>
+                    <li><a href="#">Пристрой</a></li>
+                    <li><a href="#">Хотелки</a></li>
+                    <li><a href="#">Хвасталки</a></li>
+                  </ul>
+                  <p class="htitle">Сервисы</p>
+                  <ul>
+                    <li><i class="fa fa-exclamation-circle"></i><a href="#">Уведомления (0)</a></li>
+                    <li><i class="fa fa-clone"></i><a href="#">Мои заказы</a></li>
+                    <li><i class="fa fa-shopping-cart"></i><a href="#">Корзина</a></li>
+                  </ul>
+                  <p class="htitle"><i class="fa fa-power-off"></i><span><a href="#">Войти</a> или <a href="#">Зарегистрироаться</a></span></p>
+                </div>
+                <div id="searchblock">
+                    <a href="#" id="goods" class="gothic">товары <i class="fa fa-bars"></i></a>
+                </div>
+                <div class="whitebox" id="allcat" rel="allcat">
+                    <div class="quarte">
+                      <h2><a href="#">Мужская одежда <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Пальто и куртки</a></li>
+                            <li><a href="#">Джинсы</a></li>
+                            <li><a href="#">Футболки</a></li>
+                            <li><a href="#">Повседневные рубашки</a></li>
+                            <li><a href="#">Свитера</a></li>
+                            <li><a href="#">Брюки</a></li>
+                            <li><a href="#">Свитера и куртки с капюшоном</a></li>
+                            <li><a href="#">Нижнее белье</a></li>
+                            <li><a href="#">Мужские сорочки</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Мужская обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Женская одежда <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte clearfix">
+                      <h2><a href="#">Женская обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                <div class="quarte">
+                      <h2><a href="#">Детская одежда,обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Пальто и куртки</a></li>
+                            <li><a href="#">Джинсы</a></li>
+                            <li><a href="#">Футболки</a></li>
+                            <li><a href="#">Повседневные рубашки</a></li>
+                            <li><a href="#">Свитера</a></li>
+                            <li><a href="#">Брюки</a></li>
+                            <li><a href="#">Свитера и куртки с капюшоном</a></li>
+                            <li><a href="#">Нижнее белье</a></li>
+                            <li><a href="#">Мужские сорочки</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Красота и здоровье <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Бытовая техника <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <div class="quarteimage">
+                            <a href="#"><img src="i/half.jpg" alt=""></a>
+                      </div>
+                    </div>
+                </div>
+                <div id="searchform">
+                    <form>
+                          <input type="text" placeholder="Найти">
+                          <div>
+                              <button value="Все категории" id="catsbutton">Все категории<i class="fa fa-angle-down"></i></button>
+                              <div class="whitebox" id="cats">
+                                <ul>
+                                    <li><a href="#">Все категории</a></li>
+                                    <li><a href="#">Женская одежда</a></li>
+                                    <li><a href="#">Женская обувь</a></li>
+                                    <li><a href="#">Мужская одежда</a></li>
+                                    <li><a href="#">Мужская обувь</a></li>
+                                    <li><a href="#">Верхняя одежда</a></li>
+                                    <li><a href="#">Детские товары</a></li>
+                                    <li><a href="#">Детская обувь</a></li>
+                                    <li><a href="#">Детская одежда</a></li>
+                                    <li><a href="#">Красота</a></li>
+                                    <li><a href="#">Здоровье</a></li>
+                                    <li><a href="#">Бытовая техника</a></li>
+                                    <li><a href="#">Пристрой</a></li>
+                                    <li><a href="#">Хотелки</a></li>
+                                    <li><a href="#">Хвасталки</a></li>
+                                    <li><a href="#">Разное</a></li>
+                                </ul>
+                              </div>
+                          </div>
+                          <input type="submit" value="Найти">
+                    </form>
+                    <p class="advsearch"><a href="#">Расширенный поиск</a></p>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <div id="secondmenu" class="container">
+    	<div class="clearfix">
+            <nav class="secondmenu">
+                <li><a href="#" class="mainlink"><span class="mainlink">Мои данные</span></a></li>
+                <li><a href="#" class="mainlink"><span class="mainlink">Закупки</span></a></li>
+                <li>Товары</li>
+            </nav>
+            <h2>Настройки</h2>
+            <nav class="secondmenu-right">
+                <li><a href="#">Главная</a></li>
+                <li>/</li>
+                <li><a href="#">Добавить товар</a></li>
+            </nav>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container clearfix">
+            	<div id="leftbar">
+                    <nav id="leftmenu">
+                        <ul>
+                            <li><a href="#" class="leaf">Для женщин</a>
+                                <ul>
+                                    <li><a href="#">Платья</a></li>
+                                    <li><a href="#">Аксессуарыв</a></li>
+                                    <li><a href="#">Верхняя одежда</a></li>
+                                    <li><a href="#">Нижнее белье, купальники</a></li>
+                                    <li><a href="#">Обувь</a></li>
+                                    <li><a href="#">Одежда</a></li>
+                                    <li><a href="#">Сумки и чемоданы</a></li>
+                                    <li><a href="#">Одежда для беременных</a></li>
+                                    <li><a href="#">Свадьбы и торжества</a></li>
+                                    <li><a href="#">Ювелирные изделия и бижутерия</a></li>
+                                </ul>
+                            </li>                            
+                            <li><a href="#">Для мужчин</a></li>
+                            <li><a href="#">Детские товары, одежда, обувь</a></li>
+                            <li><a href="#">Красота и здоровье</a></li>
+                            <li><a href="#">Бытовая техника</a></li>
+                            <li><a href="#">Хвасталки</a></li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <a href="#" class="logout">Выйти из личного кабинета</a>
+                </div>
+                <div id="rightcontent">
+                    <article>
+                        <div class="widenavytabs">
+                            <table>
+                            	<td><a href="#" class="active">Информация</a></td>
+                                  <td><a href="#"> Характеристики</a></td>
+                                  <td width="100%;"></td>
+                            </table>
+                        </div>
+                        
+                                          
+						<div id="infornation">
+                            
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Поиск товара в каталоге</div>
+                                <div class="infodata">
+                                	<textarea value="" name="" placeholder=""></textarea>
+                                    <p class="descr">Введите поисковые запросы через запятую, например: платья, купить платья, юбки и т.п.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Категория в каталоге</div>
+                                <div class="infodata">
+                                	<p><span class="redtext">Платья / Сарафаны</span> <a href="#">Редактировать</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Бренд</div>
+                                <div class="infodata">
+                                	<select>
+                                    	<option value="0">Все производители</option>
+                                    	<option value="1">Все производители 1</option>
+                                        <option value="2">Все производители 2</option>
+                                        <option value="3">Все производители 3</option>
+                                        <option value="4">Все производители 4</option>
+                                    </select>
+                                    <p><a href="#">Предложить свой вариант</a></p>
+                                </div>
+                            </div>
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Вид изделия</div>
+                                <div class="infodata">
+                                	<select>
+                                    	<option value="0">Все значения</option>
+                                    	<option value="1">Все значения 1</option>
+                                        <option value="2">Все значения 2</option>
+                                        <option value="3">Все значения 3</option>
+                                        <option value="4">Все значения 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Размер женской одежды</div>
+                                <div class="infodata">
+                                	<select>
+                                    	<option value="0">Все значения</option>
+                                    	<option value="1">Все значения 1</option>
+                                        <option value="2">Все значения 2</option>
+                                        <option value="3">Все значения 3</option>
+                                        <option value="4">Все значения 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Фасон платья</div>
+                                <div class="infodata">
+                                	<select>
+                                    	<option value="0">Все значения</option>
+                                    	<option value="1">Все значения 1</option>
+                                        <option value="2">Все значения 2</option>
+                                        <option value="3">Все значения 3</option>
+                                        <option value="4">Все значения 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Стиль</div>
+                                <div class="infodata">
+                                	<select>
+                                    	<option value="0">Все значения</option>
+                                    	<option value="1">Все значения 1</option>
+                                        <option value="2">Все значения 2</option>
+                                        <option value="3">Все значения 3</option>
+                                        <option value="4">Все значения 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Длина изделия</div>
+                                <div class="infodata">
+                                	<select>
+                                    	<option value="0">Все значения</option>
+                                    	<option value="1">Все значения 1</option>
+                                        <option value="2">Все значения 2</option>
+                                        <option value="3">Все значения 3</option>
+                                        <option value="4">Все значения 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Длина рукава</div>
+                                <div class="infodata">
+                                	<select>
+                                    	<option value="0">Все значения</option>
+                                    	<option value="1">Все значения 1</option>
+                                        <option value="2">Все значения 2</option>
+                                        <option value="3">Все значения 3</option>
+                                        <option value="4">Все значения 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="infoline clearfix">
+                            	<div class="infotitle">Страна производитель</div>
+                                <div class="infodata">
+                                	<select>
+                                    	<option value="0">Все производители</option>
+                                    	<option value="1">Все производители 1</option>
+                                        <option value="2">Все производители 2</option>
+                                        <option value="3">Все производители 3</option>
+                                        <option value="4">Все производители 4</option>
+                                    </select>
+                                    <p><a href="#">Предложить свою характеристику</a></p>
+                                </div>
+                            </div>
+                            
+                            <h4>Мои характеристики</h4>
+                            <table class="har">
+                            	<tr>
+                                	<th>Название</th>
+                                    <th>Значение</th>
+                                </tr>
+                                <tr>
+                                	<td>Бренд</td>
+                                    <td><input type="text" value="kISSME"><a class="del" href="#"></a><a class="plus" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                	<td>Артикул</td>
+                                    <td><input type="text" value="1253л97"><a class="del" href="#"></a><a class="plus" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                	<td>Состав ткани</td>
+                                    <td><input type="text" value="100% полиэстер"><a class="del" href="#"></a><a class="plus" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                	<td>Изделие</td>
+                                    <td><input type="text" value="платье"><a class="del" href="#"></a><a class="plus" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                	<td>Страна производитель</td>
+                                    <td><input type="text" value="китай"><a class="del" href="#"></a><a class="plus" href="#"></a></td>
+                                </tr>
+                                <tr class="last">
+                                	<td></td>
+                                    <td><a href="#">Добавить характеристики товара</a></td>
+                                </tr>
+                            </table>
+                            <div class="orderbuttons">
+                                <button class="ordercancel">Отменить</button>
+                                <button class="orderpay">Опубликовать</button>
+                            </div>
+                            
+                        </div>
+                            
+                    </article>
+                </div>
+        </div><!-- /container -->
+        
+       
+        
+        
+    </div><!-- /contant -->
+    <footer id="mainfooter">
+        <div class="container">
+        	<div class="clearfix">
+            	<div class="quarte">
+                	<h3>Закупки</h3>
+                    <ul>
+                        <li><a href="#">Пристрой</a></li>
+                        <li><a href="#">Закупки</a></li>
+                        <li><a href="#">Хотелки</a></li>
+                        <li><a href="#">Хвасталки</a></li>
+                        <li><a href="#">Для женщин</a></li>
+                        <li><a href="#">Для мужчин</a></li>
+                        <li><a href="#">Детские товары, одежда, обувь</a></li>
+                        <li><a href="#">Красота и здоровье</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<h3>о zakupiclub</h3>
+                    <ul>
+                        <li><a href="#">О клубе</a></li>
+                        <li><a href="#">Стать участником</a></li>
+                        <li><a href="#">Стать организатором</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                        <li><a href="#">Новичкам</a></li>
+                        <li><a href="#">Пункты выдачи</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<h3>Справка и помощь</h3>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Вопросы и предложения</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<p>VK</p>
+                	<div class="logo">
+                        <a href="#">
+                            <img src="i/logo.png" alt="">
+                            <p class="logo-name">za<span>kupi</span><sup>.club</sup></p>
+                            <p class="logo-slogan">совместные покупки</p>
+                        </a>
+                    </div>
+                    <p class="copy">Copyright 2015 Закупиклаб</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.jcarousellite.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/misc.js"></script>
+</body>
+</html>

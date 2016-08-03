@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="GetHost" />
+    <link rel="StyleSheet" href="style.css" type="text/css" /> 
+	<title>Welkom bij bodyteccenterdelft.nl</title>
+       
+</head>
+
+<body>
+
+    <div id="inhoud">
+        <p class="titel"> Deze website wordt gehost door GetHost</p>
+        <p class="hoofdtekst">De eigenaar van deze site heeft nog geen inhoud geplaatst. Bent u de eigenaar? In dat geval kunt u uw bestanden uploaden in de public_html map en deze standaard index.html te vervangen door uw eigen.<br /><br />  
+
+        Bent u ook geïnteresseerd in hosting met hoge kwaliteit en lage prijzen? Neem dan een kijkje op onze website: <a href="https://www.gethost.nl" title="GetHost kwaliteit webhosting tegen lage prijzen.">www.gethost.nl</a></p>
+    
+      <div class="domaincheck">
+         <p class="check">Check direct of uw domeinnaam nog vrij is!</p>
+             <form method="POST" action="https://www.gethost.nl/site/domeinregistratie/" id="check_1" />
+                <input type="text" name="domainname" id="domainname" value="uw-keuze.nl" onclick="this.value=''"/>
+                <input type="submit" value="Check" class="domain_check"
+             </form>
+        </div>
+    
+
+    
+    </div>
+
+</body>
+</html>

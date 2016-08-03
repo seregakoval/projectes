@@ -1,0 +1,23 @@
+ul.exxica-simple-sharing-list {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.exxica-simple-sharing-list span.dashicons, ul.exxica-simple-sharing-list span.dashicons:before {
+	vertical-align: center !important;
+}
+li.exxica-simple-sharing-list-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+a.exxica-simple-sharing-link {
+	text-decoration: none !important;
+	font-size: 14px;
+}
+a.exxica-simple-sharing-link:hover {
+	text-decoration: none !important;
+}
+span.exxica-simple-sharing-link-text {
+	display: inline-block;
+	vertical-align: top;
+}

@@ -1,0 +1,241 @@
+#leftbar .profilepic{
+	width:240px;
+	border:1px solid #f1f0f3;
+	box-shadow:0 0 9px rgba(0,0,0,.07);
+	padding:35px;
+	font-family: 'Didact Gothic', sans-serif;
+	color:#000;
+	font-size:12px;
+}
+
+#leftbar  .profilepic .profilephoto{
+	width:165px;
+	height:auto;
+}
+
+#leftbar  .profilerate{
+	display:inline-block;
+	text-align:center;
+	width:165px;
+	height:36px;
+	line-height:36px;
+	background:#fcfcfc;
+	margin-top:20px;
+	margin-bottom:30px;
+	border-radius:18px;
+}
+#leftbar .profilerate span{
+	font-size:18px;
+	display:inline-block;
+	margin:0 8px;
+}
+#leftbar .profilerate span.toup{
+	color:#159312;
+}
+#leftbar .profilerate span.todown{
+	color:#125293;
+}
+#leftbar .profilerate a{
+	display:inline-block;
+	width:11px;
+	height:9px;
+	background-image:url(../i/updown.png);
+	background-repeat:no-repeat;
+}
+#leftbar .profilerate a.toup{
+	background-position:0 0;
+	margin-left:8px;
+}
+#leftbar .profilerate a.todown{
+	background-position:0 -9px;
+}
+
+#leftbar .profilecity{
+	text-align:center;
+	line-height:24px;
+	margin:0;
+}
+#leftbar .profiledate{
+	text-align:center;
+	margin:0;
+	color:#b3b3b4;
+	font-style:italic;
+	line-height:24px;
+}
+#leftbar .inform{
+    margin:20px auto 0;
+    display: block;
+	width:140px;
+    background: #fccc82;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 30px;
+    border: 1px solid #dad9db;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 3px #fff;
+	text-decoration:none;
+}
+#leftbar .inform:hover{
+	color:#fff;
+	text-decoration:none;
+}
+#leftbar .logout{
+	display:block;
+	text-align:center;
+	font-size:12px;
+	color:#7a7a7a;
+	text-decoration:underline;
+	height:50px;
+	line-height:50px;
+	background:#f1f0f3;
+	position:relative;
+	padding-left:20px;
+	
+}
+#leftbar .logout:before{
+	content:url(../i/logout.png);
+	display:inline-block;
+	position:absolute;
+	top:10px;
+	left:20px;
+}
+#leftbar .logout:hover{
+	text-decoration:none;
+}
+#leftbar .profilemenu{
+	margin:22px 0 0;
+	padding:0;
+	display:block;
+	list-style:none;
+}
+
+#leftbar .profilemenu li{
+	display:block;
+}
+#leftbar .profilemenu li a{
+	display:block;
+	line-height:21px;
+	font-size:12px;
+	padding:8px 8px 6px 55px;
+	border-top:1px solid #f1f0f3;
+	color:#7a7a7a;
+	text-decoration:none;
+	position:relative;
+}
+#leftbar .profilemenu li.messages a{
+	border-bottom:1px solid #f1f0f3;
+	margin-bottom:1px;
+}
+#leftbar .profilemenu li a:hover,#leftbar .profilemenu li a.active{
+	color:#a4b95e;
+	text-decoration:underline;
+}
+#leftbar .profilemenu li span{
+	display:inline-block;
+	text-decoration:none !important;
+	height:21px;
+	color:#fff !important;
+	background:#a4b95e;
+	font-style:italic;
+	padding:0 15px;
+	border-radius:7px;
+	margin-left:8px;
+}
+#leftbar .profilemenu li.themes a:before{
+	display:inline-block;
+	width:13px;
+	height:11px;
+	background:url(../i/themes.png) no-repeat 0 0;
+	content:"";
+	position:absolute;
+	left:35px;
+	top:13px;
+}
+#leftbar .profilemenu li.themes a:hover:before,#leftbar .profilemenu li.themes a.active:before{
+	background-position:0 -11px;
+}
+#leftbar .profilemenu li.messages a:before{
+	display:inline-block;
+	width:11px;
+	height:8px;
+	background:url(../i/privat.png) no-repeat 0 0;
+	content:"";
+	position:absolute;
+	left:35px;
+	top:14px;
+}
+#leftbar .profilemenu li.messages a:hover:before,#leftbar .profilemenu li.messages a.active:before{
+	background-position:0 -8px;
+}
+
+
+/* ************************************************ */
+#usermenu{
+	height:44px;
+	position:relative;
+	width:111px;
+	line-height:44px;
+	float:right;
+	top:25px;
+	background:#8e89a0;
+}
+
+#usermenu span{
+	margin-right:6px;
+	margin-left:15px;
+	display:inline-block;
+}
+#usermenu a{
+	width:100%;
+	height:100%;
+	display:block;
+	position:relative;
+	color:#fff;
+	
+	text-decoration:none;
+}
+#usermenu:hover a{
+	background:#fff;
+	text-decoration:none;
+	color:#000;
+}
+#usermenu:hover a:after{
+	display: inline-block;
+    font: normal normal normal 16px/1 FontAwesome;
+	content: "\f106";
+	margin-left:10px;
+}
+#usermenu:hover ul{
+	display:block;
+}
+#usermenu ul{
+	display:none;
+	background:#fff;
+	list-style:none;
+	margin:0;
+	width:111px;
+	border:1px solid #f1f0f3;
+	padding:18px 0;
+}
+#usermenu ul li{
+	display:block;
+	height:28px;
+	line-height:28px;
+}
+#usermenu ul li a{
+	background:#fff;
+	text-decoration:none;
+	color:#000;
+	padding-left:18px;
+	height:28px;
+}
+#usermenu ul li a:after{
+	content:"";
+	display:none !important;
+}
+#usermenu ul li a:hover{
+	text-decoration:underline;
+}

@@ -1,0 +1,182 @@
+
+/* module-search-form*/
+.search-form{
+  padding: 30px 0;
+  background: #f7f7f7;
+  h1{
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    color: #4E5E6A;
+    margin: 0 0 30px 0px;
+  }
+  h2{
+    font-size: 17px;
+    color: #4e5e6a;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .search-tag{
+    .input{
+      margin-bottom: 16px;
+      position: relative;
+      input[type='text']{
+        border: 1px solid #d2d8d6;
+        width: 100%;
+        height: 40px;
+        outline: none;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        padding: 0 15px;
+      }
+      .icon-plus{
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 8px;
+        top: 5px;
+        display: block;
+        background: #22baa0 url("../images/icons/plus.png") no-repeat center center;
+      }
+    }
+    .tags{
+      margin-bottom: 15px;
+      .tag{
+        display: inline-block;
+        background: #4e5e6a;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        margin-bottom: 5px;
+        p{
+          vertical-align: middle;
+          padding: 0px 7px 0 10px;
+          font-size: 12px;
+          display: inline-block;
+          color: #fff;
+          text-transform: uppercase;
+        }
+        .icon-close{
+          width: 28px;
+          display: inline-block;
+          height: 28px;
+          vertical-align: middle;
+          border-left: 1px solid #6e8aa0;
+          background: url("../images/icons/Path.png") no-repeat center center;
+        }
+      }
+    }
+    input[type='submit']{
+      padding: 10px 35px;
+      background: #22baa0;
+      font-size: 16px;
+      text-align: center;
+      border: none;
+      outline: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      color: #fff;
+      &:hover{
+        background: #09caa9;
+      }
+    }
+  }
+  .slider{
+    .irs-single{top:-16px;}
+    margin: 0 auto;
+    max-width: 340px;
+    .irs-min, .irs-max{
+      font-size: 15px;
+      background:  #fff;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      border: 1px solid #22baa0;
+      padding: 2px 10px;
+      color: #4d4d53;
+      font-weight: bold;
+      top: 7px;
+    }
+    .irs-line{
+      background: #d2d8d6;
+      top: 15px;
+    }
+    .irs-slider{
+      outline: none;
+      border-radius: 50%;
+      top: 6px;
+      width: 25px;
+      height: 25px;
+      border: 1px solid #22baa0;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      background: #fff;
+    }
+    .irs-from{
+      top: 46px;
+      font-size: 13px;
+      background: #fff;
+      color: #37373f;
+      font-weight: bold;
+      &:after{
+        width: 10px;
+        height: 8px;
+        content: "";
+        left: 50%;
+        margin-left: -4px;
+        top: -8px;
+        position: absolute;
+        background: url("../images/icons/arrow-top-range.png") no-repeat center center;
+      }
+    }
+    .irs-to{
+      top: 46px;
+      font-size: 13px;
+      background: #fff;
+      color: #37373f;
+      font-weight: bold;
+      &:after{
+        width: 10px;
+        height: 8px;
+        content: "";
+        left: 50%;
+        margin-left: -4px;
+        top: -8px;
+        position: absolute;
+        background: url("../images/icons/arrow-top-range.png") no-repeat center center;
+      }
+    }
+
+  }
+  .group-checkbox{
+    padding-top: 10px;
+    input[type="checkbox"] {
+      display:none;
+    }
+    input[type="checkbox"] + label{
+      font-size: 15px;
+      font-family: "Cabin", sans-serif;
+      color: #4e5e6a;
+      font-weight: 500;}
+    input[type="checkbox"] + label span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: -1px 8px 0 0;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      vertical-align: middle;
+      background: #22baa0;
+      cursor: pointer;
+    }
+    input[type="checkbox"]:checked + label span {
+      background: #22baa0 url("../images/icons/checkbox.png") no-repeat center center;
+    }
+  }
+}

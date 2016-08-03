@@ -1,0 +1,1159 @@
+#shul{display:none;}
+#shulm{display:none;}
+#leftbar {display:block;}
+.searchform2{display: none;}
+@media (min-width: 768px) and (max-width: 1000px) {
+body .container-fluid, body .container {
+  width: 768px; 
+ }
+
+ul#self{
+ position:absolute;
+ z-index:2;
+ display:none;
+ bottom:-40px;
+ right:0px;
+ width:130px;
+}
+ul#self.active{
+  display:block;
+}
+ul#self li{
+  float:none;
+  background-color:#fff;
+  width:130px;
+  margin:0;
+  display:block;
+  line-height:24px;
+  height:24px;
+  padding-left:10px;
+}
+
+#shul{
+  display:block;
+  font-family:FontAwesome;
+  font-size:22px;
+  text-align:center;
+  line-height:40px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  display:block;
+  width:40px;
+  height:40px;
+  position:absolute;
+  right:0;
+  bottom:0;
+  color:#000000 !important;
+  text-decoration:none;
+  cursor:pointer;
+}
+#shulm{
+  color: #000000 !important;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 5px;
+}
+
+
+#formen, #allcat {
+    max-width: 768px;
+}
+
+#searchform {
+    width: 369px;
+}
+#searchform input[type=text] {
+  width:130px;
+}
+#searchform input[type=submit] {
+    padding: 0 15px;
+}
+.whitebox#cats {
+    left: 129px;
+}
+.whitebox#cats ul {
+    width: 218px;
+}
+
+#rightcontent {
+  width:768px;
+  padding:0;
+  margin:0 auto;
+}
+
+#leftbar {
+  display: none;
+  position: absolute;
+  background: #fff;
+  z-index: 200000;
+}
+#leftbar.active{
+  display:block;
+}
+#leftbar > *{
+  display:none;
+}
+#leftbar #leftmenu, #leftbar .profilepic{
+  display:block;
+}
+#content #hotelki .buying.cat {
+    margin: 30px 0 30px 14px;
+}
+#content #hotelki .buying{
+  margin-left:14px;
+}
+#carlite {
+    width: 768px !important;
+}
+#carlite ul li {
+    margin: 0 10px;
+}
+
+#carusel{
+  display:none;
+}
+#offers .offers{
+  float:none;
+  margin:0 auto;
+}
+#offers #cararr{
+  display:none;
+}
+a img{
+  max-width:768px;
+  height:auto;
+}
+#content #newsletter #newsform input[type=text] {
+    margin: 0 25px 0 0;
+    width: 105px;
+}
+#content .buying {
+    display: block;
+    margin: 50px auto;
+}
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    height: 0;
+    clear: both;
+}
+.clearfix:before {
+    content: '';
+    display: table;
+    height: 0;
+    clear: both;
+}
+.hide-block{
+    display: none;
+    float: right;
+    width: 100%;
+    height: 39px;
+}
+.ul-tabs{float: right;margin: 35px 30px 0 0;}
+.ul-tabs li{float:left;margin-right:40px;width: 35px;height: 35px;list-style: none;cursor: pointer;}
+.ul-tabs li.basket-g{background: url('../i/basked.png') no-repeat;}
+.ul-tabs li.lock{background: url('../i/lock.png') no-repeat;}
+.ul-tabs li.search-icon{background: url('../i/search.png') no-repeat;}
+.hide-block .box-tabs{
+    margin-top:30px;
+    background: red;
+}
+@media (max-width: 768px) {
+    #secondmenu{display: none;}
+    .searchform2 input[type=submit]{padding:0 4%!important;}
+    /*.hide-block{display: block;}*/
+
+    .bighvast.card2 .photoblock .photo{
+        position: relative;}
+    .bighvast.card2 .photoblock .photo .photoslider ul li{
+        width: 65px;
+        height: 65px;
+        margin-left: 13px;
+    }
+    .bighvast.card2 .photoblock .photo .photoslider ul li img{
+        width: 65px;
+        height: 65px;
+    }
+  body .container-fluid, body .container {
+  /*width: 320px;*/
+      width: 100%;
+ }
+    #content .fullcard2 .fc2desc .tocart{height: auto;}
+ #content {
+    background: none;
+     margin-top: 20px;
+    padding-bottom: 20px;
+}
+ .show-b{display:block !important;}
+ .no320{
+   display:none;
+ }
+ #content h1 {
+    font-size: 36px;
+    font-family: 'Didact Gothic', sans-serif;
+    text-transform: uppercase;
+    line-height: 44px;
+    margin: 10px 0 10px 0px;
+    padding: 0;
+    display: block;
+}
+
+ #rightcontent {
+  width:320px;
+  padding:0;
+  margin:0 auto;
+}
+
+#leftbar {
+  display: none;
+  position: absolute;
+  background: #fff;
+  z-index: 200000;
+}
+
+.widenavy ul li {
+    display: block;
+    margin: 0;
+}
+.catnav{
+  height:auto;
+  text-align: center;
+}
+.catnav:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.catnav .hpager ul {
+    margin: 5px 0 5px -5px;
+}
+.catnav .hpages {
+    float: none;
+    text-align: center;
+}
+.hfiltr {
+    float: none;
+    text-align:left;
+}
+.view {
+    display:none;
+}
+#content #hotelki .buying .topblock .textblock {
+    width: 320px;
+    height: 142px;
+    overflow: hidden;
+    color: #000;
+    font-size: 12px;
+    line-height: 16px;
+    float: none;
+    padding: 0;
+}
+
+#content #hotelki .buying {
+    display: block;
+    width: 320px;
+    border: 0;
+    box-sizing: border-box;
+    background-color:transparent;
+    position: relative;
+    height: auto;
+    margin:20px 0;
+}
+#content #hotelki .buying .topblock {
+    width: 320px;
+    height: 142px;
+}
+#content #hotelki .buying.cat .topblock {
+    width: 320px;
+}
+#content #hotelki .buying .topblock .textblock .othertext {
+    width: 320px;
+    float: none;
+    height: auto;
+}
+#content #hotelki .buying .topblock .infoblock {
+    width: 320px;
+    height: auto;
+    float: none;
+    margin-right: 0;
+}
+#content #hotelki .buying .topblock .infoblock .box {
+   display:none;
+}
+#content #hotelki .buying .topblock .infoblock .hearts {
+    text-align: left;
+    padding: 0px;
+}
+#content #hotelki .buying .picblock {
+    width: 320px;
+    height: auto;
+    border: 0 none;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+#content #hotelki .buying .picblock img{
+  width:320px;
+  height:auto;
+  display:block;
+}
+#content #hotelki .hotelki {
+  display: none;
+}
+#content #hotelki .buying .topblock .infoblock {
+  display:none;
+}
+#topline{
+  display:none;
+}
+#searchblock {
+  display:none;
+}
+#secondmenu .secondmenu {
+    display: none;
+}
+#secondmenu .secondmenu-right {
+    display: none;
+}
+#searchform p.advsearch {
+  display:none;
+}
+#searchform button {
+  display: none;
+}
+#header {
+  height: auto;
+}
+#searchform {
+    width: 320px;
+    float: none;
+    margin:10px auto;
+    padding:0;
+    display:none;
+    height:35px;
+}
+    .searchform2{display: block !important;width:98% !important;}
+    .searchform2 input[type=text]{width: 85% !important;}
+#searchform input[type=text] {
+    width: 210px;
+}
+#header .logo {
+    float: none;
+    position:relative;
+    /*width:320px;*/
+    width:98%;
+}
+#mainfooter {
+    padding: 10px 0;
+}
+#mainfooter h3 {
+    margin: 5px 0;
+    text-align:center;
+}
+#mainfooter .quarte {
+    width: 33.3% !important;
+    float: left;
+    width: 100%;
+    text-align:center;
+}
+#mainfooter .logo {
+   display:none;
+}
+#mainfooter p.copy {
+  display:none;
+}
+#m320{
+  display:none;
+  width:100%;
+  position:absolute;
+  z-index:200000;
+  top:0;
+  left:0;
+  background:url(../i/u320.png) repeat;
+}
+#m320 p.htitle{
+  display:block;
+  color:#fff;
+  font-size:14px;
+  line-height:50px;
+  padding:0 14px;
+  margin:0;
+  text-transform:uppercase;
+  font-family: 'Didact Gothic', sans-serif;
+  background:#746c8d;
+}
+#m320 p.htitle a{
+  color:#fff;
+  text-decoration:underline;
+}
+#m320 p.htitle a:hover{
+  text-decoration:none;
+}
+#m320 p.htitle span{
+  text-transform:none;
+  font-size:12px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+#m320 p.htitle i.fa{
+  margin:0 8px 0 0;
+  display:inline-block;
+  font:normal normal normal 24px/50px FontAwesome;
+  float:left;
+}
+#m320 ul{
+  display:block;
+  list-style:none;
+  margin:0;
+  padding:8px 0;
+  
+}
+#m320 ul li{
+  display:block;
+  padding:0 14px;
+  font-size:12px;
+  line-height:24px;
+  height:24px;
+}
+#m320 ul li a{
+  color:#fff;
+  text-decoration:none;
+}
+#m320 ul li a:hover{
+  text-decoration:underline;
+  color:#a4b95e;
+}
+#m320 ul li i{
+  display:inline-block;
+  margin-right:6px;
+  color:#fff;
+}
+#m320 .close{
+  display:block;
+	position:absolute;
+	right:12px;
+	top:12px;
+	width:17px;
+	height:17px;
+	background:url(../i/wclose.png) no-repeat center center;
+  z-index:2;
+}
+#am320{
+  display:block;
+  cursor:pointer;
+  position:absolute;
+  right:0;
+  font-size:32px;
+  color:#000;
+  top:35px;
+  text-decoration:none;
+}
+.fullversion{
+  display:block;
+  text-align:right;
+  font-size:12px;
+}
+.fullversion a{
+  color:#b3b3b4;
+  text-decoration:none;
+}
+.fullversion a:hover{
+  text-decoration:underline;
+}
+.bighvast .hvastblock {
+    width: 320px;
+    float: none;
+    padding:0;
+}
+.hvasthead .hvasttitle {
+    width: 210px;
+    float: right;
+}
+.bighvast {
+    width: 320px;
+}
+.bighvast .photoblock {
+    width: 320px !important;
+    float: none !important;
+    margin:0 auto;
+}
+.bighvast .photoblock .photo {
+    width: 320px;
+    height: 470px;
+    padding: 10px 10px;
+    box-shadow: 0 0 9px rgba(0,0,0,.07);
+}
+.bighvast .photoblock .photo .imageblock {
+    margin: 0 auto;
+}
+    .fullcard2{width: 100%;}
+.bighvast .photoblock .photo .photoslider {
+    /*margin: 30px auto 0 ;*/
+}
+.bighvast .photoblock .photo .photoslider #photonext {
+    left: -19px;
+}
+.bighvast .photoblock .photo .photoslider #photoprev {
+    right: -19px;
+}
+.bighvast .photoblock .hearts {
+    padding: 5px 0;
+    font-size: 11px;
+    width: 320px;
+}
+.bighvast .photoblock .social {
+    width: 320px;
+}
+.fullcard {
+    width: 320px;
+    float: none;
+    padding-right: 0px;
+    padding-top: 15px;
+    position: relative;
+    min-height:auto;
+}
+.fullcard.pristroy {
+    padding-bottom: 0px;
+}
+.hvasthead.pristroy .hvastphoto {
+    width: 120px;
+    padding: 10px 0 0 10px;
+}
+.hvasthead.pristroy .hvasttitle {
+    width: 200px;
+    padding-top: 10px;
+}
+#content .hvasttitle .buyerinfo .buyno {
+    display: block;
+    padding-left: 18px;
+    position: relative;
+}
+#content .hvasttitle .buyerinfo a {
+    margin-left: 0px;
+}
+#content .hvasttitle .buyerinfo {
+  display:block;
+}
+.fullcard .extra {
+    width: 320px;
+    position: relative;
+    background: #f1f0f3;
+}
+.fullcard .extra .linetocart {
+    padding: 20px 10px;
+}
+.fullcard .extra .linetocart .cartprice {
+    margin-left: 5px;
+}
+.catnav .hpager ul {
+    margin: 5px 0 5px -5px;
+    display:block;
+}
+span.addcomment {
+    float: right;
+}
+a.addcomment {
+    font-size: 10px;
+}
+a.addcomment:before {
+    display: none;
+}
+.comment.levelone {
+    width: 320px;
+}
+.comment.levelone .textblock, .comment.leveltwo .textblock {
+    width: 320px;
+}
+.comment .face {
+    padding-left: 10px;
+}
+.comment.leveltwo .othertext {
+    width: 200px;
+    padding-right:5px;
+}
+.comment.levelone .othertext {
+    width: 200px;
+    padding-right:5px;
+}
+.comment .extra a.commlike {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.comment.leveltwo {
+    margin-left: 0px;
+}
+.catnav .hpager {
+    float: none;
+    display:block;
+}
+.fullcard .extra .lineinstock {
+    height:auto;
+}
+#content .fullcard .extra .lineinstock p {
+    margin: 0;
+    float: right;
+    width:200px;
+    line-height:1.5em;
+}
+
+.fullcard .extra .linksline a {
+    width: 104px;
+}
+.fullcard .extra .linksline a:before {
+   display:none !important;
+}
+.bighvast.card {
+    margin-bottom: 0px;
+}
+.cardinfo .tabtext {
+    padding: 10px;
+}
+#itemlist .itemboard {
+    margin: 9px 45px;
+   
+}
+.hfiltr.inset {
+    display: none;
+}
+.acsess {
+    display: none;
+}
+
+#catalog .buying {
+    width: 320px;
+    margin: 10px 0;
+}
+#catalog .buying .topblock {
+    width: 320px;
+    margin-bottom: 10px;
+}
+#catalog .buying .topblock .textblock {
+    width: 320px;
+    padding:0;
+}
+#content .buying .topblock .infoblock {
+    display:none;
+}
+#catalog .buying .picblock .others {
+   display:none;
+}
+#catalog .buying .picblock {
+    width: 320px;
+}
+#content .buying .picblock .mainpic {
+    width: 320px;
+    float: none;
+}
+#content .buying .picblock {
+    width: 320px;
+    height: 366px;
+    border: none;
+    background: #fff;
+}
+#content .buying .picblock .mainpic img {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:auto;
+}
+.infoline .infotitle {
+    display: block;
+    width: 320px;
+    float: none;
+    padding-right: 0px;
+}
+.infodata {
+    display: block;
+    float: none;
+    width: 320px;
+}
+#infornation table.har tr td:nth-child(1) {
+    min-width: 0px;
+}
+#infornation table.har tr.last td {
+    padding: 5px 0 ;
+}
+#infornation table.har tr td {
+    padding-left: 5px;
+    line-height:normal;
+}
+#infornation table.har tr td input[type=text] {
+    padding: 0 5px;
+    width: 135px;
+    margin-right: 5px;
+}
+#infornation table.har tr.last td a {
+    line-height: 14px;
+    display: inline;
+    float:none;
+    text-align:center;
+}
+#legend .item .itemtext {
+    border-bottom: 1px solid #e8edd8;
+    height: 47px;
+    line-height: 12px;
+    text-indent: 0;
+    text-align:center;
+    font-size: 8px;
+    text-transform: uppercase;
+    padding-top:12px;
+}
+.comment.levelone.carp h4 {
+    width: 100%;
+}
+.comment.leveltwo.carp h4 {
+    width: 100%;
+}
+.comment .othertext .carpstatus {
+    display:none;
+}
+#usermenu{
+  display:none;
+}
+.infodata input.short {
+   width: 210px;
+}
+.infodata input.wide {
+    width: 320px;
+}
+.infodata.medium .jq-selectbox {
+    width: 320px;
+}
+#lc #llc, #lc #llcf {
+    width: 320px;
+    float: none;
+}
+.filtr .filtrbody .line {
+    height: auto;
+}
+
+.filtr.short .filtrbody .line .jq-selectbox {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom:5px;
+    height:22px;
+}
+.filtr.short .filtrbody .line .find, .filtr .filtrbody .line .find{
+    margin: 0;
+}
+#lc #rlc, #lc #rlcf {
+    width: 234px;
+    float: none;
+    margin:0 auto;
+}
+#lc.rash #llc .textblock {
+    float: none;
+    width: 320px;
+}
+#lc #llcf ul li {
+    width: 158px;
+    margin-bottom:3.5px;
+}
+#lc #rlcf a {
+    margin: 0 0 5px 0;
+}
+.filtr .filtrbody .line .jq-selectbox {
+    width: 100%;
+    float: none;
+    margin-bottom: 5px;
+}
+.infodata span.ainfo {
+  display:block;
+}
+.infotitle .alignright {
+    float: none;
+    margin-left:12px;
+}
+.infodata{
+  position:relative;
+}
+.infodata a.del {
+    background: url(../i/delt.png) no-repeat center center;
+    position:absolute;
+    right:0;
+    top:0;
+}
+#infornation .infolinks {
+    float: none;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+.infosend {
+    float: none;
+    margin: 10px 0;
+    height:auto;
+}
+.infosend .infosendcancel {
+    margin: 5px 0;
+}
+.infosend .infosendsave {
+    margin: 5px 0;
+}
+
+#cart>p {
+    padding-left: 0px;
+}
+#cart .cartitem .cartitemcard .cardphoto {
+    width: 320px;
+    float: none;
+}
+#cart .cartitem .cartitemcard .cardphoto span.image {
+    padding: 50px 0;
+    width: 320px;
+}
+
+#cart .cartitem .cartitemcard .cardinfo {
+    float: none;
+    width: 320px;
+    padding: 17px 8px 17px 0;
+}
+#cart .cartitem .cartitemcard .cardinfo .cardinfotitle {
+    float: left;
+    width: 224px;
+}
+#cart .cartitem .cartitemcard .cardinfo .cardinfopic {
+  width:320px;
+}
+#cart .cartitem .cartitemcard .cardinfo .cardinfophoto p.status {
+    margin: 10px 0 0px;
+}
+#cart .cartitem .cartitemcard .cardinfo .cardinfoproc {
+    display: block;
+    height: auto;
+}
+#cart .cartitem .cartitemcard .cardinfo .cardinfoproc .peoples {
+    display: block;
+    float:none;
+    padding-left:23px;
+}
+#cart .cartitem .cartitemcard .cardinfo .cardinfoproc .peoples:before {
+    left: 3px;
+}
+#cart .cartitem .cartitemcard .cardinfo .cardinfoproc .gifts {
+    display: block;
+    float: none;
+}
+#cart .cartitem .cartitemcard .cardinfo .cardinfoproc .progressblock {
+    display: block;
+    margin-left: 23px;
+}
+
+#cart .cartitem .cartitemcard .cardinfo .cardinfoclock {
+  padding-left:30px;
+  background: url(../i/clock.png) no-repeat 5px center;
+}
+
+#cart .cartitem {
+    margin-bottom: 10px;
+}
+table.orderone {
+    width: 320px;
+}
+
+table.orderone tr.orderparam td {
+    padding:0 5px !important;
+}
+
+table.orderone tr td:nth-child(4),table.orderone tr td:nth-child(3) {
+  display:none;
+}
+table.orderone tr td:nth-child(7) {
+  width:12px !important;
+}
+table.orderone tr td:nth-child(2) {
+  width:50px !important;
+}
+table.orderone tr.orderitem td.ordername {
+    padding-left: 3px;
+}
+.ordercount a.todown, .ordercount a.toup {
+    display:block;
+    float: none;
+    width: 30px;
+}
+
+#lpro {
+    float: none;
+    width: 320px;
+}
+
+#lpro #profile {
+    width: 320px;
+}
+#profile .profilepic .profilephoto {
+    width: 100%;
+}
+
+#rpro {
+    width: 320px;
+    padding-right: 0px;
+    float: none;
+}
+#rpro .infotitle {
+    width: 320px;
+}
+
+#rpro .infodata {
+    width: 320px;
+}
+#rpro .infodata input[type=text] {
+    width: 320px;
+}
+
+#content h1 {
+    font-size: 26px;
+    line-height: 28px;
+}
+
+#usrlist .usrcomment .usrtext.full, #usrlist .usrcomment .blcomment.full, #usrlist .usrcomment .usrtext, #usrlist .usrcomment .blcomment {
+    width: 210px;
+}
+#usrlist .usrcomment .usrtext .blcomment.full .commentdata {
+    width: 100%;
+}
+
+.writebox {
+    margin: 25px auto;
+    width: 320px;
+}
+.writebox .writebody .writeleftphoto, .writebox .writebody .writerightphoto {
+    display:none;
+}
+.writebox .writebody .writetext {
+    width: 300px;
+    float: none;
+    margin-left: 3px;
+}
+.writebox .writefooter .writesend {
+    float: none;
+    padding:0;
+}
+.writebox .writefooter .writesend input[type=submit] {
+    margin: 10px auto;
+}
+.writebox .writefooter {
+    height: auto;
+}
+
+.userstat {
+    float: left;
+    padding-left: 24px;
+    margin-top:5px;
+}
+
+.widenavytabs td {
+    text-align: center;
+    margin: 0;
+    padding:0px;
+    height:auto;
+    line-height: 10px;
+    position: relative;
+    font-size: 10px;
+}
+.widenavytabs td a {
+    display: block;
+    padding: 0 2px;
+    height: 100%;
+    text-decoration: none;
+    color: #261100;
+}
+.innersearch .isinput {
+    float: none;
+    width: 290px;
+    position: relative;
+}
+.innersearch {
+    padding: 15px;
+}
+.innersearch .issubmit a.button {
+    display: block;
+    margin:5px 0 0;
+    padding: 0 20px;
+
+}
+#hotelkismall ul li.hvastsmall {
+    width: 320px;
+    height: 370px;
+}
+#hotelkismall ul li.hvastsmall .imageblock img{
+    width: 320px;
+    height:auto;
+}
+#hotelkismall ul li.hvastsmall .textblock {
+    width: 320px;
+}
+#touchs {
+    width: 100%;
+    height:auto;
+}
+
+
+#touchs .touch {
+    float: none;
+    width: 320px;
+    margin-right: 0px;
+}
+
+.helppanel td {
+    line-height: 12px;
+    font-size: 10px;
+    vertical-align: middle;
+    text-align: center;
+    background: none;
+}
+
+.helppanel td p.hp-cellphone, .helppanel td p.hp-fornew, .helppanel td p.hp-online {
+    background: none;
+}
+.helppanel td p {
+    margin: 0;
+    display: inline-block;
+    padding-left: 8px;
+}
+.helppanel td span {
+    font-size: 12px;
+}
+#content .helptabble td, #content .helptabble th {
+    font-size: 11px;
+}
+#offers #cararr {
+    display: none;
+}
+#offers #carusel {
+   display:none;
+}
+#offers .offers {
+    width: 320px;
+    height: 164px;
+    float: none;
+}
+
+#offers .offers .offer {
+    width: 320px;
+    height: 164px;
+}
+
+#offers .offers .offer {
+    background-size: contain;
+}
+
+
+#content .buying {
+    width: 320px;
+    margin: 20px 0;
+}
+#content .buying .topblock {
+    width: 320px;
+    height: 134px;
+}
+#content .buying .topblock .textblock {
+    width: 320px;
+    height: 134px;
+    padding: 0px;
+    float: none;
+}
+#content .buying .picblock .others {
+  display:none;
+}
+
+#content #newsletter .textblock {
+    display: inline-block;
+    padding: 15px 0 0 15px;
+}
+#content #newsletter #newsform input[type=text] {
+    display: none;
+}
+#content #newsletter #newsform {
+    left: 150px;
+    top: 115px;
+}
+a img {
+    max-width: 320px;
+    height: auto;
+}
+#content #offers {
+  height:auto;
+}
+
+#offers .offers .offer1 p.title, #offers .offers .offer2 p.title, #offers .offers .offer3 p.title {
+    font-size: 14px;
+    line-height: normal;
+    left: 10px;
+    top: 20px;
+    text-transform: uppercase;
+}
+#offers .offers .offer1 p.title span, #offers .offers .offer2 p.title span, #offers .offers .offer3 p.title span {
+    display: inline-block;
+    font-size: 14px;
+}
+#offers .offers .offer1 p.secondtitle, #offers .offers .offer2 p.secondtitle, #offers .offers .offer3 p.secondtitle {
+    left: 10px;
+    top: 45px;
+    font-size: 12px;
+}
+#offers .offers .offer1 a.sign, #offers .offers .offer2 a.sign, #offers .offers .offer3 a.sign {
+
+    left: 10px;
+    top: 120px;
+}
+#content h3 {
+    line-height: normal;
+}
+
+}
+
+@media (max-width: 670px) {
+    .fullcard2 .fc2desc{width: 100%;}
+    #buyer{margin: 0 auto;
+        width: 235px;
+        background: #fff;
+        clear: both;
+    float:none;}
+}
+@media (max-width: 640px) {
+    .searchform2 input[type=text] {
+        width: 76% !important;
+    }
+    .ul-tabs {
+        margin: 115px 0px 0 0;
+    }
+    .ul-tabs li:last-child{margin-right: 0;
+    }
+}
+@media (max-width: 480px) {
+
+    #mainfooter .quarte{
+        width: 100% !important;
+    }
+    .bighvast .photoblock .photo .photoslider{margin: 30px auto 0;}
+    .bighvast.card2 .photoblock .photo .photoslider ul li{/*width:60px;height: 60px;*/margin-left: 4px;margin-top: 10px;}
+   /* .bighvast .photoblock .photo .photoslider{margin:0;}*/
+    .bighvast.card2 .photoblock .photo .photoslider ul li img{
+        width:65px;
+        height:65px;
+    }
+    #content .fullcard2 .fc2desc .misc span{
+        margin-left:5px;
+    }
+    #content .fullcard2 .fc2desc .misc .miscpart{
+        padding-left:0;}
+    #content .fullcard2 .fc2desc .tocart a.tocart{
+        margin:0 0 20px 0;
+    }
+    #content .fullcard2 .fc2desc .titleblock h2{font-size: 20px;line-height: 62px;}
+    .bighvast.card2 .photoblock .photo .photoslider ul{width: 100%;}
+    #searchform input[type=text]{width: 175px;}
+    #searchform{width:300px;}
+    .bighvast.card2 .photoblock .photo{width:300px;}
+    .bighvast.card2 .photoblock .photo .imageblock{width:300px;}
+    .bighvast .photoblock{
+        width: 300px !important;
+    }
+    .bighvast .photoblock .hearts{width:300px;}
+}

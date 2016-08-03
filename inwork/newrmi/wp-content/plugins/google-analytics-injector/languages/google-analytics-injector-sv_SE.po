@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Niklas Olsson <niklas.olsson@geckosolutions.se>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+#. Text in function
+#: google-analytics-injector.php:127
+msgid "Enter the tracking code from the Google Analytics account you want to use for this site. None of the java script code will be injected if you leave this field empty. (eg. the plugin will be inactive) "
+msgstr "Ange spårningskoden från det Google Analytics-konto som du vill använda för denna webbplats. Javaskriptet kommer inte läggas till om du lämnar detta fält tomt. (d.v.s. pluginet är inte aktivt)"
+
+#. Text in function
+#: google-analytics-injector.php:127
+msgid "Go to <a href=\"http://www.google.com/analytics/\" target=\"_blank\">Google Analytics</a> %s and get your tracking code."
+msgstr "Gå till <a href=\"http://www.google.com/analytics/\" target=\"_blank\">Google Analytics</a> %s och hämta din spårningskod."
+
+#. Text in function
+#: google-analytics-injector.php:1
+#: google-analytics-injector.php:105
+msgid "Google Analytics Injector Settings"
+msgstr "Google Analytics Injector inställningar"
+
+#. Text in function
+#: google-analytics-injector.php:109
+msgid "Google Analytics tracking code (UA-xxxx-x)"
+msgstr "Google Analytics spårningskod (UA-xxxx-x)"
+
+#. Text in function
+#: google-analytics-injector.php:117
+msgid "Restrict tracking to this domain http://"
+msgstr "Begränsa spårning till denna domän http://"
+
+#. Text in function
+#: google-analytics-injector.php:142
+msgid "This plugin is created by Gecko Solutions. Find more plugins at <br /><a href=\"http://www.geckosolutions.se/blog/wordpress-plugins/\">Gecko Solutions plugins</a> %s"
+msgstr "Detta plugin är skapat av Gecko Solutions. Hitta fler plugins här  <br /><a href=\"http://www.geckosolutions.se/blog/wordpress-plugins/\">Gecko Solutions plugins</a> %s"
+
+#. Text in function
+#: google-analytics-injector.php:138
+msgid "To be sure this tracking code is not used on the wrong site you could restrict the useage by specifying the site url. This plugin also exclude the visits from the Administrator if he/she is currently logged in."
+msgstr "För att vara säker på att spårningskoden inte används på fel webbplats kan du begränsa användningen genom att specificera webbplatsens url. Detta plugin excluderar också besöken från administratören om denne är inloggad."
+
+#. Text in function
+#: google-analytics-injector.php:121
+msgid "Update Options"
+msgstr "Uppdatera"
+
+#. Text in function
+#: google-analytics-injector.php:162
+msgid "The tracking code is on the wrong format"
+msgstr "Spårningskoden är på fel format"
+

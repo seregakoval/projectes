@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<setting>
+<!--target Time Text, year-month-date-hour-min-sec-->
+	<targetTimeText>2011-08-24-7-59-0</targetTimeText>
+	<!--target Time Zone, GMT-->
+	<targetTimeZone>0</targetTimeZone>
+	<!--inner glow alpha, 1~100 -->
+	<innerGlowAlpha>100</innerGlowAlpha>
+	<!--background shadow Alpha, 1~100 -->
+	<bgShadowAlpha>100</bgShadowAlpha>
+	<!--background light Alpha, 1~100 -->
+	<bgLightAlpha>100</bgLightAlpha>
+	<!--textColor, 0x000000~0xFFFFFF-->
+    <textColor>0xf9ff83</textColor>
+	<!--bgColor, 0x000000~0xFFFFFF-->
+	<bgColor>0xf9ff83</bgColor>
+	<!--show or hide label, true or false-->
+	<showLabel>true</showLabel>
+	<!--show or hide label, true or false-->
+	<showDay>true</showDay>
+	<!--show or hide label, true or false-->
+	<showHour>true</showHour>
+	<!--show or hide label, true or false-->
+	<showMin>true</showMin>
+	<!--show or hide label, true or false-->
+	<showSec>true</showSec>
+	<!--text space-->
+	<textSpace>15</textSpace>
+</setting>

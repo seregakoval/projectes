@@ -1,0 +1,628 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gourmand v10.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-01-04 19:50+0300\n"
+"Last-Translator: Игорь <dybabiz@ya.ru>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Language: ru\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ site5framework
+#: 404.php:8
+msgid "404 Not Found"
+msgstr "404 Страница не найдена"
+
+# @ site5framework
+#: 404.php:10
+msgid "The article you were looking for was not found, but maybe try looking again!"
+msgstr "По данному адресу ничего не найдено. Воспользуйтесь поиском."
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:52
+msgid "Reading attachments..."
+msgstr "Читать вложение..."
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:73
+msgid "No attachments found."
+msgstr "Вложения не найдены"
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:81
+msgid "Done."
+msgstr "Готово."
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:84
+#, php-format
+msgid "\"Rebuilding \" + %s + \" of \" + %s + \" (\" + %s + \")...\""
+msgstr "\"Восстановление\" + %s + \" of \" + %s + \" (\" + %s + \")...\""
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:103
+msgid "Error"
+msgstr "Ошибка"
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:120
+msgid "Select which thumbnails you want to rebuild"
+msgstr "Выберите, какие миниатюры вы хотите восстановить"
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:121
+msgid "Toggle all"
+msgstr "Все метки"
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:131
+msgid "cropped"
+msgstr "обрезать"
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:138
+msgid "Only rebuild featured images"
+msgstr "Только восстановить Избранные изображения"
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:141
+msgid "Note: If you've changed the dimensions of your thumbnails, existing thumbnail images will not be deleted."
+msgstr "Примечание: Если вы изменили размеры ваших миниатюр, существующие изображения не будут удалены."
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:145
+msgid "Rebuild All Thumbnails"
+msgstr "Перестроить Все миниатюры"
+
+# @ ajax-thumbnail-rebuild
+#: admin/inc/ajax-thumbnail-rebuild.php:149
+msgid "Last image"
+msgstr "Последняя картинка"
+
+# @ site5framework
+#: admin/inc/customfunctions.php:18
+msgid "Portfolio archive pages will only display in WordPress 3.1 or above.  Please upgrade."
+msgstr "Архив Портфолио страницы будут отображаться только в WordPress 3.1 или выше. Пожалуйста, обновите."
+
+# @ site5framework
+#: admin/inc/customfunctions.php:154
+msgid "Post navigation"
+msgstr "Навигация по записи"
+
+# @ site5framework
+#: admin/inc/customfunctions.php:155
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Старые записи"
+
+# @ site5framework
+#: admin/inc/customfunctions.php:156
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Новые записи <span class=\"meta-nav\">&rarr;</span>"
+
+# @ default
+#: admin/inc/customfunctions.php:230
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+# @ default
+#: admin/inc/customfunctions.php:232
+msgid "(Edit)"
+msgstr "(Изменить)"
+
+# @ site5framework
+#: admin/inc/customfunctions.php:239
+msgid "Your comment is awaiting moderation."
+msgstr "Спасибо! Ваш комментарий ожидает проверки."
+
+# @ site5framework
+#: admin/inc/custompostypes.php:4
+msgctxt "post type general name"
+msgid "Recipes"
+msgstr "Рецепты"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:5
+msgctxt "post type singular name"
+msgid "Recipes"
+msgstr "Рецепты"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:6
+msgctxt "work"
+msgid "Add New"
+msgstr "Добавить"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:7
+msgid "Add New Recipes"
+msgstr "Добавить новые рецепты"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:8
+msgid "Edit Recipes"
+msgstr "Редактировать Рецепты"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:9
+msgid "New Recipes"
+msgstr "Новые рецепты"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:10
+msgid "View Recipes"
+msgstr "Просмотр рецепта"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:11
+msgid "Search Recipes"
+msgstr "Поиск Рецептов"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:12
+msgid "No work found"
+msgstr "Работы не найдены"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:13
+msgid "No recipes entry found in Trash"
+msgstr "Рецепты в корзине не найдены"
+
+# @ default
+#: admin/inc/custompostypes.php:18
+msgid "recipes"
+msgstr "рецепты"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:38
+msgctxt "post type general name"
+msgid "Team"
+msgstr "Команда"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:39
+msgctxt "post type singular name"
+msgid "Team"
+msgstr "Команда"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:40
+msgctxt "team"
+msgid "Add New"
+msgstr "Добавить"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:41
+msgid "Add New Team"
+msgstr "Добавить нового участника команды"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:42
+msgid "Edit Team"
+msgstr "Редактировать команду"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:43
+msgid "New Team"
+msgstr "Новая команда"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:44
+msgid "View Team"
+msgstr "Посмотреть участника"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:45
+msgid "Search Team"
+msgstr "Поиск пользователя команды"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:46
+msgid "No Team found"
+msgstr "Ни одна команда не найдена"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:47
+msgid "No Team found in Trash"
+msgstr "Участник команды не найден в корзине"
+
+# @ default
+#: admin/inc/custompostypes.php:53
+msgid "team"
+msgstr "команда"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:71
+msgctxt "post type general name"
+msgid "Service"
+msgstr "Сервис"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:72
+msgctxt "post type singular name"
+msgid "Service"
+msgstr "Сервис"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:73
+msgctxt "service"
+msgid "Add New"
+msgstr "Добавить"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:74
+msgid "Add New Service"
+msgstr "Добавить новый сервис"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:75
+msgid "Edit Service"
+msgstr "Редактировать сервис"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:76
+msgid "New Service"
+msgstr "Новый сервис"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:77
+msgid "View Service"
+msgstr "Посмотреть сервис"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:78
+msgid "Search Service"
+msgstr "Поиск сервиса"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:79
+msgid "No Service found"
+msgstr "Сервис не найден"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:80
+msgid "No Service found in Trash"
+msgstr "В корзине сервис не найден"
+
+# @ default
+#: admin/inc/custompostypes.php:86
+msgid "service"
+msgstr "сервис"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:102
+msgid "Title"
+msgstr "Заголовок"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:103
+msgid "Tags"
+msgstr "Метки"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:104
+msgid "Author"
+msgstr "Автор"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:105
+msgid "Comments"
+msgstr " Комментарии"
+
+# @ site5framework
+#: admin/inc/custompostypes.php:106
+msgid "Date"
+msgstr "Дата"
+
+# @ default
+#: admin/inc/pagination.php:44
+msgid "Pages:"
+msgstr "Страницы:"
+
+# @ default
+#: admin/inc/pagination.php:45
+msgid "&raquo;"
+msgstr ""
+
+# @ default
+#: admin/inc/pagination.php:45
+msgid "&laquo"
+msgstr ""
+
+# @ site5framework
+#: admin/inc/widgets.php:10
+msgid "Sidebar"
+msgstr "Боковая колонка"
+
+# @ site5framework
+#: admin/inc/widgets.php:19
+msgid "Page"
+msgstr "Страница "
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:253
+msgid "Delete this image"
+msgstr "Удалить изображение"
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:253
+#: admin/meta-box-class/meta-box-class.php:862
+msgid "Delete"
+msgstr "Удалить"
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:345
+msgid "Cannot delete file. Something's wrong."
+msgstr "Не удается удалить файл. Что-то не так."
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:560
+#: admin/meta-box-class/meta-box-class.php:600
+msgid "Remove"
+msgstr "Удалить"
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:566
+msgid "Add New"
+msgstr "Добавить"
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:858
+msgid "Uploaded files"
+msgstr "Загруженные файлы"
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:869
+msgid "Upload new files"
+msgstr "Загрузить новые файлы"
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:875
+msgid "Add more files"
+msgstr "Добавить еще файлы"
+
+# @ default
+#: admin/meta-box-class/meta-box-class.php:925
+msgid "Select a color"
+msgstr "Выбрать цвет"
+
+# @ default
+#: admin/options-framework.php:210
+msgid "Options"
+msgstr "Опции"
+
+# @ site5framework
+#: admin/options-framework.php:214
+msgid "A Theme by"
+msgstr ""
+
+# @ site5framework
+#: admin/options-framework.php:214
+msgid "S5themes.com"
+msgstr ""
+
+# @ site5framework
+#: admin/options-framework.php:232
+msgid "Save Options"
+msgstr "Сохранить настройки"
+
+# @ site5framework
+#: admin/options-framework.php:233
+msgid "Restore Defaults"
+msgstr "По умолчанию"
+
+# @ site5framework
+#: admin/options-framework.php:233
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Нажмите кнопку OK, чтобы сбросить. Все настройки темы будут потеряны!"
+
+# @ site5framework
+#: admin/options-framework.php:263
+msgid "Default options restored."
+msgstr "Настройки по умолчанию восстановлены."
+
+# @ site5framework
+#: admin/options-framework.php:310
+msgid "Options saved."
+msgstr "Настройки сохранены."
+
+# @ site5framework
+#: admin/options-framework.php:358
+msgid "Theme Options"
+msgstr "Опции темы"
+
+# @ site5framework
+#: admin/options-medialibrary-uploader.php:26
+msgid "Options Framework Internal Container"
+msgstr "Настройки системы внутреннего контейнера"
+
+# @ site5framework
+#: admin/options-medialibrary-uploader.php:128
+msgid "Upload"
+msgstr "Загрузка"
+
+# @ optionsframework
+#: admin/options-medialibrary-uploader.php:151
+msgid "View File"
+msgstr "Просмотреть файл"
+
+# @ site5framework
+#: admin/options-medialibrary-uploader.php:288
+msgid "Gallery"
+msgstr "Галерея"
+
+# @ site5framework
+#: admin/options-medialibrary-uploader.php:288
+msgid "Previously Uploaded"
+msgstr "Ранее Загружено"
+
+# @ site5framework
+#: archive.php:64 page-temp-blog.php:44 single.php:24
+msgid ", "
+msgstr ""
+
+# @ site5framework
+#: archive.php:64 page-temp-blog.php:44 single.php:24
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Категории: %1$s"
+
+# @ site5framework
+#: archive.php:89
+msgid "Keep Reading &gt;"
+msgstr "Подробнее &gt;"
+
+# @ site5framework
+#: comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Эта запись защищена паролем. Введите пароль, чтобы увидеть комментарии."
+
+# @ site5framework
+#: comments.php:50
+msgid "Comments are closed."
+msgstr "Обсуждение закрыто"
+
+# @ site5framework
+#: comments.php:61
+msgid "Leave A Comment"
+msgstr "Написать комментарий"
+
+# @ site5framework
+#: comments.php:69
+msgid "You must be  "
+msgstr "Вы должны  "
+
+# @ site5framework
+#: comments.php:69
+msgid "logged in "
+msgstr "Войти"
+
+# @ site5framework
+#: comments.php:69
+msgid "to post a comment. "
+msgstr "для публикации комментария"
+
+# @ site5framework
+#: comments.php:79
+msgid "Logged in as  "
+msgstr "Вы вошли как  "
+
+# @ site5framework
+#: comments.php:79
+msgid "Log out &raquo; "
+msgstr "Выйти &raquo;"
+
+# @ site5framework
+#: comments.php:85
+msgid "Your Name "
+msgstr "Ваше Имя"
+
+# @ site5framework
+#: comments.php:90
+msgid "Your Mail "
+msgstr "Ваш Mail "
+
+# @ site5framework
+#: comments.php:95
+msgid "Your Website "
+msgstr "Ваш сайт "
+
+# @ site5framework
+#: comments.php:102
+msgid "Message "
+msgstr "Сообщение "
+
+# @ site5framework
+#: comments.php:109
+msgid "POST REVIEW"
+msgstr "Оставить отзыв"
+
+# @ site5framework
+#: front-page.php:10 index.php:10
+msgid "BROWSE MY COLLECTIONS:"
+msgstr "ПРОСМОТР МОИХ КОЛЛЕКЦИЙ:"
+
+# @ default
+#: functions.php:43
+msgid "Main Menu"
+msgstr "Главное Меню"
+
+# @ site5framework
+#: header.php:50
+msgid "Menu"
+msgstr "Меню"
+
+# @ site5framework
+#: page-temp-blog.php:63
+msgid "Read More"
+msgstr "Подробнее"
+
+# @ site5framework
+#: page-temp-contact.php:8 page-temp-contact.php:95
+msgid "You forgot to enter your name."
+msgstr "Вы забыли ввести ваше имя."
+
+# @ site5framework
+#: page-temp-contact.php:16 page-temp-contact.php:98
+msgid "You forgot to enter your email address."
+msgstr "Вы забыли ввести свой email адрес."
+
+# @ site5framework
+#: page-temp-contact.php:19
+msgid "You entered an invalid email address."
+msgstr "Вы ввели неверный email адрес."
+
+# @ site5framework
+#: page-temp-contact.php:27 page-temp-contact.php:102
+msgid "You forgot to enter your comments."
+msgstr "Вы забыли ввести свои комментарий."
+
+# @ site5framework
+#: page-temp-contact.php:87
+msgid "There was an error submitting the form."
+msgstr "Произошла ошибка при отправке формы."
+
+# @ site5framework
+#: page-temp-contact.php:89
+msgid "<strong>Thanks!</strong> Your email was successfully sent. We should be in touch soon."
+msgstr "<strong>Спасибо!</strong> Мы ответим вам в ближайшее время."
+
+# @ site5framework
+#: page-temp-contact.php:93
+msgid "Your name"
+msgstr "Ваше имя"
+
+# @ site5framework
+#: page-temp-contact.php:96
+msgid "Your email"
+msgstr "Ваш e-mail"
+
+# @ site5framework
+#: page-temp-contact.php:100
+msgid "Your message"
+msgstr "Ваше сообщение"
+
+# @ site5framework
+#: page-temp-contact.php:106
+msgid "SEND MESSAGE"
+msgstr "ОТПРАВИТЬ СООБЩЕНИЕ"
+
+# @ site5framework
+#: theme-options.php:75
+msgid "All Categories"
+msgstr "Все рубрики"
+
+# @ site5framework
+#: theme-options.php:83
+msgid "Select a page:"
+msgstr "Выберите страницу:"

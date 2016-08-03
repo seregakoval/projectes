@@ -1,0 +1,176 @@
+
+
+
+	#timeline {
+		width: 100%;
+		max-height: 450px;
+		overflow: hidden;
+		position: relative;
+                z-index: 0;
+		background: url('../images/dot.gif') 3px top repeat-y;
+	}
+		#dates {
+			 float: right;
+                            height: 450px;                           
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 30%;
+                            background: rgba(0, 0, 0, 0.5);
+                            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4c000000', endColorstr='#4c000000');
+                            z-index: 10;
+		}
+			#dates li {
+                                margin-top: 15%;
+				background: url('../images/biggerdot.png') left center no-repeat;
+			}
+                        #dates li span{
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            background: #fff;
+                        }
+
+				#dates a {
+                                    display:block;
+                                    padding-bottom: 10px;
+                                    color:#fff;
+                                    line-height: 22px;
+                                    background: url('../img/icon2.png') no-repeat left center;
+                                    padding-left: 40px;
+                                    margin-left: -12px;
+				}
+				#dates .selected {
+			        color:#ff872a;
+                                background: url('../img/hover-alips.png') no-repeat  left center;
+				}
+		
+		#issues {
+			float: left;
+                        height: 600px;
+                        overflow: hidden;
+                        width: 100%;
+		}	
+			#issues li {
+				height: 600px;
+                                width: 100%;
+
+			}
+				#issues li img {
+					
+				}
+				#issues li h1 {
+					color: #ffcc00;
+					font-size: 48px;
+					text-align: center;
+					text-shadow: #000 1px 1px 2px;
+				}
+				#issues li p {
+					font-size: 14px;
+					margin: 10px 20px;
+					font-weight: normal;
+					line-height: 22px;
+					text-shadow: #000 1px 1px 2px;
+				}
+		
+		#grad_top,
+		#grad_bottom {
+			width: 500px;
+			height: 80px;
+			position: absolute;
+		}
+			#grad_top {
+		        top: 0;
+		        background: url('../images/grad_top.png') repeat-x;
+			}
+			#grad_bottom {
+		        bottom: 0;
+		        background: url('../images/grad_bottom.png') repeat-x;
+			}
+		
+		#next,
+		#prev {
+			position: absolute;
+			left: 55%;
+			font-size: 70px;
+			width: 38px;
+			height: 22px;
+			background-position: 0 -44px;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position:  0 0;
+			}
+			#next {
+				bottom: 0;
+				background-image: url('../images/next_v.png');
+			}
+			#prev {
+				top: 0;
+				background-image: url('../images/prev_v.png');
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
+                                @media(max-width:1233px){
+                                    
+                                    #dates{height: auto;}
+                                    #dates li {
+    
+    margin-top: 3%;
+}
+#dates a {
+    font-size: 12px;
+   }
+ }
+    @media(max-width:1024px){
+        .slider{padding-bottom: 5%;}
+     #dates {
+    background:none;
+    bottom: -30px;
+    top: auto;
+    /*height: 100px ;*/
+    text-align: center;
+    width: 100% ;
+}
+#dates li {
+    float: left;
+    margin-top:auto;
+    width: 33.3%;
+}
+#dates a {
+    background: rgba(0, 0, 0, 0) url("../img/icon2.png") no-repeat  center top;
+    color: black;
+    font-size: 12px;
+    margin-left:auto;
+    padding-left:0;
+    padding-top: 30px;
+}
+#dates .selected {
+    background: rgba(0, 0, 0, 0) url("../img/hover-alips.png") no-repeat  center top;
+    }
+}
+@media(max-width:768px){
+    /*#dates{bottom:40px;}*/
+    
+}
+@media (max-width: 590px) {
+    #dates{bottom:50px;}
+    .slider{padding-bottom: 1%;}
+}
+@media (max-width: 480px) {
+    .news{
+        margin-top: 20px;
+    }
+    #dates li{
+        width: 100%;
+    }
+    #dates{
+        bottom:0px;
+    } 
+    #dates a{font-size: 14px;}
+}

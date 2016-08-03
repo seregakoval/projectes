@@ -1,0 +1,456 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gourmand - Site5.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-31 10:32+0200\n"
+"PO-Revision-Date: 2015-09-07 16:47+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_c;esc_attr_e;_n\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:5
+msgid "404 Not Found"
+msgstr ""
+
+#: 404.php:6
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+
+#: admin/inc/customfunctions.php:18
+msgid ""
+"Portfolio archive pages will only display in WordPress 3.1 or above.  Please "
+"upgrade."
+msgstr ""
+
+#: admin/inc/customfunctions.php:154
+msgid "Post navigation"
+msgstr ""
+
+#: admin/inc/customfunctions.php:155
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: admin/inc/customfunctions.php:156
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: admin/inc/customfunctions.php:207
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: admin/inc/customfunctions.php:209
+msgid "(Edit)"
+msgstr ""
+
+#: admin/inc/customfunctions.php:216
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: admin/inc/custompostypes.php:7
+msgid "Add New Work"
+msgstr ""
+
+#: admin/inc/custompostypes.php:8
+msgid "Edit Work"
+msgstr ""
+
+#: admin/inc/custompostypes.php:9
+msgid "New Work"
+msgstr ""
+
+#: admin/inc/custompostypes.php:10
+msgid "View Work"
+msgstr ""
+
+#: admin/inc/custompostypes.php:11
+msgid "Search Work"
+msgstr ""
+
+#: admin/inc/custompostypes.php:12
+msgid "No work found"
+msgstr ""
+
+#: admin/inc/custompostypes.php:13
+msgid "No work found in Trash"
+msgstr ""
+
+#: admin/inc/custompostypes.php:18
+msgid "work"
+msgstr ""
+
+#: admin/inc/custompostypes.php:41
+msgid "Add New Feature"
+msgstr ""
+
+#: admin/inc/custompostypes.php:42
+msgid "Edit Feature"
+msgstr ""
+
+#: admin/inc/custompostypes.php:43
+msgid "New Feature"
+msgstr ""
+
+#: admin/inc/custompostypes.php:44
+msgid "View Feature"
+msgstr ""
+
+#: admin/inc/custompostypes.php:45
+msgid "Search Feature"
+msgstr ""
+
+#: admin/inc/custompostypes.php:46
+msgid "No Feature found"
+msgstr ""
+
+#: admin/inc/custompostypes.php:47
+msgid "No Feature found in Trash"
+msgstr ""
+
+#: admin/inc/custompostypes.php:53
+msgid "feature"
+msgstr ""
+
+#: admin/inc/custompostypes.php:74
+msgid "Add New Team"
+msgstr ""
+
+#: admin/inc/custompostypes.php:75
+msgid "Edit Team"
+msgstr ""
+
+#: admin/inc/custompostypes.php:76
+msgid "New Team"
+msgstr ""
+
+#: admin/inc/custompostypes.php:77
+msgid "View Team"
+msgstr ""
+
+#: admin/inc/custompostypes.php:78
+msgid "Search Team"
+msgstr ""
+
+#: admin/inc/custompostypes.php:79
+msgid "No Team found"
+msgstr ""
+
+#: admin/inc/custompostypes.php:80
+msgid "No Team found in Trash"
+msgstr ""
+
+#: admin/inc/custompostypes.php:86
+msgid "team"
+msgstr ""
+
+#: admin/inc/custompostypes.php:107
+msgid "Add New Service"
+msgstr ""
+
+#: admin/inc/custompostypes.php:108
+msgid "Edit Service"
+msgstr ""
+
+#: admin/inc/custompostypes.php:109
+msgid "New Service"
+msgstr ""
+
+#: admin/inc/custompostypes.php:110
+msgid "View Service"
+msgstr ""
+
+#: admin/inc/custompostypes.php:111
+msgid "Search Service"
+msgstr ""
+
+#: admin/inc/custompostypes.php:112
+msgid "No Service found"
+msgstr ""
+
+#: admin/inc/custompostypes.php:113
+msgid "No Service found in Trash"
+msgstr ""
+
+#: admin/inc/custompostypes.php:119
+msgid "service"
+msgstr ""
+
+#: admin/inc/custompostypes.php:135
+msgid "Title"
+msgstr ""
+
+#: admin/inc/custompostypes.php:136
+msgid "Tags"
+msgstr ""
+
+#: admin/inc/custompostypes.php:137
+msgid "Author"
+msgstr ""
+
+#: admin/inc/custompostypes.php:138
+msgid "Comments"
+msgstr ""
+
+#: admin/inc/custompostypes.php:139
+msgid "Date"
+msgstr ""
+
+#: admin/inc/pagination.php:44
+msgid "Pages:"
+msgstr ""
+
+#: admin/inc/pagination.php:45
+msgid "&raquo;"
+msgstr ""
+
+#: admin/inc/pagination.php:45
+msgid "&laquo"
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:253
+msgid "Delete this image"
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:253
+#: admin/meta-box-class/meta-box-class.php:862
+msgid "Delete"
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:345
+msgid "Cannot delete file. Something's wrong."
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:560
+#: admin/meta-box-class/meta-box-class.php:600
+msgid "Remove"
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:566
+msgid "Add New"
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:858
+msgid "Uploaded files"
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:869
+msgid "Upload new files"
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:875
+msgid "Add more files"
+msgstr ""
+
+#: admin/meta-box-class/meta-box-class.php:925
+msgid "Select a color"
+msgstr ""
+
+#: admin/options-framework.php:214
+msgid "A Theme by"
+msgstr ""
+
+#: admin/options-framework.php:214
+msgid "S5themes.com"
+msgstr ""
+
+#: admin/options-framework.php:232
+msgid "Save Options"
+msgstr ""
+
+#: admin/options-framework.php:233
+msgid "Restore Defaults"
+msgstr ""
+
+#: admin/options-framework.php:233
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: admin/options-framework.php:263
+msgid "Default options restored."
+msgstr ""
+
+#: admin/options-framework.php:310
+msgid "Options saved."
+msgstr ""
+
+#: admin/options-framework.php:358
+msgid "Theme Options"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:26
+msgid "Options Framework Internal Container"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:128
+msgid "Upload"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:151
+msgid "View File"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:288
+msgid "Gallery"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:288
+msgid "Previously Uploaded"
+msgstr ""
+
+#: archive.php:5
+msgid "Archive"
+msgstr ""
+
+#: archive.php:16 category.php:16 index.php:22 index.php:47
+#: page-temp-blog.php:41 page-temp-blog.php:66 single.php:18
+msgid "by"
+msgstr ""
+
+#: archive.php:17 category.php:17 index.php:23 index.php:48
+#: page-temp-blog.php:42 page-temp-blog.php:67 single.php:19
+msgid "in"
+msgstr ""
+
+#: category.php:5
+msgid "Category"
+msgstr ""
+
+#: comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:50
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:61
+msgid "Leave A Comment"
+msgstr ""
+
+#: comments.php:69
+msgid "You must be  "
+msgstr ""
+
+#: comments.php:69
+msgid "logged in "
+msgstr ""
+
+#: comments.php:69
+msgid "to post a comment. "
+msgstr ""
+
+#: comments.php:79
+msgid "Logged in as  "
+msgstr ""
+
+#: comments.php:79
+msgid "Log out &raquo; "
+msgstr ""
+
+#: comments.php:85
+msgid "Your Name "
+msgstr ""
+
+#: comments.php:90
+msgid "Your Mail "
+msgstr ""
+
+#: comments.php:95
+msgid "Your Website "
+msgstr ""
+
+#: comments.php:102
+msgid "Message "
+msgstr ""
+
+#: comments.php:107
+msgid "POST COMMENT"
+msgstr ""
+
+#: functions.php:42
+msgid "Main Menu"
+msgstr ""
+
+#: home.php:5 home.php:309 page-temp-contact.php:8 page-temp-contact.php:83
+msgid "You forgot to enter your name."
+msgstr ""
+
+#: home.php:13 home.php:312 page-temp-contact.php:16 page-temp-contact.php:86
+msgid "You forgot to enter your email address."
+msgstr ""
+
+#: home.php:16 page-temp-contact.php:19
+msgid "You entered an invalid email address."
+msgstr ""
+
+#: home.php:24 home.php:316 page-temp-contact.php:27 page-temp-contact.php:90
+msgid "You forgot to enter your comments."
+msgstr ""
+
+#: home.php:121
+msgid "all"
+msgstr ""
+
+#: home.php:157
+msgid "+"
+msgstr ""
+
+#: home.php:292
+msgid "Contact Info"
+msgstr ""
+
+#: home.php:301 page-temp-contact.php:75
+msgid "There was an error submitting the form."
+msgstr ""
+
+#: home.php:303 page-temp-contact.php:77
+msgid ""
+"<strong>Thanks!</strong> Your email was successfully sent. We should be in "
+"touch soon."
+msgstr ""
+
+#: home.php:307 page-temp-contact.php:81
+msgid "Your name"
+msgstr ""
+
+#: home.php:310 page-temp-contact.php:84
+msgid "Your email"
+msgstr ""
+
+#: home.php:314 page-temp-contact.php:88
+msgid "Your message"
+msgstr ""
+
+#: home.php:320
+msgid "SEND"
+msgstr ""
+
+#: index.php:65 page-temp-blog.php:84 search.php:23
+msgid "Read More"
+msgstr ""
+
+#: page-temp-contact.php:94
+msgid "SEND MESSAGE"
+msgstr ""
+
+#: search.php:6
+msgid "Search Results"
+msgstr ""
+
+#: theme-options.php:79
+msgid "All Categories"
+msgstr ""
+
+#: theme-options.php:87
+msgid "Select a page:"
+msgstr ""

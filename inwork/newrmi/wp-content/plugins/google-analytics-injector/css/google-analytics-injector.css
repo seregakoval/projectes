@@ -1,0 +1,27 @@
+/*
+ * Style sheet for the Goole Analytics Injector plugin.
+ */
+
+#wpbody-content .wrap .gai-col1 {
+  float:left;
+  width:480px;
+}
+
+  #wpbody-content .wrap .gai-col1 .errorMsg {
+	  margin-right:60px;
+	  color:red;
+	}
+
+#wpbody-content .wrap .gai-col2 {
+  float:left;
+  margin-top:44px;
+  width:500px;
+}
+
+#wpbody-content .wrap .gai-col1 .description,
+#wpbody-content .wrap .gai-col2 .description {
+  border-left: 2px solid #C1C1C1;
+  margin-top: 18px;
+  padding-left: 10px;
+}
+

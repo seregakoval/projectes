@@ -1,0 +1,1 @@
+[05-Sep-2015 23:48:00 America/Chicago] PHP Fatal error:  Call to undefined function wp_die() in /home2/andywhit/public_html/newrmi/wp-content/plugins/genesis-media-project/plugin.php on line 25

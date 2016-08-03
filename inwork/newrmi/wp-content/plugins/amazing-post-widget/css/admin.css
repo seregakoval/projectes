@@ -1,0 +1,34 @@
+/*
+ * Flexible Posts Widget
+ * Admin Styles
+ * Author: dpe415
+ * URI: http://wordpress.org/extend/plugins/flexible-posts-widget/
+ */
+
+.cf:before,
+.cf:after	{content:" "; display:table;}
+.cf:after	{clear:both;}
+.cf			{*zoom:1;}
+
+.pj-ap-widget h4		{margin-bottom:0.5em;}
+.pj-ap-widget select	{background-color:#fff;}
+
+.pj-ap-widget .ui-tabs-active		{background:#fff; border-color: #DFDFDF #DFDFDF #FFFFFF;}
+.pj-ap-widget .ui-tabs-active a	{color:#333333;}
+
+.pj-ap-widget .warning	{color:#d21703;}
+.pj-ap-widget .section	{margin-bottom:1.33em; border-bottom:1px solid #dfdfdf;}
+.pj-ap-widget .section.getemby	{padding-bottom:1.333em;}
+
+.pj-ap-widget .tabs-panel.tt			{padding:1.333em 1em;}
+.pj-ap-widget .tabs-panel .terms		{max-height:110px; overflow:auto; border:1px solid #DFDFDF;}
+.pj-ap-widget .tabs-panel .terms ul	{margin-left:1em;}
+.pj-ap-widget .tabs-panel .terms p		{margin:1em;}
+
+.pj-ap-widget .display p				{margin-bottom:0.5em;}
+.pj-ap-widget .display p:last-child	{margin-bottom:1em;}
+.pj-ap-widget .display label			{float:left; padding-top:0.4em;}
+.pj-ap-widget .display input, .pj-ap-widget .thumbnails input	{float:right; width:60px; text-align:right;}
+.pj-ap-widget .display select			{float:right; width:120px;}
+
+.pj-ap-widget .thumbnails label		{padding-top:0.4em;}

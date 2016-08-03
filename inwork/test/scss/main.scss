@@ -1,0 +1,28 @@
+/****************************/
+/*  BASE STYLES  */
+
+@import "base/_base.scss";
+
+/*****************************/
+/*  LAYOUT */
+
+// HEADER
+@import "layout/_header.scss";
+
+// SIDEBAR
+@import "layout/_sidebar.scss";
+
+// CONTENT
+@import "layout/_content.scss";
+
+// FOOTER
+@import "layout/_footer.scss";
+
+/******************************/
+/*    MODULES */
+
+/*---SEARCH-FORM_module-----*/
+@import "modules/_form-search.scss";
+
+/*---MEDIA_module-----*/
+@import "modules/_media.scss";

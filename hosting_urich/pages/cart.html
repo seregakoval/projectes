@@ -1,0 +1,612 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>title</title>
+    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <link href="css/ups.css" rel="stylesheet">
+    <link href="css/resp.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	 <div id="shadow"></div>
+     <header>
+    	<div class="container">
+            <nav id="topline" class="wrapper">
+                <ul id="topmenu">
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Вопросы и предложения</a></li>
+                    <li><a href="#">Стать организатором</a></li>
+                    <li><a href="#">Партнерская программа</a></li>
+                    <li><a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></li>
+                </ul>
+                <ul id="self">
+                    <li><i class="fa fa-exclamation-circle"></i><a href="#">Уведомления (0)</a></li>
+                    <li><i class="fa fa-clone"></i><a href="#">Мои заказы</a></li>
+                    <li><i class="fa fa-shopping-cart"></i><a href="#">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="i/logo.png" alt="">
+                        <p class="logo-name">za<span>kupi</span><sup>.club</sup></p>
+                        <p class="logo-slogan">совместные покупки</p>
+                    </a>
+                </div>
+                <div id="m320">
+                  <a href="#" class="close"></a>
+                  <p class="htitle">Закупки по категориям</p>
+                  <ul>
+                    <li><a href="#">Для женщин</a></li>
+                    <li><a href="#">Для мужчин</a></li>
+                    <li><a href="#">Детские товары, одежда, обувь</a></li>
+                    <li><a href="#">Красота и здоровье</a></li>
+                    <li><a href="#">Бытовая техника</a></li>
+                  </ul>
+                  <p class="htitle">Меню</p>
+                  <ul>
+                    <li><a href="#">Закупки</a></li>
+                    <li><a href="#">Пристрой</a></li>
+                    <li><a href="#">Хотелки</a></li>
+                    <li><a href="#">Хвасталки</a></li>
+                  </ul>
+                  <p class="htitle">Сервисы</p>
+                  <ul>
+                    <li><i class="fa fa-exclamation-circle"></i><a href="#">Уведомления (0)</a></li>
+                    <li><i class="fa fa-clone"></i><a href="#">Мои заказы</a></li>
+                    <li><i class="fa fa-shopping-cart"></i><a href="#">Корзина</a></li>
+                  </ul>
+                  <p class="htitle"><i class="fa fa-power-off"></i><span><a href="#">Войти</a> или <a href="#">Зарегистрироаться</a></span></p>
+                </div>
+                <div id="searchblock">
+                    <a href="#" id="goods" class="gothic">товары <i class="fa fa-bars"></i></a>
+                </div>
+                <div class="whitebox" id="allcat" rel="allcat">
+                    <div class="quarte">
+                      <h2><a href="#">Мужская одежда <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Пальто и куртки</a></li>
+                            <li><a href="#">Джинсы</a></li>
+                            <li><a href="#">Футболки</a></li>
+                            <li><a href="#">Повседневные рубашки</a></li>
+                            <li><a href="#">Свитера</a></li>
+                            <li><a href="#">Брюки</a></li>
+                            <li><a href="#">Свитера и куртки с капюшоном</a></li>
+                            <li><a href="#">Нижнее белье</a></li>
+                            <li><a href="#">Мужские сорочки</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Мужская обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Женская одежда <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte clearfix">
+                      <h2><a href="#">Женская обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                <div class="quarte">
+                      <h2><a href="#">Детская одежда,обувь <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Пальто и куртки</a></li>
+                            <li><a href="#">Джинсы</a></li>
+                            <li><a href="#">Футболки</a></li>
+                            <li><a href="#">Повседневные рубашки</a></li>
+                            <li><a href="#">Свитера</a></li>
+                            <li><a href="#">Брюки</a></li>
+                            <li><a href="#">Свитера и куртки с капюшоном</a></li>
+                            <li><a href="#">Нижнее белье</a></li>
+                            <li><a href="#">Мужские сорочки</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Красота и здоровье <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <h2><a href="#">Бытовая техника <i class="fa fa-angle-right"></i></a></h2>
+                        <ul>
+                            <li><a href="#">Для спорта</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                            <li><a href="#">Повседневная обувь</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандалии и шлепанцы</a></li>
+                            <li><a href="#">Тапочки</a></li>
+                            <li><a href="#">Перчатки и варежки</a></li>
+                            <li><a href="#">Шарфы</a></li>
+                            <li><a href="#">Пряжки на ремни</a></li>
+                        </ul>
+                    </div>
+                    <div class="quarte">
+                      <div class="quarteimage">
+                            <a href="#"><img src="i/half.jpg" alt=""></a>
+                      </div>
+                    </div>
+                </div>
+                <div id="searchform">
+                    <form>
+                          <input type="text" placeholder="Найти">
+                          <div>
+                              <button value="Все категории" id="catsbutton">Все категории<i class="fa fa-angle-down"></i></button>
+                              <div class="whitebox" id="cats">
+                                <ul>
+                                    <li><a href="#">Все категории</a></li>
+                                    <li><a href="#">Женская одежда</a></li>
+                                    <li><a href="#">Женская обувь</a></li>
+                                    <li><a href="#">Мужская одежда</a></li>
+                                    <li><a href="#">Мужская обувь</a></li>
+                                    <li><a href="#">Верхняя одежда</a></li>
+                                    <li><a href="#">Детские товары</a></li>
+                                    <li><a href="#">Детская обувь</a></li>
+                                    <li><a href="#">Детская одежда</a></li>
+                                    <li><a href="#">Красота</a></li>
+                                    <li><a href="#">Здоровье</a></li>
+                                    <li><a href="#">Бытовая техника</a></li>
+                                    <li><a href="#">Пристрой</a></li>
+                                    <li><a href="#">Хотелки</a></li>
+                                    <li><a href="#">Хвасталки</a></li>
+                                    <li><a href="#">Разное</a></li>
+                                </ul>
+                              </div>
+                          </div>
+                          <input type="submit" value="Найти">
+                    </form>
+                    <p class="advsearch"><a href="#">Расширенный поиск</a></p>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <div id="secondmenu" class="container">
+    	<div class="clearfix">
+            <nav class="secondmenu">
+                <li><a href="#" class="mainlink"><span class="mainlink">Мои данные</span></a></li>
+                <li><a href="#" class="mainlink"><span class="mainlink">Закупки</span></a></li>
+                <li><a href="#" class="mainlink"><span class="mainlink">Товары</span></a></li>
+            </nav>
+            <h2>Корзина</h2>
+            <nav class="secondmenu-right">
+                <li><a href="#">Главная</a></li>
+                <li>/</li>
+                <li><a href="#">Корзина</a></li>
+            </nav>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container clearfix">
+            	<div id="leftbar">
+                    <nav id="leftmenu">
+                        <ul>
+                            <li><a href="#">Закупки</a></li>
+                            <li><a href="#">Добавить закупку</a></li>
+                            <li><a href="#">Хвастики</a></li>
+                            <li><a href="#">Пристрой </a></li>
+                            <li><a href="#">Мои закупки (23)</a></li>
+                            <li><a href="#">Мои подписчики (3)</a></li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <a href="#" class="logout">Выйти из личного кабинета</a>
+                </div>
+                <div id="rightcontent">
+                    <article>
+                        
+                        <div id="cart" class="clearfix">
+                        	<h1>Корзина</h1>
+                            <p>Заполните поля для подтверждения покупки. В ближайшее время она будет принята и проверена модератом. Вам придет уведомлении об активации закупки.</p>
+                            
+                            <div class="cartitem">
+                            	<div class="cartitemcard clearfix">
+	                                <div class="cardphoto">
+                                    	<span class="image">
+                                        	<img src="i/phone1.jpg" alt="">
+                                        </span>
+                                        <span class="oplata"></span>
+                                    </div>
+                                    <div class="cardinfo">
+                                    	<div class="cardinfoclock">
+                                        	<span class="days gothic">1 день</span>
+                                            <span class="time gothic">09:49:30</span>
+                                            <span class="number">Закуп № 3542</span>
+                                        </div>
+                                    	<div class="cardinfopic clearfix">
+                                            <div class="cardinfophoto">
+	                                            <img src="i/face.jpg" alt="">
+    	                                        <p class="status"><span><img src="i/status-online.png" alt=""></span>Милана</p>
+                                            </div>
+                                            <div class="cardinfotitle">
+        	                                    <h3>Смартфоны телефункен</h3>
+            	                                <p class="date">Начало закупки: 7.05.15 | Стоп закупки: 15.05.15 | Оргсбор: 13%</p>
+                	                            <p>Доброе время суток! Меня зовут Татьяна! Приглашаю Вас в закупку</p>
+                    	                        <p><a href="#" class="sendmess">Написать сообщение</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="cardinfoproc gothic">
+                                            <span class="peoples">Участников:<span>3</span></span>
+                                            <span class="gifts">Товаров:<span>23</span></span>
+                                            <div class="progressblock">Собрано<span class="copmlt">33 %</span>
+                                                <div class="progressbar"><span rel="33"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="orderone">
+                                    <tbody>
+                                        <tr class="orderparam">
+                                            <td>Название товара</td>
+                                            <td>Кол-во</td>
+                                            <td>Размер</td>
+                                            <td>Цвет</td>
+                                            <td>Цена</td>
+                                            <td>Статус</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="orderitem">
+                                            <td class="ordername">
+                                                <p class="ordernametitle gothic"><a href="#">Платье нарядное</a></p>
+                                                <p class="ordernameart">Артикул: <span>b3069</span></p>
+                                            </td>
+                                            <td class="ordercount">
+                                            	<a href="#" class="toup"><i class="fa fa-angle-up"></i></a>
+                                                <input type="text" value="1" name="instock" class="numonly">
+                                                <a href="#" class="todown"><i class="fa fa-angle-down"></i></a>
+                                            </td>
+                                            <td>35</td>
+                                            <td class="ordercolor">синий</td>
+                                            <td class="orderprice gothic">1 240 <i class="fa fa-rub"></i></td>
+                                            <td class="orderstarus">оплачено</td>
+                                            <td class="orderactions">
+                                                <a href="#"><img src="i/1.png" alt=""></a>
+                                                <a href="#"><img src="i/2.png" alt=""></a>
+                                                <a href="#"><img src="i/3.png" alt=""></a>
+                                            </td>
+                                        </tr>
+                                        <tr class="orderitem">
+                                            <td class="ordername">
+                                                <p class="ordernametitle gothic"><a href="#">Телефон смартфон 258</a></p>
+                                                <p class="ordernameart">Артикул: <span>b3069</span></p>
+                                            </td>
+                                            <td class="ordercount">
+                                               <a href="#" class="toup"><i class="fa fa-angle-up"></i></a>
+                                                <input type="text" value="1" name="instock" class="numonly">
+                                                <a href="#" class="todown"><i class="fa fa-angle-down"></i></a>
+                                            </td>
+                                            <td>42</td>
+                                            <td class="ordercolor">синий</td>
+                                            <td class="orderprice gothic">7 240 <i class="fa fa-rub"></i></td>
+                                            <td class="orderstarus">оплачено</td>
+                                            <td class="orderactions">
+                                                <a href="#"><img src="i/1.png" alt=""></a>
+                                                <a href="#"><img src="i/2.png" alt=""></a>
+                                                <a href="#"><img src="i/3.png" alt=""></a>
+                                            </td>
+                                        </tr>
+                                        <tr class="orderitem">
+                                            <td class="ordername">
+                                                <p class="ordernametitle gothic"><a href="#">Детская одежда из Италии</a></p>
+                                                <p class="ordernameart">Артикул: <span>b3069</span></p>
+                                            </td>
+                                            <td class="ordercount">
+                                                <a href="#" class="toup"><i class="fa fa-angle-up"></i></a>
+                                                <input type="text" value="1" name="instock" class="numonly">
+                                                <a href="#" class="todown"><i class="fa fa-angle-down"></i></a>
+                                            </td>
+                                            <td>5</td>
+                                            <td class="ordercolor">синий</td>
+                                            <td class="orderprice gothic">5 240 <i class="fa fa-rub"></i></td>
+                                            <td class="orderstarus">оплачено</td>
+                                            <td class="orderactions">
+                                                <a href="#"><img src="i/1.png" alt=""></a>
+                                                <a href="#"><img src="i/2.png" alt=""></a>
+                                                <a href="#"><img src="i/3.png" alt=""></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7">
+                                            	<div  class="cartiteminfo">
+                                                    <p class="cartiteminfo-info">Информация для покупателя</p>
+                                                    <p class="cartiteminfo-alert">Заказ был оплачен организатором 1,5 недели назад. Просьба всех участников вовремя произвести оплату по своему заказу в срок до 1 недели,иначе Ваш заказ не будет принят. Спасибо за понимание.</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="ordertotal">
+                                            <td colspan="7">
+                                                <p class="ordersumm"><span class="ordersbor">Оргсбор: 13%</span> <span class="orderitogo gothic">Итого:</span> <span class="ordermoney gothic">10 173 <i class="fa fa-rub"></i></span></p>
+                                                <p class="orderblank"><a href="#">Бланк раздачи</a></p>
+                                                <div class="orderbuttons">
+                                                    <button class="ordercancel">Отменить</button>
+                                                    <button class="orderpay">Оплатить заказ</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                	</tbody>
+                                </table>
+                            </div>
+                            
+                            
+                            <div class="cartitem">
+                            	<div class="cartitemcard clearfix">
+	                                <div class="cardphoto">
+                                    	<span class="image">
+                                        	<img src="i/phone1.jpg" alt="">
+                                        </span>
+                                        <span class="oplata"></span>
+                                    </div>
+                                    <div class="cardinfo">
+                                    	<div class="cardinfoclock">
+                                        	<span class="days gothic">1 день</span>
+                                            <span class="time gothic">09:49:30</span>
+                                            <span class="number">Закуп № 3542</span>
+                                        </div>
+                                    	<div class="cardinfopic clearfix">
+                                            <div class="cardinfophoto">
+	                                            <img src="i/face.jpg" alt="">
+    	                                        <p class="status"><span><img src="i/status-online.png" alt=""></span>Милана</p>
+                                            </div>
+                                            <div class="cardinfotitle">
+        	                                    <h3>Смартфоны телефункен</h3>
+            	                                <p class="date">Начало закупки: 7.05.15 | Стоп закупки: 15.05.15 | Оргсбор: 13%</p>
+                	                            <p>Доброе время суток! Меня зовут Татьяна! Приглашаю Вас в закупку</p>
+                    	                        <p><a href="#" class="sendmess">Написать сообщение</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="cardinfoproc gothic">
+                                            <span class="peoples">Участников:<span>3</span></span>
+                                            <span class="gifts">Товаров:<span>23</span></span>
+                                            <div class="progressblock">Собрано<span class="copmlt">33 %</span>
+                                                <div class="progressbar"><span rel="33"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="orderone">
+                                    <tbody>
+                                        <tr class="orderparam">
+                                            <td>Название товара</td>
+                                            <td>Кол-во</td>
+                                            <td>Размер</td>
+                                            <td>Цвет</td>
+                                            <td>Цена</td>
+                                            <td>Статус</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="orderitem">
+                                            <td class="ordername">
+                                                <p class="ordernametitle gothic"><a href="#">Платье нарядное</a></p>
+                                                <p class="ordernameart">Артикул: <span>b3069</span></p>
+                                            </td>
+                                            <td class="ordercount">
+                                            	<a href="#" class="toup"><i class="fa fa-angle-up"></i></a>
+                                                <input type="text" value="1" name="instock" class="numonly">
+                                                <a href="#" class="todown"><i class="fa fa-angle-down"></i></a>
+                                            </td>
+                                            <td>35</td>
+
+                                            <td class="ordercolor">синий</td>
+                                            <td class="orderprice gothic">1 240 <i class="fa fa-rub"></i></td>
+                                            <td class="orderstarus">оплачено</td>
+                                            <td class="orderactions">
+                                                <a href="#"><img src="i/1.png" alt=""></a>
+                                                <a href="#"><img src="i/2.png" alt=""></a>
+                                                <a href="#"><img src="i/3.png" alt=""></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7">
+                                            	<div  class="cartiteminfo">
+                                                    <p class="cartiteminfo-info">Информация для покупателя</p>
+                                                    <p class="cartiteminfo-alert">Заказ был оплачен организатором 1,5 недели назад. Просьба всех участников вовремя произвести оплату по своему заказу в срок до 1 недели,иначе Ваш заказ не будет принят. Спасибо за понимание.</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="ordertotal">
+                                            <td colspan="7">
+                                                <p class="ordersumm"><span class="ordersbor">Оргсбор: 13%</span> <span class="orderitogo gothic">Итого:</span> <span class="ordermoney gothic">10 173 <i class="fa fa-rub"></i></span></p>
+                                                <p class="orderblank"><a href="#">Бланк раздачи</a></p>
+                                                <div class="orderbuttons">
+                                                    <button class="ordercancel">Отменить</button>
+                                                    <button class="orderpay">Оплатить заказ</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                	</tbody>
+                                </table>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </article>
+                </div>
+        </div><!-- /container -->
+        
+       
+        
+        
+    </div><!-- /contant -->
+    <footer id="mainfooter">
+        <div class="container">
+        	<div class="clearfix">
+            	<div class="quarte">
+                	<h3>Закупки</h3>
+                    <ul>
+                        <li><a href="#">Пристрой</a></li>
+                        <li><a href="#">Закупки</a></li>
+                        <li><a href="#">Хотелки</a></li>
+                        <li><a href="#">Хвасталки</a></li>
+                        <li><a href="#">Для женщин</a></li>
+                        <li><a href="#">Для мужчин</a></li>
+                        <li><a href="#">Детские товары, одежда, обувь</a></li>
+                        <li><a href="#">Красота и здоровье</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<h3>о zakupiclub</h3>
+                    <ul>
+                        <li><a href="#">О клубе</a></li>
+                        <li><a href="#">Стать участником</a></li>
+                        <li><a href="#">Стать организатором</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                        <li><a href="#">Новичкам</a></li>
+                        <li><a href="#">Пункты выдачи</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<h3>Справка и помощь</h3>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Вопросы и предложения</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+                <div class="quarte">
+                	<p>VK</p>
+                	<div class="logo">
+                        <a href="#">
+                            <img src="i/logo.png" alt="">
+                            <p class="logo-name">za<span>kupi</span><sup>.club</sup></p>
+                            <p class="logo-slogan">совместные покупки</p>
+                        </a>
+                    </div>
+                    <p class="copy">Copyright 2015 Закупиклаб</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="ppup" id="pupload">
+    	<div class="header">Прикрепить хвастик<a href="#" class="close"></a></div>
+        <div class="action"><a href="#" class="actionphoto">Загрузить фотографию</a></div>
+        <div class="upphoto">
+        	<ul>
+              <li class="hvastsmall">
+                <div class="imageblock"><img src="i/smallh01.jpg" alt=""></div>
+                <div class="textblock">
+                  <div class="hearts">
+                    <a href="#" class="like">95</a>
+                    <a href="#" class="dislike">100</a>
+                  </div>
+                  <div class="social">
+                  social
+                  </div>
+                </div>
+              </li>
+              <li class="hvastsmall">
+                <div class="imageblock"><img src="i/smallh02.jpg" alt=""></div>
+                  <div class="textblock">
+                    <div class="hearts">
+                      <a href="#" class="like">95</a>
+                      <a href="#" class="dislike">100</a>
+                    </div>
+                    <div class="social">
+                    social
+                    </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+    
+	<div class="ppup" id="pgift">
+    	<div class="header">Добавить закупку<a href="#" class="close"></a></div>
+        <div class="search"><input type="text" value="" placeholder="Поиск..."><input type="submit" value=""></div>
+        <div class="giftitem clearfix">
+        	<div class="imageblock">
+            	<img src="i/item0.jpg" alt="">
+            </div>
+            <div class="textblock">
+            	<h3>Платья - новинки</h3>
+                <p class="date">Окончание закупки: 7.05.2015</p>
+                <span class="peoples gothic"><span>3</span></span><span class="gifts gothic"><span>23</span></span>
+            </div>
+            <a href="#" class="addgift">Добавить</a>
+        </div>
+        <div class="addfromsearch"><a href="#">Добавить закупку из полного списка</a></div>
+    </div>
+    
+    <div class="ppup" id="pnew">
+    	<div class="header">Добавить новость<a href="#" class="close"></a></div>
+        <div class="newsform">
+        	<h4>Выберите аудиторию</h4>
+            <p class="radio"><input type="radio" name="au" checked>Участники</p>
+            <p class="radiotext">Поделиться новостью участниками Вашей закупки</p>
+            <p class="radio"><input type="radio" name="au">Отправить личным сообщением</p>
+            <p class="radiotext">
+            	<select>
+                	<option value=""></option>
+                    <option value="User 1">User 1</option>
+                    <option value="User 1">User 2</option>
+                    <option value="User 1">User 3</option>
+                </select>
+            </p>
+            <h4>Ваше сообщение</h4>
+            <textarea></textarea>
+            <div class="clearfix">
+	            <input type="submit" value="Поделиться новостью">
+            </div>
+        </div>
+    </div>
+    
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.jcarousellite.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/misc.js"></script>
+</body>
+</html>
