@@ -1,0 +1,55 @@
+
+@media (max-width: 1200px) {
+    .section-content .section-head_section-left {margin-right: 0;max-width: 61%;}
+    .section-content .section-head_section-right {float: right;}
+}
+@media (max-width:992px) {
+    .section-content .section-head_video {margin-bottom: 15px;}
+    .section-content .section-head_section-left h1 {font-size: 24px;}
+    .section-content .section-head_section-right {float: none;}
+    .section-content .section-head_section-left {margin-right: 20px;}
+    .section-content .section-center{margin: -60px 15px 0 15px;}
+    .wrap-reviews{padding: 0 15px;}
+}
+@media (max-width:767px) {
+    .section-content .section-center_head .col-lg-4{ padding: 0;}
+    .section-content .section-center .general-wrap-body .string .box { padding: 15px;}
+    /*.section-head .media-body { display: inline-block; }*/
+    .section-head .media-right { display: inline-block; padding-left: 0;}
+    .section-head .media {text-align: center;}
+    .section-content .section-head_video .images {max-width: 270px;margin: 0 auto;display: block;}
+    .tab-overview .btn-languages {margin-top: 15px;}
+    .tab-overview {padding: 15px;}
+    .tab-overview .tags-right {text-align: left;}
+    .tab-overview .btn-languages {float:left !important;}
+    .tab-overview_section {padding: 15px;}
+    .tab-overview_section .section-author .avatar-author { position: static; margin: 0 auto; }
+    .tab-overview_section .section-author .section-top-author {padding: 15px 0;}
+    .tab-overview_section .section-author .section-top-author .block-info{padding-left: 15px;}
+    .tab-overview_section .section-author .section-content { padding: 20px 30px 0 15px; }
+    .tab-overview_section .section-author .avatar-author{max-width: 134px;}
+    .tab-overview_section h2{text-align: center;}
+    .wrap-reviews_title{text-align: center;}
+    .wrap-reviews_title .right-btn { width: 100%;padding: 15px 0;}
+}
+@media (max-width: 480px) {
+    .tab-overview_section .section-author .section-top-author{text-align: center; display: block;}
+    .tab-overview_section .section-author .section-top-author .thumb_social {display: block;text-align: center;margin:15px 0;}
+    .tab-overview .tags a { margin-bottom: 10px;}
+    .tab-overview_section .text { font-size: 14px;}
+    .tab-overview h2 { font-size: 22px;}
+    .bottom-btn { margin: 0px 0 18px 95px; }
+    .section-content .reviews_user { padding: 20px 0px; }
+    .wrap-reviews_title h1 {font-size: 18px;}
+    .wrap-reviews_leave .info-user { text-align: center; }
+    .wrap-reviews_leave h2 { text-align: center;}
+    .wrap-reviews_leave { padding: 20px 15px 35px 15px;}
+}
+@media (max-width: 400px) {
+    .section-content .section-center .general-wrap-body .string_head{  padding: 0 15px 0 20px; }
+    .section-content .section-center .general-wrap-body .string_head .time{ position: static;margin: 10px 0; }
+    .section-content .section-center .general-wrap-body .string_head:after{ display: none;}
+    .section-content .section-center .general-wrap-body .string_head .title{ font-weight: 600; }
+    .section-content .section-center .general-wrap-body .string_title-string:before { top: 3px; }
+    .section-content .section-center_head .box a{ font-size: 14px; }
+}

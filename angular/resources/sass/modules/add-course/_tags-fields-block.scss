@@ -1,0 +1,50 @@
+.tags-fields-block {
+    margin-bottom: 30px;
+    > label {
+        font-size: 14px;
+        color: #64718b;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+    .tags-field {
+        border: 1px solid #d2d8d6;
+        border-radius: 3px;
+        padding: 10px 15px;
+        .tag-item {
+            position: relative;
+            line-height: 24px;
+            border: 1px solid #d2d8d6;
+            border-radius: 3px;
+            padding: 0 34px 0 10px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px 10px 5px 0;
+            color: #4e5e6a;
+            span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 24px;
+                border-left: 1px solid #d2d8d6;
+                line-height: 22px;
+                text-align: center;
+                font-size: 16px;
+                color: #4e5e6a;
+                cursor: pointer;
+                border-radius: 0 2px 2px 0;
+                &:hover {
+                    background: $green;
+                    color: #ffffff;
+                    border-left-color: $green;
+                }
+            }
+        }
+        input[type="text"] {
+            border: none;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

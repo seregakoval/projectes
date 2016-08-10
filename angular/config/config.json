@@ -1,0 +1,90 @@
+{
+    "config": {
+        "title": "Skeleton",
+        "baseUrl": "/",
+        "apiUrl": "/rest/v1",
+        "facebookClientId": "1020326964712117",
+        "linkedinClientId": "78j6zoflulimx4"
+    },
+    "app": {
+        "module": [
+            "ct.ui.router.extras",
+            "ui.bootstrap",
+            "ngResource",
+            "satellizer",
+            "toaster",
+            "acl",
+            "ngTagsInput"
+        ],
+        "config": [
+            "config",
+            "routes"
+        ],
+        "run": [
+            "run"
+        ],
+        "validator": {},
+        "directive": {
+            "socialLogin": "socialLogin",
+            "logout": "logout",
+            "avatarInput": "avatarInput",
+            "fileInput": "fileInput",
+            "dragDropInput": "dragDropInput"
+        },
+        "component": {
+            "baseInput": "baseInput",
+            "horizontalInput": "horizontalInput",
+            "baseTextarea": "baseTextarea",
+            "baseRadio": "baseRadio",
+            "baseSubmit": "baseSubmit",
+            "baseSelect": "baseSelect"
+        },
+        "provider": {},
+        "service": {},
+        "factory": {
+            "Validator": "Validator",
+            "UserLogin": "UserLogin",
+            "Scroll": "Scroll",
+            "ToasterError": "ToasterError",
+            "Request": "Request"
+        },
+        "controller": {
+            "Login": "auth/Login",
+            "Register": "auth/Register",
+            "RegisterConfirm": "auth/RegisterConfirm",
+            "Forgot": "auth/Forgot",
+            "Home": "site/Home",
+            "Header": "site/Header",
+            "Profile": "profile/Profile",
+            "CourseCreate": "course/CourseCreate"
+        },
+        "filter": {},
+        "model": {
+            "User": "User",
+            "Country": "Country",
+            "CourseSubject": "CourseSubject",
+            "CourseRequest": "CourseRequest",
+            "CourseLevel": "CourseLevel"
+        },
+        "custom": [
+        ]
+    },
+    "global": {
+        "$": "jquery",
+        "window.jQuery": "jquery",
+        "jQuery": "jquery"
+    },
+    "vendor": [
+        "jquery",
+        "angular",
+        "angular-ui-router",
+        "ui-router-extras",
+        "angular-ui-bootstrap",
+        "angular-resource",
+        "satellizer",
+        "angularjs-toaster",
+        "bootstrap/dist/js/bootstrap.min",
+        "angular-acl-tahiaji/angular-acl.js",
+        "ng-tags-input"
+    ]
+}

@@ -1,0 +1,76 @@
+<!-- registration -->
+<section class="registration-section">
+    <div class="container">
+        <header class="registration-section_header">
+            <h1>Registration</h1>
+        </header>
+        <div class="registration-section_form">
+            <form name="vm.registerForm" novalidate>
+                <base-radio
+                    data-model="vm.model.group"
+                    data-options="vm.groups"
+                    data-name="group"
+                    data-submitted="vm.submitted"
+                    data-error="vm.errors.group"
+                    data-required="true"                        
+                    ></base-radio>
+                <base-input
+                    data-model="vm.model.email"
+                    data-name="email"
+                    data-submitted="vm.submitted"
+                    data-error="vm.errors.email"
+                    data-required="true"
+                    data-placeholder="Email"
+                    data-type="email"
+                    ></base-input>
+
+                <base-input
+                    data-model="vm.model.password"
+                    data-name="password"
+                    data-submitted="vm.submitted"
+                    data-error="vm.errors.password"
+                    data-required="true"               
+                    data-type="password"
+                    data-placeholder="Password"
+                    ></base-input>
+                <base-input
+                    data-model="vm.model.confirmPassword"
+                    data-name="confirmPassword"
+                    data-submitted="vm.submitted"
+                    data-error="vm.errors.confirmPassword"
+                    data-required="true"               
+                    data-type="password"
+                    data-placeholder="Confirm Password"
+                    ></base-input>
+                <div class="form-group" ng-class="{'has-error': (vm.submitted && vm.registerForm.terms.$invalid)}">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="terms" ng-model="vm.model.terms" required>
+                            <span class="checkbox-emu"></span> I have read and agree to all <a href="#">Term and Conditions</a>.
+                        </label>
+                    </div>
+                    <!--<span class="help-block" ng-show="vm.submitted && vm.registerForm.terms.$error.required">You have to read and agree to all</span>-->
+                </div>
+                <base-submit
+                    form="vm.registerForm"
+                    send-function="vm.register(form)"
+                    submitted="vm.submitted"
+                    loading="vm.loading"
+                    label="Sign up"
+                    data-class="btn btn-block btn-green"
+                    ></base-submit>
+                <div class="registration-section_social">
+                    <p class="title">Sign up with social accounts</p>
+                    <div class="items">
+                        <a href="#" data-social-login data-type="linkedin" data-group="vm.model.group" data-callback="vm.socialCallback(data)"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" data-social-login data-type="facebook" data-group="vm.model.group" data-callback="vm.socialCallback(data)"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" data-social-login data-type="twitter" data-group="vm.model.group" data-callback="vm.socialCallback(data)"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="registration-section_text">
+                    Already have an account? <a data-ui-sref="root.auth.login">Sign In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section><!--./registration -->

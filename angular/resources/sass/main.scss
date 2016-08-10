@@ -1,0 +1,66 @@
+
+/***********************/
+/*      BASE STYLES    */
+
+@import "base/_base.scss";
+
+/***********************/
+/*        LAYOUT       */
+
+/* HEADER */
+@import "layout/_header.scss";
+
+/* CONTENT */
+@import "layout/_content.scss";
+
+/*FOOTER */
+@import "layout/_footer.scss";
+
+/* SEARCH page layout */
+@import "layout/_search.scss";
+
+/***********************/
+/*       MODULES       */
+
+/* home screen module */
+@import "modules/_home-screen.scss";
+/* light section module */
+@import "modules/_light-section.scss";
+/* image section */
+@import "modules/_image-section.scss";
+/* form elements */
+@import "modules/_forms.scss";
+/* buttons style */
+@import "modules/_buttons.scss";
+/* profile layout */
+@import "modules/_profile-section.scss";
+/* thimbs styles */
+@import "modules/_thumbs.scss";
+/* notification styles */
+@import "modules/_notification.scss";
+
+
+@import "modules/add-course/tags-fields-block";
+@import "modules/add-course/course-info-block";
+@import "modules/add-course/upload-text-block";
+
+
+/***********************/
+/*        PAGES        */
+/* registation page */
+@import "pages/_registration.scss";
+/*courses-list*/
+@import "pages/_my-courses-list-page.scss";
+/*my-courses-tabs*/
+@import "pages/_my-courses-tabs.scss";
+/*details-page*/
+@import "pages/_user-details-page.scss";
+/*suppotr page*/
+@import "pages/_support.scss";
+/*add page*/
+@import "pages/_add-course.scss";
+
+/***********************/
+/*        MEDIA        */
+
+@import "_media.scss";

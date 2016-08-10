@@ -1,0 +1,369 @@
+<div class="profile-section">
+    <div class="container container-small">
+        <h1 class="profile-section_title">
+            MY PROFILE
+        </h1>
+        <div class="profile-section_white">
+            <form name="vm.profileForm" novalidate>
+                <div class="group">
+                    <p class="group_title">
+                        About Me
+                    </p>
+                    <div class="profile-section_about">
+                        <div class="media">
+                            <div class="media-left">
+                                <avatar-input
+                                    data-model="vm.model.avatar"
+                                    data-name="avatar"
+                                    data-view="vm.model.avatar_url"
+                                    data-submitted="vm.submitted"
+                                    data-error="vm.errors.avatar"
+                                    data-required="true"
+                                    >
+                                </avatar-input>
+                            </div>
+                            <div class="media-body"  data-allowrole="student">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <base-input
+                                            data-model="vm.model.firstname"
+                                            data-name="firstname"
+                                            data-submitted="vm.submitted"
+                                            data-error="vm.errors.firstname"
+                                            data-required="true"
+                                            data-placeholder="First name"
+                                            ></base-input>
+                                        <base-input
+                                            data-model="vm.model.lastname"
+                                            data-name="lastname"
+                                            data-submitted="vm.submitted"
+                                            data-error="vm.errors.lastname"
+                                            data-required="true"
+                                            data-placeholder="Last name"
+                                            ></base-input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body" data-allowrole="instructor">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <base-input
+                                            data-model="vm.model.firstname"
+                                            data-name="firstname"
+                                            data-submitted="vm.submitted"
+                                            data-error="vm.errors.firstname"
+                                            data-required="true"
+                                            data-placeholder="First name"
+                                            ></base-input>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <base-input
+                                            data-model="vm.model.lastname"
+                                            data-name="lastname"
+                                            data-submitted="vm.submitted"
+                                            data-error="vm.errors.lastname"
+                                            data-required="true"
+                                            data-placeholder="Last name"
+                                            ></base-input>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <base-textarea
+                                            model="vm.model.bio"
+                                            name="bio"
+                                            submitted="vm.submitted"
+                                            error="vm.errors.bio"
+                                            required="true"
+                                            placeholder="Bio"
+                                            ></base-textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="group sm">
+                    <div class="group_social">
+                        <a href="#" class="item in" ng-class="{'active':vm.social.linkedin}" ng-click="vm.toggleConnect('linkedin')">
+                            <i class="fa fa-linkedin"></i>
+                            <span ng-show="vm.social.linkedin">Disconnect</span><span ng-hide="vm.social.linkedin">Connect</span> LinkedIn
+                        </a>
+                        <a href="#" class="item fb" ng-class="{'active':vm.social.facebook}" ng-click="vm.toggleConnect('facebook')">
+                            <i class="fa fa-facebook"></i>
+                            <span ng-show="vm.social.facebook">Disconnect</span><span ng-hide="vm.social.facebook">Connect</span> Facebook
+                        </a>
+                        <a href="#" class="item tw" ng-class="{'active':vm.social.twitter}" ng-click="vm.toggleConnect('twitter')">
+                            <i class="fa fa-twitter"></i>
+                            <span ng-show="vm.social.twitter">Disconnect</span><span ng-hide="vm.social.twitter">Connect</span> Twitter
+                        </a>
+                    </div>
+                </div>
+                <div class="group fields">
+                    <p class="group_title">
+                        My Location
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <base-select
+                                model="vm.model.location.country_id"
+                                options="vm.countries"
+                                name="country_id"
+                                submitted="vm.submitted"
+                                error="vm.errors.country_id"
+                                required="true"
+                                placeholder="Country"
+                                ></base-select>
+                        </div>
+                        <div class="col-md-6">
+                            <base-input
+                                data-model="vm.model.location.state"
+                                data-name="state"
+                                data-submitted="vm.submitted"
+                                data-error="vm.errors.state"
+                                data-required="true"
+                                data-placeholder="State"
+                                ></base-input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <base-input
+                                data-model="vm.model.location.city"
+                                data-name="city"
+                                data-submitted="vm.submitted"
+                                data-error="vm.errors.city"
+                                data-required="true"
+                                data-placeholder="City"
+                                ></base-input>
+                        </div>
+                        <div class="col-md-6">
+                            <base-input
+                                data-model="vm.model.location.address"
+                                data-name="address"
+                                data-submitted="vm.submitted"
+                                data-error="vm.errors.address"
+                                data-required="true"
+                                data-placeholder="Address"
+                                ></base-input>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group fields" data-allowrole="instructor">
+                    <p class="group_title">
+                        Position
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <base-input
+                                data-model="vm.model.position"
+                                data-name="position"
+                                data-submitted="vm.submitted"
+                                data-error="vm.errors.position"
+                                data-required="true"
+                                data-placeholder="Position"
+                                ></base-input>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="group">
+                    <p class="group_title">
+                        Qualifications
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Category Name I</label>
+                            <div class="row">
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Category Name II</label>
+                            <div class="row">
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                                <!-- repeat item -->
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span class="checkbox-emu"></span>
+                                            Name 1
+                                        </label>
+                                    </div>
+                                </div><!--./ repeat item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group fields">
+                    <p class="group_title">
+                        Email
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <base-input
+                                data-model="vm.model.email"
+                                data-name="email"
+                                data-submitted="vm.submitted"
+                                data-error="vm.errors.email"
+                                data-required="true"
+                                data-placeholder="Email"
+                                data-type="email"
+                                ></base-input>
+                        </div>
+                    </div>
+                </div>
+                <div class="group fields">
+                    <p class="group_title">
+                        Change password
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <base-input
+                                data-model="vm.model.currentPassword"
+                                data-name="currentPassword"
+                                data-submitted="vm.submitted"
+                                data-error="vm.errors.currentPassword"
+                                data-required="vm.model.newPassword || vm.model.confirmPassword"
+                                data-type="password"
+                                data-placeholder="Old password"
+                                ></base-input>
+                        </div>
+                        <div class="col-md-4">
+                            <base-input
+                                data-model="vm.model.newPassword"
+                                data-name="newPassword"
+                                data-submitted="vm.submitted"
+                                data-error="vm.errors.newPassword"
+                                data-required="vm.model.confirmPassword || vm.model.currentPassword" 
+                                data-type="password"
+                                data-placeholder="New password"
+                                ></base-input>
+                        </div>
+                        <div class="col-md-4">
+                            <base-input
+                                data-model="vm.model.confirmPassword"
+                                data-name="confirmPassword"
+                                data-submitted="vm.submitted"
+                                data-error="vm.errors.confirmPassword"
+                                data-required="vm.model.newPassword || vm.model.currentPassword"
+                                data-type="password"
+                                data-placeholder="Confirm password"
+                                ></base-input>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <base-submit
+                        data-form="vm.profileForm"
+                        data-send-function="vm.save(form)"
+                        data-submitted="vm.submitted"
+                        data-loading="vm.loading"
+                        data-label="Save"
+                        data-class="btn btn-green"
+                        ></base-submit>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

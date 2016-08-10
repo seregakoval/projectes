@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TITLE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+
+        <!-- COMPONENTS -->
+        <link rel="stylesheet" href="../web/css/vendor.css.css">
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="../web/css/main.css">
+
+    </head>
+    <body ng-app="">
+        <!-- navigration -->
+        <header ng-include="'partials/header-public.html'"></header><!--./navigation -->
+
+        <!-- registration -->
+        <section class="registration-section">
+            <div class="container">
+                <header class="registration-section_header">
+                    <h1>Registration</h1>
+                </header>
+                <div class="registration-section_form">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="role-btn">
+                                    <input type="radio" name="role">
+                                    <div class="role-btn_btn">
+                                        <span>I am a student</span>
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="role-btn">
+                                    <input type="radio" name="role">
+                                    <div class="role-btn_btn">
+                                        <span>I am an instructor</span>
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group with-icon">
+                            <input type="text" class="form-control" placeholder="omelchenko.net@gmail.com">
+                            <i class="icon ion-ios-checkmark-empty"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                               <label>
+                                 <input type="checkbox"><span class="checkbox-emu"></span> I have read and agree to all <a href="#">Term and Conditions</a>.
+                               </label>
+                             </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-block btn-green" type="submit">Sign up</button>
+                        </div>
+                        <div class="registration-section_social">
+                            <p class="title">Sign up with social accounts</p>
+                            <div class="items">
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="registration-section_text">
+                            Already have an account? <a href="#">Sign In</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section><!--./registration -->
+
+        <!-- footer -->
+        <footer ng-include="'partials/footer.html'"></footer><!--./footer -->
+
+        <!-- COMPONENTS SCRIPTS -->
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="../app/custom/custom.js"></script>
+
+    </body>
+</html>

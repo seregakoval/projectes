@@ -1,0 +1,45 @@
+.btn {
+    font-family: $cabin;
+    &.btn-green {
+        color: $white;
+        transition: background 0.2s linear;
+        @include hoverBackground($green);
+    }
+    &.btn-default {
+        box-shadow: none !important;
+        border-color: #d2d8d6;
+        color: $green;
+        transition: background 0.2s linear;
+        @include hoverBackground(#fff);
+    }
+    &.btn-upload {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        input[type="file"] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            left: -100%;
+            cursor: pointer;
+        }
+    }
+    &.btn-primary {
+        background: #ffffff;
+        border: 2px solid $green;
+        color: $green;
+        width: auto;
+        box-shadow: none !important;
+        &:focus {
+            border: 2px solid $green;
+            color: $green;
+        }
+        &:hover, &:active {
+            background: $green;
+            color: #ffffff;
+            border: 2px solid $green;
+        }
+    }
+}

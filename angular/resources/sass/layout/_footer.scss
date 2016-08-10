@@ -1,0 +1,107 @@
+/* FOOTER */
+.footer {
+    padding: 20px 15px 0;
+    background: #4e5e6a;
+    position: relative;
+    z-index: 3;
+    @media (max-width: 1280px) {
+        text-align: center;
+    }
+    &:after,
+    &:before {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    &_logo {
+        display: inline-block;
+        margin: 0 57px 20px 0;
+        vertical-align: middle;
+        @media (max-width: 992px) {
+            display: block;
+            margin: 0 0 20px;
+        }
+        img {
+            max-width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    &_nav {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 20px;
+        @media (max-width: 767px) {
+            display: block;
+        }
+        a {
+            display: inline-block;
+            font-family: $cabin;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #d8e0e5;
+            margin: 0 23px;
+            transition: color 0.2s linear;
+            @media (max-width: 767px) {
+                display: block;
+                margin: 0 0 20px;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    &_right {
+        float: right;
+        white-space: nowrap;
+        @media (max-width: 1280px) {
+            float: none;
+            display: inline-block;
+        }
+    }
+    &_social {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 52px 20px 0;
+        @media (max-width: 767px) {
+            display: block;
+            margin: 0 0 20px;
+        }
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 8px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid $white;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 28px;
+            background: $white;
+            color: #4e5e6a;
+            font-size: 19px;
+            transition: all 0.2s linear;
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+            &:hover {
+                color: $white;
+                background: #4e5e6a;
+            }
+        }
+    }
+    &_rights {
+        font-size: 13px;
+        display: inline-block;
+        color: #8199aa;
+        vertical-align: middle;
+        margin: 0 0 20px;
+    }
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TITLE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+
+        <!-- COMPONENTS -->
+        <link rel="stylesheet" href="../web/css/vendor.css.css">
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="../web/css/main.css">
+
+    </head>
+    <body ng-app="">
+        <!-- navigration -->
+        <header ng-include="'partials/header-private.html'"></header><!--./navigation -->
+
+        <div class="asides-layout">
+            <!-- nav -->
+            <div ng-include="'partials/search-layout-nav.html'"></div><!--./nav -->
+            <!-- sidebar left -->
+            <div ng-include="'partials/search-sidebar-left.html'"></div><!--./sidebar left -->
+            <!-- sidebar right -->
+            <div ng-include="'partials/search-sidebar-right.html'"></div><!--./sidebar right -->
+            <!-- header -->
+            <div class="asides-layout_header">
+                <div class="container">
+                    <p class="title">
+                        SEARCH COURSES: <span>WEB DESIGN</span>
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Tags</label>
+                                <div class="with-button">
+                                    <input type="text" class="form-control input-lg" placeholder="Start typing...">
+                                    <button class="btn btn-green"><i class="ion-android-add"></i></button>
+                                </div>
+                            </div>
+                            <div class="form-tags">
+                                <div class="form-tags_item">
+                                    WEB
+                                    <a href="#"><i class="ion-ios-close-empty"></i></a>
+                                </div>
+                                <div class="form-tags_item">
+                                    WEB
+                                    <a href="#"><i class="ion-ios-close-empty"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Type</label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"><span class="checkbox-emu"></span>
+                                        Standart
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"><span class="checkbox-emu"></span>
+                                        Premium
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-green submit-btn">Search</button>
+                    </div>
+                </div>
+            </div><!--./header -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- thumb -->
+                        <div class="thumb">
+                            <div class="thumb_img">
+                                <img src="../web/img/home.jpg" alt="">
+                                <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="rating">
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="count">
+                                    Taking course:<span>582 <i class="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="thumb_body">
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Subject: <span>Web Design</span></div>
+                                    <div class="thumb_title">Photoshop for Web Design Beginners</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Type:</div>
+                                    <div class="thumb_text">Standard</div>
+
+                                    <div class="thumb_label">Author:</div>
+                                    <div class="thumb_text green">Sandra Schmidt</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_between">
+                                        <div class="price">
+                                            <small>$</small>252
+                                        </div>
+                                        <a href='#' class="btn thumb_btn">Take Course</a>
+                                    </div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_social">
+                                        <a href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--./thumb -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- thumb -->
+                        <div class="thumb">
+                            <div class="thumb_img">
+                                <img src="../web/img/home.jpg" alt="">
+                                <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="rating">
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="count">
+                                    Taking course:<span>582 <i class="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="thumb_body">
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Subject: <span>Web Design</span></div>
+                                    <div class="thumb_title">Photoshop for Web Design Beginners</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Type:</div>
+                                    <div class="thumb_text">Standard</div>
+
+                                    <div class="thumb_label">Author:</div>
+                                    <div class="thumb_text green">Sandra Schmidt</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_between">
+                                        <div class="price">
+                                            <small>$</small>252
+                                        </div>
+                                        <a href='#' class="btn thumb_btn">Take Course</a>
+                                    </div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_social">
+                                        <a href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--./thumb -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- thumb -->
+                        <div class="thumb">
+                            <div class="thumb_img">
+                                <img src="../web/img/home.jpg" alt="">
+                                <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="rating">
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="count">
+                                    Taking course:<span>582 <i class="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="thumb_body">
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Subject: <span>Web Design</span></div>
+                                    <div class="thumb_title">Photoshop for Web Design Beginners</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Type:</div>
+                                    <div class="thumb_text">Standard</div>
+
+                                    <div class="thumb_label">Author:</div>
+                                    <div class="thumb_text green">Sandra Schmidt</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_between">
+                                        <div class="price">
+                                            <small>$</small>252
+                                        </div>
+                                        <a href='#' class="btn thumb_btn">Take Course</a>
+                                    </div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_social">
+                                        <a href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--./thumb -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- thumb -->
+                        <div class="thumb">
+                            <div class="thumb_img">
+                                <img src="../web/img/home.jpg" alt="">
+                                <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="rating">
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="count">
+                                    Taking course:<span>582 <i class="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="thumb_body">
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Subject: <span>Web Design</span></div>
+                                    <div class="thumb_title">Photoshop for Web Design Beginners</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Type:</div>
+                                    <div class="thumb_text">Standard</div>
+
+                                    <div class="thumb_label">Author:</div>
+                                    <div class="thumb_text green">Sandra Schmidt</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_between">
+                                        <div class="price">
+                                            <small>$</small>252
+                                        </div>
+                                        <a href='#' class="btn thumb_btn">Take Course</a>
+                                    </div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_social">
+                                        <a href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--./thumb -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- thumb -->
+                        <div class="thumb">
+                            <div class="thumb_img">
+                                <img src="../web/img/home.jpg" alt="">
+                                <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="rating">
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="count">
+                                    Taking course:<span>582 <i class="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="thumb_body">
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Subject: <span>Web Design</span></div>
+                                    <div class="thumb_title">Photoshop for Web Design Beginners</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Type:</div>
+                                    <div class="thumb_text">Standard</div>
+
+                                    <div class="thumb_label">Author:</div>
+                                    <div class="thumb_text green">Sandra Schmidt</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_between">
+                                        <div class="price">
+                                            <small>$</small>252
+                                        </div>
+                                        <a href='#' class="btn thumb_btn">Take Course</a>
+                                    </div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_social">
+                                        <a href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--./thumb -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- thumb -->
+                        <div class="thumb">
+                            <div class="thumb_img">
+                                <img src="../web/img/home.jpg" alt="">
+                                <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="rating">
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="count">
+                                    Taking course:<span>582 <i class="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="thumb_body">
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Subject: <span>Web Design</span></div>
+                                    <div class="thumb_title">Photoshop for Web Design Beginners</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Type:</div>
+                                    <div class="thumb_text">Standard</div>
+
+                                    <div class="thumb_label">Author:</div>
+                                    <div class="thumb_text green">Sandra Schmidt</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_between">
+                                        <div class="price">
+                                            <small>$</small>252
+                                        </div>
+                                        <a href='#' class="btn thumb_btn">Take Course</a>
+                                    </div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_social">
+                                        <a href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--./thumb -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- thumb -->
+                        <div class="thumb">
+                            <div class="thumb_img">
+                                <img src="../web/img/home.jpg" alt="">
+                                <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="rating">
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="count">
+                                    Taking course:<span>582 <i class="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="thumb_body">
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Subject: <span>Web Design</span></div>
+                                    <div class="thumb_title">Photoshop for Web Design Beginners</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Type:</div>
+                                    <div class="thumb_text">Standard</div>
+
+                                    <div class="thumb_label">Author:</div>
+                                    <div class="thumb_text green">Sandra Schmidt</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_between">
+                                        <div class="price">
+                                            <small>$</small>252
+                                        </div>
+                                        <a href='#' class="btn thumb_btn">Take Course</a>
+                                    </div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_social">
+                                        <a href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--./thumb -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <!-- thumb -->
+                        <div class="thumb">
+                            <div class="thumb_img">
+                                <img src="../web/img/home.jpg" alt="">
+                                <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="rating">
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#" class="active"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                    <a href="#"><i class="fa fa-star"></i></a>
+                                </div>
+                                <div class="count">
+                                    Taking course:<span>582 <i class="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="thumb_body">
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Subject: <span>Web Design</span></div>
+                                    <div class="thumb_title">Photoshop for Web Design Beginners</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_label">Type:</div>
+                                    <div class="thumb_text">Standard</div>
+
+                                    <div class="thumb_label">Author:</div>
+                                    <div class="thumb_text green">Sandra Schmidt</div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_between">
+                                        <div class="price">
+                                            <small>$</small>252
+                                        </div>
+                                        <a href='#' class="btn thumb_btn">Take Course</a>
+                                    </div>
+                                </div>
+                                <div class="thumb_section">
+                                    <div class="thumb_social">
+                                        <a href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--./thumb -->
+                    </div>
+                </div><!--./ thumbs list -->
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer ng-include="'partials/footer.html'"></footer><!--./footer -->
+
+        <!-- COMPONENTS SCRIPTS -->
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="../app/custom/custom.js"></script>
+
+    </body>
+</html>

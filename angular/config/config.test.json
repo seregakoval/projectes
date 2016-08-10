@@ -1,0 +1,5 @@
+{
+  "config": {
+    "apiUrl": "http://courserooms.test.gbksoft.net/rest/v1/"
+  }
+}

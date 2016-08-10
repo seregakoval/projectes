@@ -1,0 +1,15 @@
+.course-info-block {
+    .field-info {
+        color: #64718b;
+        padding-top: 6px;
+        i {
+            color: #f08f9f;
+            margin-right: 5px;
+        }
+    }
+    textarea {
+        min-height: 150px;
+        resize: none;
+        margin-top: 15px;
+    }
+}

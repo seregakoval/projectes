@@ -1,0 +1,189 @@
+<div class="profile-section">
+    <div class="container container-small">
+        <h1 class="profile-section_title">
+            Add course
+        </h1>
+        <div class="profile-section_white">
+
+            <!-- Create congratulations -->
+            <div class="group congratulations-group" ng-show="vm.created">
+                <h2>Thank you for sending a course</h2>
+                <p>We will add it to website as soon as possible. You will get <br/>
+                    a notification from us once it's published. </p>
+                <button class="btn btn-green">Upload another course</button>
+            </div><!--./create congratulations -->
+
+
+            <form name="vm.courseForm" novalidate>
+                <div class="group">
+                    <drag-drop-input
+                        data-model="vm.model.data_file"
+                        data-name="data_file"
+                        data-label="or click here"
+                        data-top-label="Drop the .zip of your course to upload or click here"
+                        data-submitted="vm.submitted"
+                        data-error="vm.errors.data_file"
+                        data-required="true"
+                        data-class="btn btn-default btn-upload"
+                        data-wrapper-class="upload-block"
+                        >
+                    </drag-drop-input>
+                </div>
+
+                <div class="group fields">
+
+                    <!-- Tags -->
+                    <div class="tags-fields-block">
+                        <label>Please add tags, with the help of which users will be able to find your
+                            course</label>
+                        <tags-input ng-model="vm.tags"  class="bootstrap" display-property="text" name="tags" ng-required="vm.submitted"></tags-input>
+                        <!--<div class="tags-field">
+                                <div class="tag-item">Design <span class="remove-tag">&times;</span></div>
+                                <input type="text">
+                            </div>-->
+
+                    </div><!--./tags -->
+
+                    <!-- Course info block -->
+                    <div class="course-info-block">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <file-input                                    
+                                    data-model="vm.model.image_file"
+                                    data-name="image_file"
+                                    data-label="Upload img"
+                                    data-view="vm.model.image_file_url"
+                                    data-submitted="vm.submitted"
+                                    data-error="vm.errors.image_file"
+                                    data-required="true"
+                                    data-class="btn btn-default btn-upload"
+                                    data-wrapper-class="upload-block"
+                                    data-preview="true"
+                                    data-type="image"
+                                    >
+                                </file-input>
+                            </div>
+                            <div class="col-md-8">
+                                <base-input
+                                    data-model="vm.model.title"
+                                    data-name="title"
+                                    data-submitted="vm.submitted"
+                                    data-error="vm.errors.title"
+                                    data-required="true"
+                                    data-placeholder="Title Course"
+                                    ></base-input> 
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <base-input
+                                            data-model="vm.model.price"
+                                            data-name="price"
+                                            data-submitted="vm.submitted"
+                                            data-error="vm.errors.price"
+                                            data-required="true"
+                                            data-placeholder="Price"
+                                            ></base-input>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form-group">
+                                            <div class="field-info">
+                                                <i class="fa fa-info-circle"></i> Courserooms will add 10% from the
+                                                purchase
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+
+
+                                        <base-select
+                                            data-model="vm.model.level_id"
+                                            data-options="vm.levels"
+                                            data-label-field="label"
+                                            data-name="level_id"
+                                            data-submitted="vm.submitted"
+                                            data-error="vm.errors.level_id"
+                                            data-required="true"
+                                            data-placeholder="Level"
+                                            ></base-select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+
+                                <base-textarea
+                                    model="vm.model.description"
+                                    name="description"
+                                    submitted="vm.submitted"
+                                    error="vm.errors.description"
+                                    required="true"                        
+                                    placeholder="Course Description"
+                                    ></base-textarea>   
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="group">
+
+                    <!-- Upload text block -->
+                    <div class="upload-text-block">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Please upload the txt file with the description of the modules of your
+                                    course,
+                                    we will use it as roadmap in adding the curriculum. </label>
+                            </div>
+                            <div class="col-md-12">
+                                <file-input                                    
+                                    data-model="vm.model.description_file"
+                                    data-name="description_file"
+                                    data-label="Upload .txt file"
+                                    data-view="vm.model.description_file_url"
+                                    data-submitted="vm.submitted"
+                                    data-error="vm.errors.description_file"                                    
+                                    data-class="btn btn-primary btn-transparent btn-upload"
+                                    data-type="txt"
+                                    >
+                                </file-input>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="group fields questions-fields">
+                    <div class="form-horizontal left-labels">
+                        <horizontal-input
+                            data-label="What are the requirements?"
+                            data-model="vm.model.requirements"
+                            data-name="requirements"
+                            data-submitted="vm.submitted"
+                            data-error="vm.errors.requirements"
+                            ></horizontal-input>
+                        <horizontal-input
+                            data-label="What am I going to get from this course?"
+                            data-model="vm.model.results_will_get"
+                            data-name="results_will_get"
+                            data-submitted="vm.submitted"
+                            data-error="vm.errors.results_will_get"
+                            ></horizontal-input>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <base-submit
+                        data-form="vm.courseForm"
+                        data-send-function="vm.save(form)"
+                        data-submitted="vm.submitted"
+                        data-loading="vm.loading"
+                        data-label="Send for adding"
+                        data-class="btn btn-green"
+                        ></base-submit>   
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+/* CONTENT */
+
+.not-found{
+    background: #FCECF1;
+    padding: 15px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    .icon-not-found{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+        width: 22px;
+        height: 21px;
+        background: url("../img/icon-not-found.png") no-repeat center center;
+    }
+    p{
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0;
+        font-size: 21px;
+        color: #F28DA6;
+
+    }
+}
