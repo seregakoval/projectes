@@ -662,6 +662,56 @@
     }
 }
 
+/* STYLES  PAGE DETAL INCTRUCTOR*/
+
+.buttons-detal {
+    a {
+        display: block;
+        color: #22baa0;
+        font-size: 14px;
+        padding-left: 23px;
+        text-decoration: none;
+        position: relative;
+        transition: 0.3s;
+        margin-bottom: 16px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &:after {
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            top: 4px;
+            font: normal normal normal 14px/1 FontAwesome;
+        }
+        &:hover {
+            color: #27d6b8;
+        }
+    }
+    a.pencil-square{
+        &:after {
+            content: "\f044";
+        }
+    }
+    a.pencil {
+        &:after {
+            content: "\f040";
+        }
+    }
+    a.globe {
+        &:after {
+            content: "\f0ac";
+        }
+    }
+    a.times {
+        &:after {
+            content: "\f00d";
+        }
+    }
+}
+
+/* END STYLES  PAGE DETAL INCTRUCTOR*/
+
 @media (max-width:991px) {
     .user-sidebar-left{width: 270px;margin: 0 auto 30px auto;}
 }

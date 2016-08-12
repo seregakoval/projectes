@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TITLE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+
+        <!-- COMPONENTS -->
+        <link rel="stylesheet" href="../web/css/vendor.css.css">
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="../web/css/main.css">
+
+    </head>
+    <body ng-app="">
+        <!-- navigration -->
+        <header ng-include="'partials/header-private.html'"></header><!--./navigation -->
+        <div class="asides-layout section-content">
+            <div class="wrap-message"><!--wrap-message-->
+                <a href="#" class="btn-back">Back to all messages</a>
+                <div class="content"><!--content-->
+                    <div class="content-head">
+                        <p class="content-head_title">New message</p>
+                    </div>
+                    <form action="" class="form-message">
+                        <div class="form-group">
+                            <input type="text" placeholder="Recipient name">
+                            <textarea name="" id="" placeholder="Text of your message"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div><!--./content-->
+            </div><!--./wrap-message-->
+        </div>
+        <!-- footer -->
+        <footer ng-include="'partials/footer.html'"></footer><!--./footer -->
+
+        <!-- COMPONENTS SCRIPTS -->
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="../app/custom/custom.js"></script>
+
+    </body>
+</html>

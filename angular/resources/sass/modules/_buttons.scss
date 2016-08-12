@@ -43,3 +43,21 @@
         }
     }
 }
+
+.btn-green {
+    padding: 6px 35px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    color: #fff;
+    background: #22baa0;
+    transition: 0.3s;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        background: #22d0b2;
+    }
+}

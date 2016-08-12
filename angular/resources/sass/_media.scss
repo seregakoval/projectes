@@ -10,6 +10,7 @@
     .section-content .section-head_section-left {margin-right: 20px;}
     .section-content .section-center{margin: -60px 15px 0 15px;}
     .wrap-reviews{padding: 0 15px;}
+
 }
 @media (max-width:767px) {
     .section-content .section-center_head .col-lg-4{ padding: 0;}
@@ -31,6 +32,8 @@
     .tab-overview_section h2{text-align: center;}
     .wrap-reviews_title{text-align: center;}
     .wrap-reviews_title .right-btn { width: 100%;padding: 15px 0;}
+    .wrap-profile .profile-content p { font-size: 14px;}
+    .content .block-users .text { padding: 0 0 0 57px;}  
 }
 @media (max-width: 480px) {
     .tab-overview_section .section-author .section-top-author{text-align: center; display: block;}
@@ -44,6 +47,10 @@
     .wrap-reviews_leave .info-user { text-align: center; }
     .wrap-reviews_leave h2 { text-align: center;}
     .wrap-reviews_leave { padding: 20px 15px 35px 15px;}
+    .wrap-profile .profile-head .block-info_avatar {width: 100%;text-align: center;max-width: 100%;}
+    .wrap-profile .profile-head .block-info_avatar img { max-width: 128px;}
+    .wrap-profile .profile-head .block-info_info { width: 100%; padding: 0;text-align: center;}
+    .wrap-profile .profile-head .block-info_info .name { margin: 10px 0; font-size: 30px;}
 }
 @media (max-width: 400px) {
     .section-content .section-center .general-wrap-body .string_head{  padding: 0 15px 0 20px; }

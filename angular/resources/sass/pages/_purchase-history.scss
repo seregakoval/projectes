@@ -1,0 +1,123 @@
+/* STYLE PURCHASE-HISTORY */
+
+.section-history {
+    .table-block {
+        background: #fff;
+        margin: 30px 0 0 0;
+        .row {
+            margin: 0;
+        }
+    }
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: #494949;
+        font-size: 30px;
+    }
+    &_head {
+        border-bottom: 1px dotted #c5c9cc;
+        padding: 10px 0;
+        @media (max-width: 767px) {
+            display: none;
+        }
+        .title {
+            text-align: left;
+        }
+        p{
+            font-size: 16px;
+            color: #c5c9cc;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    &_string {
+        padding: 15px 0;
+        border-bottom: 1px  dotted #d5d5d5;
+        display: flex;
+        align-items: center;
+        &:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 767px) {
+            display: block;
+            [class^="col"] {
+                margin-bottom: 10px;
+            }
+        }
+
+        .title-string {
+            font-size: 18px;
+            color: #3fc3ac;
+            font-weight: bold;
+            margin: 0;
+            @media (max-width: 767px) {
+                text-align: center;
+            }
+        }
+        .text {
+            font-size: 18px;
+            color: #4e5e6a;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .icon {
+            width: 20px;
+            margin: 0 auto;
+            display: block;
+            .icon-file {
+                background: url("web/img/icon-file.png");
+                width: 20px;
+                height: 28px;
+                display: inline-block;
+            }
+        }
+    }
+    .result {
+        padding: 10px 0;
+        margin: 0;
+        border-bottom: 1px  dotted #d5d5d5;
+        .date {
+            font-size: 13px;
+            color: #4e5e6a;
+            margin: 0;
+        }
+        .total {
+            font-size: 18px;
+            padding-left: 10px;
+            margin: 0;
+            span {
+                margin-right: 10px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* ./STYLE PURCHASE-HISTORY */
+
+
+/* STYLES THANKS PAGE*/
+
+    .title-thank {
+        font-weight: bold;
+        margin-top: 17%;
+        color: #4e5e6a;
+        @media (max-width: 480px ) {
+            font-size: 18px !important;
+        }
+    }
+    .sub-title-thank {
+        font-size: 18px;
+        color: #4e5e6a;
+        text-align: center;
+    }
+    .btn-wrap {
+        text-align: center;
+        .sub-btn {
+            padding: 8px 24px;
+        }
+    }
+
+/* ./STYLES THANKS PAGE*/
