@@ -11,6 +11,12 @@
     .section-content .section-center{margin: -60px 15px 0 15px;}
     .wrap-reviews{padding: 0 15px;}
 
+    .footer-player .container-f {max-width: 768px;}
+    .footer-player_string{ width: 48%;}
+    .footer-player_times {width: 16%;}
+    .footer-player_buttons-player {width: 19%;}
+    .wrapper video { object-fit: contain; }
+
 }
 @media (max-width:767px) {
     .section-content .section-center_head .col-lg-4{ padding: 0;}
@@ -33,7 +39,14 @@
     .wrap-reviews_title{text-align: center;}
     .wrap-reviews_title .right-btn { width: 100%;padding: 15px 0;}
     .wrap-profile .profile-content p { font-size: 14px;}
-    .content .block-users .text { padding: 0 0 0 57px;}  
+    .content .block-users .text { padding: 0 0 0 57px;}
+    .footer-player .container-f {max-width: 480px;}
+    .footer-player_buttons-player > a {margin-left: 5px;}
+    .footer-player_buttons-player {width: 20%;}
+    .footer-player_controls { width: 28%;}
+    .footer-player_string { width: 22%;}
+    .footer-player_times { width: 24%; }
+    .wrapper { height: calc(100vh - 54px - 57px); }
 }
 @media (max-width: 480px) {
     .tab-overview_section .section-author .section-top-author{text-align: center; display: block;}
@@ -51,6 +64,12 @@
     .wrap-profile .profile-head .block-info_avatar img { max-width: 128px;}
     .wrap-profile .profile-head .block-info_info { width: 100%; padding: 0;text-align: center;}
     .wrap-profile .profile-head .block-info_info .name { margin: 10px 0; font-size: 30px;}
+    .footer-player .container-f {max-width: 320px;}
+    .footer-player_times { display: none; }
+    .footer-player_buttons-player { width: 30%; }
+    .footer-player_controls a { background-size: 100% !important; width: 15px; }
+    .footer-player_buttons-player .volume .volume-controls { bottom: 43px;}
+    .footer-player_string { width: 40%; }
 }
 @media (max-width: 400px) {
     .section-content .section-center .general-wrap-body .string_head{  padding: 0 15px 0 20px; }
@@ -59,4 +78,7 @@
     .section-content .section-center .general-wrap-body .string_head .title{ font-weight: 600; }
     .section-content .section-center .general-wrap-body .string_title-string:before { top: 3px; }
     .section-content .section-center_head .box a{ font-size: 14px; }
+    .header-player_navigation  .general-wrap-body .string_head { padding: 0 15px 0 20px; }
+    .header-player_navigation .general-wrap-body .string_head:after { display: none; }
+    .header-player_navigation .general-wrap-body .string_head .time { position: static; text-align: right; }
 }

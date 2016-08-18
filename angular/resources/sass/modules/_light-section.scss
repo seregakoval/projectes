@@ -4,6 +4,7 @@
         position: relative;
         text-align: center;
         margin: 0 0 50px;
+
         &:before {
             content: '';
             display: block;
@@ -190,9 +191,31 @@
         }
     }
     &_img {
-        max-width: 100%;
+        max-width: 50%;
         vertical-align: middle;
         display: inline-block;
         margin: 0 0 30px;
     }
+}
+
+.light-section{
+    .cont {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        &_text {
+            text-align: center;
+        }
+        .light-section_text {
+            margin: 20px 0 20px !important;
+            text-align: center !important;
+            .upper{ font-size: 20px !important;color: #22baa0 !important;}
+        }
+
+    }
+}
+.profile-section .profile-section_white .group_social a span {
+    line-height: 1.6;
+    position: relative;
+    top: -1px;
 }

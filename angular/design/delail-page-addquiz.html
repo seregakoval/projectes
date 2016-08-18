@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TITLE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+
+        <!-- COMPONENTS -->
+        <link rel="stylesheet" href="../web/css/vendor.css.css">
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="../web/css/main.css">
+
+    </head>
+    <body ng-app="">
+        <!-- navigration -->
+        <header ng-include="'partials/header-private.html'"></header><!--./navigation -->
+        <div class="asides-layout section-content">
+            <div class="container-addquiz">
+                <form action="#">
+                    <div class="container">
+                        <div class="row">
+                            <h1>Add Quiz</h1>
+                        </div>
+                        <div class="row body">
+                            <div class="col-lg-6 col-md-6">
+                                <p class="body_title">Title</p>
+                                <input type="text" class="body_input">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <p class="body_title">Select the curriculum:</p>
+                                <select class="form-control" name="">
+                                    <option value="">All Sections</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 col-md-12 margin">
+                                <p class="body_title">Description:</p>
+                                <textarea name="name" id="df" class="body_textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="row body">
+                            <div class="col-lg-5 col-md-5">
+                                <div class="body_block-text">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                    <p>#1.  Lorem ipsum dolor sit amet, consecte...</p>
+                                </div>
+                                <div class="body_block-text">
+                                    <i class="fa fa-angle-right active" aria-hidden="true"></i>
+                                    <p>#2. No text</p>
+                                </div>
+                                <a href="#" class="btn-add">+ add Question</a>
+                            </div>
+                            <div class="col-lg-7 col-md-7">
+                                <p class="body_title">Select type the of question:</p>
+                                <div class="form-group">
+                                    <div class="select-k">
+                                        <select name="" class='form-control radio-btn'>
+                                            <option value="Radio button" selected disabled>Radio button</option>
+                                            <option value=""> Radio button</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="body_title">Question #2</p>
+                                <div class="form-group">
+                                    <input type="text" class="body_input">
+                                </div>
+                                <div class="form-group body_check">
+                                    <p class="body_title">Answer #1</p>
+                                    <div class="body_group-checkbox">
+                                        <input type="checkbox" id="c1" name="cc">
+                                        <label for="c1"><span></span></label>
+                                    </div>
+                                    <div class="box-input">
+                                        <div class="box-close">
+                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                            <input type="text" class="body_input">
+                                        </div>
+                                        <textarea name=""  placeholder="Explanation of correct answer"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group body_check">
+                                    <p class="body_title">Answer #2</p>
+                                    <div class="body_group-checkbox">
+                                        <input type="checkbox" id="c1" name="cc">
+                                        <label for="c1"><span></span></label>
+                                    </div>
+                                    <div class="box-input">
+                                        <div class="box-close">
+                                            <input type="text" class="body_input">
+                                        </div>
+                                        <textarea name=""  placeholder="Explanation of correct answer"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group body_check">
+                                    <p class="body_title">Answer #3</p>
+                                    <div class="body_group-checkbox">
+                                        <input type="checkbox" id="c1" name="cc">
+                                        <label for="c1"><span></span></label>
+                                    </div>
+                                    <div class="box-input">
+                                        <div class="box-close">
+                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                            <input type="text" class="body_input">
+                                        </div>
+                                        <textarea name=""  placeholder="Explanation of correct answer"></textarea>
+                                        <a href="#" class="add-answer">+ Add Answer</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-green">Save the Quiz</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer ng-include="'partials/footer.html'"></footer><!--./footer -->
+
+        <!-- COMPONENTS SCRIPTS -->
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="../app/custom/custom.js"></script>
+
+    </body>
+</html>

@@ -49,8 +49,14 @@
 /*        PAGES        */
 /* registation page */
 @import "pages/_registration.scss";
+/* continue to course */
+@import "pages/_continue-to-course.scss";
+/* errors */
+@import "pages/_errors.scss";
 /* history */
 @import "pages/_purchase-history.scss";
+/*_detail-page-addquiz.scss*/
+@import "pages/_detail-page-addquiz.scss";
 /*courses-list*/
 @import "pages/_my-courses-list-page.scss";
 /*messages*/
@@ -65,6 +71,12 @@
 @import "pages/_support.scss";
 /*add page*/
 @import "pages/_add-course.scss";
+/*courserooms startquiz*/
+@import "pages/_courserooms-startQuiz.scss";
+
+
+
+
 
 /***********************/
 /*        MEDIA        */
