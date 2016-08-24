@@ -1,0 +1,49 @@
+.section_6 {
+    background:#e9e9e9;
+
+}
+.section_6 .wr {
+}
+.section_6 .item {
+    float: left;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: normal;
+    width: 50%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.section_6 .item .img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 130px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 5px 10px 10px 0;
+}
+.section_6 .item .name {
+    font-weight: 300;
+    color: #008bbf;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.section_6 .item .descr {
+    margin-top: 40px;
+    float: left;
+    width: 340px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.section_6 .item .descr .rev_hvost {
+    position: absolute;
+    background: url("rev_hvost.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/rev_hvost.png*/ no-repeat;
+    width: 32px;
+    height: 31px;
+    top: 70px;
+    left: -32px;
+}

@@ -1,0 +1,57 @@
+.section_10 {
+    background: #f2f2f2;
+}
+
+.section_10 .wr {
+    text-align: center;
+}
+.section_10 .item {
+    float: left;
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.section_10 .item:nth-child(5n) {
+    margin-right: 0;
+}
+
+.section_10 .item img {
+    display:block;
+    margin: 0 auto;
+    line-height: 0;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 0;
+}
+.section_10 .item .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("mask.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/mask.png*/;
+    left: 0;
+    top: 0;
+    color: #fefefe;
+    font-size: 17px;
+    opacity: 0;
+    -webkit-transition: opacity ease-out 0.5s;
+    -moz-transition: opacity ease-out 0.5s;
+    -o-transition: opacity ease-out 0.5s;
+    transition: opacity ease-out 0.5s;
+}
+.section_10 .item .mask span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("plus.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/plus.png*/ 50% 50% no-repeat;
+    padding-top: 70%;
+}
+.section_10 .item:hover .mask {
+    opacity: 1;
+}

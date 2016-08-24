@@ -1,0 +1,63 @@
+.section_5 {
+    background:url("sect_3_bg.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/sect_3_bg.png*/;
+
+}
+.section_5 .wr {
+    color: #fff;
+    text-align: center;
+}
+.section_5 .zag_big {
+    color: #fff;
+}
+
+.section_5 table {
+    width: 100%;
+}
+.section_5 table td.param_name {
+    text-align: left;
+    padding: 20px 15px;
+    width: 260px;
+}
+.section_5 table td.param_name.color {
+    background: url("bg_trans_fff.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/bg_trans_fff.png*/;
+}
+.section_5 table td.bg_fff {
+    background: #fff;
+    /*background: url("../../../../images/bg_trans_fff.png") !important;*/
+    padding: 15px 15px 14px;
+    color: #333333;
+    position: relative;
+    /*border-bottom: 1px solid #e6e6e6;*/
+}
+.section_5 table tbody tr:nth-child(2n-1) td.bg_fff {
+    background: #f7f7f7;
+}
+.section_5 table td.bg_fff.n_bord {
+    border: none;
+}
+.section_5 td .name {
+    color: #008bbf;
+    font-size: 30px;
+    font-weight: 300;
+    vertical-align: middle;
+    width: 100%;
+    min-height: 65px;
+    line-height: 1;
+}
+.section_5 td .price {
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.section_5 td .price span {
+    font-size: 26px;
+}
+.section_5 td .galka {
+    display: inline-block;
+    background: url("galka.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/galka.png*/ no-repeat;
+    width: 26px;
+    height: 20px;
+}
+.section_5 .bt_1 {
+    width: 80%;
+}

@@ -1,0 +1,581 @@
+@media all and (max-width: 1024px)
+{
+    body {
+    min-width: 100%;
+    }
+    .wr {
+    width: 100%;
+    }
+    .sec {
+    overflow-x: hidden;
+    padding: 25px 0;
+    }
+
+    .tetka .we_do_this {
+        width: 90%;
+        font-size: 20px;
+    }
+    .header {
+        height: auto;
+        padding: 10px 5px;
+    }
+    .logo_descr span {
+        font-size: 24px !important;
+    }
+    .header .clb {
+        width: 40%
+    }
+    .header .clb.top_tel_marg {
+        width: 59%;
+        padding: 0 !important;
+    }
+    .top_tel {
+        display: block !important;
+        text-align: right;
+        float: none !important;
+    }
+
+    .top_tel span {
+        font-size: 25px !important;
+    }
+    .zag_big {
+        margin-bottom: 25px;
+    }
+
+    /* ����� */
+    .top_bg_img .clb_1.f_l,
+    .top_bg_img .cl_2.f_l{
+       /* width: auto;
+        height: auto;
+        float: none !important;*/
+    }
+
+    .top_bg_img {
+        background-size: cover;
+        height: auto !important
+    }
+    .top_bg_img .wr {
+        height: auto !important;
+    }
+    .strel_block {
+        position: relative !important;
+    }
+    .top_bg_img .s1feedback_cont {
+        margin: 10px 7% 10px auto;
+    }
+    .top_bg_img .clb_1 {
+        width: 50% !important;
+    }
+    .top_bg_img .cl_2.f_l {
+        float: right !important;
+        padding-right: 10px;
+    }
+
+    .strel_block {
+        /*background-size: contain !important;*/
+        width: 100% !important;
+        background: rgba(0, 139, 191, 0.80) !important;
+        height: auto !important;
+    }
+    .strel_block .strel_disc {
+        margin-right: 20px !important;
+    }
+    .strel_block .strel_zag {
+        font-size: 20px !important;
+        width: 70% !important;
+    }
+    .top_bg_img .strel_block .clb_1 {
+        display: none;
+    }
+    .top_bg_img .strel_block .clb_2 {
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .we_do_this {
+        width: 300px;
+        margin: 20px auto;
+        font-size: 30px;
+    }
+
+
+    /* ������ �� */
+    .section_3 .wr {
+        padding: 0 3%;
+    }
+    .section_3 .item {
+        padding-left: 150px;
+        margin-bottom: 25px;
+    }
+    .section_3 .item .img {
+        margin-left: -151px;
+    }
+    .section_3 .item .descr {
+        width: 98%;
+        margin-right: 0;
+    }
+
+    .section_3 .item.second {
+        padding-right: 150px;
+        padding-left: 0;
+    }
+    .section_3 .item.second .img {
+        margin-left:auto;
+        margin-right: -152px;
+    }
+    .section_3 .item.second .descr {
+        margin-left: 0;
+    }
+
+
+}
+@media all and (max-width: 760px)
+{
+
+    /* ����� */
+    .top_bg_img .clb_1.f_l,
+    .top_bg_img .cl_2.f_l{
+        width: auto !important;
+        height: auto;
+        float: none !important;
+    }
+
+    .top_bg_img .clb_1.f_l {
+        width: 70% !important;
+        margin: 10px auto 10px auto;
+    }
+    .top_bg_img {
+        background-size: cover;
+        height: auto !important
+    }
+    .top_bg_img .wr {
+        height: auto !important;
+    }
+    .strel_block {
+        position: relative !important;
+        margin: 10px auto 10px auto;
+        left: auto !important;
+    }
+    .top_bg_img .s1feedback_cont {
+        margin: 10px auto 10px auto;
+    }
+
+    /* ����� ��� */
+    .section_9 .catalog_index {
+        width: 85%;
+        margin: 0 auto 30px;
+    }
+    .section_9 .pic {
+        width: auto;
+        height: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .section_9 .pic img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .section_9 .price {
+        margin: 5px 0 20px;
+        font-weight: bold;
+    }
+    .section_9 .bt_1 {
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* ���� ������������ */
+    .section_1 .item {
+        padding: 0 15px;
+        width: 32%;
+    }
+
+    /* ��� �� �������� */
+    .section_2 .item {
+        margin-bottom: 15px;
+    }
+
+
+
+    /* �������� ����� */
+    .section_5 .wr table {
+        width: 96%;
+    }
+
+    .section_5 td .name {
+        font-size: 26px;
+    }
+
+
+
+    /* ������ �������� */
+    .section_6 .item {
+        width: 80%;
+        margin: 0 auto 15px;
+        float: none;
+    }
+
+    /* ���� �������� */
+    .section_7 .item {
+        width: 32%;
+        display: inline-block;
+    }
+
+    /* ������������ */
+    .section_11 .zag_big {
+        font-size: 38px;
+    }
+    .plus_minus {
+        width: 96%;
+        margin: 0 auto;
+    }
+    .plus_minus td .desc .name {
+        font-size: 18px;
+    }
+
+
+    /* ����� */
+    .tetka {
+        display: none;
+    }
+
+    /* �������� */
+    .foot_cont .clb_1 {
+        width: 50%;
+        margin: 0 auto 25px;
+        float: none !important;
+        padding: 0;
+    }
+
+    .foot_cont .clb_2 {
+        width: 300px;
+        margin: 0 auto;
+        float: none !important;
+    }
+
+}
+
+
+@media all and (max-width: 680px)
+{
+    .bt_2 {
+        padding: 0;
+        width: 78% !important;
+    }
+    .top_bg_img .clb_1.f_l {
+        width: 95% !important;
+    }
+    .strel_block {
+        padding: 15px 10px !important;
+    }
+    .strel_block .strel_disc {
+        margin-right: 0 !important;
+        padding: 10px 10px !important;
+        font-size: 30px !important;
+    }
+    .strel_block .strel_zag {
+        line-height: normal !important;
+    }
+    .strel_block .clb_2 .item div {
+        width: 62px !important;
+    }
+    .header {
+        height: auto;
+        padding: 10px 5px;
+    }
+    .header .clb {
+        float: none !important;
+    }
+    .logo {
+        background-position: 50% 0;
+        width: 100%;
+        background-size:contain ;
+    }
+    .logo_descr {
+        text-align: center !important;
+    }
+    .logo_descr span {
+        font-size: 24px !important;
+    }
+    .header .clb {
+        width: 100%
+    }
+
+    .header .clb.top_tel_marg {
+        width: 100%;
+        padding-top: 10px !important;
+    }
+    .top_tel {
+        display: inline-block !important;
+        margin-top:7px;
+        font-size: 18px !important;
+    }
+    .top_tel span {
+        font-size: 20px !important;
+    }
+    .zag_big {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .s1feedback_cont {
+        width: 260px;
+        padding: 10px 20px;
+    }
+    .s1feedback_cont .s1zag {
+        font-size: 16px;
+    }
+    .s1feedback_cont .s1zag b {
+        font-size: 20px;
+    }
+
+    /* ����� */
+    .top_bg_img .s1feedback_cont {
+        margin: 10px auto 10px auto;
+    }
+
+
+    .we_do_this {
+        width: 293px;
+        margin: 20px auto;
+        font-size: 30px;
+    }
+    .strel_block .clb_2 .item:last-child {
+        margin-right: 0;
+    }
+    .strel_block .clb_2 .item{
+        margin-right: 1px !important;
+    }
+    /* ����� ��� */
+    .section_9 {
+        min-height: 500px;
+    }
+    .section_9 .catalog_index {
+        width: 90%;
+    }
+    .section_9 .item {
+        padding: 15px;
+        font-size: 18px;
+    }
+    .section_9 .price {
+        margin: 5px 0 20px;
+        font-weight: bold;
+        font-size: 30px;
+        height: auto;
+    }
+    .section_9 .bt_1 {
+        margin: 0 auto;
+        display: block;
+    }
+    .section_9 .name {
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+
+    /* ���� ������������ */
+    .section_1 .item {
+        padding: 0 10px;
+        width: 49%;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+
+    /* ��� �� �������� */
+    .section_2 .item {
+        margin-bottom: 15px;
+        width: 45%;
+        background-position: 98% 43%;
+        font-size: 15px;
+    }
+    .section_2 .item .img {
+        width: 100px;
+        height: 100px;
+    }
+    .section_2 .item .name {
+        font-size: 24px;
+    }
+
+    /* ������ �� */
+    .section_3 .wr {
+        padding: 0;
+    }
+    .section_3 .wr .wr{
+        padding: 0 3%;
+    }
+    .section_3 .item {
+        padding-left: 130px;
+        margin-bottom: 25px;
+    }
+    .section_3 .item .img {
+        margin: 0;
+        margin-left: -131px;
+    }
+    .section_3 .item .descr {
+        width: 90%;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .section_3 .item.second {
+        padding-right: 130px;
+        padding-left: 0;
+    }
+    .section_3 .item.second .img {
+        margin-left:auto;
+        margin-right: -132px;
+    }
+    .section_3 .item.second .descr {
+        margin-left: 0;
+    }
+    .section_3 .item .name {
+        font-size: 18px;
+    }
+
+
+    /* ���� ������ */
+    .section_4 .item {
+        width: 45%;
+        font-size: 14px;
+    }
+    .section_4 .item .img {
+        width: auto;
+        height: auto;
+    }
+    .section_4 .item .img img {
+        width: 100%;
+        height: auto;
+    }
+    .section_4 .item .bt_2 {
+        width: 100%;
+    }
+    .section_4 .item .serv_bot {
+        width: 100%;
+        background-position: 50% 0;
+    }
+    .section_4 .item .descr {
+        padding: 0 5px 5px;
+    }
+    .section_4 .item .name {
+        font-size: 16px;
+    }
+
+
+    /* �������� ����� */
+    .section_5 .wr .wr {
+        overflow-x: scroll;
+        padding:0 2%;
+    }
+
+
+    .section_5 td .name {
+        font-size: 18px;
+        min-height: 35px;
+    }
+    .section_5 td .price {
+        font-size: 20px;
+    }
+    .section_5 td .price span {
+        font-size: 16px;
+    }
+    .section_5 table td{
+        color: #444;
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    .section_5 table td.param_name {
+        background: #fff;
+        padding: 10px 5px;
+    }
+    .section_5 table td.param_name.color {
+        background: #F7F7F7;
+    }
+
+    .section_5 .bt_1 {
+        width: 100%;
+    }
+
+    /* ������ �������� */
+    .section_6 .item {
+        width: 90%;
+        margin: 0 auto 15px;
+        float: none;
+        padding-left: 110px;
+    }
+    .section_6 .item .descr {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .section_6 .item .img {
+        margin-left: -110px;
+    }
+
+    /* ���� �������� */
+    .section_7 .item {
+        width: 47%;
+        display: inline-block;
+    }
+
+    /* ������������ */
+    .section_11 .zag_big {
+        font-size: 20px;
+    }
+    .plus_minus {
+        width:auto;
+        margin: 0 5px;
+    }
+    .plus_minus td .desc .name {
+        font-size: 18px;
+    }
+
+    .plus_minus thead td {
+        font-size: 16px;
+    }
+    .plus_minus td img {
+        width: 15%;
+        height: auto;
+    }
+    .plus_minus td .desc .name {
+        font-size: 16px;
+    }
+    .plus_minus td .desc {
+        font-size: 14px;
+        width: 80%;
+        padding-left: 10px;
+    }
+
+
+    /* �������� */
+    .foot_cont .clb_1 {
+        width: 85%;
+        margin: 0 auto 25px;
+        float: none !important;
+        padding: 0;
+    }
+
+    .foot_cont .s1feedback_cont {
+        margin: 0 auto;
+    }
+
+    .vilka_feedback_cont {
+
+        width: 280px !important;
+    }
+
+    /* ������� */
+    .section_10 .item {
+        width: 45% !important;
+        height: auto;
+        margin: 5px !important;
+    }
+    .section_10 .item img {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 320px)
+{
+
+}

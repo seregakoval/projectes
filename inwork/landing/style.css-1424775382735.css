@@ -1,0 +1,36 @@
+.section_2 {
+    background: #f2f2f2;
+}
+.section_2 .wr {
+    text-align: center;
+}
+.section_2 .item {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    padding:0 30px 0 0;
+    font-size: 17px;
+    color: #666666;
+    background: url("strel_right.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/strel_right.png*/ 98% 48% no-repeat;
+}
+.section_2 .item:nth-child(5n) {
+    width: 150px;
+    padding: 0;
+    background: none;
+}
+
+.section_2 .item .img {
+    display: inline-block;
+    width: 122px;
+    height: 122px;
+    border-radius: 130px;
+    background: #008bbf;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 5px 0 10px;
+}
+.section_2 .item .name {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 30px;
+}

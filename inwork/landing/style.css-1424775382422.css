@@ -1,0 +1,23 @@
+.section_7 .wr {
+    text-align: center;
+}
+.section_7 .item {
+    float: left;
+    width: 20%;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.section_7 .item .img {
+    display:block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 0;
+}
+.section_7 .item:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,107 @@
+.section_9 {
+	background: #F2F2F2;
+}
+.section_9 .item {
+	background: #fff;
+	padding: 35px;
+	font-size: 24px;
+	position:relative;
+	border-bottom: 4px solid #dedede;
+
+}
+.section_9 .catalog_index {
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.3);
+}
+.section_9 .pic {
+	float: left;
+	width: 500px;
+	margin-right: 45px;
+}
+
+.section_9 .lable {
+	background: url("hit.png-2.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/hit.png?2*/ no-repeat;
+	width: 86px;
+	height: 86px;
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+.section_9 .name {
+	font-size: 36px;
+	color: #444444;
+	margin-bottom: 15px;
+}
+.section_9 .price {
+	font-size: 44px;
+	background: #ebebeb;
+	color: #333;
+	padding: 15px 10px;
+	height: 70px;
+	line-height: 1;
+	display: inline-block;
+	position: relative;
+	margin: 20px 0 40px;
+}
+.section_9 .price .str {
+	background: url("price_right.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/price_right.png*/ no-repeat;
+	display: block;
+	position: absolute;
+	width: 36px;
+	height: 70px;
+	top: 0;
+	right: -35px;
+}
+.section_9 .bt_1 {
+	font-size: 24px;
+	font-weight: bold;
+	width: 180px;
+	padding: 15px 0;
+	line-height: 1;
+}
+.section_9 .catalog_index .owl-buttons div {
+	position: absolute;
+	background: url("slide_strel.png-2.png")/*tpa=http://demo.vsrt.ru/bitrix/templates/vilka_lp_s3/images/slide_strel.png?2*/ 0 0  no-repeat;
+	width:50px;
+	height: 0;
+	padding-top:100px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -50px;
+}
+.section_9 .catalog_index .owl-buttons div.owl-next {
+	right: 0;
+	left: auto;
+	background-position: 100% 0;
+}
+.section_9 .catalog_index .owl-buttons div:hover {
+	background-position: 0 100%;
+}
+.section_9 .catalog_index .owl-buttons div.owl-next:hover {
+	background-position: 100% 100%;
+}
+
+.section_9 .catalog_index .owl-pagination {
+	position:absolute;
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+
+}
+.section_9 .catalog_index .owl-pagination .owl-page {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 30px;
+	background: #008bbf;
+	margin: 0 4px;
+}
+.section_9 .catalog_index .owl-pagination .owl-page:hover,
+.section_9 .catalog_index .owl-pagination .owl-page.active {
+	background: #ff6000;
+}

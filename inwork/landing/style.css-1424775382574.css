@@ -1,0 +1,33 @@
+.plus_minus {
+    width: 100%;
+}
+.plus_minus td {
+    width: 50%;
+    padding-bottom: 20px;
+}
+.plus_minus thead td {
+    font-weight: bold;
+    font-size: 20px;
+    color: #008bbf;
+    padding-bottom: 30px;
+}
+.plus_minus thead td:nth-child(2) {
+    color: #777777;
+}
+
+.plus_minus td img {
+    vertical-align: middle;
+}
+.plus_minus td .desc {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    padding-left: 20px;
+    font-size: 17px;
+}
+.plus_minus td .desc .name {
+    color: #444444;
+    font-size: 21px;
+    font-weight: bold;
+    display: block;
+}
