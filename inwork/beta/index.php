@@ -1,26 +1,3 @@
-<?php
-
-include 'simple_html_dom.php';
-
-/*
-$ch = curl_init ("https://www.weblancer.net/users/seregakoval96/reviews/");
-$fp = fopen ("people.html", "w");
-curl_setopt ($ch, CURLOPT_FILE, $fp);
-curl_setopt ($ch, CURLOPT_HEADER, 0);
-curl_exec ($ch);
-curl_close ($ch);
-fclose ($fp);
-$arr = array();
-$zp_weather = file_get_html('people.html');
-foreach($zp_weather->find('.user_brief') as $e) {
-    $arr[] = $e->innertext;
-}
-foreach($zp_weather->find('.username') as $b){
-    $arr[] = $b->innertext;
-}
-*/
-
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -31,11 +8,25 @@ foreach($zp_weather->find('.username') as $b){
     <meta name="description" content="Sergey Koval - Верстка, натяжка Wordpress" />
     <meta name="keywords" content="html,Koval Sergey Front-end Developer, " />
     <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700' rel='stylesheet' type='text/css'>
-    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
-
-</head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/menu_sideslide.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
+<div class="over" style="position: fixed;
+    lef: 0;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;"></div>
+<div id="loading">
+    <div id="loader"></div>
+</div>
 <!--<iframe style="width:1000px;height: 600px;overflow:hidden; " src="https://www.weblancer.net/users/seregakoval96/reviews/" frameborder="0"></iframe>-->
 <div class="wrap-container">
     <div class="menu-wrap">
@@ -147,7 +138,7 @@ foreach($zp_weather->find('.username') as $b){
                 </div>
             </div>
         </header>
-        <section  class="parallax clearfix" data-parallax="scroll" >
+        <section  class="parallax clearfix" data-parallax="scroll"  >
             <div class="title-head">
                 <h2 class="animated wow fadeInDown"  data-wow-delay="1.8s">Portfolio Developer</h2>
             </div>
@@ -181,6 +172,29 @@ foreach($zp_weather->find('.username') as $b){
         <div class="line_bg"></div>
         <div class="servises">
             <div class="container services2">
+                <div class="livicon-wrapper" style="display: block;"><div data-options="name:alarm;style:linesAlt;size:60px; colorsOnHover:darker; brightness:0.05; saturation:0.05" class="livicon livicon-evo-holder" style="visibility: visible; width: 60px;"><div class="lievo-svg-wrapper"><svg data-animoptions="{'duration':'0.8', 'repeat':'0', 'repeatDelay':'0.5'}" data-shift="x" xml:space="preserve" viewBox="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin meet" style="left: 0.5px; top: -0.0333252px;"><g class="lievo-setrotation"><g class="lievo-setsharp"><g class="lievo-setflip"><g class="lievo-main">
+                                                <g class="lievo-common">
+                                                    <line y2="51" x2="45" y1="47" x1="42" stroke-miterlimit="10" stroke-linecap="square" stroke-width="2" stroke="#22a7f0" fill="none" style="stroke: rgb(34, 167, 240);"/>
+                                                    <line y2="51" x2="15" y1="47" x1="18" stroke-miterlimit="10" stroke-linecap="square" stroke-width="2" stroke="#22a7f0" fill="none" style="stroke: rgb(34, 167, 240);"/>
+                                                    <circle r="19" cy="32" cx="30" stroke-miterlimit="10" stroke-linecap="square" stroke-width="2" stroke="#22a7f0" fill="none" transform="rotate(-90, 30, 32)" style="stroke: rgb(34, 167, 240);"/>
+                                                </g>
+
+
+
+                                                <g class="lievo-lineicon">
+                                                    <line y2="37" x2="21" y1="32" x1="30" stroke-miterlimit="10" stroke-linecap="square" stroke-width="2" stroke="#f9b32f" fill="none" class="lievo-altstroke" style="stroke: rgb(249, 179, 47);"/>
+
+                                                    <line y2="18" x2="30" y1="32" x1="30" stroke-miterlimit="10" stroke-linecap="square" stroke-width="2" stroke="#f9b32f" fill="none" class="lievo-altstroke" style="stroke: rgb(249, 179, 47);" data-svg-origin="30 32" transform="matrix(1,0,0,1,0,0)"/>
+
+                                                    <path d="M19.79,11.39C18.69,9.94,16.96,9,15,9c-3.31,0-6,2.69-6,6c0,1.69,0.7,3.21,1.82,4.3" stroke-miterlimit="10" stroke-linecap="square" stroke-width="2" stroke="#22a7f0" fill="none" style="stroke: rgb(34, 167, 240);" data-svg-origin="30.00039434634177 32.001027138201884" transform="matrix(1,0,0,1,-0.00042768164886244594,-0.0005288541277751759)"/>
+
+                                                    <path d="M40.21,11.39C41.31,9.94,43.04,9,45,9c3.31,0,6,2.69,6,6c0,1.69-0.7,3.21-1.82,4.3" stroke-miterlimit="10" stroke-linecap="square" stroke-width="2" stroke="#22a7f0" fill="none" style="stroke: rgb(34, 167, 240);" data-svg-origin="30.00099528682504 32.00045981072736" transform="matrix(1,0,0,1,-0.000504924689444185,-0.00045695060403655257)"/>
+                                                </g>
+
+
+                                                <rect x="-20" y="-19" width="4" height="4" class="lievo-checkshift lievo-donotdraw lievo-nohoverstroke lievo-nohovercolor" style="stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; opacity: 0;" fill="none" stroke="#22a7f0"/></g></g></g></g>
+
+                                <desc>LivIcons Evolution</desc><defs/></svg></div></div><p class="livicon-desc">alarm</p></div>
                 <div class="col-md-2 col-sm-4 col-xs-6 service-content">
                     <div class="box animated wow fadeInDown" data-wow-offset="200">
                         <div class="icon-surround-1 new-lh"><i class="icon-embed2"></i></div>
@@ -365,10 +379,7 @@ foreach($zp_weather->find('.username') as $b){
                 <div class="container-b clearfix">
                     <div class="col-lg-6 col-md-6 col-sm-6" style="position:relative;min-height: 327px;">
                         <div class="block-img-responsive">
-                            <img src="img/flat-iphone.png" alt="Image 5" class="img4">
-                            <img src="http://flathe.wpelement.com/wp-content/uploads/flat-ipad.png" alt="Image 3" class="img3">
-                            <img src="http://flathe.wpelement.com/wp-content/uploads/flat-laptop.png" alt="Image 2" class="img2">
-                            <img src="http://flathe.wpelement.com/wp-content/uploads/flat-pc.png" alt="Image 1" class="img1" >
+                            <img src="img/responsive.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
@@ -473,49 +484,47 @@ foreach($zp_weather->find('.username') as $b){
         </div>
     </div>
 </div>
+<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Малая модаль</button>
 
-<div class="over"></div>
-<div id="loading">
-    <div id="loader"></div>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <form action="register.php" method="post">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="password">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                      </span>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/menu_sideslide.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/device.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/wow.min.js"></script>
-<script>
-    new WOW().init();
-    try {
-        $.browserSelector();
-        if($("html").hasClass("chrome")) {
-            $.smoothScroll();
-        }
-    } catch(err) {
 
-    };
-   /* if($("html").hasClass("")){
-        var script = document.createElement("script");
-        script.src = "js/keybord.js";
-        document.body .appendChild(script);
-    }*/
+</body>
+<script   src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script  src="js/parallax.min.js"></script>
+
+<script >
+    if($(window).width() >= 640){
+     $(".parallax").attr("data-image-src","img/image-bg.jpg");
+     $(".section-bg").attr("data-image-src","img/s3.jpg");
+     }
     if($(window).width() <= 640){
-       /* $(".parallax").attr("data-image-src","img/image-bg-mobile.jpg");
-        $(".section-bg").attr("data-image-src","img/s3-mobile.jpg");*/
+         $(".parallax").attr("data-image-src","img/image-bg-mobile.jpg");
+        $(".section-bg").attr("data-image-src","img/s3.jpg");
+         //$(".section-bg").attr("data-image-src","img/s3-mobile.jpg");
         $(".parallax").css({"background":"url('img/image-bg-mobile.jpg') no-repeat","background-size":"cover"});
-
-    }else{
-
-
-    }
-</script>
-<script>
+    }else{}
     $(window).load(function() {
         function loadFile(){
-
             $('#loading-center-absolute,#loading').css({"display":"none"});
             add_class();
         }
@@ -536,14 +545,7 @@ foreach($zp_weather->find('.username') as $b){
         }
     });
 </script>
-<script src="js/jquery.particleground.min.js"></script>
-<script>
-    if($(window).width() >= 640){
-        $(".parallax").attr("data-image-src","img/image-bg.jpg");
-        $(".section-bg").attr("data-image-src","img/s3.jpg");
-        document.write('<script type="text/javascript" src="js/parallax.min.js"><\x2fscript>');
-    }
-</script>
-<!--<script src="js/parallax.min.js"></script>-->
-<script src="js/plugins-scroll.js"></script>
-<script src="js/js.js"></script>
+<script  src="js/js.js"></script>
+
+<?php require_once ("register.php"); ?>
+
