@@ -188,6 +188,12 @@ body {
     margin: auto;
     max-width: 1140px;
 }
+<<<<<<< HEAD
+=======
+.block-img-responsive img {
+    max-width: 100%;
+}
+>>>>>>> 8aeb5be261cb7694a8984117dd8c6ef1b692baf1
 .title-head {
     position: absolute;
     text-align: center;
@@ -200,9 +206,12 @@ body {
     font-size: 50px;
     font-weight: 400;
 }
+<<<<<<< HEAD
 .menu-button:before{
 
 }
+=======
+>>>>>>> 8aeb5be261cb7694a8984117dd8c6ef1b692baf1
 .fullwidthbanner-container {
     top: 278px;
 }
@@ -573,7 +582,14 @@ progress::-moz-progress-bar{
 .nav-container ul li a span:hover i {
     color: #0773ba;
 }
+<<<<<<< HEAD
 .line_bg{width: 100%;height: 6px;
+=======
+.line_bg{
+    width: 100%;
+    height: 6px;
+    top: -6px;
+>>>>>>> 8aeb5be261cb7694a8984117dd8c6ef1b692baf1
     position: relative; background: #333;}
 .line_bg .background-block {
     position: absolute;
@@ -847,10 +863,15 @@ Text animation
 
 .parallax {
     padding: 20px 0;
+<<<<<<< HEAD
     height: 99vh !important;
     background: transparent;
     position: relative;
     overflow: hidden;
+=======
+    height: 100vh !important;
+    background: transparent;
+>>>>>>> 8aeb5be261cb7694a8984117dd8c6ef1b692baf1
 }
 .service-content .icon-surround, .services4 .service-content .ico1,.services4 .service-content .ico2,.services4 .service-content .ico3,.services4 .service-content .ico4,.services4 .service-content .ico5,.services4 .service-content .ico6 {
     float: left;
@@ -2038,6 +2059,7 @@ xclip
     position: absolute;
     right: 55px;
     top: 113px;
+<<<<<<< HEAD
 }/*
 .menu-wrap {
     position: fixed;
@@ -2050,6 +2072,11 @@ xclip
     font-size: 1.15em;
     background: #365371;
 }*/
+=======
+}
+
+
+>>>>>>> 8aeb5be261cb7694a8984117dd8c6ef1b692baf1
 @media  (max-width: 1200px) {
     .mobile-slider{max-width: 981px;}
     .plus-img {
@@ -2160,7 +2187,10 @@ xclip
     .about-us .block-img-responsive img{display: block;margin:10px auto;position: static;}
     .portfolio .grid > div{width: 100%;}
     .cd-intro{top:260px;}
+<<<<<<< HEAD
     .menu-button{margin-top:-1px;}
+=======
+>>>>>>> 8aeb5be261cb7694a8984117dd8c6ef1b692baf1
     #header .header-fix .logo .name{margin:4px 0 4px 0;font-size:19px;}
     #header .logo .position{font-size: 13px;}
     .content #home-slider .caption h1 {font-size: 34px;}
@@ -2207,3 +2237,11 @@ xclip
     .servises .box{width: 112px;}
     .icon-surround-1 i{}
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 8aeb5be261cb7694a8984117dd8c6ef1b692baf1

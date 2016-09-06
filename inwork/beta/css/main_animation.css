@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @keyframes string {
     from{
         width: 0%;
@@ -97,4 +98,105 @@
         position: relative;
         top: -8px;
     }
+=======
+@keyframes string {
+    from{
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@-webkit-keyframes string_animation {
+    from{
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+.active-animation {
+    -webkit-animation-name: string_animation;
+    -webkit-animation-duration: 5100ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    animation-name: string_animation;
+    animation-duration: 5100ms;
+    -webkit-animation-iteration-count: 1;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes animate_molot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-45deg);
+    }
+}
+@-webkit-keyframes animate_molot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-45deg);
+    }
+}
+@keyframes animate_icon5 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes animate_icon5 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes animate_icon5 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate_icon6 {
+    from {
+        position: relative;
+        top:0;
+    }
+    to {
+        position: relative;
+        top: -8px;
+    }
+}
+@-webkit-keyframes animate_icon6 {
+    from {
+        position: relative;
+        top:0;
+    }
+    to {
+        position: relative;
+        top: -8px;
+    }
+}
+@-moz-keyframes animate_icon6 {
+    from {
+        position: relative;
+        top:0;
+    }
+    to {
+        position: relative;
+        top: -8px;
+    }
+>>>>>>> 8aeb5be261cb7694a8984117dd8c6ef1b692baf1
 }
