@@ -865,6 +865,9 @@ Text animation
     margin: 2px 0 10px;
     margin-left: 88px;
 }
+.servises {
+    background-color: #fff;
+}
 .servises  .box{
     position: relative;
     width: 146px;
@@ -1100,7 +1103,7 @@ Text animation
 .icon-code:before {
     content: "\e31d";
 }
-.servises{margin-top:5%;position: relative;z-index: 100;border-bottom: 3px solid #59A5B7;padding-bottom: 2%;}
+.servises{margin-top:5%;position: relative;z-index: 100;border-bottom: 3px solid #59A5B7;padding: 2% 0;}
 .service-content:hover {
     cursor: pointer;
 }
