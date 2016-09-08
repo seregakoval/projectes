@@ -62,7 +62,7 @@
   </nav>
 </div>
 <div class="content-wrap">
-  <header class="header" >
+  <header class="header" id="images3">
     <div class="left-bg"></div>
     <div class="container header-b">
       <div class="string">
@@ -120,15 +120,15 @@
       </div>
     </div>
   </header><!--./header-->
-  <section  class="parallax"  style="background: url('img/image-bg.jpg') no-repeat;background-size: cover;" >
+  <section  id="par" class="parallax"  style="background: url('img/image-bg.jpg') no-repeat;background-size: cover;" >
     <div class="title-head">
-      <h2 class=""  data-wow-delay="1.8s" data-parallax='{"y":-140,"opacity":0,"duration":"200vh"}' >Portfolio Developer</h2>
+      <h2 class=""  data-wow-delay="1.8s" data-parallax='{"y":-140, "scale":0.8, "opacity": 0, "duration":"200"}' >Portfolio Developer</h2>
     </div>
     <div class="slider-caption slider-caption-center">
       <div id="particles" class="slider-caption" style="height: 400px;width:100%;overflow: hidden;"></div>
       <div class="container">
         <div class="mobile-slider">
-          <div class="html5" data-parallax='{"y":-140,"opacity":0,"duration":"200"}'>
+          <div class="html5" data-parallax='{"y":-140,"opacity":0, "scale":0.8,"duration":"300"}'>
             <p class="text-html animated wow" data-wow-delay="1.8s">html5</p>
             <p class="text-css animated wow" data-wow-delay="2s">css3</p>
             <img src="img/slide_img1.png" class="slide-img1 animated wow" data-wow-delay="0.4s"  alt="">
@@ -138,8 +138,8 @@
             <img src="img/slide_img5.png" class="slide-img5 animated wow" data-wow-delay="0.8s" alt="">
             <img src="img/slide_img6.png" class="slide-img6 animated wow" data-wow-delay="0.8s" alt="">
           </div>
-          <img src="img/plus.png"  data-parallax='{"y":-140,"opacity":0,"duration":"200"}' class="plus-img animated wow fadeInDown" data-wow-delay="2.5s" alt="">
-          <div class="js" data-parallax='{"y":-140,"opacity":0,"duration":"200"}'>
+          <img src="img/plus.png"  data-parallax='{"y":-140,"opacity":0,"scale":0.8,"duration":"300"}'  class="plus-img " data-wow-delay="2.5s" alt="">
+          <div class="js" data-parallax='{"y":-140,"opacity":0,"scale":0.8,"duration":"300"}'>
             <img src="img/js-left.png" class="left-js animated wow" data-wow-delay="1.8s" alt="">
             <img src="img/js-right.png" class="right-js animated wow" data-wow-delay="1.8s" alt="">
             <img src="img/js-right-b.png" class="right-js-b animated wow" data-wow-delay="2.1s" alt="">
@@ -149,14 +149,14 @@
       </div>
     </div>
   </section>
-  <div class="line_bg">
+  <div class="line_bg" id="par2">
     <div class="background-block"></div>
   </div>
-  <div class="anim-box" data-parallax='{"y":-650,"duration":"300"}' style="position: relative;z-index:800;">
+  <div class="anim-box"  data-parallax='{"y":-550,"duration":"60vh"}' style="position: relative;z-index:800; height: 70vh;">
     <div class="servises">
       <div class="container services2">
         <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon1 animated wow fadeInDown" data-wow-offset="200">
+          <div class="box icon1" style="position: fixed;left: 0;" data-parallax='{"x":400,"duration":"42vh"}' data-wow-offset="200">
             <div class="icon-surround-1 new-lh"><i class="icon-embed2"></i></div>
             <div class="services-popup">
               <h4>Чистота и Семантичность</h4>
@@ -165,7 +165,7 @@
           </div>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon2 animated wow fadeInDown" data-wow-delay="0.4s" data-wow-offset="200">
+          <div class="box icon2" style="position: fixed;left: 0;" data-parallax='{"x":595,"duration":"40vh"}' data-wow-delay="0.4s" data-wow-offset="200">
             <div class="icon-surround-1 new-lh"><i class="icon-mobile"></i></div>
             <div class="services-popup">
               <h4>Адаптивная верстка</h4>
@@ -174,7 +174,7 @@
           </div>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon3 animated wow fadeInDown" data-wow-delay="0.6s" data-wow-offset="200">
+          <div class="box icon3 " data-wow-delay="0.6s" data-wow-offset="200">
             <div class="icon-surround-1 new-lh"><i class="icon-html-five"></i></div>
             <div class="services-popup">
               <h4>HTML5, CSS3, jQuery</h4>
@@ -183,7 +183,7 @@
           </div>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="icon4 box animated wow fadeInDown" data-wow-delay="0.8s" data-wow-offset="200" >
+          <div class="icon4 box " data-wow-delay="0.8s" data-wow-offset="200" >
             <div class="icon-surround-1 new-lh"><i class="icon-hammer"></i></div>
             <div class="services-popup">
               <h4>Исправления верстки</h4>
@@ -193,7 +193,7 @@
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon5 animated wow fadeInDown" data-wow-delay="1s" data-wow-offset="200">
+          <div class="box icon5 " data-wow-delay="1s" data-wow-offset="200">
             <div class="icon-surround-1 new-lh"><i class="icon-cogs"></i></div>
             <div class="services-popup">
               <h4>Установка на CMS WordPress</h4>
@@ -202,7 +202,7 @@
           </div>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon6 animated wow fadeInDown" data-wow-delay="1.2s" data-wow-offset="200">
+          <div class="box icon6" data-rapallax='{"x":200,"duration":"100"}' data-wow-delay="1.2s" data-wow-offset="200">
             <div class="icon-surround-1 new-lh"><i class="icon-checkmark"></i></div>
             <div class="services-popup">
               <h4>Качество</h4>
@@ -221,6 +221,57 @@
         <h1 class="animated wow bounceIn"  data-wow-offset="400">My Project</h1>
       </div>
       <div class="grid clearfix">
+        <div class="box col-lg-4 col-sm-4 col-xs-6 animated wow fadeInUp" data-wow-offset="300">
+          <div class="scale-img">
+            <div class="hide-block">
+            </div>
+            <div class="top">
+              <h3>Safari</h3>
+              <a class="main" href="#url">All pages project:</a>
+            </div>
+            <div class="img-n">
+              <img src="img/111.jpg" alt="">
+            </div>
+            <div class="bottom">
+              <h3>Safari</h3>
+              <a href="http://dribbble.com/shots/1116775-Safari">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="box col-lg-4 col-sm-4 col-xs-6 animated wow fadeInUp" data-wow-offset="300">
+          <div class="scale-img">
+            <div class="hide-block">
+            </div>
+            <div class="top">
+              <h3>Safari</h3>
+              <a class="main" href="#url">All pages project:</a>
+            </div>
+            <div class="img-n">
+              <img src="img/111.jpg" alt="">
+            </div>
+            <div class="bottom">
+              <h3>Safari</h3>
+              <a href="http://dribbble.com/shots/1116775-Safari">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="box col-lg-4 col-sm-4 col-xs-6 animated wow fadeInUp" data-wow-offset="300">
+          <div class="scale-img">
+            <div class="hide-block">
+            </div>
+            <div class="top">
+              <h3>Safari</h3>
+              <a class="main" href="#url">All pages project:</a>
+            </div>
+            <div class="img-n">
+              <img src="img/111.jpg" alt="">
+            </div>
+            <div class="bottom">
+              <h3>Safari</h3>
+              <a href="http://dribbble.com/shots/1116775-Safari">Demo</a>
+            </div>
+          </div>
+        </div>
         <div class="box col-lg-4 col-sm-4 col-xs-6 animated wow fadeInUp" data-wow-offset="300">
           <div class="scale-img">
             <div class="hide-block">
@@ -302,8 +353,12 @@
         </div>
       </div>
     </section>
-  <div class="line_bg_2"></div>
-  <section class="start_work clearfix">
+  <div class="line_bg_2" id="images-scene"></div>
+  <section class="start_work" id="images2">
+    <video autoplay loop class="fillWidth">
+      <source src="video/For_Wes.mp4" type="video/mp4" />
+      <source src="video/For_Wes.ogv" type="video/webm" />
+    </video>
     <div class="container">
       <div class="row">
         <div class="left animated wow fadeInLeft" data-wow-offset="300" data-wow-delay="0.4s">
@@ -320,7 +375,7 @@
     <div style="clear: both;"></div>
     <h1 class="animated wow bounceIn"  data-wow-offset="300">About Us</h1>
   </div>
-  <div class="section-bg">
+  <div class="section-bg"  data-parallax='{"y":240, "duration":"500","start":"#images2"}' style="background: url('img/s3.jpg') no-repeat;background-size: cover;">
     <section class="about-us clearfix parallax2">
       <div class="container-b clearfix">
         <div class="col-lg-6 col-md-6 col-sm-6" style="position:relative;min-height: 327px;">
@@ -367,7 +422,7 @@
       </div>
     </section>
     <div style="clear: both;"></div>
-    <div class="title-contact clearfix">
+    <div class="title-contact clearfix" style="position: relative;top: 800px;"  data-parallax='{"y":-300, "duration":"1000","start":"#images-scene"}'>
       <div class="container" style="position: relative;">
         <div class="icon">
           <span class="icon-pentagon wow bounceIn animated" style="visibility: visible;"><i class="fa fa-pencil"></i></span>

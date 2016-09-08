@@ -200,29 +200,6 @@ body {
     font-size: 50px;
     font-weight: 400;
 }
-.menu-button:before{
-
-}
-.fullwidthbanner-container {
-    top: 278px;
-}
-.video-placeholder {
-    background-repeat: no-repeat !important;
-    z-index: 4;
-}
-.flex-caption, .nivo-caption, .slider-caption {
-    color: #eee;
-    width: 100%;
-    font-size: 22px;
-    font-weight: 300;
-    position: absolute;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-    top: 37%;
-    transition: top 0.3s ease 0s;
-    z-index: 20;
-}
-
-
 .slider-caption h2 {
     font-size: 70px;
     color:#fff;
@@ -1117,12 +1094,22 @@ Text animation
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-
+.fillWidth {
+    width: 100%;
+    object-fit: cover;
+}
+.start_work:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    background: url("img/overaly.png");
+}
 /* --------------------------------
-xclip
+
 -------------------------------- */
-
-
 /*# sourceMappingURL=style.css.map */
 .block-opacity{
   width: 100%;
@@ -1387,6 +1374,8 @@ xclip
 }
 
 .start_work{
+    overflow: hidden;
+    position: relative;
     padding: 3% 0 5% 0;
     background: #DBF1FA;
 }
