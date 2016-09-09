@@ -120,7 +120,8 @@
       </div>
     </div>
   </header><!--./header-->
-  <section  id="par" class="parallax"  style="background: url('img/image-bg.jpg') no-repeat;background-size: cover;" >
+  <section  id="par" class="parallax"  style=" background: url('img/image-bg.jpg') no-repeat;background-size: cover;" >
+    <canvas id="demo-canvas" style="position: absolute;z-index: 100; display: none;" ></canvas>
     <div class="title-head">
       <h2 class=""  data-wow-delay="1.8s" data-parallax='{"y":-140, "scale":0.8, "opacity": 0, "duration":"200"}' >Portfolio Developer</h2>
     </div>
@@ -152,7 +153,7 @@
   <div class="line_bg" id="par2">
     <div class="background-block"></div>
   </div>
-  <div class="anim-box"  data-parallax='{"y":-550,"duration":"60vh"}' style="position: relative;z-index:800; height: 70vh;">
+  <div class="anim-box"  data-parallax='{"y":-550,"duration":"50vh"}' style="position: relative;background-attachment: fixed; z-index:800; height: 70vh;">
     <div class="servises">
       <div class="container services2">
         <div class="col-md-2 col-sm-4 col-xs-6 service-content">
@@ -215,13 +216,54 @@
     <section class="portfolio clearfix">
       <div class="title">
         <div class="icon">
-          <span class="icon-pentagon wow bounceIn animated" data-wow-offset="100"><i class="fa fa-suitcase"></i></span>
+          <span class="icon-pentagon " data-wow-offset="100"><i class="fa fa-suitcase"></i></span>
         </div>
         <div style="clear: both;"></div>
         <h1 class="animated wow bounceIn"  data-wow-offset="400">My Project</h1>
       </div>
       <div class="grid clearfix">
-        <div class="box col-lg-4 col-sm-4 col-xs-6 animated wow fadeInUp" data-wow-offset="300">
+        <div class="col-lg-6 col-sm-4 col-xs-6 " data-wow-offset="300">
+          <canvas id="canvas2" width="500" height="300" style="background: url('img/111.jpg');background-size: cover;">
+            <!-- add text here for accessibility for screen readers (assistive technologies) and no-js browsers. These are the results for browsers in most cases, but Firefox does not display the fallback content when JavaScript is disabled. -->
+          </canvas>
+        </div>
+        <div class="box col-lg-6 col-sm-4 col-xs-6 " data-wow-offset="300">
+          <div id="canvas2" width="500" height="300" style="background: url('');background-size: cover;">
+            <div class="scale-img">
+              <div class="hide-block">
+              </div>
+              <div class="top">
+                <h3>Safari</h3>
+                <a class="main" href="#url">All pages project:</a>
+              </div>
+              <div class="img-n">
+                <img src="img/111.jpg" alt="">
+              </div>
+              <div class="bottom">
+                <h3>Safari</h3>
+                <a href="http://dribbble.com/shots/1116775-Safari">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<div class="box col-lg-4 col-sm-4 col-xs-6 " data-wow-offset="300">
+          <div class="scale-img">
+            <div class="hide-block">
+            </div>
+            <div class="top">
+              <h3>Safari</h3>
+              <a class="main" href="#url">All pages project:</a>
+            </div>
+            <div class="img-n">
+              <img src="img/111.jpg" alt="">
+            </div>
+            <div class="bottom">
+              <h3>Safari</h3>
+              <a href="http://dribbble.com/shots/1116775-Safari">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="box col-lg-4 col-sm-4 col-xs-6 " data-wow-offset="300">
           <div class="scale-img">
             <div class="hide-block">
             </div>
@@ -271,25 +313,8 @@
               <a href="http://dribbble.com/shots/1116775-Safari">Demo</a>
             </div>
           </div>
-        </div>
-        <div class="box col-lg-4 col-sm-4 col-xs-6 animated wow fadeInUp" data-wow-offset="300">
-          <div class="scale-img">
-            <div class="hide-block">
-            </div>
-            <div class="top">
-              <h3>Safari</h3>
-              <a class="main" href="#url">All pages project:</a>
-            </div>
-            <div class="img-n">
-              <img src="img/111.jpg" alt="">
-            </div>
-            <div class="bottom">
-              <h3>Safari</h3>
-              <a href="http://dribbble.com/shots/1116775-Safari">Demo</a>
-            </div>
-          </div>
-        </div>
-        <div class="box col-lg-4 col-sm-4 col-xs-6 animated wow fadeInUp" data-wow-offset="300" data-wow-delay="0.2s" >
+        </div>-->
+        <!--<div class="box col-lg-4 col-sm-4 col-xs-6 animated wow fadeInUp" data-wow-offset="300" data-wow-delay="0.2s" >
           <div class="scale-img">
             <div class="top">
               <h3>Safari</h3>
@@ -350,7 +375,7 @@
               <a href="http://dribbble.com/shots/1116775-Safari">Take a look</a>
             </figcaption>
           </figure>
-        </div>
+        </div>-->
       </div>
     </section>
   <div class="line_bg_2" id="images-scene"></div>
@@ -503,10 +528,12 @@
 </progress>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="js/parallax.min.js"></script>
+<!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<!--<script src="js/parallax.min.js"></script>-->
+<script src="https://cdn.rawgit.com/kasparsj/jquery.requestAnimationFrame/master/jquery.requestAnimationFrame.min.js"></script>
 <script src="js/jquery.data-parallax.min.js"></script>
-<script >
+
+<script>
   if($(window).width() >= 640){
 
     //$(".parallax").attr("data-image-src","img/image-bg.jpg");
@@ -555,3 +582,4 @@
   });
 </script>
 <script src="js/js.js"></script>
+

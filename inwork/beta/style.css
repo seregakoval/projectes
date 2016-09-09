@@ -21,7 +21,7 @@ footer, header, menu, nav, section {
 
 html, body {
   height: 100%; }
-.portfolio .grid .box{height: 280px;overflow: hidden;transition: 0.3s;}
+.portfolio .grid .box{height: 320px;transition: 0.3s;}
 .portfolio .grid .box .top{
     position: absolute;
     transition: 0.4s;
@@ -63,7 +63,7 @@ color: rgb(255, 255, 255);
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-    transition: 0.5s; height:280px;margin: 0 auto;position: relative;overflow: hidden; background:#2c3f52;width: 328px;}
+    transition: 0.5s; height: 320px;margin: 0 auto;position: relative;overflow: hidden; background:#2c3f52;width: 100%;}
 .portfolio .grid .box .scale-img.active {
     transform: rotateY(180deg);
 }
@@ -96,7 +96,7 @@ color: rgb(255, 255, 255);
 .portfolio .grid .box .bottom h3{float:left;}
 .portfolio .grid .box .bottom a{display: block;float:right;padding: 5px 8px;color:#fff;border-radius: 2px; margin:0 15px 0 0; background: #0773BA;}
 .portfolio .grid .box:hover .bottom{
-    bottom: 20px;
+    bottom: 0px;
     z-index: 100;
     opacity: 1;
 }
@@ -824,8 +824,26 @@ Text animation
 
 .parallax {
     padding: 20px 0;
-    height: 99vh !important;
+    height: 100vh !important;
     background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+#canvas2 {
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+    background-color: #050505;
+    display: block;
+    -webkit-transform: translateZ(-300px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
+    transform: translateZ(-300px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
+    margin: 50px auto;
+    outline: 1px solid transparent;
+    box-shadow: -50px 50px 40px rgba(0,0,0,0.4);
+}
+#canvas2:hover {
+    z-index:5;
+    transform: translateZ(0px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) ;
 }
 .service-content .icon-surround, .services4 .service-content .ico1,.services4 .service-content .ico2,.services4 .service-content .ico3,.services4 .service-content .ico4,.services4 .service-content .ico5,.services4 .service-content .ico6 {
     float: left;
@@ -1094,10 +1112,7 @@ Text animation
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-.fillWidth {
-    width: 100%;
-    object-fit: cover;
-}
+
 .start_work:after {
     width: 100%;
     height: 100%;
@@ -1349,7 +1364,12 @@ Text animation
     top: 304px;
     z-index: 6;
 }
-
+.slider-caption {
+    position: absolute;
+    left:0;
+    width: 100%;
+    top: 40%;
+}
 .slider-caption:after {
     background: rgba(0, 0, 0, 0.18) none repeat scroll 0 0;
     content: "";
@@ -1373,14 +1393,26 @@ Text animation
     z-index: 500;
 }
 
-.start_work{
+.start_work {
     overflow: hidden;
     position: relative;
-    padding: 3% 0 5% 0;
+    height: 400px;
+    display: block;
+    align-items: center;
     background: #DBF1FA;
 }
+
+.fillWidth {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: 450px;
+}
+
 .start_work h2{
     font-size: 35px;
+    color: #fff;
 }
 .start_work .left{
     float:left;
@@ -1389,6 +1421,7 @@ Text animation
 .start_work .sub-text{
     font-size: 17px;
     margin-top: 5px;
+    color: #fff;
 }
 /* Box colors */
 .bg-1 {
