@@ -28,7 +28,7 @@ html, body {
 top: -30px;
 background: rgb(44, 63, 82) none repeat scroll 0% 0%;
 width: 100%;
-    padding: 15px;
+    padding: 8px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +95,7 @@ color: rgb(255, 255, 255);
 }
 .portfolio .grid .box .bottom h3{float:left;}
 .portfolio .grid .box .bottom a{display: block;float:right;padding: 5px 8px;color:#fff;border-radius: 2px; margin:0 15px 0 0; background: #0773BA;}
-.portfolio .grid .box:hover .bottom{
+.portfolio .grid .box:hover .bottom {
     bottom: 0px;
     z-index: 100;
     opacity: 1;
@@ -103,7 +103,7 @@ color: rgb(255, 255, 255);
 
 .portfolio .grid .box img{
     transform: translate(0px, 0px);
-    transition: transform 4s ease 0s;
+    transition: transform 6s ease 0s;
 }
 .portfolio .grid .box:hover img{
     transform: translate(0px, calc(-100% + 280px));
@@ -596,7 +596,8 @@ progress::-moz-progress-bar{
     text-align: center; }
    .portfolio .grid .box {
       display: inline-block;
-      margin: 0;
+      margin: 0 0 50px 0px;
+       opacity: 0;
       padding: 20px;
       text-align: left;
       position: relative; }
@@ -829,19 +830,21 @@ Text animation
     position: relative;
     overflow: hidden;
 }
-#canvas2 {
+.canvas {
     overflow: hidden;
     position: relative;
     transition: 0.3s;
+    width: 430px;
     background-color: #050505;
     display: block;
     -webkit-transform: translateZ(-300px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
     transform: translateZ(-300px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
-    margin: 50px auto;
+    margin: 0px auto 50px 0px;
     outline: 1px solid transparent;
-    box-shadow: -50px 50px 40px rgba(0,0,0,0.4);
+    box-shadow: -50px 50px 40px rgba(0,0,0,0.2);
 }
-#canvas2:hover {
+
+.canvas:hover {
     z-index:5;
     transform: translateZ(0px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) ;
 }
@@ -2145,6 +2148,8 @@ Text animation
     .menu li{border-bottom:1px solid #323440;}
     .mobile-logo{display: block;}
     .nav-container{display: none;}
+    .canvas { width: 350px; }
+    .portfolio .grid .box .scale-img { height: 250px; }
 }
 
 
