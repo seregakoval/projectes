@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Adastra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/css/main.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-3 col-sm-4">
+                <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
                     <a href="#"><img src="dist/img/logo.png" class="logo" alt=""></a>
                 </div>
-                <div class="col-lg-8 col-md-9 col-sm-8">
+                <div class="col-lg-8 col-md-9 col-sm-8 col-xs-12">
                     <div class="block-info">
                         <div class="block-info_button">
-                            <a href="#" class="btn-block">Записаться на прием</a>
+                            <a href="#" class="block-btn">Записаться на прием</a>
                         </div>
                         <div class="block-info_info">
                             <p class="address">б-р Звездный, 1</p>
@@ -25,24 +26,30 @@
                             <p>СБ  7:30-12:00</p>
                         </div>
                     </div>
-                    <button type="button" class="navbar-toggle">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <nav class="nav">
-                        <a href="#">о центре</a>
-                        <a href="#">Специалисты</a>
-                        <a href="#">Услуги</a>
-                        <a href="#">Акции</a>
-                        <a href="#">Советы</a>
-                        <a href="#">Цены</a>
-                        <a href="#">Контакты</a>
-                    </nav>
+                    <div class="menu">
+                        <nav class="nav collapse" id="navigation">
+                            <ul>
+                                <li><a href="#">о центре</a></li>
+                                <li><a href="#">Специалисты</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Советы</a></li>
+                                <li><a href="#">Цены</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
     </header> <!--./header-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
