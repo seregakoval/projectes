@@ -1,19 +1,19 @@
 // module SUB HEADER
 $orangeColor: #ff851a;
 .sub-header {
-  background: #00a0d2 url("../../../dist/img/image.jpg") no-repeat center center;
+  background: #00a0d2 url("../../../dist/img/image.jpg") no-repeat center 100%;
   background-size: cover;
-  padding: 48px 0;
-  min-height: 350px;
+  min-height: 379px;
   .left-block-image {
-    max-width: 100%;
+    max-width: 450px;
+    margin: 40px 0;
   }
   .body {
-    width: 87%;
     float: right;
+    padding: 45px 0;
      h1 {
        text-align: right;
-       font-size: 40px;
+       font-size: 42px;
        color: #fff;
        margin: 0 0 30px 0;
        text-transform: uppercase;
@@ -30,10 +30,12 @@ $orangeColor: #ff851a;
         padding: 15px 0;
         border-top: 4px dashed $orangeColor;
         border-bottom: 4px dashed $orangeColor;
+        width: 98%;
+        justify-content: space-between;
         .block-img {
-          padding-right: 29px;
+          padding-left: 29px;
           img {
-            max-width: 85%;
+            max-width: 100%;
           }
         }
         h2 {
@@ -44,15 +46,17 @@ $orangeColor: #ff851a;
       }
     }
     &_phone {
-      margin: 0 0 0 20px;
+      margin: 0 0 0 15px;
       padding-left: 38px;
       background: url('../../../dist/img/cell.png') no-repeat left center;
       p {
         font-size: 30px;
         color: $orangeColor;
+        line-height: 1.2;
         font-weight: bold;
       }
     }
   }
 }
+
 
