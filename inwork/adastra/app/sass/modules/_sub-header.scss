@@ -1,2 +1,58 @@
 // module SUB HEADER
+$orangeColor: #ff851a;
+.sub-header {
+  background: #00a0d2 url("../../../dist/img/image.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 48px 0;
+  min-height: 350px;
+  .left-block-image {
+    max-width: 100%;
+  }
+  .body {
+    width: 87%;
+    float: right;
+     h1 {
+       text-align: right;
+       font-size: 40px;
+       color: #fff;
+       margin: 0 0 30px 0;
+       text-transform: uppercase;
+        text-shadow: 1px 1px 1px #0a001f;
+       font-weight: 600;
+     }
+    &_content {
+      margin: 0 0 30px 0;
+      .title {
+        float: right;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 4px dashed $orangeColor;
+        border-bottom: 4px dashed $orangeColor;
+        .block-img {
+          padding-right: 29px;
+          img {
+            max-width: 85%;
+          }
+        }
+        h2 {
+          font-size: 30px;
+          color: #626262;
+          line-height: 1.2;
+        }
+      }
+    }
+    &_phone {
+      margin: 0 0 0 20px;
+      padding-left: 38px;
+      background: url('../../../dist/img/cell.png') no-repeat left center;
+      p {
+        font-size: 30px;
+        color: $orangeColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
 

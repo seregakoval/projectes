@@ -154,12 +154,9 @@ body {
   .header .menu {
     position: relative; }
     .header .menu .nav {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+      /*display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;*/ }
       @media (max-width: 991px) {
         .header .menu .nav ul {
           padding: 15px; } }
@@ -192,22 +189,23 @@ body {
     .header .navbar-toggle .icon-bar {
       background-color: #333; }
 
-.navbar-toggle {
-  margin: 10px 0; }
+.collapse {
+  display: block; }
 
 @media (max-width: 991px) {
-  .header .menu .nav {
+  .collapse {
     display: none; }
   .header .navbar-toggle {
     display: block; }
-  .header .menu .nav.collapse.in {
-    display: block;
+  .header .menu .nav {
     position: absolute;
     width: 100%;
-    top: 59px;
+    top: 150px;
     background: #e6e6e6;
     min-width: 100%;
     left: 0; }
+  .header .menu .nav.collapse.in {
+    display: block; }
   .header .block-info_info p {
     border: none; } }
 
@@ -233,3 +231,49 @@ body {
 /*---CONTENT---*/
 /*MEDIA HEADER*/
 /* END MEDIA HEADER*/
+.sub-header {
+  background: #00a0d2 url("../../../dist/img/image.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 48px 0;
+  min-height: 350px; }
+  .sub-header .left-block-image {
+    max-width: 100%; }
+  .sub-header .body {
+    width: 87%;
+    float: right; }
+    .sub-header .body h1 {
+      text-align: right;
+      font-size: 40px;
+      color: #fff;
+      margin: 0 0 30px 0;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px #0a001f;
+      font-weight: 600; }
+    .sub-header .body_content {
+      margin: 0 0 30px 0; }
+      .sub-header .body_content .title {
+        float: right;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 4px dashed #ff851a;
+        border-bottom: 4px dashed #ff851a; }
+        .sub-header .body_content .title .block-img {
+          padding-right: 29px; }
+          .sub-header .body_content .title .block-img img {
+            max-width: 85%; }
+        .sub-header .body_content .title h2 {
+          font-size: 30px;
+          color: #626262;
+          line-height: 1.2; }
+    .sub-header .body_phone {
+      margin: 0 0 0 20px;
+      padding-left: 38px;
+      background: url("../../../dist/img/cell.png") no-repeat left center; }
+      .sub-header .body_phone p {
+        font-size: 30px;
+        color: #ff851a;
+        font-weight: bold; }
