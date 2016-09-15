@@ -4,9 +4,18 @@ $orangeColor: #ff851a;
   background: #00a0d2 url("../../../dist/img/image.jpg") no-repeat center 100%;
   background-size: cover;
   min-height: 379px;
+  .left-img {
+    height: 355px;
+    background: url("../../../dist/img/people.png") no-repeat left bottom;
+    background-size: cover;
+  }
   .left-block-image {
-    max-width: 450px;
-    margin: 40px 0;
+
+
+
+   /* position: relative;
+    top: 0px;
+    max-width:  100%;*/
   }
   .body {
     float: right;
