@@ -8,10 +8,21 @@ $orangeColor: #ff851a;
     height: 355px;
     background: url("../../../dist/img/people.png") no-repeat left bottom;
     background-size: cover;
+    @media (max-width: 991px) {
+      height: 300px;
+      background: url("../../../dist/img/people.png") no-repeat 187px bottom;
+      background-size: 67%;
+    }
+    @media (max-width:  768px) {
+      background: url("../../../dist/img/people.png") no-repeat center bottom;
+      height: 263px;
+      background-size: 68%;
+    }
+    @media (max-width:  768px) {
+      height: 160px;
+    }
   }
   .left-block-image {
-
-
 
    /* position: relative;
     top: 0px;
@@ -20,6 +31,9 @@ $orangeColor: #ff851a;
   .body {
     float: right;
     padding: 45px 0;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
      h1 {
        text-align: right;
        font-size: 42px;
@@ -28,6 +42,15 @@ $orangeColor: #ff851a;
        text-transform: uppercase;
         text-shadow: 1px 1px 1px #0a001f;
        font-weight: 600;
+       @media (max-width: 1200px) {
+         font-size: 36px;
+       }
+       @media (max-width: 991px) {
+         text-align: center;
+       }
+       @media (max-width:  480px) {
+         font-size: 21px;
+       }
      }
     &_content {
       margin: 0 0 30px 0;
@@ -41,8 +64,19 @@ $orangeColor: #ff851a;
         border-bottom: 4px dashed $orangeColor;
         width: 98%;
         justify-content: space-between;
+        @media (max-width: 991px) {
+          float: none;
+          width: 58%;
+          margin: 0 auto;
+        }
+        @media (max-width:  480px) {
+          width: 100%;
+        }
         .block-img {
           padding-left: 29px;
+          @media (max-width: 480px) {
+            padding-left: 0;
+          }
           img {
             max-width: 100%;
           }
@@ -51,6 +85,12 @@ $orangeColor: #ff851a;
           font-size: 30px;
           color: #626262;
           line-height: 1.2;
+          @media (max-width: 1200px) {
+            font-size: 24px;
+          }
+          @media (max-width: 480px) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -58,11 +98,23 @@ $orangeColor: #ff851a;
       margin: 0 0 0 15px;
       padding-left: 38px;
       background: url('../../../dist/img/cell.png') no-repeat left center;
+      @media (max-width: 1200px) {
+        float: right;
+      }
+      @media (max-width: 991px) {
+        float: none;
+        max-width: 269px;
+        margin: 0 auto
+      }
       p {
         font-size: 30px;
         color: $orangeColor;
         line-height: 1.2;
         font-weight: bold;
+        @media (max-width: 480px) {
+          text-align: center;
+          font-size: 25px;
+        }
       }
     }
   }
