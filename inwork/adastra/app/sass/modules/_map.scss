@@ -1,0 +1,36 @@
+/*  MAP */
+
+
+.map {
+  position: relative;
+  h3 {
+    font-size: 21px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    border-bottom: 3px dashed #fff;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    margin-left: -84px;
+  }
+  .overlay {
+    background: rgba(3, 145, 180,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  > div {
+    height: 120px;
+    width: 100% !important;
+    #gmap_canvas {
+      width:  100% !important;
+      height: 120px;
+
+    }
+  }
+}

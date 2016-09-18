@@ -1,7 +1,8 @@
 // module SUB HEADER
 $orangeColor: #ff851a;
 .sub-header {
-  background: #00a0d2 url("../../../dist/img/image.jpg") no-repeat center 100%;
+  box-shadow: 0 3px 9px -5px rgba(0, 0, 0, 0.38) ;
+  background: #b8eaf3 /*url("../../../dist/img/image.jpg") no-repeat center 100%*/;
   background-size: cover;
   min-height: 379px;
   .left-img {

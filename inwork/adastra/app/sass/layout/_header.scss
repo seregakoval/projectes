@@ -139,7 +139,8 @@
   .header .menu .nav {
     position: absolute;
     width: 100%;
-    top: 150px;
+    top: 50px;
+    z-index: 100;
     background: #e6e6e6;
     min-width: 100%;
     left: 0;
@@ -148,10 +149,11 @@
   .header .block-info_info p {
     border: none; } }
 @media (max-width: 767px) {
+  .header .menu .nav { top: 5px; }
   .navbar-toggle { margin: 3px 0 0 0; }
   .header .navbar-toggle { display: block; position: absolute; right: 8px;top: 8px; }
   .header .block-info { text-align: center; padding: 10px 0; }
   .header .block-info_info p { margin: 5px 0; }
   .header .block-info_button a { font-weight: normal;padding: 10px; }
-  .header .menu .nav.collapse.in { top: 0px; }
+  .header .menu .nav.collapse.in {  }
 }
