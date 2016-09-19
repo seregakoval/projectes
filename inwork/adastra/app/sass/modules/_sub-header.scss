@@ -1,124 +1,112 @@
 // module SUB HEADER
 $orangeColor: #ff851a;
 .sub-header {
-  box-shadow: 0 3px 9px -5px rgba(0, 0, 0, 0.38) ;
-  background: #b8eaf3 /*url("../../../dist/img/image.jpg") no-repeat center 100%*/;
+  background: #00a0d2 url("../../dist/img/image.jpg") no-repeat center 100%;
   background-size: cover;
-  min-height: 379px;
-  .left-img {
-    height: 355px;
-    background: url("../../../dist/img/people.png") no-repeat left bottom;
-    background-size: cover;
-    @media (max-width: 991px) {
-      height: 300px;
-      background: url("../../../dist/img/people.png") no-repeat 187px bottom;
-      background-size: 67%;
-    }
-    @media (max-width:  768px) {
-      background: url("../../../dist/img/people.png") no-repeat center bottom;
-      height: 263px;
-      background-size: 68%;
-    }
-    @media (max-width:  768px) {
-      height: 160px;
-    }
-  }
-  .left-block-image {
-
-   /* position: relative;
-    top: 0px;
-    max-width:  100%;*/
-  }
-  .body {
-    float: right;
-    padding: 45px 0;
-    @media (max-width: 991px) {
-      width: 100%;
-    }
-     h1 {
-       text-align: right;
-       font-size: 42px;
-       color: #fff;
-       margin: 0 0 30px 0;
-       text-transform: uppercase;
-        text-shadow: 1px 1px 1px #0a001f;
-       font-weight: 600;
-       @media (max-width: 1200px) {
-         font-size: 36px;
-       }
-       @media (max-width: 991px) {
-         text-align: center;
-       }
-       @media (max-width:  480px) {
-         font-size: 21px;
-       }
-     }
-    &_content {
-      margin: 0 0 30px 0;
-      .title {
-        float: right;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        padding: 15px 0;
-        border-top: 4px dashed $orangeColor;
-        border-bottom: 4px dashed $orangeColor;
-        width: 98%;
-        justify-content: space-between;
-        @media (max-width: 991px) {
-          float: none;
-          width: 58%;
-          margin: 0 auto;
-        }
-        @media (max-width:  480px) {
-          width: 100%;
-        }
-        .block-img {
-          padding-left: 29px;
-          @media (max-width: 480px) {
-            padding-left: 0;
-          }
-          img {
-            max-width: 100%;
-          }
-        }
-        h2 {
-          font-size: 30px;
-          color: #626262;
-          line-height: 1.2;
-          @media (max-width: 1200px) {
-            font-size: 24px;
-          }
-          @media (max-width: 480px) {
-            font-size: 16px;
-          }
-        }
-      }
-    }
-    &_phone {
-      margin: 0 0 0 15px;
-      padding-left: 38px;
-      background: url('../../../dist/img/cell.png') no-repeat left center;
-      @media (max-width: 1200px) {
-        float: right;
-      }
-      @media (max-width: 991px) {
-        float: none;
-        max-width: 269px;
-        margin: 0 auto
-      }
-      p {
-        font-size: 30px;
-        color: $orangeColor;
-        line-height: 1.2;
-        font-weight: bold;
-        @media (max-width: 480px) {
-          text-align: center;
-          font-size: 25px;
-        }
-      }
-    }
-  }
-}
-
+  min-height: 379px; }
+.sub-header .left-img {
+  height: 380px;
+  background: url("../../dist/img/people.png") no-repeat left bottom;
+  background-size: 84%; }
+@media (max-width: 991px) {
+  .sub-header .left-img {
+    /*height: 300px;*/
+    background: url("../../dist/img/people.png") no-repeat center bottom;
+    background-size: 67%; } }
+@media (max-width: 640px) {
+  .sub-header .left-img {
+    background: url("../../dist/img/people.png") no-repeat center bottom;
+    height: 293px;
+    background-size: 68%; } }
+@media (max-width: 480px) {
+  .sub-header .left-img {
+    height: 183px; } }
+.sub-header .left-block-image {
+  /* position: relative;
+  top: 0px;
+  max-width:  100%;*/ }
+.sub-header .body {
+  float: right;
+  padding: 45px 0; }
+@media (max-width: 991px) {
+  .sub-header .body {
+    width: 100%; } }
+.sub-header .body h1 {
+  text-align: right;
+  font-size: 42px;
+  color: #fff;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #0a001f;
+  font-weight: 600; }
+@media (max-width: 1200px) {
+  .sub-header .body h1 {
+    font-size: 36px; } }
+@media (max-width: 991px) {
+  .sub-header .body h1 {
+    text-align: center; } }
+@media (max-width: 480px) {
+  .sub-header .body h1 {
+    font-size: 21px; } }
+.sub-header .body_content {
+  margin: 0 0 30px 0; }
+.sub-header .body_content .title {
+  float: right;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 4px dashed #ff851a;
+  border-bottom: 4px dashed #ff851a;
+  width: 98%;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+@media (max-width: 991px) {
+  .sub-header .body_content .title {
+    float: none;
+    width: 58%;
+    margin: 0 auto; } }
+@media (max-width: 480px) {
+  .sub-header .body_content .title {
+    width: 100%; } }
+.sub-header .body_content .title .block-img {
+  padding-left: 29px; }
+@media (max-width: 480px) {
+  .sub-header .body_content .title .block-img {
+    padding-left: 0; } }
+.sub-header .body_content .title .block-img img {
+  max-width: 100%; }
+.sub-header .body_content .title h2 {
+  font-size: 30px;
+  color: #626262;
+  line-height: 1.2; }
+@media (max-width: 1200px) {
+  .sub-header .body_content .title h2 {
+    font-size: 24px; } }
+@media (max-width: 480px) {
+  .sub-header .body_content .title h2 {
+    font-size: 16px; } }
+.sub-header .body_phone {
+  margin: 0 0 0 15px;
+  padding-left: 38px;
+  background: url("../../dist/img/cell.png") no-repeat left center; }
+@media (max-width: 1200px) {
+  .sub-header .body_phone {
+    float: right; } }
+@media (max-width: 991px) {
+  .sub-header .body_phone {
+    float: none;
+    max-width: 269px;
+    margin: 0 auto; } }
+.sub-header .body_phone p {
+  font-size: 30px;
+  color: #ff851a;
+  line-height: 1.2;
+  font-weight: bold; }
+@media (max-width: 480px) {
+  .sub-header .body_phone p {
+    text-align: center;
+    font-size: 25px; } }
 
