@@ -25,16 +25,16 @@ html, body {
 .portfolio .grid .box .top{
     position: absolute;
     transition: 0.4s;
-top: -30px;
-background: rgb(44, 63, 82) none repeat scroll 0% 0%;
-width: 100%;
+    top: -30px;
+    background: rgb(44, 63, 82) none repeat scroll 0% 0%;
+    width: 100%;
     padding: 8px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-z-index: 0;
+    z-index: 0;
     opacity: 0;
-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 .portfolio .grid .box .scale-img .hide-block {
     position: absolute;
@@ -63,7 +63,7 @@ color: rgb(255, 255, 255);
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-    transition: 0.5s; height: 320px;margin: 0 auto;position: relative;overflow: hidden; background:#2c3f52;width: 100%;}
+    transition: 0.5s; height: 260px;margin: 0 auto;position: relative;overflow: hidden; background:#2c3f52;width: 100%;}
 .portfolio .grid .box .scale-img.active {
     transform: rotateY(180deg);
 }
@@ -597,7 +597,7 @@ progress::-moz-progress-bar{
    .portfolio .grid .box {
       display: inline-block;
       margin: 0 0 50px 0px;
-       opacity: 0;
+      /* opacity: 0;*/
       padding: 20px;
       text-align: left;
       position: relative; }
@@ -834,7 +834,7 @@ Text animation
     overflow: hidden;
     position: relative;
     transition: 0.3s;
-    width: 430px;
+    /*width: 320px;*/
     background-color: #050505;
     display: block;
     -webkit-transform: translateZ(-300px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
