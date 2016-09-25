@@ -398,6 +398,7 @@ progress::-moz-progress-bar{
   float:left;
   margin: 4px 0 0 20px;
 }
+
 .header .string {
     display: flex;
     align-items: center;
@@ -588,7 +589,9 @@ progress::-moz-progress-bar{
     top: 12px;
     width: 41px;
 }*/
+
  .portfolio .grid {
+     -dyn-display: '@if(@transitionToOne({when : @win-scrollTop , start: @pos(".content__page3").top + @win-height * .1 , stop: @pos(".content__page4").top - @win-height/2 }, 1) < 0.9, "", "none")'
     padding: 20px 20px 5% 20px;
     margin: 0 auto;
     max-width: 1170px;
@@ -2235,8 +2238,4 @@ Text animation
     .servises .box{width: 112px;}
     .icon-surround-1 i{}
 }
-
-
-
-
 
