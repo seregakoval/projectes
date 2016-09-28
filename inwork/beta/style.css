@@ -22,7 +22,13 @@ footer, header, menu, nav, section {
 html, body {
   height: 100%; }
 .portfolio .grid .box{height: 320px;transition: 0.3s;}
-.portfolio .grid .box .top{
+.portfolio .grid .box .block {
+    position: relative;
+}.portfolio .grid .box .block > img {
+    width: 348px;
+ }
+
+ .portfolio .grid .box .top{
     position: absolute;
     transition: 0.4s;
     top: -30px;
@@ -58,12 +64,20 @@ html, body {
 .modal-backdrop{z-index: 0;}
 .modal-dialog{margin-top:10% !important;}
 .modal{z-index: 100;}
-.portfolio .grid .box .scale-img{
+.portfolio .grid .box .scale-img {
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-    transition: 0.5s; height: 260px;margin: 0 auto;position: relative;overflow: hidden; background:#2c3f52;width: 100%;}
+    transition: 0.5s;
+    height: 178px;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    background: #2c3f52;
+    width: 318px;
+    top: 15px;
+    left: 15px;}
 .portfolio .grid .box .scale-img.active {
     transform: rotateY(180deg);
 }
@@ -101,11 +115,11 @@ html, body {
     opacity: 1;
 }
 
-.portfolio .grid .box img{
+.portfolio .grid .box .screen {
     transform: translate(0px, 0px);
     transition: transform 6s ease 0s;
 }
-.portfolio .grid .box:hover img{
+.portfolio .grid .box:hover .screen {
     transform: translate(0px, calc(-100% + 280px));
 }
 .portfolio .grid .box:hover{/*background:#2c3f52;*/ }
@@ -835,16 +849,14 @@ Text animation
 }
 .canvas {
     overflow: hidden;
-    position: relative;
     transition: 0.3s;
-    /*width: 320px;*/
+    width: 318px;
     background-color: #050505;
     display: block;
-    -webkit-transform: translateZ(-300px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
-    transform: translateZ(-300px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
-    margin: 0px auto 50px 0px;
-    outline: 1px solid transparent;
-    box-shadow: -50px 50px 40px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 13px;
+    height: 179px;
+    left: 15px;
 }
 
 .canvas:hover {

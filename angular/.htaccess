@@ -1,5 +1,0 @@
-# Mod_Rewrite
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteRule !\.\w+$ index.html [L]
-</IfModule>

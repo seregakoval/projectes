@@ -1,7 +1,0 @@
-/* MIXINS */
-@mixin hoverBackground($color) {
-    background: $color;
-    &:hover {
-        background: darken($color, 10%);
-    }
-}
