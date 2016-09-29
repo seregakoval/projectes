@@ -98,3 +98,36 @@
         top: -8px;
     }
 }
+@-webkit-keyframes demo-btn {
+    from {
+        opacity: 0;
+        margin-top: 30px;
+    }
+    to {
+        display: block;
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@-moz-keyframes demo-btn {
+    from {
+        opacity: 0;
+        margin-top: 30px;
+    }
+    to {
+        display: block;
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes demo-btn {
+    from {
+        opacity: 0;
+        margin-top: 30px;
+    }
+    to {
+        display: block;
+        opacity: 1;
+        margin-top: 0;
+    }
+}
