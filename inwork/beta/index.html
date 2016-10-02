@@ -8,8 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sergey Koval - Верстка, натяжка Wordpress" />
   <meta name="keywords" content="html,Koval Sergey Front-end Developer, " />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/menu_sideslide.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -28,17 +30,17 @@
     <div class="icon-list">
       <li>
         <a href="http://koval.urich.org/portfolio/">
-                    <span class="icon">
-                        <i aria-hidden="true" class="icon-home"></i>
-                    </span>
+            <span class="icon">
+                <i aria-hidden="true" class="icon-home"></i>
+            </span>
           <span>home</span>
         </a>
       </li>
       <li>
         <a href="#" class="btn1 historyAPI">
-                    <span class="icon">
-                        <i aria-hidden="true" class="icon-portfolio"></i>
-                    </span>
+            <span class="icon">
+                <i aria-hidden="true" class="icon-portfolio"></i>
+            </span>
           <span>Portfolio</span>
         </a>
       </li>
@@ -120,10 +122,11 @@
       </div>
     </div>
   </header><!--./header-->
-  <section  id="par" class="parallax"  style="background: url('img/image-bg.jpg') no-repeat;background-size: cover;" >
+  <section  id="par" class="parallax"  style="background-image:url('http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg'); background-repeat: no-repeat;background-size: cover;" >
     <canvas id="demo-canvas" style="position: absolute;z-index: 100; display: none;" ></canvas>
     <div class="title-head">
-      <h2 id="caption">Portfolio Developer <span id="cursor">|</span></h2>
+      <h2 id="caption">Portfolio Developer</h2>
+        <span id="cursorr">|</span>
     </div>
     <div class="slider-caption slider-caption-center">
       <div id="particles" class="slider-caption" style="height: 400px;width:100%;overflow: hidden;"></div>
@@ -153,64 +156,107 @@
   <div class="line_bg" id="par2">
     <div class="background-block"></div>
   </div>
-  <div class="anim-box"  data-parallax='{"y":-550,"duration":"70vh"}' style="position: relative;background-attachment: fixed; z-index:800; height: 70vh;">
     <div class="servises">
       <div class="container services2">
-        <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon1" style="position: fixed;left: 0;" data-parallax='{"x":400,"duration":"42vh"}' data-wow-offset="200">
-            <div class="icon-surround-1 new-lh"><i class="icon-embed2"></i></div>
-            <div class="services-popup">
-              <h4>Чистота и Семантичность</h4>
-              <p>Аккуратный, логичный, продуманный код</p>
-            </div>
+          <div class="row services">
+              <div class="col-md-4">
+                  <div class="svg-wrapper">
+                      <svg height="280" width="320" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="shape" height="280" width="320" />
+                          <div class="service">
+                              <div class="icon-holder">
+                                  <i class="icon-embed2"></i>
+                              </div>
+                              <h4 class="heading">Чистота и Семантичность</h4>
+                              <p class="description">Аккуратный, логичный, продуманный код</p>
+                          </div>
+                      </svg>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="svg-wrapper">
+                      <svg height="280" width="320" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="shape" height="280" width="320" />
+                          <div class="service">
+                              <div class="icon-holder">
+                                  <i class="icon-mobile"></i>
+                              </div>
+                              <h4 class="heading">Адаптивная верстка</h4>
+                              <p class="description">Адаптивная верстка под планшеты и мобильные устройства</p>
+                          </div>
+                      </svg>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="svg-wrapper">
+                      <svg height="280" width="320" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="shape" height="280" width="320" />
+                          <div class="service">
+                              <div class="icon-holder">
+                                  <i class="icon-html-five"></i>
+                              </div>
+                              <h4 class="heading">HTML5, CSS3, jQuery</h4>
+                              <p class="description">Использование новых технологий верстки</p>
+                          </div>
+                      </svg>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon2" style="position: fixed;left: 0;" data-parallax='{"x":595,"duration":"40vh"}' data-wow-delay="0.4s" data-wow-offset="200">
-            <div class="icon-surround-1 new-lh"><i class="icon-mobile"></i></div>
-            <div class="services-popup">
-              <h4>Адаптивная верстка</h4>
-              <p>Адаптивная верстка под планшеты и мобильные устройства</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon3 " data-wow-delay="0.6s" data-wow-offset="200">
-            <div class="icon-surround-1 new-lh"><i class="icon-html-five"></i></div>
-            <div class="services-popup">
-              <h4>HTML5, CSS3, jQuery</h4>
-              <p>Использование новых технологий верстки</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="icon4 box " data-wow-delay="0.8s" data-wow-offset="200" >
-            <div class="icon-surround-1 new-lh"><i class="icon-hammer"></i></div>
-            <div class="services-popup">
-              <h4>Исправления верстки</h4>
-              <p>Правки верстки на существующих сайтах любой сложности</p>
-            </div>
-          </div>
-        </div>
+        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
+          <!--<div class="box icon1" style="position: fixed;left: 0;" data-parallax='{"x":400,"duration":"42vh"}' data-wow-offset="200">-->
+            <!--<div class="icon-surround-1 new-lh"><i class="icon-embed2"></i></div>-->
+            <!--<div class="services-popup">-->
+              <!--<h4>Чистота и Семантичность</h4>-->
+              <!--<p>Аккуратный, логичный, продуманный код</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
+          <!--<div class="box icon2" style="position: fixed;left: 0;" data-parallax='{"x":595,"duration":"40vh"}' data-wow-delay="0.4s" data-wow-offset="200">-->
+            <!--<div class="icon-surround-1 new-lh"><i class="icon-mobile"></i></div>-->
+            <!--<div class="services-popup">-->
+              <!--<h4>Адаптивная верстка</h4>-->
+              <!--<p>Адаптивная верстка под планшеты и мобильные устройства</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
+          <!--<div class="box icon3 " data-wow-delay="0.6s" data-wow-offset="200">-->
+            <!--<div class="icon-surround-1 new-lh"><i class="icon-html-five"></i></div>-->
+            <!--<div class="services-popup">-->
+              <!--<h4>HTML5, CSS3, jQuery</h4>-->
+              <!--<p>Использование новых технологий верстки</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
+          <!--<div class="icon4 box " data-wow-delay="0.8s" data-wow-offset="200" >-->
+            <!--<div class="icon-surround-1 new-lh"><i class="icon-hammer"></i></div>-->
+            <!--<div class="services-popup">-->
+              <!--<h4>Исправления верстки</h4>-->
+              <!--<p>Правки верстки на существующих сайтах любой сложности</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
 
-        <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon5 " data-wow-delay="1s" data-wow-offset="200">
-            <div class="icon-surround-1 new-lh"><i class="icon-cogs"></i></div>
-            <div class="services-popup">
-              <h4>Установка на CMS WordPress</h4>
-              <p>Установка готового html кода на систему управления сайтов WordPress</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 service-content">
-          <div class="box icon6" data-rapallax='{"x":200,"duration":"100"}' data-wow-delay="1.2s" data-wow-offset="200">
-            <div class="icon-surround-1 new-lh"><i class="icon-checkmark"></i></div>
-            <div class="services-popup">
-              <h4>Качество</h4>
-              <p>Код будет выполнен качественно и точно в срок!</p>
-            </div>
-          </div>
-        </div>
+        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
+          <!--<div class="box icon5 " data-wow-delay="1s" data-wow-offset="200">-->
+            <!--<div class="icon-surround-1 new-lh"><i class="icon-cogs"></i></div>-->
+            <!--<div class="services-popup">-->
+              <!--<h4>Установка на CMS WordPress</h4>-->
+              <!--<p>Установка готового html кода на систему управления сайтов WordPress</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
+          <!--<div class="box icon6" data-rapallax='{"x":200,"duration":"100"}' data-wow-delay="1.2s" data-wow-offset="200">-->
+            <!--<div class="icon-surround-1 new-lh"><i class="icon-checkmark"></i></div>-->
+            <!--<div class="services-popup">-->
+              <!--<h4>Качество</h4>-->
+              <!--<p>Код будет выполнен качественно и точно в срок!</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
       </div>
     </div>
     <section class="portfolio clearfix">
@@ -702,7 +748,6 @@
       </div>
     </section>-->
   </div>
-</div>
 </div>
 <div class="over" style="position: fixed;
     lef: 0;

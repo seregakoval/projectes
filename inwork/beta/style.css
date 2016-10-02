@@ -170,7 +170,7 @@ body {
     content: "\e905";
 }
 .slider-parallax{height: 700px !important;}
-.parallax {height: 900px !important;}
+
 
 .slide2 {
     position: absolute;
@@ -204,14 +204,29 @@ body {
 .title-head {
     position: absolute;
     text-align: center;
-    top: 163px;
+    top: 257px;
     width: 100%;
     z-index: 100;
 }
+#cursorr{
+    font-size: 60px;
+    display: inline-block;
+    margin: 0 10px;
+    color: #00a8ff;
+    -webkit-animation-name: flash;
+    animation-name: flash;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
 .title-head h2{
+    font-family: 'Baloo Da', cursive;
     color: #fff;
     font-size: 50px;
     font-weight: 400;
+    display: inline-block;
 }
 .slider-caption h2 {
     font-size: 70px;
@@ -241,7 +256,7 @@ body {
     content: "";
     bottom: 0;
     right: 0;
-    background: url("img/overaly.png");
+    background: rgba(28, 36, 65, 0.53) url("img/overaly.png");
 }
 #loading {
   background-color: #1A1B23;
@@ -861,6 +876,7 @@ Text animation
     background: transparent;
     position: relative;
     overflow: hidden;
+
 }
 .canvas {
     overflow: hidden;
@@ -893,89 +909,108 @@ Text animation
     margin: 2px 0 10px;
     margin-left: 88px;
 }
-.servises {
-    background-color: #fff;
+.service {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /*height: 280px;*/
+    text-align: center;
+  /*  border-radius: 5px;
+    border: 1px solid #ddd;*/
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.servises  .box{
+
+.service .icon-holder {
     position: relative;
-    width: 146px;
-    margin:0 auto;
+    top: 100px;
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 10px;
+    background: white;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.servises  .box .icon-surround-1 {/*transition:0.5s;*/}
-.servises  .icon4:hover .icon-surround-1{
-    animation-name: animate_molot;
-    -webkit-animation-name: animate_molot;
-    -moz-animation-name: animate_molot;
-    animation-duration: 500ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-}
-.servises  .icon5:hover .icon-surround-1{
-    animation-name: animate_icon5;
-    -webkit-animation-name: animate_icon5;
-    -moz-animation-name: animate_icon5;
-    animation-duration: 1000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.servises  .icon6:hover .icon-surround-1 i{
-    animation-name: animate_icon6;
-    -webkit-animation-name: animate_icon6;
-    -moz-animation-name: animate_icon6;
-    animation-duration: 400ms;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.servises  .icon2:hover .icon-surround-1 i,
-.servises  .icon1:hover .icon-surround-1 i,
-.servises  .icon3:hover .icon-surround-1 i{
-    animation-name: animate_icon6;
-    -webkit-animation-name: animate_icon6;
-    -moz-animation-name: animate_icon6;
-    animation-duration: 400ms;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.service-content .icon-surround i {font-size:30px; line-height:65px }
-.service-content {text-align:center; color:#444}
-
-.services4 .service-content p {
-    font-weight: 400;
-    text-align: left;
-    margin-left: 88px;
-    padding: 0;
-}
-
-.services4 .service-content {
-    margin-bottom: 13px;
-}
-
-.service-content:hover .icon-surround, .services4 .service-content:hover .ico1,.services4 .service-content:hover .ico2,.services4 .service-content:hover .ico3,.services4 .service-content:hover .ico4,.services4 .service-content:hover .ico5,.services4 .service-content:hover .ico6 {
-    background-color: #e96546;
-    border-color: #e96546;
-    color:#fff
-}
-.services {
-    padding: 70px 90px 30px;
-    background: url("images/service-bg.png")/*tpa=http://chemistry.beantownthemes.com/images/service-bg.png*/ no-repeat center 90px;
-}
-
-.services3,.services4 {
-    padding: 20px 0 0 !important;
-    background: none;
-}
-
-.service-content {
+.svg-wrapper {
     position: relative;
+    top: 50%;
+   /* transform: translateY(-50%);*/
+    margin: 0 auto;
+    width: 320px;
+}
+.svg-wrapper svg {
+    border-radius: 5px;
+}
+.shape {
+    border-radius: 5px;
+    stroke-dasharray: 290 640;
+    stroke-dashoffset: -614;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: #00a8ff;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #fff;
+    top: -48px;
+    position: relative;
+}
+.svg-wrapper:hover .shape {
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1260;
+    stroke: #00a8ff;
+}
+.service .heading {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: 80px;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.service i {
+    font-size: 50px;
+    color: #49acef;
+}
+.service .icon-holder > img.icon {
+    width: 40px;
+}
+
+.svg-wrapper:hover .icon-holder {
+    top: -30px;
+}
+
+.svg-wrapper:hover .heading {
+    top: -30px;
+}
+
+.service .description {
+    padding-bottom: 15px;
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    margin: 0 auto;
+    font-size: 16px;
+    opacity: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.svg-wrapper:hover .description {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 
 .icon-surround-1, .service-content .icon-surround, .service-content .ico1,.service-content .ico2,.service-content .ico3,.service-content .ico4,.service-content .ico5,.service-content .ico6 {
@@ -1404,7 +1439,7 @@ Text animation
     top: 40%;
 }
 .slider-caption:after {
-    background: rgba(0, 0, 0, 0.18) none repeat scroll 0 0;
+   /* background: rgba(0, 0, 0, 0.18);*/
     content: "";
     height: 383px;
     position: absolute;

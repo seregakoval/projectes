@@ -24,7 +24,7 @@ try {
 
 var index = 0;
 var captionLength = 0;
-var captionOptions = ["This is the first one.", "This is the second.", "This is the third :)"]
+var captionOptions = ["Portfolio Developer :)", "Portfolio Developer :)", "Portfolio Developer :)","Protfolio Developer :)","Portfolio Developer :)"]
 
 // this will make the cursor blink at 400ms per cycle
 function cursorAnimation() {
@@ -106,6 +106,18 @@ function validateEmail(){
 }
 
 $(document).ready(function(){
+    var images = [
+        "http://usersthink.com/wp-content/uploads/06-usersthink-stock-image.jpg",
+        "http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg"
+    ];
+    $(".parallax").css("background-image");
+
+    $.each(images,function Array(){
+        $(".parallax").css({"background-image":"url(" + images[i++] + ")"});
+        console.log(images);
+    });
+    setInterval(Array, 3000);
+
     $(window).scroll(function(){
         var st = $(window).scrollTop();
 
