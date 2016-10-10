@@ -122,7 +122,8 @@
       </div>
     </div>
   </header><!--./header-->
-  <section  id="par" class="parallax"  style="background-image:url('http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg'); background-repeat: no-repeat;background-size: cover;" >
+    <!--http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg-->
+  <section class="parallax" data-parallax="scroll" data-image-src="img/image-bg.jpg"  style=" background-repeat: no-repeat;background-size: cover;" >
     <canvas id="demo-canvas" style="position: absolute;z-index: 100; display: none;" ></canvas>
     <div class="title-head">
       <h2 id="caption">Portfolio Developer</h2>
@@ -153,10 +154,16 @@
       </div>
     </div>
   </section>
-  <div class="line_bg" id="par2">
     <div class="background-block"></div>
   </div>
     <div class="servises">
+        <div class="title">
+            <div class="icon">
+                <span class="icon-pentagon"><i class="fa fa-suitcase"></i></span>
+            </div>
+            <div style="clear:both"></div>
+            <h1>Servises</h1>
+        </div>
       <div class="container services2">
           <div class="row services">
               <div class="col-md-4">
@@ -201,62 +208,49 @@
                       </svg>
                   </div>
               </div>
+              <div class="col-md-4">
+                  <div class="svg-wrapper">
+                      <svg height="280" width="320" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="shape" height="280" width="320" />
+                          <div class="service">
+                              <div class="icon-holder">
+                                  <i class="icon-hammer"></i>
+                              </div>
+                              <h4 class="heading">Исправления верстки</h4>
+                              <p class="description">Правки верстки на существующих сайтах любой сложности</p>
+                          </div>
+                      </svg>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="svg-wrapper">
+                      <svg height="280" width="320" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="shape" height="280" width="320" />
+                          <div class="service">
+                              <div class="icon-holder">
+                                  <i class="icon-cogs"></i>
+                              </div>
+                              <h4 class="heading">Установка на CMS WordPress</h4>
+                              <p class="description">Установка готового html кода на систему управления сайтов WordPress</p>
+                          </div>
+                      </svg>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="svg-wrapper">
+                      <svg height="280" width="320" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="shape" height="280" width="320" />
+                          <div class="service">
+                              <div class="icon-holder">
+                                  <i class="icon-checkmark"></i>
+                              </div>
+                              <h4 class="heading">Качество</h4>
+                              <p class="description">Код будет выполнен качественно и точно в срок!</p>
+                          </div>
+                      </svg>
+                  </div>
+              </div>
           </div>
-        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
-          <!--<div class="box icon1" style="position: fixed;left: 0;" data-parallax='{"x":400,"duration":"42vh"}' data-wow-offset="200">-->
-            <!--<div class="icon-surround-1 new-lh"><i class="icon-embed2"></i></div>-->
-            <!--<div class="services-popup">-->
-              <!--<h4>Чистота и Семантичность</h4>-->
-              <!--<p>Аккуратный, логичный, продуманный код</p>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
-          <!--<div class="box icon2" style="position: fixed;left: 0;" data-parallax='{"x":595,"duration":"40vh"}' data-wow-delay="0.4s" data-wow-offset="200">-->
-            <!--<div class="icon-surround-1 new-lh"><i class="icon-mobile"></i></div>-->
-            <!--<div class="services-popup">-->
-              <!--<h4>Адаптивная верстка</h4>-->
-              <!--<p>Адаптивная верстка под планшеты и мобильные устройства</p>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
-          <!--<div class="box icon3 " data-wow-delay="0.6s" data-wow-offset="200">-->
-            <!--<div class="icon-surround-1 new-lh"><i class="icon-html-five"></i></div>-->
-            <!--<div class="services-popup">-->
-              <!--<h4>HTML5, CSS3, jQuery</h4>-->
-              <!--<p>Использование новых технологий верстки</p>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
-          <!--<div class="icon4 box " data-wow-delay="0.8s" data-wow-offset="200" >-->
-            <!--<div class="icon-surround-1 new-lh"><i class="icon-hammer"></i></div>-->
-            <!--<div class="services-popup">-->
-              <!--<h4>Исправления верстки</h4>-->
-              <!--<p>Правки верстки на существующих сайтах любой сложности</p>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
-          <!--<div class="box icon5 " data-wow-delay="1s" data-wow-offset="200">-->
-            <!--<div class="icon-surround-1 new-lh"><i class="icon-cogs"></i></div>-->
-            <!--<div class="services-popup">-->
-              <!--<h4>Установка на CMS WordPress</h4>-->
-              <!--<p>Установка готового html кода на систему управления сайтов WordPress</p>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-md-2 col-sm-4 col-xs-6 service-content">-->
-          <!--<div class="box icon6" data-rapallax='{"x":200,"duration":"100"}' data-wow-delay="1.2s" data-wow-offset="200">-->
-            <!--<div class="icon-surround-1 new-lh"><i class="icon-checkmark"></i></div>-->
-            <!--<div class="services-popup">-->
-              <!--<h4>Качество</h4>-->
-              <!--<p>Код будет выполнен качественно и точно в срок!</p>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
       </div>
     </div>
     <section class="portfolio clearfix">
@@ -285,6 +279,41 @@
                               <h3>Safari</h3>
                           </div>
                       </div>
+              </div> <!--./block-->
+              <div class="button-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+                      <defs>
+                          <filter id="filter-goo-3">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                              <feComposite in="SourceGraphic" in2="goo" />
+                          </filter>
+                      </defs>
+                  </svg>
+                  <button id="component-3" class="button button--2 button--3">
+                      <i class="fa fa-desktop" aria-hidden="true"></i>
+                      View demo
+                      <span class="button__bg"></span>
+                  </button>
+              </div>
+          </div> <!--./box-->
+          <div class="box col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="block">
+                  <img src="img/imac-mockup-27%20(1).png" alt="">
+                  <div class="scale-img">
+                      <div class="hide-block">
+                      </div>
+                      <!--<div class="top">-->
+                      <!--<h3>Safari</h3>-->
+                      <!--<a class="main" href="#url">All pages project:</a>-->
+                      <!--</div>-->
+                      <div class="img-n">
+                          <img src="img/screencapture5.jpg" class="screen" alt="">
+                      </div>
+                      <div class="bottom">
+                          <h3>Safari</h3>
+                      </div>
+                  </div>
               </div> <!--./block-->
               <div class="button-svg">
                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
@@ -771,9 +800,9 @@
 
 <script src="js/button-svg.js"></script>
 <!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
-<!--<script src="js/parallax.min.js"></script>-->
+<script src="js/parallax.min.js"></script>
 <!--<script src="https://cdn.rawgit.com/kasparsj/jquery.requestAnimationFrame/master/jquery.requestAnimationFrame.min.js"></script>-->
-<script src="js/jquery.data-parallax.min.js"></script>
+<!--<script src="js/jquery.data-parallax.min.js"></script>-->
 
 <script>
   if($(window).width() >= 640){

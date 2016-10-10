@@ -106,30 +106,7 @@ function validateEmail(){
 }
 
 $(document).ready(function(){
-    var images = [
-        "http://usersthink.com/wp-content/uploads/06-usersthink-stock-image.jpg",
-        "http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg"
-    ];
-    $(".parallax").css("background-image");
-
-    $.each(images,function Array(){
-        $(".parallax").css({"background-image":"url(" + images[i++] + ")"});
-        console.log(images);
-    });
-    setInterval(Array, 3000);
-
-    $(window).scroll(function(){
-        var st = $(window).scrollTop();
-
-      /*  $(".html5").css({
-            "transform" : "translate(0%,-" + st/4 + "%",
-        });
-        $(".services").css({
-            "transform" : "translate(0%,-" + st/4 + "%",
-        });*/
-    });
-
-
+    
    /* $('#scene').parallax();*/
     (function() {
 

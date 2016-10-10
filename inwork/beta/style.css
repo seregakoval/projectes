@@ -932,11 +932,30 @@ Text animation
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+.servises h1 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #333;
+    display: inline-block;
+    padding: 0 0px 10px 0;
+    margin: 20px 0 30px 0;
+    border-bottom: 2px solid #333;
+    position: relative;
+}
+.servises .icon {
+    width: 30px;
+    margin: 0 auto;
+}
+.servises .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
 .svg-wrapper {
     position: relative;
     top: 50%;
    /* transform: translateY(-50%);*/
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     width: 320px;
 }
 .svg-wrapper svg {
@@ -1166,7 +1185,7 @@ Text animation
 .icon-code:before {
     content: "\e31d";
 }
-.servises{margin-top:5%;position: relative;z-index: 100;border-bottom: 3px solid #59A5B7;padding: 2% 0;}
+.servises{margin-top:5%;position: relative;z-index: 100;}
 .service-content:hover {
     cursor: pointer;
 }
