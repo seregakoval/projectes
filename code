@@ -1,0 +1,13 @@
+/*SCROLL links*/
+
+$(function(){
+        $("[data-scroll-nav] a").on('click', function(e) {
+            e.preventDefault();
+            var scrollTo = $(this).attr('href');
+            $("body").animate({
+                scrollTop: $(scrollTo).offset().top
+            },500);
+        });
+    });
+
+/*./SCROLL links*/
