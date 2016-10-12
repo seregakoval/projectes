@@ -36,11 +36,13 @@ Array.prototype.slice.call(document.querySelectorAll('.button'), 0).forEach(func
 initBt3();
 // Button 3
 function initBt3() {
-    var bt = document.querySelectorAll('#component-3')[0];
+    var bt = document.querySelectorAll('#component-1')[0];
+    var bt2 = document.querySelectorAll('#component-2')[0];
     var particleCount = 6;
     var particles;
     var clicked = false;
-
+    console.log(bt);
+    console.log(bt2);
     bt.addEventListener('mouseenter', function() {
         particles = [];
 
@@ -49,19 +51,30 @@ function initBt3() {
         for (var i = 0; i < particleCount; i++) {
             particles.push(document.createElement('span'));
             bt.appendChild(particles[i]);
-
             particles[i].classList.add(i % 2 ? 'left' : 'right');
-
             var dir = i % 2 ? '-' : '+';
             var tl = new TimelineLite();
 
             tl.to(particles[i], 2, { x: dir + 18, scaleX: 1.4, ease: Expo.easeOut });
         }
     });
+    bt2.addEventListener('mouseenter', function() {
+        particles = [];
 
+        TweenLite.to(bt.querySelectorAll('.button__bg'), 1.5, { scaleX: 1.05, ease: Expo.easeOut, delay: 0.2 });
+
+        for (var i = 0; i < particleCount; i++) {
+            particles.push(document.createElement('span'));
+            bt2.appendChild(particles[i]);
+            particles[i].classList.add(i % 2 ? 'left' : 'right');
+            var dir = i % 2 ? '-' : '+';
+            var tl = new TimelineLite();
+
+            tl.to(particles[i], 2, { x: dir + 18, scaleX: 1.4, ease: Expo.easeOut });
+        }
+    });
     bt.addEventListener('mouseleave', function() {
         if (clicked) return;
-
         TweenLite.to(bt.querySelectorAll('.button__bg'), 0.9, { scale: 1, ease: Power3.easeOut, overwrite: 'all' });
 
         for (var i = 0; i < particles.length; i++) {
@@ -73,6 +86,18 @@ function initBt3() {
         }
     });
 
+    bt2.addEventListener('mouseleave', function() {
+        if (clicked) return;
+        TweenLite.to(bt2.querySelectorAll('.button__bg'), 0.9, { scale: 1, ease: Power3.easeOut, overwrite: 'all' });
+
+        for (var i = 0; i < particles.length; i++) {
+            particles[i].classList.add(i % 2 ? 'left' : 'right');
+
+            TweenLite.to(particles[i], 0.6, { x: 0, scaleX: 1, ease: Power3.easeOut, onComplete: function() {
+                this.target.parentNode.removeChild(this.target);
+            } });
+        }
+    });
     bt.addEventListener('click', function() {
         clicked = true;
 
@@ -96,4 +121,3 @@ function initBt3() {
         }
     });
 }
-

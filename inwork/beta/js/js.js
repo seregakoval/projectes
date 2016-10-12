@@ -19,9 +19,7 @@ try {
 } catch(err) {
 
 }
-
 /*    ANIMATION-TEXT   */
-
 var index = 0;
 var captionLength = 0;
 var captionOptions = ["Portfolio Developer :)", "Portfolio Developer :)", "Portfolio Developer :)","Protfolio Developer :)","Portfolio Developer :)"]
@@ -34,7 +32,6 @@ function cursorAnimation() {
         opacity: 1
     }, 400);
 }
-
 // this types the caption
 function type() {
     $caption.html(caption.substr(0, captionLength++));
@@ -42,7 +39,6 @@ function type() {
         setTimeout('type()', 70);
     }
 }
-
 // this erases the caption
 function erase() {
     $caption.html(caption.substr(0, captionLength--));
@@ -50,7 +46,6 @@ function erase() {
         setTimeout('erase()', 50);
     }
 }
-
 // this instigates the cycle of typing the captions
 function showCaptions() {
     caption = captionOptions[index];
@@ -65,8 +60,6 @@ function showCaptions() {
         }, 1500)
     }
 }
-
-
 $(document).ready(function(){
     // use setInterval so that it will repeat itself
     setInterval('cursorAnimation()', 600);
@@ -77,7 +70,6 @@ $(document).ready(function(){
 });
 
 /*---AND ANIMATION TEXT---*/
-
 
 /*validate_name*/
 errorName = false;
@@ -104,9 +96,7 @@ function validateEmail(){
         errorMail = false;
     }
 }
-
 $(document).ready(function(){
-    
    /* $('#scene').parallax();*/
     (function() {
 
@@ -134,7 +124,6 @@ $(document).ready(function(){
                 }
             } );
         }
-
         function toggleMenu() {
             if( isOpen ) {
                 classie.remove( bodyEl, 'show-menu' );
