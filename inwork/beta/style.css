@@ -324,7 +324,7 @@ body {
 .header{
     top:0;
     width:100%;
-    position: fixed;
+    position: absolute;
     z-index:100;
 }
 .header > .container { padding: 15px; }
@@ -877,22 +877,6 @@ Text animation
     overflow: hidden;
 
 }
-.canvas {
-    overflow: hidden;
-    transition: 0.3s;
-    width: 318px;
-    background-color: #050505;
-    display: block;
-    position: absolute;
-    top: 13px;
-    height: 179px;
-    left: 15px;
-}
-
-.canvas:hover {
-    z-index:5;
-    transform: translateZ(0px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) ;
-}
 .service-content .icon-surround, .services4 .service-content .ico1,.services4 .service-content .ico2,.services4 .service-content .ico3,.services4 .service-content .ico4,.services4 .service-content .ico5,.services4 .service-content .ico6 {
     float: left;
     margin: 0;
@@ -913,10 +897,7 @@ Text animation
     position: absolute;
     top: 0;
     width: 100%;
-    /*height: 280px;*/
     text-align: center;
-  /*  border-radius: 5px;
-    border: 1px solid #ddd;*/
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -2254,6 +2235,7 @@ Text animation
 }
 .morph-shape{display: none;}
 @media  (max-width: 991px){
+    .parallax { background:url("img/image-bg.jpg") no-repeat center center; background-size: cover;background-attachment: fixed; }
     .mobile-slider .html5{margin:0 auto;float:none;}
     .mobile-slider .js{display: none;}
     .mobile-slider {max-width: 720px;}
