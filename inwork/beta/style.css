@@ -169,7 +169,8 @@ body {
 .icon-html-five:before {
     content: "\e905";
 }
-.slider-parallax{height: 700px !important;}
+
+
 
 
 .slide2 {
@@ -204,7 +205,7 @@ body {
 .title-head {
     position: absolute;
     text-align: center;
-    top: 257px;
+    top: 222px;
     width: 100%;
     z-index: 100;
 }
@@ -871,7 +872,7 @@ Text animation
 
 .parallax {
     padding: 20px 0;
-    height: 100vh !important;
+    height: 100vh;
     background: transparent;
     position: relative;
     overflow: hidden;
@@ -987,7 +988,7 @@ Text animation
 .service .icon-holder > img.icon {
     width: 40px;
 }
-
+.close { display: none; }
 .svg-wrapper:hover .icon-holder {
     top: -30px;
 }
@@ -2095,6 +2096,7 @@ Text animation
 .mobile-slider .text-html {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #fff;
     position: absolute;
     top: 42px;
     text-transform: uppercase;
@@ -2106,6 +2108,7 @@ Text animation
     margin-bottom: 10px;
     position: absolute;
     top: 42px;
+    color:#fff;
     text-transform: uppercase;
     font-weight: 100;
     left: 152px;
@@ -2235,7 +2238,7 @@ Text animation
 }
 .morph-shape{display: none;}
 @media  (max-width: 991px){
-    .parallax { background:url("img/image-bg.jpg") no-repeat center center; background-size: cover;background-attachment: fixed; }
+    .parallax { height:  auto;min-height: 600px;background:url("img/image-bg.jpg") no-repeat center center; background-size: cover;background-attachment: fixed; }
     .mobile-slider .html5{margin:0 auto;float:none;}
     .mobile-slider .js{display: none;}
     .mobile-slider {max-width: 720px;}
@@ -2296,16 +2299,20 @@ Text animation
     .icon-gif{display: none;}
     .svg-wrapper svg { height: 250px; }
     .svg-wrapper rect { height: 250px; }
+    #cursorr { font-size: 30px; margin: 0;}
+    .shape { stroke-dashoffset: -587;}
+
 }
 @media  (max-width: 480px){
+    .shape { stroke-dashoffset: -537; }
     .portfolio .grid .box { height: 280px; }
     .portfolio .grid .box .block { width: 361px;max-width: 300px; }
     .portfolio .grid .box .block > img { width: 100%; }
     /*.portfolio .grid .box .scale-img { top: 11px;left: 10px;width: 217px; height: 120px; }*/
-    .svg-wrapper { width: 100%; }
+    .svg-wrapper { width: 290px; }
     .portfolio h1 { font-size: 27px; }
-    .svg-wrapper svg  { width: 100%; height:250px; }
-    .svg-wrapper rect { width: 100%; height:250px; }
+    .svg-wrapper svg  { width: 290px; height:250px; }
+    .svg-wrapper rect { width: 290px; height:250px; }
     .about-us .block-img-responsive img{display: block;margin:10px auto;position: static;}
     .portfolio .grid > div{width: 100%;}
     .cd-intro{top:260px;}
@@ -2332,14 +2339,14 @@ Text animation
     .title-about-us {margin: 8% 0 0 0;}
     .space h5{margin-bottom: 5px;font-size: 18px;}
     .progress{margin-bottom: 16px;}
-    .title-head h2 {font-size: 32px;}
+    .title-head h2 {font-size: 28px;}
     .mobile-slider .html5 .slide-img2{max-width: 110px;}
     .mobile-slider .html5 .slide-img1{max-width: 110px;}
     .mobile-slider .html5 .slide-img5{max-width: 81px;}
     .mobile-slider .html5 .slide-img6{max-width: 81px;}
     .mobile-slider .html5 .slide-img3{max-width: 61px;}
     .mobile-slider .html5 .slide-img4{max-width: 61px;}
-    .flex-caption, .nivo-caption, .slider-caption{top:30%;}
+    .flex-caption, .nivo-caption, .slider-caption{top: 39%;}
     .mobile-slider .html5 .slide-img2{left:118px;}
     .mobile-slider .html5 .slide-img4{left: 119px;}
     .mobile-slider .html5 .slide-img6{left:119px;}

@@ -203,6 +203,7 @@ button.trigger {
     height:100px;
 }
 .dialog__content {
+
     width: 100%;
     max-height: 800px;
     max-width: 1366px;
@@ -248,6 +249,7 @@ button.trigger {
 }
 
 .dialog.dialog--open .dialog__content {
+
     -webkit-animation-name: anim-open;
     animation-name: anim-open;
     -webkit-animation-timing-function: cubic-bezier(0.6,0,0.4,1);
