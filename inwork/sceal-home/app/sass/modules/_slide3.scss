@@ -1,0 +1,32 @@
+
+.full-screen {
+  &__slide3 {
+    background: url("../../../app/img/slide3.jpg") no-repeat;
+    background-size: cover;
+    .title {
+      font-size: 60px;
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 40px;
+      @media(max-width: 991px) {
+        font-size: 40px;
+      }
+    }
+    .sub-title {
+      font-size: 40px;
+      color: #fff;
+      font-weight: 300;
+	  margin-bottom: 40px;
+      line-height: 30px;
+    }
+    .text {
+      color: #fff;
+	  font-size: 25px;
+	  font-weight: bold;
+	  text-align: right;
+      @media(max-width: 991px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

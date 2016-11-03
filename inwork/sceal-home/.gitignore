@@ -1,0 +1,11 @@
+.sass-cache/
+vendor/
+node_modules/
+*.txt
+
+# composer vendor dir
+/vendor
+
+# ide project files
+.idea
+nbproject

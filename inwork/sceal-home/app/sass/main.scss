@@ -1,0 +1,38 @@
+/***********************/
+/*      BASE STYLES    */
+
+@import "base/_base.scss";
+// variables
+@import "base/_variables.scss";
+// MIXIN
+@import "base/_mixin.scss";
+// BUTTONS
+@import "base/_buttons.scss";
+/*        LAYOUT       */
+
+// HEADER
+@import "layout/_header.scss";
+// FOOTER
+@import "layout/_footer.scss";
+
+/*        MODULES       */
+//SLIDE 1
+@import "modules/_home-screen.scss";
+//SLIDE 2
+@import "modules/_slide2.scss";
+//SLIDE 3
+@import "modules/_slide3.scss";
+//SLIDE 4
+@import "modules/_slide4.scss";
+//SLIDE
+@import "modules/_boxes.scss";
+
+//SLIDER
+@import "modules/_slider.scss";
+@import "_media.scss";
+
+
+
+
+
+

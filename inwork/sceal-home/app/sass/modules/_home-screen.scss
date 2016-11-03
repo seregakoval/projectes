@@ -1,0 +1,61 @@
+//HOME-SCREEN
+.full-screen {
+	&__slide1 {
+	  background: url("../../../app/img/slide.jpg") no-repeat;
+	  background-size: cover;
+	  .content-slide {
+		text-align: center;
+		.title {
+		  font-size: 36px;
+		  color: #fff;
+		  margin-bottom: 50px;
+		  font-weight: 300;
+		  @media(max-width: 991px) {
+			font-size: 30px;
+		  }
+		}
+		.btn-screen {
+		  transition: background 0.3s;
+		  padding: 10px 15px;
+		  border: 2px solid #fff;
+		  outline: none;
+		  font-size: 14px;
+		  font-weight: 700;
+		  color: #fff;
+		  text-transform: uppercase;
+		  background: #03baf4;
+		  &:hover {
+			background: #1980a1;
+		  }
+		}
+	  }
+	}
+  &__navSlider {
+	position: fixed;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+
+  }
+}
+#pp-nav {
+  li {
+	span {
+	  position: relative;
+	  margin: 15px 0 !important;;
+	  width: 17px;
+	  display: block;
+	  height: 17px;
+	  background: none;
+	  transition: all 0.3s;
+	  border: 2px solid #fff !important;
+	  border-radius: 50%;
+	}
+	&.active a span {
+	  background: #fff !important;;
+	}
+  }
+}
+#pp-nav li .active span, .pp-slidesNav .active span {
+  background: #fff;
+}

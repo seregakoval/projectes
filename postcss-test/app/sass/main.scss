@@ -1,0 +1,27 @@
+/***********************/
+/*      BASE STYLES    */
+
+@import "base/_base.scss";
+// variables
+@import "base/_variables.scss";
+// MIXIN
+@import "base/_mixin.scss";
+// BUTTONS
+@import "base/_buttons.scss";
+/*        LAYOUT       */
+
+// HEADER
+@import "layout/_header.scss";
+// FOOTER
+@import "layout/_footer.scss";
+
+/*        MODULES       */
+@import "modules/_home-screen.scss";
+
+@import "_media.scss";
+
+
+
+
+
+

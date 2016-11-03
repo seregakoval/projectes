@@ -1,0 +1,18 @@
+//SLIDE2
+
+.full-screen {
+  &__slide2 {
+	background: #191919;
+	//background: url("../../../app/img/slide2.jpg") no-repeat;
+	.content-slide2 {
+	  .text {
+		font-size: 30px;
+		color: #fff;
+		font-weight: 600;
+		text-align: center;
+		line-height: 46px;
+	  }
+	}
+  }
+}
+
