@@ -164,15 +164,72 @@ button.trigger {
 .dialog {
     position: fixed;
     display: -webkit-flex;
-    display: flex;
+    display: none;
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
     pointer-events: none;
     z-index:100;
+    background: rgba(0,0,0,0.6);
 }
-
+.dialog .modal-head {
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
+    padding: 10px;
+    background: #dfdfdf;
+    border-radius: 3px 3px 0 0;
+}
+.dialog .modal-head .head-left {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    width: 10%;
+}
+.dialog .modal-head .head-left span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.dialog .modal-head .head-left span.red {
+    background: #fc625d;
+}
+.dialog .modal-head .head-left span.yellow {
+    background: #fdc041;
+}
+.dialog .modal-head .head-left span.green {
+    background: #34cb4a;
+}
+.dialog .modal-head .search {
+    position: relative;
+    height: 28px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 80%;
+}
+.dialog .modal-head .search i {
+    position: absolute;
+    color: #b2b2b2;
+    font-family: FontAwesome !important;
+}
+.dialog .modal-head .search .icon-search {
+    left: 10px;
+    top: 5px;
+    font-size: 16px;
+}
+.dialog .modal-head .search  .icon-sync {
+    right: 10px;
+    top: 6px;
+    font-size: 16px;
+}
 .dialog__overlay {
     position: absolute;
     z-index: 1;
@@ -182,8 +239,9 @@ button.trigger {
     transition: opacity 0.3s;
     -webkit-backface-visibility: hidden;
 }
-
+.dialog--open {  display: flex; }
 .dialog--open .dialog__overlay {
+
     opacity: 1;
     pointer-events: auto;
 }
@@ -242,6 +300,7 @@ button.trigger {
 
 .dialog.dialog--open .dialog__content,
 .dialog.dialog--close .dialog__content {
+    border-radius: 3px 3px 0 0;
     -webkit-animation-duration: 0.4s;
     animation-duration: 0.4s;
     -webkit-animation-fill-mode: forwards;
