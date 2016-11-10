@@ -706,7 +706,7 @@ So I moved to stack the svgs as actual imgs instead. IE also had a hard time dea
 }
 
 .activated .plugin-action__label {
-		color: $green;
+		color: $blue;
 	}
 
 .form-toggle:focus + .form-toggle__label .form-toggle__switch,
@@ -715,7 +715,7 @@ So I moved to stack the svgs as actual imgs instead. IE also had a hard time dea
 }
 
 .form-toggle:checked + .form-toggle__label .form-toggle__switch {
-	background: $green;
+	background: $blue;
 		&:after {
 			left: 16px;
 		}

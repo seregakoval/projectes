@@ -131,20 +131,7 @@ function initBt3() {
                 $(".dialog").removeClass("dialog--open");
             });
         }
-        setTimeout(koval,200);
-        function koval(){
-            $('.dialog-iframe').attr('src', 'portfolio/dentist 2.4.5/index.html');
-                $(".dialog-iframe").load(function(){
-                    setTimeout(showLoad,2000);
-                    function showLoad(){
-                        $(".svg-loader").fadeOut();
-                    }
-                    setTimeout(showframe,2000);
-                    function showframe(){
-                        $('.dialog-iframe').fadeIn();
-                    }
-                });
-            }
+
 
     });
 }
