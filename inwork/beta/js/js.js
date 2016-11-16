@@ -203,20 +203,30 @@ $(document).ready(function(){
             $(".nav-container ul li a i").css({'color':"#fff"});
         }
     });
-
-    // setTimeout(koval,200);
-    // function koval(){
-    //     $('.dialog-iframe').attr('src', 'portfolio/dentist 2.4.5/index.html');
-    //     $(".dialog-iframe").load(function(){
-    //         setTimeout(showLoad,2000);
-    //         function showLoad(){
-    //             $(".svg-loader").fadeOut();
-    //         }
-    //         setTimeout(showframe,2000);
-    //         function showframe(){
-    //             $('.dialog-iframe').fadeIn();
-    //         }
-    //     });
-    // }
 });
+$(document).on('opened', '.remodal', function () {
 
+    setTimeout(show_loader, 200);
+    function show_loader() {
+
+        setTimeout(add_class_losder, 200);
+    }
+    function add_class_losder(){
+        $(".svg-loading").addClass("bounceIn");
+    }
+    setTimeout(koval,300);
+    function koval(){
+        $('.dialog-iframe').attr('src', 'portfolio/dentist 2.4.5/index.html');
+        $(".dialog-iframe").load(function(){
+            setTimeout(showLoad,2000);
+            function showLoad(){
+                $(".svg-loading").addClass("bounceOut");
+            }
+            setTimeout(showframe,2700);
+            function showframe(){
+                $(".svg-loader").addClass("bounceOutLeft");
+                $('.dialog-iframe').fadeIn();
+            }
+        });
+    }
+});
