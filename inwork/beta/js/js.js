@@ -216,7 +216,7 @@ $(document).on('opened', '.remodal', function () {
     }
     setTimeout(koval,300);
     function koval(){
-        $('.dialog-iframe').attr('src', 'portfolio/dentist 2.4.5/index.html');
+        $('.dialog-iframe').attr('src', 'portfolio/dentist/index.html');
         $(".dialog-iframe").load(function(){
             setTimeout(showLoad,2000);
             function showLoad(){

@@ -21,6 +21,7 @@ footer, header, menu, nav, section {
 
 html, body {
   height: 100%; }
+  
 .portfolio .grid .box{height: 320px;transition: 0.3s;}
 .portfolio .grid .box .block {
     position: relative;
