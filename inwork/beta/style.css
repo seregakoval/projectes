@@ -257,7 +257,16 @@ body {
     content: "";
     bottom: 0;
     right: 0;
-    background: rgba(28, 36, 65, 0.53) url("img/overaly.png");
+    background: url("img/overaly.png");
+}
+.servises:after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    background: url("img/overaly.png");
 }
 #loading {
   background-color: #0e1a23;
@@ -327,12 +336,13 @@ body {
     width:100%;
     position: absolute;
     z-index:1000;
+    background: #fff;
 }
 .block-hidden {
     display: none;
 }
 .header > .container { padding: 15px; }
-.left-bg{ top:0; display: none;background: #0773BA;position: absolute;z-index: 0;height:100%;width: 35%;min-width: 238px;}
+.left-bg{ top:0;background: #0773BA;position: absolute;z-index: 0;height:100%;width: 35%;min-width: 238px;}
 .header .header-fix {padding: 6px 15px 6px 15px;}
  .header-fix .nav-container ul li a span {
     text-transform: none;
@@ -2085,6 +2095,7 @@ Text animation
 .mobile-slider .html5 .slide-img1{
     position: absolute;
     top: 75px;
+    left:0;
 }
 .mobile-slider .html5 .slide-img2 {
     position: absolute;
@@ -2273,8 +2284,119 @@ Text animation
 body {
     overflow-x: hidden;
 }
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 130vh;
+    position: fixed;
+    width: 100%;
+    -webkit-transform: translateY(30vh);
+    transform: translateY(30vh);
+    -webkit-transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+    transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
 
+.background:first-child {
+    background-image: url("img/image-bg.jpg");
+    -webkit-transform: translateY(-15vh);
+    transform: translateY(-15vh);
+}
+.background:first-child .content-wrapper {
+    -webkit-transform: translateY(15vh);
+    transform: translateY(15vh);
+}
+.background:nth-child(2) {
+    background-image: url("img/image-bg.jpg");
+}
+.background:nth-child(3) {
+    background-image: url(http://usersthink.com/wp-content/uploads/06-usersthink-stock-image.jpg);
+}
 
+/* Set stacking context of slides */
+.background:nth-child(1) {
+    z-index: 3;
+}
+
+.background:nth-child(2) {
+    z-index: 2;
+}
+
+.background:nth-child(3) {
+    z-index: 1;
+}
+
+.content-wrapper {
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    text-transform: uppercase;
+    -webkit-transform: translateY(40vh);
+    transform: translateY(40vh);
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+    transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+}
+.content-title {
+    font-size: 12vh;
+    line-height: 1.4;
+}
+.pt-page-1 {
+    z-index:-1;
+}
+.background.scroll {
+    padding-top: 66vh;
+    overflow: auto;
+}
+.background.up-scroll {
+    -webkit-transform: translate3d(0, -15vh, 0);
+    transform: translate3d(0, -15vh, 0);
+}
+.background.up-scroll .content-wrapper {
+    -webkit-transform: translateY(15vh);
+    transform: translateY(15vh);
+}
+.background.up-scroll + .background {
+    -webkit-transform: translate3d(0, 30vh, 0);
+    transform: translate3d(0, 30vh, 0);
+}
+.background.up-scroll + .background .content-wrapper {
+    -webkit-transform: translateY(30vh);
+    transform: translateY(30vh);
+}
+
+.background.down-scroll {
+    -webkit-transform: translate3d(0, -130vh, 0);
+    transform: translate3d(0, -130vh, 0);
+}
+.background.down-scroll .content-wrapper {
+    -webkit-transform: translateY(40vh);
+    transform: translateY(40vh);
+}
+.background.down-scroll + .background:not(.down-scroll) {
+    -webkit-transform: translate3d(0, -15vh, 0);
+    transform: translate3d(0, -15vh, 0);
+}
+.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
+    -webkit-transform: translateY(15vh);
+    transform: translateY(15vh);
+}
 @media  (max-width: 1200px) {
     .mobile-slider{max-width: 981px;}
     .plus-img {
