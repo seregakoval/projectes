@@ -80,16 +80,25 @@ function nextItem() {
     $(".header-b").addClass('header-fix');
     $(".menu-button span").css({"background":"#EE4A34"});
     $(".nav-container ul li a i").css({'color':"#333"});
+    setTimeout(classServises, 300);
 }
-
+function classServises() {
+    $(".servises-animation").removeClass("slideOutDown");
+    $(".servises-animation").addClass("slideInUp");
+}
+function removeClassServises() {
+    $(".servises-animation").addClass("slideOutDown");
+}
 function previousItem() {
-    var $currentSlide = $(".background").eq(currentSlideNumber);
-    $currentSlide.removeClass("down-scroll").addClass("up-scroll");
+    var height = $(".background.scroll").scrollTop();
+    if(height == 0 ) {
+        var $currentSlide = $(".background").eq(currentSlideNumber);
+        $currentSlide.removeClass("down-scroll").addClass("up-scroll");
+        removeClassServises();
+    }
     $('.header').removeClass('animated fadeInDown');
 
 }
-
-
 
 /*    ANIMATION-TEXT   */
 var index = 0;
@@ -282,12 +291,14 @@ $(document).ready(function(){
         $(".pt-page").each(function() {
             if($(this).hasClass("pt-page-current")) {
                 $(".parallax,.servises,.parallax-mirror").fadeOut();
+                $(".background.scroll").fadeOut();
                 var ElementBody = $("body");
                 ElementBody.addClass("hidden-body");
                 var homeButton = $(".pt-trigger").first();
                 homeButton.on("click", function() {
                     $(".parallax,.servises,.parallax-mirror").fadeIn();
                     ElementBody.removeClass("hidden-body");
+                    $(".background.scroll").fadeIn();
                 });
             }
         });

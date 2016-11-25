@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="node_modules/remodal/dist/remodal-default-theme.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<script id="__bs_script__">//<![CDATA[
+document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.17.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 <body>
 <div class="menu-wrap">
   <nav class="menu">
@@ -121,13 +124,17 @@
     </header><!--./header-->
         <section class="background up-scroll">
             <div class="content-wrapper">
-                <section class="parallax" data-parallax="scroll" data-image-src="img/image-bg.jpg"  style=" background-repeat: no-repeat;background-size: cover;" >
+                <section class="parallax" >
+                    <video autoplay loop class="fillWidth">
+                    <source src="video/For_Wes.mp4" type="video/mp4" />
+                    <source src="video/For_Wes.ogv" type="video/webm" />
+                    </video>
                     <div class="title-head">
                         <h2 id="caption">Portfolio Developer</h2>
                         <span id="cursorr">|</span>
                     </div>
                     <div class="slider-caption slider-caption-center">
-                        <div id="particles" class="slider-caption" style="height: 400px;width:100%;overflow: hidden;"></div>
+                        <!--<div id="particles" class="slider-caption" style="height: 400px;width:100%;overflow: hidden;"></div>-->
                         <div class="container">
                             <div class="mobile-slider">
                                 <div class="html5">
@@ -156,14 +163,14 @@
         <section class="background scroll">
            <div class="content-wrapper">
                <div class="servises">
-                   <div class="title">
-                       <div class="icon">
-                           <span class="icon-pentagon"><i class="fa fa-suitcase"></i></span>
+                   <div class="container animated servises-animation">
+                       <div class="title">
+                           <div class="icon">
+                               <span class="icon-pentagon"><i class="fa fa-suitcase"></i></span>
+                           </div>
+                           <div style="clear:both"></div>
+                           <h1>Servises</h1>
                        </div>
-                       <div style="clear:both"></div>
-                       <h1>Servises</h1>
-                   </div>
-                   <div class="container services2">
                        <div class="row services">
                            <div class="col-md-4 col-sm-6">
                                <div class="svg-wrapper">
@@ -258,7 +265,7 @@
                <span class="icon-pentagon " data-wow-offset="100"><i class="fa fa-suitcase"></i></span>
                </div>
                <div style="clear: both;"></div>
-               <h1 class="animated wow bounceIn"  data-wow-offset="400">My Project</h1>
+               <h1 class="" >My Project</h1>
                </div>
                <div class="grid clearfix">
                <div class="box col-lg-4 col-sm-6">
@@ -988,14 +995,17 @@
     background: rgba(0,0,0,0.7);
     z-index: 100;
     display: none;"></div>
-<div id="loading">
-  <div id="loader"></div>
+<div id="loading" class="animated">
+  <div class="block-loader animated">
+      <div id="loader"></div>
+  </div>
 </div>
 <!--<progress class="progress-scroll" value="0">-->
   <!--<div class="progress-container">-->
     <!--<span class="progress-bar"></span>-->
   <!--</div>-->
 <!--</progress>-->
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -1014,8 +1024,8 @@
 <!--<script src="js/jquery.data-parallax.min.js"></script>-->
 
 <script>
-  if($(window).width() >= 640){
 
+    if($(window).width() >= 640){
     //$(".parallax").attr("data-image-src","img/image-bg.jpg");
     //$(".section-bg").attr("data-image-src","img/s3.jpg");
   }
@@ -1025,8 +1035,8 @@
     //$(".section-bg").attr("data-image-src","img/s3-mobile.jpg");
     //$(".parallax").css({"background":"url('img/image-bg-mobile.jpg') no-repeat","background-size":"cover"});
   }else{}
+  $('.block-loader').fadeIn();
   $(window).load(function() {
-
 //    $(function() {
 //      $(window).on("scroll resize", function() {
 //        var o = $(window).scrollTop() / ($(document).height() - $(window).height());
@@ -1036,12 +1046,19 @@
 //        $('.progress-scroll')[0].value = o;
 //      })
 //    });
-    function loadFile(){
-      $('#loading-center-absolute,#loading').css({"display":"none"});
-      add_class();
-      setTimeout(animation_string, 1500);
+      function hideOverlay() {
+          $('#loading').fadeOut();
+      }
+      function hideLoader() {
+          $('.block-loader').fadeOut();
+          setTimeout(hideOverlay, 400);
+      }
+    function loadFile() {
+        setTimeout(hideLoader,200);
+        add_class();
+        setTimeout(animation_string, 1500);
     }
-    setTimeout(loadFile,1000);
+    setTimeout(loadFile, 2000);
     function add_class(){
       $(".text-html").addClass( "bounceInDown" );
       $(".text-css").addClass( "bounceInDown" );

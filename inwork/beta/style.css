@@ -266,6 +266,7 @@ body {
     content: "";
     bottom: 0;
     right: 0;
+    top:0;
     background: url("img/overaly.png");
 }
 #loading {
@@ -278,7 +279,8 @@ body {
   top: 0px;
 
 }
-
+#loading .fadeIn {
+    opacity:0; }
 #loading-center-absolute {
   position: absolute;
   left: 50%;
@@ -1204,16 +1206,26 @@ Text animation
     top: -13px;
     background: url("img/popup-arrow.png")/*tpa=http://chemistry.beantownthemes.com/images/popup-arrow.png*/;
 }
-
-
+.block-loader {
+    height: 100%; }
 .icon-code:before {
     content: "\e31d";
 }
-.servises{margin-top:5%;position: relative;z-index: 0;}
+.servises{ min-height: 100vh; position: relative;z-index: 100;}
 .service-content:hover {
     cursor: pointer;
 }
-
+.servises-animation {
+    min-height: 100vh;
+    padding-top: 57px;
+    position: relative;
+    background: #fff;
+    z-index:100;
+    opacity: 0;
+}
+.servises-animation.slideInUp {
+    opacity: 1;
+}
 .service-content:hover .services-popup{
     visibility: visible;
     opacity: 1;
@@ -1523,8 +1535,9 @@ Text animation
     position: absolute;
     z-index: 0;
     width: 100%;
+    height: 100%;
+    left:0;
     object-fit: cover;
-    max-height: 450px;
 }
 
 .start_work h2{
@@ -2302,7 +2315,7 @@ body {
 }
 
 .background:first-child {
-    background-image: url("img/image-bg.jpg");
+    /*background-image: url("img/image-bg.jpg");*/
     -webkit-transform: translateY(-15vh);
     transform: translateY(-15vh);
 }
@@ -2311,10 +2324,10 @@ body {
     transform: translateY(15vh);
 }
 .background:nth-child(2) {
-    background-image: url("img/image-bg.jpg");
+    /*background-image: url("img/image-bg.jpg");*/
 }
 .background:nth-child(3) {
-    background-image: url(http://usersthink.com/wp-content/uploads/06-usersthink-stock-image.jpg);
+    background-image: url(http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg);
 }
 
 /* Set stacking context of slides */
@@ -2361,7 +2374,7 @@ body {
     z-index:-1;
 }
 .background.scroll {
-    padding-top: 66vh;
+    padding-top: 64vh;
     overflow: auto;
 }
 .background.up-scroll {
