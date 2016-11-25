@@ -609,8 +609,9 @@ progress::-moz-progress-bar{
 .portfolio .icon {
     width: 30px;
     margin: 0 auto;
+    height:40px;
 }
-.portfolio .title{text-align: center;margin-top: 3%;}
+.portfolio .title{text-align: center;margin-top: 3%;width:100%;}
  .portfolio h1 {
      text-align: center;
      font-size:36px;
@@ -2448,7 +2449,7 @@ body {
 }
 .morph-shape{display: none;}
 @media  (max-width: 991px){
-    .parallax { height:  auto;min-height: 600px;background:url("img/image-bg.jpg") no-repeat center center; background-size: cover;background-attachment: fixed; }
+   /* .parallax { height:  auto;min-height: 600px;background:url("img/image-bg.jpg") no-repeat center center; background-size: cover;background-attachment: fixed; }*/
     .mobile-slider .html5{margin:0 auto;float:none;}
     .mobile-slider .js{display: none;}
     .mobile-slider {max-width: 720px;}
