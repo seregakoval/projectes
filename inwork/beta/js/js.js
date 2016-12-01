@@ -61,7 +61,18 @@ function showCaptions() {
         }, 1500)
     }
 }
+function resizeWindow() {
+    var widthResize = $(this).width();
+    if(widthResize <= 991) {
+        $(".pt-wrapper section").removeClass("background");
+
+    }
+}
+$(window).resize(function() {
+    resizeWindow();
+});
 $(document).ready(function(){
+    resizeWindow();
     // use setInterval so that it will repeat itself
     setInterval('cursorAnimation()', 600);
     $caption = $('#caption');
@@ -193,18 +204,18 @@ $(document).ready(function(){
     });
     $(window).on('scroll', function(){
         if( $(window).scrollTop() == 100 ){
-            $('.header').addClass('animated fadeInDown').css({"box-shadow":"0 0 1px 2px rgba(0,0,0,0.25)","background":"#fff",'position':"fixed"});
-            $('.left-bg').css({"display":"block"});
-            $(".header-b").addClass('header-fix');
-            $(".menu-button span").css({"background":"#EE4A34"});
-            $(".nav-container ul li a i").css({'color':"#333"});
+            // $('.header').addClass('animated fadeInDown').css({"box-shadow":"0 0 1px 2px rgba(0,0,0,0.25)","background":"#fff",'position':"fixed"});
+            // $('.left-bg').css({"display":"block"});
+            // $(".header-b").addClass('header-fix');
+            // $(".menu-button span").css({"background":"#EE4A34"});
+            // $(".nav-container ul li a i").css({'color':"#333"});
         }
         else {
-            $('.header').removeClass('animated fadeInDown').css({"box-shadow":"none","background":"transparent",'position':"absolute","border-top":"none"});
-            $(".header-b").removeClass('header-fix');
-            $('.left-bg').css({"display":"none"});
-            $(".menu-button span").css({"background":"#fff"});
-            $(".nav-container ul li a i").css({'color':"#fff"});
+            // $('.header').removeClass('animated fadeInDown').css({"box-shadow":"none","background":"transparent",'position':"absolute","border-top":"none"});
+            // $(".header-b").removeClass('header-fix');
+            // $('.left-bg').css({"display":"none"});
+            // $(".menu-button span").css({"background":"#fff"});
+            // $(".nav-container ul li a i").css({'color':"#fff"});
         }
     });
     $(".pt-trigger").on("click", function() {
