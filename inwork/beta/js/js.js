@@ -202,22 +202,7 @@ $(document).ready(function(){
         }
 
     });
-    $(window).on('scroll', function(){
-        if( $(window).scrollTop() == 100 ){
-            // $('.header').addClass('animated fadeInDown').css({"box-shadow":"0 0 1px 2px rgba(0,0,0,0.25)","background":"#fff",'position':"fixed"});
-            // $('.left-bg').css({"display":"block"});
-            // $(".header-b").addClass('header-fix');
-            // $(".menu-button span").css({"background":"#EE4A34"});
-            // $(".nav-container ul li a i").css({'color':"#333"});
-        }
-        else {
-            // $('.header').removeClass('animated fadeInDown').css({"box-shadow":"none","background":"transparent",'position':"absolute","border-top":"none"});
-            // $(".header-b").removeClass('header-fix');
-            // $('.left-bg').css({"display":"none"});
-            // $(".menu-button span").css({"background":"#fff"});
-            // $(".nav-container ul li a i").css({'color':"#fff"});
-        }
-    });
+
     $(".pt-trigger").on("click", function() {
         $(".pt-page").each(function() {
             if($(this).hasClass("pt-page-current")) {
@@ -264,4 +249,13 @@ $(document).on('opened', '.remodal', function () {
             }
         });
     }
+});
+$(".background.scroll").scroll(function(){
+
+    /*!
+     * parallax.js v1.3 (http://pixelcog.github.io/parallax.js/)
+     * @copyright 2015 PixelCog, Inc.
+     * @license MIT (https://github.com/pixelcog/parallax.js/blob/master/LICENSE)
+     */
+
 });

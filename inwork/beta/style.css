@@ -247,16 +247,6 @@ body {
     right: 0;
     background: url("img/overaly.png");
 }
-.servises:after{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    top:0;
-    background: url("img/overaly.png");
-}
 #loading {
   background-color: #0e1a23;
   height: 100%;
@@ -837,7 +827,11 @@ progress::-moz-progress-bar{
       position: absolute;
       top: 0;
       z-index: 1; }
-.section-bg{position: relative;}
+.section-bg{
+    background: url("img/footer.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
 .section-bg:after {
     width: 100%;
     height: 100%;
@@ -845,7 +839,7 @@ progress::-moz-progress-bar{
     content: "";
     bottom: 0;
     right: 0;
-    background: rgba(0,0,0,0.3) url("img/overaly.png");
+    background: url("img/overaly.png");
 }
 @font-face {
   font-family: 'icomoon';
@@ -1210,7 +1204,7 @@ Text animation
     position: relative;
     background: #fff;
     z-index:100;
-    opacity: 0;
+
 }
 .servises-animation.slideInUp {
     opacity: 1;
@@ -1364,8 +1358,9 @@ Text animation
     width: 139px;
     margin: 128px 0 0 194px;
 }
-.title-about-us{
-    margin:3%;
+.title-about-us {
+    padding: 3%;
+    background: #fff;
     text-align: center;
 }
 .title-about-us h1{
@@ -1508,15 +1503,20 @@ Text animation
 .start_work {
     overflow: hidden;
     position: relative;
-    height: 400px;
+    height: 200px;
     display: flex;
     align-items: center;
     background: #DBF1FA;
+    background: url("img/main-bg.jpg") no-repeat ;
+    background-position-y: 61%;
 }
 .start_work .content-row {
     position: relative;
     z-index: 100;
     display: flex;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
 }
@@ -2294,7 +2294,7 @@ body {
     will-change: transform;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    height: 130vh;
+    height: 115vh;
     position: fixed;
     width: 100%;
     -webkit-transform: translateY(30vh);
@@ -2315,9 +2315,9 @@ body {
 .background:nth-child(2) {
     /*background-image: url("img/image-bg.jpg");*/
 }
-.background:nth-child(3) {
-    background-image: url(http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg);
-}
+/*.background:nth-child(3) {*/
+    /*background-image: url(http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg);*/
+/*}*/
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
@@ -2333,7 +2333,7 @@ body {
 }
 
 .content-wrapper {
-    height: 100vh;
+    min-height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2363,7 +2363,7 @@ body {
     z-index:-1;
 }
 .background.scroll {
-    padding-top: 64vh;
+    padding-top: 7vh;
     overflow: auto;
 }
 .background.up-scroll {
