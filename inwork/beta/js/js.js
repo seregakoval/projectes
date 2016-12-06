@@ -251,11 +251,12 @@ $(document).on('opened', '.remodal', function () {
     }
 });
 $(".background.scroll").scroll(function(){
-
-    /*!
-     * parallax.js v1.3 (http://pixelcog.github.io/parallax.js/)
-     * @copyright 2015 PixelCog, Inc.
-     * @license MIT (https://github.com/pixelcog/parallax.js/blob/master/LICENSE)
-     */
-
+    var heigthBlock = $(this).scrollTop();
+    if( heigthBlock > 2000) {
+      var st = $(this).scrollTop();
+        console.log(st);
+        $(".title-contact").css({
+            "transform":"translate( 0%,-" + st/7 + "%"
+        });
+    }
 });

@@ -1484,7 +1484,7 @@ Text animation
     position: absolute;
     width: 100%;
 }
-.contact{ position: relative;padding: 3% 0;}
+.contact{ position: relative;  padding: 220px 0 3% 0;}
 .title-contact .icon {
     width: 30px;
     margin: 0 auto;
@@ -1766,7 +1766,14 @@ Text animation
 ---------------------------------------------------------
  contact
 */
-.title-contact{text-align: center;padding: 54px 0;background: #fff;position: relative;z-index: 5;}
+.title-contact {
+    position: absolute;
+    text-align: center;
+    padding: 54px 0;
+    background: #fff;
+    top: 1200px;
+    position: relative;
+    z-index: 5;}
 .title-contact h1{
     text-align: center;
     font-size:42px;
