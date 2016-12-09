@@ -223,6 +223,8 @@ $(document).ready(function(){
     if(widthWindow <= 991) {
         $(".servises-animation").removeClass("animated");
     }
+
+
 });
 $(document).on('opened', '.remodal', function () {
 
@@ -250,11 +252,11 @@ $(document).on('opened', '.remodal', function () {
         });
     }
 });
+
 $(".background.scroll").scroll(function(){
     var heigthBlock = $(this).scrollTop();
     if( heigthBlock > 2000) {
       var st = $(this).scrollTop();
-        console.log(st);
         $(".title-contact").css({
             "transform":"translate( 0%,-" + st/7 + "%"
         });
