@@ -2691,7 +2691,7 @@ Text animation
     z-index: 10;
     display: flex;
     justify-content: flex-end;
-    min-height: 100vh;
+    min-height: calc(100vh - 50px - 50px);
 }
 .about-us:after {
     width: 100%;
@@ -2703,15 +2703,21 @@ Text animation
     background: rgba(0,0,0,0.2);
 }
 .about-us img {
-    max-width: 100%;
+    max-width: 60%;
     backface-visibility: hidden;
 }
 .about-us .container-about {
-    max-width: 900px;
+    width: 70%;
+    max-width: 1200px;
     float: right;
+    opacity: 0;
+    margin: 40px 0;
     position: relative;
     z-index: 5;
     background: #fff;
+}
+.about-us .container-about.bounceInRight {
+    opacity: 1;
 }
 .about-us .container-about .main-col {
     display: flex;
@@ -3143,20 +3149,21 @@ Text animation
     text-align: center;
     padding: 54px 0;
     background: #fff;
-    top: 1200px;
+    /*top: 1200px;*/
     position: relative;
     z-index: 5;}
-.title-contact h1{
-    text-align: center;
-    font-size:42px;
-    text-transform: uppercase;
-    color: #333;
-    display: inline-block;
-    padding: 0 0px 10px 0;
-    margin: 20px 0;
-    border-bottom: 2px solid #333;
-    position: relative;
-}
+
+/*.title-contact h1{*/
+    /*text-align: center;*/
+    /*font-size:42px;*/
+    /*text-transform: uppercase;*/
+    /*color: #333;*/
+    /*display: inline-block;*/
+    /*padding: 0 0px 10px 0;*/
+    /*margin: 20px 0;*/
+    /*border-bottom: 2px solid #333;*/
+    /*position: relative;*/
+/*}*/
 .contact .form-contact{
     position: relative;
     z-index: 500;
@@ -3665,7 +3672,7 @@ Text animation
     z-index: 999;
 }
 body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 .background {
     background-size: cover;
@@ -3675,8 +3682,8 @@ body {
     will-change: transform;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    height: 115vh;
-    position: fixed;
+    min-height: 115vh;
+    position: absolute;
     width: 100%;
     -webkit-transform: translateY(30vh);
     transform: translateY(30vh);
@@ -3744,7 +3751,7 @@ body {
 }
 .background.scroll {
     padding-top: 7vh;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 .background.up-scroll {
     -webkit-transform: translate3d(0, -15vh, 0);

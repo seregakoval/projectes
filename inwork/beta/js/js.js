@@ -223,8 +223,19 @@ $(document).ready(function(){
     if(widthWindow <= 991) {
         $(".servises-animation").removeClass("animated");
     }
-
-
+    $(".container-about").waypoint(function(direction){
+        if (direction === 'down') {
+            $(this.element).removeClass("fadeOut");
+            $(this.element).addClass("bounceInRight");
+        }
+        else {
+            $(this.element).removeClass("bounceInRight");
+            $(this.element).addClass("fadeOut");
+        }
+        // $(".container-about")
+    },{
+        offset: 1000
+    });
 });
 $(document).on('opened', '.remodal', function () {
 
@@ -253,12 +264,12 @@ $(document).on('opened', '.remodal', function () {
     }
 });
 
-$(".background.scroll").scroll(function(){
-    var heigthBlock = $(this).scrollTop();
-    if( heigthBlock > 2000) {
-      var st = $(this).scrollTop();
-        $(".title-contact").css({
-            "transform":"translate( 0%,-" + st/7 + "%"
-        });
-    }
-});
+// $(".background.scroll").scroll(function(){
+//     var heigthBlock = $(this).scrollTop();
+//     if( heigthBlock > 2000) {
+//       var st = $(this).scrollTop();
+//         $(".title-contact").css({
+//             "transform":"translate( 0%,-" + st/7 + "%"
+//         });
+//     }
+// });
