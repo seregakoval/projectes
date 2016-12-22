@@ -216,13 +216,11 @@ $(document).ready(function(){
                 // $(".parallax,.servises,.parallax-mirror").fadeOut();
                 $(".background, .background.scroll, .parallax-mirror").css({"display":"none"});
                 $(".background.scroll").fadeOut();
-                var ElementBody = $("body");
-                ElementBody.addClass("hidden-body");
+                // var ElementBody = $("body");
+                // ElementBody.addClass("hidden-body");
                 var homeButton = $(".pt-trigger").first();
                 homeButton.on("click", function() {
-                    $(" .parallax,.servises,.parallax-mirror").fadeIn();
-                    ElementBody.removeClass("hidden-body");
-                    $(".background.scroll").fadeIn();
+                    $(".background, .background.scroll, .parallax-mirror").css({"display":"block"});
                 });
             }
         });
@@ -244,6 +242,20 @@ $(document).ready(function(){
     },{
         offset: 1000
     });
+    // $(".box").waypoint(function(direction){
+    //     if (direction === 'down') {
+    //
+    //         $(this.element).removeClass("fadeOut");
+    //         $(this.element).addClass("bounceInRight");
+    //     }
+    //     else {
+    //         $(this.element).removeClass("bounceInRight");
+    //         $(this.element).addClass("fadeOut");
+    //     }
+    //     // $(".container-about")
+    // },{
+    //     offset: 100
+    // });
 });
 $(document).on('opened', '.remodal', function () {
 

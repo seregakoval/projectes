@@ -3676,7 +3676,6 @@ Text animation
     top: 0;
     left: 0;
     visibility: hidden;
-    overflow-y: scroll;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
 }
