@@ -112,6 +112,10 @@ function validateEmail(){
     }
 }
 $(document).ready(function(){
+    $('.close-carbon-adv').on('click', function(event){
+        event.preventDefault();
+        $('#carbonads-container').hide();
+    });
     if($(".input-field input").val() != ""){
         $(".lab1").css({"top":"-17px","font-size":"12px"});
     }
@@ -209,13 +213,14 @@ $(document).ready(function(){
     $(".pt-trigger").on("click", function() {
         $(".pt-page").each(function() {
             if($(this).hasClass("pt-page-current")) {
-                $(".parallax,.servises,.parallax-mirror").fadeOut();
+                // $(".parallax,.servises,.parallax-mirror").fadeOut();
+                $(".background, .background.scroll, .parallax-mirror").css({"display":"none"});
                 $(".background.scroll").fadeOut();
                 var ElementBody = $("body");
                 ElementBody.addClass("hidden-body");
                 var homeButton = $(".pt-trigger").first();
                 homeButton.on("click", function() {
-                    $(".parallax,.servises,.parallax-mirror").fadeIn();
+                    $(" .parallax,.servises,.parallax-mirror").fadeIn();
                     ElementBody.removeClass("hidden-body");
                     $(".background.scroll").fadeIn();
                 });

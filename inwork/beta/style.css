@@ -2314,19 +2314,19 @@ Text animation
     text-align: center;
     margin-bottom: 30px;
 }
-.svg-wrapper {
+.servises .svg-wrapper {
     position: relative;
     top: 50%;
    /* transform: translateY(-50%);*/
     margin: 0 auto 50px auto;
     width: 320px;
 }
-.svg-wrapper svg {
+.servises .svg-wrapper svg {
     border-radius: 5px;
     width: 320px;
     height:280px;
 }
-.svg-wrapper rect {
+.servises .svg-wrapper rect {
     width: 320px;
     height:280px;
 }
@@ -3680,14 +3680,7 @@ Text animation
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
 }
-.pt-page .page-head {
-    padding: 70px 15px;
-}
-.pt-page .page-head  h1 {
-    font-size: 28px;
-    color: #ccc;
-    text-align: center;
-}
+
 .pt-page-current,
 .no-js .pt-page {
     visibility: visible;
@@ -3710,7 +3703,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    /*overflow: hidden;*/
+    /*overflow-x: hidden;*/
     will-change: transform;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -3722,7 +3715,9 @@ body {
     -webkit-transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
     transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
 }
-
+.background .parallax-content {
+    transform: translateY(20vh);
+}
 .background:first-child {
     /*background-image: url("img/image-bg.jpg");*/
     -webkit-transform: translateY(-15vh);

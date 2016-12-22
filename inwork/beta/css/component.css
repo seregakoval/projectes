@@ -44,19 +44,19 @@ html, body { height: 100%; }
 
 /* Text Styles, Colors, Backgrounds */
 
-.pt-page h1 {
-	position: absolute;
-	font-weight: 300;
-	font-size: 4.4em;
-	line-height: 1;
-	letter-spacing: 6px;
-	margin: 0;
-	top: 12%;
-	width: 100%;
-	text-align: center;
-	text-transform: uppercase;
-	word-spacing: -0.3em;
-}
+/*.pt-page h1 {*/
+	/*position: absolute;*/
+	/*font-weight: 300;*/
+	/*font-size: 4.4em;*/
+	/*line-height: 1;*/
+	/*letter-spacing: 6px;*/
+	/*margin: 0;*/
+	/*top: 12%;*/
+	/*width: 100%;*/
+	/*text-align: center;*/
+	/*text-transform: uppercase;*/
+	/*word-spacing: -0.3em;*/
+/*}*/
 
 .pt-page h1 span {
 	font-family: 'Satisfy', serif;
@@ -77,9 +77,9 @@ html, body { height: 100%; }
 	background: #0ac2d2;
 }
 
-.pt-page-2 {
-	background: #7bb7fa;
-}
+/*.pt-page-2 {*/
+	/*background: #7bb7fa;*/
+/*}*/
 
 .pt-page-3 {
 	background: #60d7a9;
