@@ -1,4 +1,5 @@
 .page-portfolio {
+  display: none;
   &__head {
     position: relative;
     margin-bottom: 30px;
@@ -32,5 +33,28 @@
   }
   &__slider {
 
+  }
+}
+.about-us.page {
+  .main-col {
+    display: flex;
+    align-items: center;
+    .col {
+      //&.left {
+      //  width: 30%;
+      //}
+      width: 50%;
+      padding: 0 15px;
+    }
+  }
+}
+.pt-page-2.pt-page-current {
+  > div {
+    display: block;
+  }
+}
+.pt-page-3.pt-page-current {
+  > div {
+    display: block;
   }
 }

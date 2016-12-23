@@ -1937,8 +1937,9 @@ progress::-moz-progress-bar{
     height: 6px;
     background: url("img/color_border.jpg");
 }
-.line_bg_2{width: 100%;height: 4px;background: #59A5B7;}
-.portfolio{background: #fff;position: relative;}
+.line_bg_2{ width: 100%;height: 4px;background: #59A5B7;}
+.portfolio{ background: #fff;position: relative;
+    overflow: hidden;}
 .portfolio .icon {
     width: 30px;
     margin: 0 auto;
@@ -2188,10 +2189,9 @@ progress::-moz-progress-bar{
     /*position: relative;*/
     /*background: #2c3e50;*/
 }
-/*.parallax-mirror {*/
-    /*top: 0 !important;*/
-    /*height: 100vh important ;*/
-/*}*/
+.parallax-mirror {
+    z-index:1 !important;
+}
 /*.section-bg:after {*/
     /*width: 100%;*/
     /*height: 100%;*/
@@ -3672,7 +3672,8 @@ Text animation
 .pt-page {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     visibility: hidden;
@@ -3696,7 +3697,7 @@ Text animation
     z-index: 999;
 }
 body {
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 .background {
     background-size: cover;

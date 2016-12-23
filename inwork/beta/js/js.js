@@ -213,11 +213,17 @@ $(document).ready(function(){
     $(".pt-trigger").on("click", function() {
         $(".pt-page").each(function() {
             if($(this).hasClass("pt-page-current")) {
+                $(".header").animate({top: "15px"},200);
+                $("body,html").scroll(function(){
+                    var scrollBody = $("body").scrollTop();
+                    console.log(scrollBody);
+                });
+
+                // $(".portfolio .box").addClass("fadeInUp");
                 // $(".parallax,.servises,.parallax-mirror").fadeOut();
                 $(".background, .background.scroll, .parallax-mirror").css({"display":"none"});
-                $(".background.scroll").fadeOut();
-                // var ElementBody = $("body");
-                // ElementBody.addClass("hidden-body");
+                var ElementBody = $("body");
+                ElementBody.addClass("hidden-body");
                 var homeButton = $(".pt-trigger").first();
                 homeButton.on("click", function() {
                     $(".background, .background.scroll, .parallax-mirror").css({"display":"block"});
