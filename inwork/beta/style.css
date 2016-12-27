@@ -22,7 +22,14 @@ footer, header, menu, nav, section {
 html, body {
   height: 100%; }
   
-.portfolio .grid .box{height: 320px;transition: 0.3s;}
+.portfolio .grid .box{
+    height: 320px;
+    transition: 0.3s;
+    opacity: 0;
+}
+.portfolio .grid .box.bounceInUp {
+    opacity: 1;
+}
 .portfolio .grid .box .block {
     position: relative;
     margin: 0 auto;
@@ -2552,12 +2559,17 @@ Text animation
 .icon-code:before {
     content: "\e31d";
 }
-.servises{
-    margin-top: -300px;
+.servises {
+    margin-top: -150px;
     min-height: 100vh;
     position: relative;
     z-index: 100;
-
+}
+.servises .item {
+    opacity: 0;
+}
+.servises .item.bounceInUp {
+    opacity: 1;
 }
 .service-content:hover {
     cursor: pointer;
@@ -2737,6 +2749,13 @@ Text animation
 .about-us .container-about .col {
     width: 50%;
     padding: 0 30px;
+    display: flex;
+    align-items:center;
+}
+.about-us .container-about .col .block-img-responsive {
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 .plus-img{
     display: block;
@@ -3202,8 +3221,7 @@ Text animation
     font-weight: 100;
 }
 .space{
-    max-width: 450px;
-    margin: 0 auto;
+    width: 100%;
 
 }
 .contact .form-contact .input-field textarea{
@@ -3662,7 +3680,7 @@ Text animation
     transform-style: preserve-3d;
 }
 .hidden-body {
-    overflow: hidden;
+    overflow-y: scroll;
 }
 .pt-wrapper {
     overflow: hidden;
@@ -3672,8 +3690,7 @@ Text animation
 .pt-page {
     width: 100%;
     height: 100%;
-    position: fixed;
-    overflow-y: scroll;
+    overflow: initial;
     top: 0;
     left: 0;
     visibility: hidden;
