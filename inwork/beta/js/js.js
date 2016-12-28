@@ -68,9 +68,6 @@ $(window).resize(function() {
     resizeWindow();
 });
 $(document).ready(function(){
-    $('.parallax-window').parallax({
-
-    });
     resizeWindow();
     // use setInterval so that it will repeat itself
     setInterval('cursorAnimation()', 600);
@@ -205,13 +202,6 @@ $(document).ready(function(){
         }
 
     });
-function ScrollBody() {
-    $(window).scroll(function(){
-        var bodyScroll = $(this).scrollTop();
-        // console.log(bodyScroll);
-    });
-}
-    ScrollBody();
     $(".pt-trigger").on("click", function() {
         $(".pt-page").each(function() {
             if($(this).hasClass("pt-page-current")) {
@@ -245,7 +235,7 @@ function ScrollBody() {
     if(widthWindow <= 991) {
         $(".servises-animation").removeClass("animated");
     }
-    $(".background .servises .item").each(function(index, el) {
+    $(".scroll .servises .item").each(function(index, el) {
         new Waypoint({
             element: el,
             handler: function() {
@@ -259,7 +249,7 @@ function ScrollBody() {
             offset: '90%'
         });
     });
-    $(".background .box").each(function(index, el) {
+    $(".scroll .box").each(function(index, el) {
         new Waypoint({
             element: el,
             handler: function() {
