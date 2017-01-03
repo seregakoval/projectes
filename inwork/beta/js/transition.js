@@ -353,7 +353,7 @@ var PageTransitions = (function () {
 
         // check if 'data-goto' value is greater than total pages inside 'pt-wrapper'
         if (!(pagesCount < gotoPage)) {
-            
+
             tempPageIndex = currentPageIndex;
 
             if($pageWrapper.data('isAnimating')) {
