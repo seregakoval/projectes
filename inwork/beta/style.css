@@ -246,15 +246,15 @@ body {
 
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
-.parallax:after{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    background: url("img/overaly.png");
-}
+/*.parallax:after{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*content: "";*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*background: url("img/overaly.png");*/
+/*}*/
 
 #loading {
   background-color: #0e1a23;
@@ -1678,6 +1678,7 @@ Video
     position: fixed;
     z-index:1000;
     background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 .block-hidden {
     display: none;
@@ -2742,7 +2743,7 @@ Text animation
     max-width: 1200px;
     float: right;
     opacity: 0;
-    margin: 70px 0;
+    margin: 50px 0;
     position: relative;
     z-index: 5;
     background: #fff;
@@ -3703,7 +3704,6 @@ Text animation
     background: none; }
 .pt-page {
     display:none;
-    background-color: #fff;
     width: 100%;
     height: 100%;
     overflow: initial;
