@@ -190,6 +190,14 @@ $(document).ready(function(){
      dotColor: 'rgba(24,159,208,0.5)',
      lineColor: 'rgba(24,159,208,0.5)'
      });*/
+    
+    /*Toggle Menu*/
+    var btnMenu = document.querySelector("#open-button");
+    btnMenu.addEventListener('click', function() { 
+        var nav = document.querySelector('.nav-container');
+        nav.classList.toggle('active');
+    });
+
     $(".scale-img .main").on("click",function(){
         document.querySelector(".main").parentNode.parentNode.classList.toggle('active');
         if(document.querySelector(".scale-img")
@@ -217,12 +225,6 @@ $(document).ready(function(){
                     // $(".background, .background.scroll, .parallax-mirror").css({"display":"block"});
                 });
             }
-
-            // if($(".pt-page:not(:first)").hasClass("pt-page-current")) {
-            //     $("body").addClass("activePage");
-            // } else {
-            //     $("body").removeClass("activePage");
-            // }
         });
         $(".pt-page-2 .box").removeClass("bounceInUp");
         $(".pt-page-2 .box").each(function(index, el) {
@@ -240,10 +242,6 @@ $(document).ready(function(){
                 offset: '70%'
             });
         });
-        // function BodyScroll(){
-        //     $('html, body').animate({scrollTop: 0}, 400);
-        // }
-        // setTimeout(BodyScroll, 1000);
 
     });
     var widthWindow = $(window).width();
@@ -257,11 +255,11 @@ $(document).ready(function(){
                 var element = $(this.element),
                     delay = element.attr('data-delay');
                 setTimeout(function() {
-                    element.addClass('bounceInUp');
+                    element.addClass('fadeInUp');
                 }, delay);
                 this.destroy();
             },
-            offset: '90%'
+            offset: '300px'
         });
     });
     $(".main-block .box").each(function(index, el) {
@@ -271,7 +269,7 @@ $(document).ready(function(){
                 var element = $(this.element),
                     delay = element.attr('data-delay');
                 setTimeout(function() {
-                    element.addClass('bounceInUp');
+                    element.addClass('fadeInUp');
                 }, delay);
                 this.destroy();
             },
@@ -292,20 +290,6 @@ $(document).ready(function(){
     },{
         offset: 700
     });
-    // $(".box").waypoint(function(direction){
-    //     if (direction === 'down') {
-    //
-    //         $(this.element).removeClass("fadeOut");
-    //         $(this.element).addClass("bounceInRight");
-    //     }
-    //     else {
-    //         $(this.element).removeClass("bounceInRight");
-    //         $(this.element).addClass("fadeOut");
-    //     }
-    //     // $(".container-about")
-    // },{
-    //     offset: 100
-    // });
 });
 $(document).on('opened', '.remodal', function () {
 

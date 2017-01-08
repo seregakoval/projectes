@@ -3932,8 +3932,13 @@ body {
         top: 0;
         background: #2e416a;
         width: 280px;
+        transition:all 0.3s;
         height: 100%;
+        transform: translateX(-210px);
     }
+     .nav-container.active {
+         transform: translateX(0px);
+     }
     .nav-container ul li {
         float:none;
     }
