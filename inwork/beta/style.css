@@ -1680,6 +1680,11 @@ Video
     background: #fff;
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
+.header .container-header {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .block-hidden {
     display: none;
 }
@@ -2718,6 +2723,8 @@ Text animation
 */
 .about-us {
     position: relative;
+    display: flex;
+    justify-content: flex-end;
     background: transparent;
     background-size: cover;
     z-index: 10;
@@ -2739,6 +2746,7 @@ Text animation
     width: 75%;
     max-width: 1200px;
     float: right;
+    padding:  15px 0;
     opacity: 0;
     margin: 50px 0;
     position: relative;
@@ -3203,25 +3211,12 @@ Text animation
 .title-contact {
     position: absolute;
     text-align: center;
-    margin-top: 70px;
-    padding: 70px 0;
+    padding: 40px 0;
     background: #fff;
     /*top: 1200px;*/
     position: relative;
     z-index: 5;}
-
-/*.title-contact h1{*/
-    /*text-align: center;*/
-    /*font-size:42px;*/
-    /*text-transform: uppercase;*/
-    /*color: #333;*/
-    /*display: inline-block;*/
-    /*padding: 0 0px 10px 0;*/
-    /*margin: 20px 0;*/
-    /*border-bottom: 2px solid #333;*/
-    /*position: relative;*/
-/*}*/
-.contact .form-contact{
+.contact .form-contact {
     position: relative;
     z-index: 500;
     max-width: 400px;
@@ -3892,6 +3887,10 @@ body {
 }
 .morph-shape{display: none;}
 @media  (max-width: 991px) {
+    .about-us .container-about {
+        width: 95%;
+        margin: 25px auto;
+    }
     .content-wrapper {
         height: auto;
         transform: initial !important;
@@ -3954,6 +3953,7 @@ body {
     }
 }
 @media  (max-width: 768px){
+    
     .cmn-toggle-switch{display: block;}
     .right_bg .container .row > div{padding: 0;}
     .about-us .container-b > div{width: 100%;}
@@ -3969,7 +3969,14 @@ body {
     .nav-container ul li a .icon + span {
         margin: 14px 17px 0 5px;}
 }
-@media  (max-width: 767px){
+@media  (max-width: 767px) {
+    .about-us .container-about .main-col {
+        display: block;
+    }
+    .about-us .container-about .col {
+        width: 100%;
+        display: block;
+    }
     .contact .form-contact{max-width: 80%;}
     .space h3{text-align: center;}
     .mobile-slider{max-width: 96%;}
@@ -3979,8 +3986,8 @@ body {
 @media  (max-width: 640px){
     .title-head h2{font-size: 42px;}
     .icon-gif{display: none;}
-    .svg-wrapper svg { height: 250px; }
-    .svg-wrapper rect { height: 250px; }
+   .servises .svg-wrapper svg { height: 250px; }
+   .servises .svg-wrapper rect { height: 250px; }
     #cursorr { font-size: 30px; margin: 0;}
     .shape { stroke-dashoffset: -587;}
 
@@ -3991,10 +3998,10 @@ body {
     .portfolio .grid .box .block { width: 361px;max-width: 300px; }
     .portfolio .grid .box .block > img { width: 100%; }
     /*.portfolio .grid .box .scale-img { top: 11px;left: 10px;width: 217px; height: 120px; }*/
-    .svg-wrapper { width: 290px; }
+    .servises .svg-wrapper { width: 290px; }
     .portfolio h1 { font-size: 27px; }
-    .svg-wrapper svg  { width: 290px; height:250px; }
-    .svg-wrapper rect { width: 290px; height:250px; }
+    .servises .svg-wrapper svg  { width: 290px; height:250px; }
+    .servises .svg-wrapper rect { width: 290px; height:250px; }
     .about-us .block-img-responsive img{display: block;margin:10px auto;position: static;}
     .portfolio .grid > div {width: 100%;}
     #header .header-fix .logo .name{margin:4px 0 4px 0;font-size:19px;}
