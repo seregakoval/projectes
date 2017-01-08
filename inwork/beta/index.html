@@ -24,9 +24,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<script id="__bs_script__">//<![CDATA[
-document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.17.6'><\/script>".replace("HOST", location.hostname));
-//]]></script>
 <body>
 <div class="menu-wrap">
   <nav class="menu">
@@ -170,7 +167,7 @@ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-cl
            </section>
            <section class="background scroll">
                <div class="parallax-content">
-                   <div class="section-bg"  data-parallax="scroll" data-image-src="img/mockup4.jpg" style="height:1000px;background-repeat: no-repeat;background-size: cover;" >
+                   <div class="section-bg parallax-mobile"  data-parallax="scroll" data-image-src="img/mockup4.jpg" style="height:700px;background-repeat: no-repeat;background-size: cover;" >
                    </div>
                    <div class="servises">
                        <div class="container servises-animation">
@@ -502,13 +499,7 @@ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-cl
     <div class="pt-page pt-page-2">
         <div class="page-portfolio">
             <div class="page-portfolio__head">
-                <div class="content">
-                    <video autoplay="" loop="" class="fillWidth">
-                        <source src="video/For_Wes.mp4" type="video/mp4">
-                        <source src="video/For_Wes.ogv" type="video/webm">
-                    </video>
-                    <h2 class="page-portfolio__title">Portfolio</h2>
-                </div>
+                <h2 class="page-portfolio__title">Portfolio</h2>
             </div> <!--page-head-->
             <div class="page-portfolio__slider">
 
@@ -634,10 +625,6 @@ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-cl
         <div class="page-portfolio">
             <div class="page-portfolio__head">
                 <div class="content">
-                    <video autoplay="" loop="" class="fillWidth">
-                        <source src="video/For_Wes.mp4" type="video/mp4">
-                        <source src="video/For_Wes.ogv" type="video/webm">
-                    </video>
                     <h2 class="page-portfolio__title">About</h2>
                 </div>
             </div> <!--page-head-->
@@ -825,7 +812,7 @@ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-cl
         add_class();
         setTimeout(animation_string, 1500);
     }
-    setTimeout(loadFile, 2000);
+    setTimeout(loadFile, 1500);
     function add_class(){
       $(".text-html").addClass( "bounceInDown" );
       $(".text-css").addClass( "bounceInDown" );

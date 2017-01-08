@@ -201,7 +201,7 @@ body {
 .title-head {
     position: absolute;
     text-align: center;
-    top: 222px;
+    top: 150px;
     width: 100%;
     z-index: 100;
 }
@@ -2272,7 +2272,7 @@ Text animation
     height: 100vh;
     background: transparent;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
 
 }
 .service-content .icon-surround, .services4 .service-content .ico1,.services4 .service-content .ico2,.services4 .service-content .ico3,.services4 .service-content .ico4,.services4 .service-content .ico5,.services4 .service-content .ico6 {
@@ -2721,9 +2721,6 @@ Text animation
     background: transparent;
     background-size: cover;
     z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    min-height: calc(100vh - 50px - 50px);
 }
 .about-us:after {
     width: 100%;
@@ -2735,11 +2732,11 @@ Text animation
     background: rgba(0,0,0,0);
 }
 .about-us img {
-    max-width: 60%;
+    max-width: 75%;
     backface-visibility: hidden;
 }
 .about-us .container-about {
-    width: 70%;
+    width: 75%;
     max-width: 1200px;
     float: right;
     opacity: 0;
@@ -2778,7 +2775,7 @@ Text animation
 }
 .title-about-us h1{
     text-align: center;
-    font-size:42px;
+    font-size:32px;
     text-transform: uppercase;
     color: #333;
     display: inline-block;
@@ -2899,7 +2896,7 @@ Text animation
     position: absolute;
     left:0;
     width: 100%;
-    top: 40%;
+    top: 30%;
 }
 .slider-caption:after {
    /* background: rgba(0, 0, 0, 0.18);*/
@@ -3882,6 +3879,12 @@ body {
 }
 
 @media  (max-width: 1024px) {
+    .parallax-mobile {
+        display: none;
+    }
+    .servises {
+        margin-top: 0;
+    }
     .plus_img img{width: 130px !important;height: 130px !important;}
     .flex-caption, .nivo-caption, .slider-caption{
         top:37%;
@@ -3931,7 +3934,7 @@ body {
         left: 0;
         top: 0;
         background: #2e416a;
-        width: 280px;
+        width: 210px;
         transition:all 0.3s;
         height: 100%;
         transform: translateX(-210px);
@@ -3965,8 +3968,6 @@ body {
     .nav-container ul li a i{margin:5px 10px;}
     .nav-container ul li a .icon + span {
         margin: 14px 17px 0 5px;}
-    .nav-container { width: 210px; }
-
 }
 @media  (max-width: 767px){
     .contact .form-contact{max-width: 80%;}
