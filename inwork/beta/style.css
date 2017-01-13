@@ -2211,6 +2211,12 @@ progress::-moz-progress-bar{
 }
 .parallax-mirror {
     z-index:1 !important;
+    /*top: 0 !important;*/
+    /*visibility: visible !important;*/
+}
+.parallax-mirror.active {
+    top: 0 !important;
+    visibility: visible !important;
 }
 /*.section-bg:after {*/
     /*width: 100%;*/
@@ -2740,7 +2746,6 @@ Text animation
 }
 .about-us img {
     max-width: 75%;
-    backface-visibility: hidden;
 }
 .about-us .container-about {
     animation-duration: 0.7s;
@@ -3738,8 +3743,10 @@ body {
 }
 .background {
     min-height: 115vh;
-    position: absolute;
+    position: relative;
     width: 100%;
+    /*-webkit-transform: translateY(30vh);*/
+    /*transform: translateY(30vh);*/
 }
 /*.background .parallax-content {*/
     /*transform: translateY(20vh);*/

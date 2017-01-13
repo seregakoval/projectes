@@ -105,6 +105,7 @@ function validateEmail(){
     }
 }
 $(document).ready(function(){
+
     $('.close-carbon-adv').on('click', function(event){
         event.preventDefault();
         $('#carbonads-container').hide();
@@ -271,6 +272,7 @@ $(document).ready(function(){
     });
     $(".main-block .box").waypoint(function(direction){
         if (direction === 'down') {
+            $(".parallax-mirror:eq(1)").removeClass("active");
             var element = $(this.element);
             var delay = element.attr("data-delay");
             setTimeout(function(){
@@ -279,6 +281,7 @@ $(document).ready(function(){
             },delay);
         }
         else {
+            $(".parallax-mirror:eq(1)").addClass("active");
             $(this.element).removeClass("fadeInUp");
             $(this.element).addClass("fadeOut");
         }
@@ -288,6 +291,7 @@ $(document).ready(function(){
     });
     $(".space .space-row").waypoint(function(direction){
         if (direction === 'down') {
+            $(".parallax-mirror:eq(1)").removeClass("active");
             var element = $(this.element);
             var delay = element.attr("data-delay");
             setTimeout(function(){
@@ -316,6 +320,7 @@ $(document).ready(function(){
     },{
         offset: 700
     });
+
 });
 $(document).on('opened', '.remodal', function () {
 
