@@ -269,29 +269,48 @@ $(document).ready(function(){
             offset: '350px'
         });
     });
-    $(".main-block .box").each(function(index, el) {
-        new Waypoint({
-            element: el,
-            handler: function() {
-                var element = $(this.element),
-                    delay = element.attr('data-delay');
-                setTimeout(function() {
-                    element.addClass('fadeInUp');
-                }, delay);
-                this.destroy();
-            },
-            offset: '90%'
-        });
-    });
-
-    $(".container-about").waypoint(function(direction){
+    $(".main-block .box").waypoint(function(direction){
         if (direction === 'down') {
-            $(this.element).removeClass("fadeOut");
-            $(this.element).addClass("bounceInRight");
+            var element = $(this.element);
+            var delay = element.attr("data-delay");
+            setTimeout(function(){
+                element.removeClass("fadeOut");
+                element.addClass("fadeInUp");
+            },delay);
         }
         else {
-            $(this.element).removeClass("bounceInRight");
+            $(this.element).removeClass("fadeInUp");
             $(this.element).addClass("fadeOut");
+        }
+        // $(".container-about")
+    },{
+        offset: 800
+    });
+    $(".space .space-row").waypoint(function(direction){
+        if (direction === 'down') {
+            var element = $(this.element);
+            var delay = element.attr("data-delay");
+            setTimeout(function(){
+                element.removeClass("fadeOut");
+                element.addClass("slideInRight");
+            },delay);
+        }
+        else {
+            $(this.element).removeClass("slideInRight");
+            $(this.element).addClass("fadeOut");
+        }
+        // $(".container-about")
+    },{
+        offset: 800
+    });
+    $(".container-about").waypoint(function(direction){
+        if (direction === 'down') {
+            $(this.element).removeClass("fadeOutRight");
+            $(this.element).addClass("slideInRight");
+        }
+        else {
+            $(this.element).removeClass("slideInRight");
+            $(this.element).addClass("fadeOutRight");
         }
         // $(".container-about")
     },{
