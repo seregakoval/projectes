@@ -18,6 +18,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglifyjs": "^0.6.2",
-    "remodal":"^1.1.0"
+    "remodal":"^1.1.0",
+    "waypoints":"^4.0.1"
+
   }
 }

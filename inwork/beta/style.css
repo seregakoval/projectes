@@ -2203,12 +2203,7 @@ progress::-moz-progress-bar{
       position: absolute;
       top: 0;
       z-index: 1; }
-.section-bg{
-    /*background: url("img/footer.jpg") no-repeat center center;*/
-    /*background-size: cover;*/
-    /*position: relative;*/
-    /*background: #2c3e50;*/
-}
+
 .parallax-mirror {
     z-index:1 !important;
     /*top: 0 !important;*/
@@ -2218,15 +2213,6 @@ progress::-moz-progress-bar{
     top: 0 !important;
     visibility: visible !important;
 }
-/*.section-bg:after {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: absolute;*/
-    /*content: "";*/
-    /*bottom: 0;*/
-    /*right: 0;*/
-    /*background: url("img/overaly.png");*/
-/*}*/
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot");
@@ -3724,6 +3710,7 @@ Text animation
     visibility: visible;
     z-index: 100;
     display: inline-block;
+
 }
 
 .no-js body {
@@ -3876,8 +3863,11 @@ body {
         max-width: 50px;
     }
 }
-
+.section-bg {
+    overflow-x: hidden; 
+}
 @media  (max-width: 1024px) {
+
     .parallax-mobile {
         display: none;
     }
@@ -3891,6 +3881,13 @@ body {
 }
 .morph-shape{display: none;}
 @media  (max-width: 991px) {
+    .page-portfolio__head {
+        background-size: cover !important;
+            background-position: -374px 1px !important;
+    }
+    .section-bg {
+        background-position: 25% 0 !important;
+    }
     .about-us .container-about {
         width: 95%;
         margin: 25px auto;
