@@ -199,9 +199,10 @@ body {
     max-width: 1140px;
 }
 .title-head {
-    position: absolute;
-    text-align: center;
-    top: 150px;
+   display: flex;
+    align-items: flex-end;
+    height: 25vh;
+    justify-content: center;
     width: 100%;
     z-index: 100;
 }
@@ -1674,6 +1675,7 @@ Video
 
 .header{
     top:0;
+    left: 0;
     width:100%;
     position: fixed;
     z-index:1000;
@@ -2766,7 +2768,6 @@ Text animation
     display: block;
     float: left;
     width: 139px;
-    margin: 128px 0 0 194px;
 }
 .title-about-us {
     padding: 3%;
@@ -2893,10 +2894,11 @@ Text animation
     z-index: 6;
 }
 .slider-caption {
-    position: absolute;
-    left:0;
-    width: 100%;
-    top: 30%;
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .slider-caption:after {
    /* background: rgba(0, 0, 0, 0.18);*/
@@ -3520,11 +3522,15 @@ Text animation
     float:right;
     background: url("img/check-mark.png") no-repeat center center;
 }
-.mobile-slider{position: absolute;
+.mobile-slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 50;
     width: 100%;
     max-width: 1170px;
-    top: 0;}
+}
 .mobile-slider .html5{
     float:left;
     position: relative;
@@ -3586,10 +3592,10 @@ Text animation
     left: 152px;
 }
 .mobile-slider .js{
+    height:  400px;
     float:right;
     position: relative;
     width: 280px;
-    margin-right:5%;
 }
 .mobile-slider .js .right-js{
     position: absolute;
@@ -3834,9 +3840,7 @@ body {
     /*transform: translateY(15vh);*/
 /*}*/
 @media  (max-width: 1200px) {
-    .mobile-slider{max-width: 981px;}
-    .plus-img {
-        margin: 128px 0 0 136px;}
+    .mobile-slider{max-width: 930px;}
     .about-us .container-b{max-width: 970px;}
     .about-us .img1{
         left: 88px;
@@ -3875,9 +3879,7 @@ body {
         margin-top: 0;
     }
     .plus_img img{width: 130px !important;height: 130px !important;}
-    .flex-caption, .nivo-caption, .slider-caption{
-        top:37%;
-    }
+
 }
 .morph-shape{display: none;}
 @media  (max-width: 991px) {
@@ -3963,7 +3965,7 @@ body {
     .about-us .img2{left: 0;max-width: 220px;position: absolute;top: 154px;}
     .about-us .img3{max-width: 108px;position: absolute; left: 302px;top: 133px;}
     .about-us .img4{position: absolute;left: 379px;top: 190px;max-width: 50px;z-index: 6;}
-    .block-img-responsive{position: relative;margin: 0 auto;width: 434px;height: 295px;}
+    .block-img-responsive{position: relative;margin: 0 auto;width: 334px;}
     .left-bg{width: 65%;}
     .nav-container ul li a{height: auto;}
     .nav-container ul li a span{font-size: 15px;}
@@ -4037,7 +4039,6 @@ body {
     .mobile-slider .html5 .slide-img6 {max-width: 81px;}
     .mobile-slider .html5 .slide-img3 {max-width: 61px;}
     .mobile-slider .html5 .slide-img4 {max-width: 61px;}
-    .flex-caption, .nivo-caption, .slider-caption {top: 39%;}
     .mobile-slider .html5 .slide-img2 {left:118px;}
     .mobile-slider .html5 .slide-img4 {left: 119px;}
     .mobile-slider .html5 .slide-img6 {left:119px;}
