@@ -101,7 +101,7 @@
                     <div class="nav pt-trigger-container" style="position:relative;z-index: 1000;">
                         <ul>
                             <li>
-                                <a class="pt-trigger" data-animation="66" data-goto="1">
+                                <a class="pt-trigger" data-animation="13" data-goto="1">
                                     <span class="icon"><i aria-hidden="true" class="icon-home"></i></span>
                                     <span>Home</span>
                                 </a>
@@ -113,13 +113,13 @@
                             </a>
                             </li>
                             <li>
-                                <a class="pt-trigger" data-animation="66" data-goto="3">
+                                <a class="pt-trigger" data-animation="13" data-goto="3">
                                     <span class="icon"><i aria-hidden="true" class="icon-home"></i></span>
                                    <span>About</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="pt-trigger" data-animation="44" data-goto="4">
+                                <a class="pt-trigger" data-animation="16" data-goto="4">
                                     <span class="icon"><i aria-hidden="true" class="icon-contact"></i></span>
                                     <span>Contact</span>
                                 </a>
@@ -772,84 +772,22 @@
         </div>
     </section>
 </div>
-<!--<progress class="progress-scroll" value="0">-->
-  <!--<div class="progress-container">-->
-    <!--<span class="progress-bar"></span>-->
-  <!--</div>-->
-<!--</progress>-->
+<progress class="progress-scroll" value="0">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!--<script>-->
-    <!--$(window).load(function() {-->
-        <!--function ScrollWindow(){-->
-            <!--$('html, body').animate({scrollTop: 0},500);-->
-            <!--return false;-->
-        <!--}-->
-        <!--ScrollWindow();-->
-    <!--});-->
-
-<!--</script>-->
-<!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<script src="js/animation-home-page.js"></script>
 <script src="node_modules/remodal/dist/remodal.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/transition.js"></script>
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="js/wow.min.js"></script>
-
-<!--<script src="js/jquery.data-parallax.min.js"></script>-->
 <script src="js/parallax.min.js"></script>
 <!--<script src="js/snap.svg-min.js"></script>-->
 <!--<script src="js/classie.js"></script>-->
-<!--<script src="js/jquery.dlmenu.js"></script>-->
-<!--<script src="js/pagetransitions.js"></script>-->
-<!--<script src="https://cdn.rawgit.com/kasparsj/jquery.requestAnimationFrame/master/jquery.requestAnimationFrame.min.js"></script>-->
-
-<script>
-  $('.block-loader').fadeIn();
-  $(window).load(function() {
-//    $(function() {
-//      $(window).on("scroll resize", function() {
-//        var o = $(window).scrollTop() / ($(document).height() - $(window).height());
-//        $(".progress-bar").css({
-//          "width": (100 * o | 0) + "%"
-//        });
-//        $('.progress-scroll')[0].value = o;
-//      })
-//    });
-      function hideOverlay() {
-          $('#loading').addClass("slideUpBlock");
-      }
-      function hideLoader() {
-          $('.block-loader').fadeOut();
-          setTimeout(hideOverlay, 400);
-      }
-    function loadFile() {
-        setTimeout(hideLoader,200);
-        add_class();
-        setTimeout(animation_string, 1500);
-    }
-    setTimeout(loadFile, 1500);
-    function add_class(){
-//        $(".parallax-mirror:eq(2)").addClass("active");
-        $(".parallax-mirror:eq(1)").addClass("active");
-      $(".text-html").addClass( "bounceInDown" );
-      $(".text-css").addClass( "bounceInDown" );
-      $(".slide-img1").addClass( "fadeInLeft" );
-      $(".slide-img2").addClass( "fadeInRight" );
-      $(".slide-img3").addClass( "fadeInLeft" );
-      $(".slide-img4").addClass( "fadeInRight" );
-      $(".slide-img5").addClass( "fadeInLeft" );
-      $(".slide-img6").addClass( "fadeInRight" );
-      $(".left-js").addClass( "fadeInLeft" );
-      $(".right-js").addClass( "fadeInRight" );
-      $(".right-js-b").addClass( "fadeInDown" );
-      $(".js-b").addClass( "fadeInUp" );
-    }
-    function animation_string(){
-      $(".background-block").addClass("active-animation");
-    }
-  });
-</script>
 <script src="js/js.js"></script>
 
 
