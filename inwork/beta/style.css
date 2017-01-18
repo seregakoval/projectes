@@ -22,7 +22,7 @@ footer, header, menu, nav, section {
 html, body {
   height: 100%; }
   
-.portfolio .grid .box{
+.portfolio .grid .box {
     height: 320px;
     transition: 0.3s;
     opacity: 0;
@@ -198,14 +198,7 @@ body {
     margin: auto;
     max-width: 1140px;
 }
-.title-head {
-   display: flex;
-    align-items: flex-end;
-    height: 25vh;
-    justify-content: center;
-    width: 100%;
-    z-index: 100;
-}
+
 #cursorr{
     font-size: 60px;
     display: inline-block;
@@ -218,44 +211,6 @@ body {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
-
-.title-head h2{
-    font-family: 'Baloo Da', cursive;
-    color: #fff;
-    font-size: 50px;
-    font-weight: 400;
-    display: inline-block;
-}
-.slider-caption h2 {
-    font-size: 70px;
-    color:#fff;
-    font-family: 'Roboto', sans-serif;
-    padding: 113px 0 !important;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 100px;
-    text-transform: uppercase;
-    z-index: 100;
-    position: relative;
-   /* opacity: 0;*/
-}
-.slider-caption p {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------*/
-/*.parallax:after{*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: absolute;*/
-    /*content: "";*/
-    /*bottom: 0;*/
-    /*right: 0;*/
-    /*background: url("img/overaly.png");*/
-/*}*/
 
 #loading {
   background-color: #0e1a23;
@@ -2266,14 +2221,6 @@ progress::-moz-progress-bar{
 Text animation
 */
 
-.parallax {
-    padding: 20px 0;
-    height: 100vh;
-    background: transparent;
-    position: relative;
-    /*overflow: hidden;*/
-
-}
 .service-content .icon-surround, .services4 .service-content .ico1,.services4 .service-content .ico2,.services4 .service-content .ico3,.services4 .service-content .ico4,.services4 .service-content .ico5,.services4 .service-content .ico6 {
     float: left;
     margin: 0;
@@ -2764,11 +2711,6 @@ Text animation
     align-items:center;
     justify-content: center;
 }
-.plus-img{
-    display: block;
-    float: left;
-    width: 139px;
-}
 .title-about-us {
     padding: 3%;
     background: #fff;
@@ -2893,13 +2835,7 @@ Text animation
     top: 304px;
     z-index: 6;
 }
-.slider-caption {
-    position: relative;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .slider-caption:after {
    /* background: rgba(0, 0, 0, 0.18);*/
     content: "";
@@ -3522,101 +3458,7 @@ Text animation
     float:right;
     background: url("img/check-mark.png") no-repeat center center;
 }
-.mobile-slider{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 50;
-    width: 100%;
-    max-width: 1170px;
-}
-.mobile-slider .html5{
-    float:left;
-    position: relative;
-    width:280px;
-    height: 400px;
-}
-.mobile-slider .html5 .slide-img1{
-    position: absolute;
-    top: 75px;
-    left:0;
-}
-.mobile-slider .html5 .slide-img2 {
-    position: absolute;
-    top: 75px;
-    left: 134px;
-}
-.mobile-slider .html5 .slide-img3 {
-    position: absolute;
-    top: 125px;
-    left: 49px;
-    z-index: 5;
-}
-.mobile-slider .html5 .slide-img4 {
-     position: absolute;
-    top: 125px;
-    left: 134px;
-     z-index: 5;
- }
-.mobile-slider .html5 .slide-img5 {
-    position: absolute;
-    top: 101px;
-    left: 29px;
-    z-index: 3;
-}
-.mobile-slider .html5 .slide-img6 {
-    position: absolute;
-    top: 101px;
-    left: 134px;
-    z-index: 3;
-}
-.mobile-slider .text-html {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #fff;
-    position: absolute;
-    top: 42px;
-    text-transform: uppercase;
-    font-weight: 100;
-    left: 23px;
-}
-.mobile-slider .text-css {
-    font-size: 24px;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 42px;
-    color:#fff;
-    text-transform: uppercase;
-    font-weight: 100;
-    left: 152px;
-}
-.mobile-slider .js{
-    height:  400px;
-    float:right;
-    position: relative;
-    width: 280px;
-}
-.mobile-slider .js .right-js{
-    position: absolute;
-    right: 0;
-    top: 78px;
-}
-.mobile-slider .js .left-js{
-    position: absolute;
-    right: 135px;
-    top: 78px;
-}
-.mobile-slider .js .right-js-b{
-    position: absolute;
-    right: 19px;
-    top: 93px;
-}
-.mobile-slider .js .js-b{
-    position: absolute;
-    right: 55px;
-    top: 113px;
-}
+
 .remodal {
     padding: 0;
     max-width: 1200px;
@@ -3700,6 +3542,7 @@ Text animation
 .pt-page-1 {
     background: none; }
 .pt-page {
+    position: absolute;
     display:none;
     width: 100%;
     height: 100%;
@@ -3738,70 +3581,8 @@ body {
     min-height: 115vh;
     position: relative;
     width: 100%;
-    /*-webkit-transform: translateY(30vh);*/
-    /*transform: translateY(30vh);*/
-}
-/*.background .parallax-content {*/
-    /*transform: translateY(20vh);*/
-/*}*/
-/*.background:first-child {*/
-    /*!*background-image: url("img/image-bg.jpg");*!*/
-    /*-webkit-transform: translateY(-15vh);*/
-    /*transform: translateY(-15vh);*/
-/*}*/
-/*.background:first-child .content-wrapper {*/
-    /*-webkit-transform: translateY(15vh);*/
-    /*transform: translateY(15vh);*/
-/*}*/
-.background:nth-child(2) {
-    /*background-image: url("img/image-bg.jpg");*/
-}
-/*.background:nth-child(3) {*/
-    /*background-image: url(http://usersthink.com/wp-content/uploads/16-usersthink-stock-image.jpg);*/
-/*}*/
-
-/* Set stacking context of slides */
-.background:nth-child(1) {
-    z-index: 3;
 }
 
-.background:nth-child(2) {
-    z-index: 2;
-}
-
-.background:nth-child(3) {
-    z-index: 1;
-}
-
-.content-wrapper {
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-    -webkit-flex-flow: column nowrap;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    -webkit-transform: translateY(40vh);
-    transform: translateY(40vh);
-    will-change: transform;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
-    transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
-}
-.content-title {
-    font-size: 12vh;
-    line-height: 1.4;
-}
-.pt-page-1 {
-    z-index:-1;
-}
 .background.scroll {
     padding-top: 7vh;
     /*overflow: auto;*/

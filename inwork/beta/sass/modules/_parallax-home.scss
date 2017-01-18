@@ -1,0 +1,145 @@
+/*parallax - Home*/
+.parallax {
+  padding: 20px 0;
+  height: 100vh;
+  background: transparent;
+  position: relative;
+  .title-head {
+    display: flex;
+    align-items: flex-end;
+    height: 25vh;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+    h2 {
+      font-family: 'Baloo Da', cursive;
+      color: #fff;
+      font-size: 50px;
+      font-weight: 400;
+      display: inline-block;
+    }
+  }
+  .slider-caption {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 70px;
+      color:#fff;
+      font-family: 'Roboto', sans-serif;
+      padding: 113px 0 !important;
+      font-weight: 500;
+      letter-spacing: 2px;
+      line-height: 100px;
+      text-transform: uppercase;
+      z-index: 100;
+      position: relative;
+    }
+    p {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .mobile-slider {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 50;
+      width: 100%;
+      max-width: 1170px;
+      .text-html {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #fff;
+        position: absolute;
+        top: 42px;
+        text-transform: uppercase;
+        font-weight: 100;
+        left: 23px;
+      }
+      .text-css {
+        font-size: 24px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 42px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 100;
+        left: 152px;
+      }
+    }
+    .plus-img{
+      display: block;
+      float: left;
+      width: 139px;
+    }
+  }
+  &__html5 {
+    float: left;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    .slide-img1 {
+      position: absolute;
+      top: 75px;
+      left: 0;
+    }
+    .slide-img2 {
+      position: absolute;
+      top: 75px;
+      left: 134px;
+    }
+    .slide-img3 {
+      position: absolute;
+      top: 125px;
+      left: 49px;
+      z-index: 5;
+    }
+    .slide-img4 {
+      position: absolute;
+      top: 125px;
+      left: 134px;
+      z-index: 5;
+    }
+    .slide-img5 {
+      position: absolute;
+      top: 101px;
+      left: 29px;
+      z-index: 3;
+    }
+    .slide-img6 {
+      position: absolute;
+      top: 101px;
+      left: 134px;
+      z-index: 3;
+    }
+  }
+  &__js {
+    height: 400px;
+    float: right;
+    position: relative;
+    width: 280px;
+    .right-js {
+      position: absolute;
+      right: 0;
+      top: 78px;
+    }
+    .left-js {
+      position: absolute;
+      right: 135px;
+      top: 78px;
+    }
+    .right-js-b {
+      position: absolute;
+      right: 19px;
+      top: 93px;
+    }
+    .js-b {
+      position: absolute;
+      right: 55px;
+      top: 113px;
+    }
+  }
+}
