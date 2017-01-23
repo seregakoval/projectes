@@ -1,3 +1,13 @@
-@import "modules/_pages.scss";
 
+/*-----LAYOUT-----*/
+
+@import "layout/_content.scss";
+@import "layout/_base.scss";
+
+/*-----MODULES-----*/
+
+@import "modules/_pages.scss";
 @import "modules/_parallax-home.scss";
+@import "modules/_servises.scss";
+@import "modules/_portfolio.scss";
+

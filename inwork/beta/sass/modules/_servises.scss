@@ -1,0 +1,119 @@
+/*SERVISES*/
+
+.servises {
+  .services-box {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #333;
+    display: inline-block;
+    padding: 0 0px 10px 0;
+    border-bottom: 2px solid #333;
+  }
+  .icon {
+    display: inline-block;
+    width: 30px;
+    margin: 0 auto;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+    .icon-pentagon i {
+      font-size: 20px;
+      color:#fff;
+    }
+  }
+  .servises-animation {
+    min-height: 100vh;
+    padding-top: 57px;
+    position: relative;
+    background: #fff;
+    z-index:100;
+
+  }
+  .item {
+    opacity: 0;
+    &.bounceInUp {
+      opacity: 1;
+    }
+  }
+  .service {
+
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    .icon-holder {
+      position: relative;
+      top: 100px;
+      display: inline-block;
+      margin-bottom: 40px;
+      padding: 10px;
+      background: white;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    .heading {
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif;
+      position: relative;
+      top: 80px;
+      -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .description {
+      padding-bottom: 15px;
+      width: 80%;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 22px;
+      margin: 0 auto;
+      font-size: 16px;
+      opacity: 0;
+      -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);}
+  }
+  .svg-wrapper {
+    position: relative;
+    top: 50%;
+    margin: 0 auto 50px auto;
+    width: 320px;
+    svg {
+      border-radius: 5px;
+      width: 320px;
+      height: 280px;
+    }
+    rect {
+      width: 320px;
+      height: 280px;
+    }
+    &:hover .icon-holder {
+      top: -30px;
+    }
+    &:hover .heading {
+      top: -30px;
+    }
+    &:hover {
+      .description {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  }
+  i {
+    font-size: 50px;
+    color: #49acef;
+  }
+}

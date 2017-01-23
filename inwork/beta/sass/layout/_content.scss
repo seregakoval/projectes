@@ -1,0 +1,36 @@
+.pt-wrapper {
+  overflow: hidden;
+}
+.pt-page-1 {
+  background: none; }
+.pt-page {
+  position: absolute;
+  display:none;
+  width: 100%;
+  height: 100%;
+  overflow: initial;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.no-js body {
+  overflow-y: auto;
+}
+.pt-page-current,
+.no-js .pt-page {
+  visibility: visible;
+  z-index: 100;
+  display: inline-block;
+
+}
+.pt-page-1 {
+  overflow-y: auto;
+}
+body {
+  overflow-x: hidden;
+}
+.activePage .parallax-mirror {
+  display: none !important;
+}

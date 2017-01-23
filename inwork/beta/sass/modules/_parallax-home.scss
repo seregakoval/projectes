@@ -1,4 +1,12 @@
 /*parallax - Home*/
+.background {
+  min-height: 115vh;
+  position: relative;
+  width: 100%;
+}
+.background.scroll {
+  padding-top: 7vh;
+}
 .parallax {
   padding: 20px 0;
   height: 100vh;
