@@ -1,5 +1,10 @@
 .page-portfolio {
   display: none;
+  .portfolio {
+    &__box {
+      opacity:0;
+    }
+  }
   &__head {
     position: relative;
     margin-bottom: 30px;
@@ -48,6 +53,9 @@
       padding: 0 15px;
     }
   }
+}
+.pt-page-2, .pt-page-3 {
+  background-color: #fff;
 }
 .pt-page-2.pt-page-current {
   > div {

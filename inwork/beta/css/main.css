@@ -41,6 +41,8 @@ body {
 /*-----MODULES-----*/
 .page-portfolio {
   display: none; }
+  .page-portfolio .portfolio__box {
+    opacity: 0; }
   .page-portfolio__head {
     position: relative;
     margin-bottom: 30px;
@@ -76,6 +78,9 @@ body {
   .about-us.page .main-col .col {
     width: 50%;
     padding: 0 15px; }
+
+.pt-page-2, .pt-page-3 {
+  background-color: #fff; }
 
 .pt-page-2.pt-page-current > div {
   display: block; }

@@ -234,8 +234,8 @@ $(document).ready(function(){
                 });
             }
         });
-        $(".pt-page-2 .box").removeClass("bounceInUp");
-        $(".pt-page-2 .box").each(function(index, el) {
+        $(".pt-page-2 .portfolio__box").removeClass("bounceInUp");
+        $(".pt-page-2 .portfolio__box").each(function(index, el) {
             new Waypoint({
                 element: el,
                 handler: function() {
@@ -267,10 +267,10 @@ $(document).ready(function(){
                 }, delay);
                 this.destroy();
             },
-            offset: '350px'
+            offset: '750px'
         });
     });
-    $(".main-block .box").waypoint(function(direction){
+    $(".main-block .portfolio__box").waypoint(function(direction){
         if (direction === 'down') {
             $(".parallax-mirror:eq(1)").removeClass("active");
             var element = $(this.element);
