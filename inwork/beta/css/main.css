@@ -88,6 +88,10 @@ body {
 .pt-page-3.pt-page-current > div {
   display: block; }
 
+.hideBox {
+  opacity: 0 !important;
+  transition: .5s; }
+
 /*parallax - Home*/
 .background {
   min-height: 115vh;
@@ -362,6 +366,8 @@ body {
     text-align: left;
     position: relative;
     /* hover box*/ }
+    .portfolio__box.animated {
+      animation-duration: 0.8s; }
     .portfolio__box .img-n {
       position: relative; }
     .portfolio__box .screen {
@@ -389,6 +395,20 @@ body {
       z-index: 0;
       opacity: 0;
       color: white; }
+      .portfolio__box .top .main {
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        display: inline-block;
+        border: 1px solid #0773BA;
+        font: 14px arial, sans-serif;
+        text-align: center;
+        text-decoration: none;
+        color: #FFF;
+        padding: 8px 12px;
+        -webkit-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out; }
       .portfolio__box .top h3 {
         float: left; }
     .portfolio__box .bottom {

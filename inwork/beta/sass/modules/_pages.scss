@@ -67,3 +67,7 @@
     display: block;
   }
 }
+.hideBox {
+  opacity: 0 !important;
+  transition: .5s;
+}

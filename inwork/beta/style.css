@@ -2877,21 +2877,6 @@ Text animation
     color:#fff;
 }
 
-.portfolio .grid .box .top a.main {
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    display: inline-block;
-    border: 1px solid #0773BA;
-    font: 14px arial, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    color: #FFF;
-    padding: 8px 12px;
-    -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-}
 .contact .about-info .head h2:after {
     background: #6BC3E9;
     content: "";

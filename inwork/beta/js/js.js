@@ -234,23 +234,53 @@ $(document).ready(function(){
                 });
             }
         });
-        $(".pt-page-2 .portfolio__box").removeClass("bounceInUp");
-        $(".pt-page-2 .portfolio__box").each(function(index, el) {
-            new Waypoint({
-                element: el,
-                handler: function() {
-                    var element = $(this.element),
-                        delay = element.attr('data-delay');
 
-                    setTimeout(function() {
-                        element.addClass('bounceInUp');
-                    }, delay);
-                    this.destroy();
-                },
-                offset: '70%'
-            });
-        });
+        if(this.childNodes[3].innerHTML == "Portfolio") {
+            $(".pt-page-2 .portfolio__box").removeClass("fadeOutLeft");
+            $(".pt-page-2 .portfolio__box").removeClass("bounceInUp");
+            $(".pt-page-2 .portfolio__box").each(function(index, el) {
+                    new Waypoint({
+                        element: el,
+                        handler: function() {
+                            var element = $(this.element),
+                                delay = element.attr('data-delay');
 
+                            setTimeout(function() {
+                                element.addClass('bounceInUp');
+                            }, delay);
+                            this.destroy();
+                        },
+                        offset: '70%'
+                    });
+                });
+        } else {
+            $(".pt-page-2 .portfolio__box").addClass("fadeOutLeft");
+            console.log("not pt-page-2");
+        }
+        // if($('.pt-page-2').hasClass('pt-page-current')) {
+        //     $(".pt-page-2 .portfolio__box").removeClass("fadeOutRight");
+        //     // $(".pt-page-2 .portfolio__box").removeClass("bounceInUp");
+        //     console.log("pt-page-2");
+        //     // $(".pt-page-2 .portfolio__box").addClass("bounceInUp");
+        // } else {
+        //     console.log("not pt-page-2");
+        //     $(".pt-page-2 .portfolio__box").addClass("fadeOutRight");
+        // }
+        // $(".pt-page-2 .portfolio__box").each(function(index, el) {
+        //     new Waypoint({
+        //         element: el,
+        //         handler: function() {
+        //             var element = $(this.element),
+        //                 delay = element.attr('data-delay');
+        //
+        //             setTimeout(function() {
+        //                 element.addClass('bounceInUp');
+        //             }, delay);
+        //             this.destroy();
+        //         },
+        //         offset: '70%'
+        //     });
+        // });
     });
     var widthWindow = $(window).width();
     if(widthWindow <= 991) {
