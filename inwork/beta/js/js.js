@@ -234,8 +234,8 @@ $(document).ready(function(){
                 });
             }
         });
-
-        if(this.childNodes[3].innerHTML == "Portfolio") {
+        var numberPage = this.getAttribute('data-goto');
+        if(numberPage == 2) {
             $(".pt-page-2 .portfolio__box").removeClass("fadeOutLeft");
             $(".pt-page-2 .portfolio__box").removeClass("bounceInUp");
             $(".pt-page-2 .portfolio__box").each(function(index, el) {
@@ -250,7 +250,7 @@ $(document).ready(function(){
                             }, delay);
                             this.destroy();
                         },
-                        offset: '70%'
+                        offset: '80%'
                     });
                 });
         } else {
@@ -317,7 +317,7 @@ $(document).ready(function(){
         }
         // $(".container-about")
     },{
-        offset: 800
+        offset: "80%"
     });
     $(".space .space-row").waypoint(function(direction){
         if (direction === 'down') {
