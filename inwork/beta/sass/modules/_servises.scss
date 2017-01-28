@@ -1,6 +1,9 @@
 /*SERVISES*/
 
 .servises {
+    min-height: 100vh;
+    position: relative;
+    z-index: 100;
   .services-box {
     display: flex;
     flex-flow: row wrap;

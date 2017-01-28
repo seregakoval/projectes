@@ -250,7 +250,7 @@ $(document).ready(function(){
                             }, delay);
                             this.destroy();
                         },
-                        offset: '80%'
+                        offset: '65%'
                     });
                 });
         } else {
