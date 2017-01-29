@@ -48,69 +48,70 @@ body {
   z-index: 1000;
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  /*logo*/ }
-  .header .logo {
-    position: relative;
-    /*avatar*/
-    /*logo-text*/ }
-    .header .logo .avatar {
-      display: inline-block;
-      vertical-align: middle;
-      width: 90px;
-      height: 90px;
-      border-radius: 50%; }
-      .header .logo .avatar .sniper {
-        border-radius: 50%;
-        border: 3px solid #FD5F54;
-        border-right-color: #1AD280;
-        border-bottom-color: #1AD280;
-        width: 90px;
-        height: 90px;
-        position: absolute;
-        -webkit-animation-name: spin;
-        -webkit-animation-duration: 2100ms;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -moz-animation-name: spin;
-        -moz-animation-duration: 2100ms;
-        -moz-animation-iteration-count: infinite;
-        -moz-animation-timing-function: linear;
-        -ms-animation-name: spin;
-        -ms-animation-duration: 2100ms;
-        -ms-animation-iteration-count: infinite;
-        -ms-animation-timing-function: linear;
-        animation-name: spin;
-        animation-duration: 2100ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear; }
-      .header .logo .avatar img {
-        border-radius: 50%;
-        display: block;
-        width: 100%; }
-    .header .logo .logo-text {
-      vertical-align: middle;
-      display: inline-block;
-      margin: 0 0 0 20px; }
-    .header .logo .name {
-      font-weight: 300;
-      font-size: 30px;
+  /*avatar*/
+  /*logo-text*/
+  /*logo*/
+  /*nav-container*/ }
+  .header__sniper {
+    border-radius: 50%;
+    border: 3px solid #FD5F54;
+    border-right-color: #1AD280;
+    border-bottom-color: #1AD280;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2100ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2100ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2100ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 2100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+  .header__avatar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; }
+    .header__avatar img {
+      border-radius: 50%;
+      display: block;
+      width: 100%; }
+  .header__logo-text {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0 0 20px; }
+    .header__logo-text .name {
+      font-size: 23px;
+      font-weight: 400;
       text-align: center;
       color: #fff;
-      margin: 0 0 10px 0; }
-    .header .logo .position {
+      margin: 0 0 8px 0; }
+    .header__logo-text .position {
       text-align: left;
       color: #fff;
       font-weight: 300;
       font-size: 14px; }
+  .header .logo {
+    position: relative; }
   .header .mobile-logo {
     float: left;
     display: none;
     width: 100%; }
-  .header .string {
+  .header__string {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-  .header .container-header {
+  .header__container-header {
     padding: 6px 15px 6px 15px;
     max-width: 1170px;
     margin: 0 auto; }
@@ -122,8 +123,55 @@ body {
     height: 100%;
     width: 35%;
     min-width: 238px; }
-  .header .nav-container ul li a .icon:hover i {
-    color: #0773BA !important; }
+  .header__nav-container {
+    /*display: none !important;*/ }
+    .header__nav-container ul li a .icon:hover i {
+      color: #0773BA !important; }
+    .header__nav-container .nav ul {
+      list-style: none; }
+      .header__nav-container .nav ul li {
+        text-align: center;
+        float: left; }
+        .header__nav-container .nav ul li a {
+          text-decoration: none;
+          display: block;
+          cursor: pointer;
+          color: #323232;
+          font-size: 16px; }
+          .header__nav-container .nav ul li a .icon {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            font-weight: 400;
+            width: 50px;
+            text-transform: uppercase; }
+            .header__nav-container .nav ul li a .icon + span {
+              transition: 0.3s; }
+              .header__nav-container .nav ul li a .icon + span i {
+                transition: 0.8s; }
+              .header__nav-container .nav ul li a .icon + span:hover i {
+                color: #0773ba; }
+          .header__nav-container .nav ul li a i {
+            position: relative;
+            display: inline-block;
+            margin: 12px 10px;
+            padding: 0.4em;
+            float: left;
+            border-radius: 50%;
+            font-size: 1.2em;
+            transform: translate3d(0, 0, 0);
+            box-shadow: 0 0 0 0.8em transparent;
+            transition: box-shadow .6s ease-in-out; }
+          .header__nav-container .nav ul li a:hover .icon + span {
+            color: #0773ba; }
+          .header__nav-container .nav ul li a:hover i {
+            box-shadow: 0 0 0px 0px rgba(7, 115, 186, 0.5);
+            color: #0773ba; }
+  .header .menu {
+    display: none; }
+  @media (max-width: 991px) {
+    .header__nav-container .nav {
+      display: none; } }
 
 @-ms-keyframes spin {
   from {
