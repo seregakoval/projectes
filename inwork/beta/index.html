@@ -34,7 +34,7 @@
                     <div class="header__avatar">
                         <a href="#">
                             <div class="header__sniper"></div>
-                            <img src="img/IMG_20140917_223455.jpg" alt="">
+                            <img src="img/IMG_20140917_223455.jpg" class="header__avatar-img" alt="">
                         </a>
                     </div>
                     <div class="header__logo-text">
@@ -42,17 +42,16 @@
                         <p class="position">Web Developer</p>
                     </div>
                 </div>
-                <button class="menu-button" id="open-button"></button>
                 <div class="header__nav-container">
                     <div class="menu">
-                        <div class="title-menu clearfix">
-                            <div class="avatar-menu ">
-                                <img src="img/IMG_20140917_223455.jpg" alt="">
-                            </div>
+                        <div class="header__title-menu clearfix">
+                            <a href="#" class="header__logo-link">
+                                <div class="sniper"></div>
+                                <img src="img/IMG_20140917_223455.jpg" class="avatar-img" alt="">
+                            </a>
                             <h1 class="name">Sergey Koval</h1>
-
                         </div>
-                    </div>
+                    </div> <!--menu-->
                     <div class="nav pt-trigger-container" style="position:relative;z-index: 1000;">
                         <ul>
                             <li>
@@ -80,20 +79,21 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </div>
+                    </div> <!--./nav-->
+                </div> <!--nav-container-->
+                <button class="menu-button" id="open-button"></button>
             </div>
         </div>
     </header><!--./header-->
        <div class="main-block pt-page ">
            <section class="background animated up-scroll">
                <div class="parallax"  data-parallax="scroll" data-image-src="img/image-bg2.jpg"  >
-                   <div class="title-head">
+                   <div class="parallax__title-head">
                        <h2 id="caption">Portfolio Developer</h2>
                        <span id="cursorr">|</span>
                    </div>
-                   <div class="slider-caption">
-                       <div class="mobile-slider">
+                   <div class="parallax__slider-caption">
+                       <div class="parallax__mobile-slider">
                            <div class="parallax__html5">
                                <p class="text-html animated wow" data-wow-delay="1.8s">html5</p>
                                <p class="text-css animated wow" data-wow-delay="2s">css3</p>
@@ -104,7 +104,7 @@
                                <img src="img/slide_img5.png" class="slide-img5 animated wow" data-wow-delay="0.8s" alt="">
                                <img src="img/slide_img6.png" class="slide-img6 animated wow" data-wow-delay="0.8s" alt="">
                            </div>
-                           <img src="img/plus.png"class="plus-img " data-wow-delay="2.5s" alt="">
+                           <img src="img/plus.png"class="parallax__plus-img " data-wow-delay="2.5s" alt="">
                            <div class="parallax__js">
                                <img src="img/js-left.png" class="left-js animated wow" data-wow-delay="1.8s" alt="">
                                <img src="img/js-right.png" class="right-js animated wow" data-wow-delay="1.8s" alt="">

@@ -196,10 +196,11 @@ $(document).ready(function(){
     var nav;
     var btnMenu = document.querySelector("#open-button");
     btnMenu.addEventListener('click', function() {
-    nav = document.querySelector('.nav-container'); 
+    this.classList.toggle("active");
+    nav = document.querySelector('.header__nav-container');
         nav.classList.toggle('active');
     });
-    var nav = document.querySelectorAll(".nav-container a");
+    var nav = document.querySelectorAll(".header__nav-container");
     for(i=0; i < nav.length; i++) {
         function clickNav () {
             nav.classList.remove("active");

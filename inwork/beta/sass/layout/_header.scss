@@ -10,7 +10,7 @@
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
     &__sniper {
         border-radius: 50%;
-        border: 3px solid #FD5F54;
+        border: 2px solid #FD5F54;
         border-right-color: #1AD280;
         border-bottom-color: #1AD280;
         width: 60px;
@@ -37,14 +37,49 @@
         display: inline-block;
         vertical-align: middle;
         width: 60px;
-        height: 60px;
         border-radius: 50%;
-      img {
+      } /*avatar*/
+      &__avatar-img {
+        border-radius: 50%;
+        display: block;
+        width: 60px;
+      }
+      &__logo-link {
+        margin: 0 auto;
+        width: 60px;
+        display: block;
+        .avatar-img {
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           display: block;
-          width: 100%; 
         }
-      } /*avatar*/
+        .sniper {
+          border-radius: 50%;
+          border: 2px solid #FD5F54;
+          border-right-color: #1AD280;
+          border-bottom-color: #1AD280;
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          -webkit-animation-name: spin;
+          -webkit-animation-duration: 2100ms;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-timing-function: linear;
+          -moz-animation-name: spin;
+          -moz-animation-duration: 2100ms;
+          -moz-animation-iteration-count: infinite;
+          -moz-animation-timing-function: linear;
+          -ms-animation-name: spin;
+          -ms-animation-duration: 2100ms;
+          -ms-animation-iteration-count: infinite;
+          -ms-animation-timing-function: linear;
+          animation-name: spin;
+          animation-duration: 2100ms;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+      }
       &__logo-text {
         vertical-align: middle;
         display: inline-block;
@@ -98,7 +133,7 @@
     				.icon {
     					&:hover {
     						i {
-    						color: #0773BA !important;
+    						color: #0773BA;
     					}
     				}
     			}
@@ -167,11 +202,119 @@
   .menu {
     display: none;
   }
+  &__title-menu {
+    display: inline-block;
+    padding: 10px 40px;
+    border-bottom:1px solid #eaeaea;
+    .name {
+      color: #fff;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+  &__avatar-menu {
+    img {
+      width: 60px;
+      border-radius: 50%;
+      height: 60px;
+    }
+  }
+  .menu-button {
+    position: relative;
+    z-index: 1000;
+    display: none;
+    padding: 0;
+    right: 0;
+    width: 40px;
+    height: 31px;
+    border: none;
+    text-indent: 2.5em;
+    /* font-size: 16px; */
+    color: transparent;
+    outline: none;
+    background: transparent;
+    &:before {
+      position: absolute;
+      top: 0.5em;
+      right: 0.5em;
+      bottom: 0.5em;
+      left: 0.5em;
+      background: linear-gradient(#FD5F54 20%, transparent 20%, transparent 40%, #FD5F54 40%, #FD5F54 60%, transparent 60%, transparent 80%, #FD5F54 80%);
+      content: '';
+    }
+  }
   @media(max-width: 991px) {
+    &__avatar {
+      width: 40px;
+    }
+    &__sniper {
+      width: 40px;
+      height: 40px;
+    }
+    &__avatar-img {
+      width: 40px;
+      height: 40px;
+    }
     &__nav-container {
+      transform: translateX(-210px);
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: linear-gradient(#2e4982,85%, #35baf3);
+      width: 210px;
+      transition:all 0.3s;
+      height: 100%;
       .nav {
-        display: none;
+        //display: none;
+        display: flex;
+        padding-left: 32px;
+        ul {
+          li {
+            text-align: left;
+            float: none;
+            a {
+              color: #fff;
+              i {
+                margin: 5px 10px;
+              }
+              &:hover {
+                .icon {
+                  + span {
+                    color: #fff;
+                  }
+                }
+                i {
+                  color: #009aff;
+                }
+              }
+            }
+          }
+        }
       }
+      &.active {
+        transform: translateX(0px);
+      }
+    }
+    .menu-button {
+      display: block;
+    }
+    .menu {
+      display:block;
+      padding: 40px 0 0 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__logo-text {
+      .name {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      .position {
+        font-size: 13px;
+      }
+    }
+    .left-bg {
+      width: 77%;
     }
   }
 }
