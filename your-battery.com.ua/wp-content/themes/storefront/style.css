@@ -4191,7 +4191,7 @@ button.menu-toggle:after {
 
     .site-header .site-branding {
         display: block;
-        width: 40%;
+        width: 33.3%;
         float: left;
         margin-right: 4.347826087%;
         clear: both;
@@ -4856,6 +4856,31 @@ button.menu-toggle:after {
 .main-navigation ul.menu > li > a:hover, .main-navigation ul.nav-menu > li > a:hover {
     border-bottom: 4px solid #ffd300;
     color: #ffd300 !important;
+}
+.section-navigation {
+    background: #39475c;
+}
+.section-navigation .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding:  0 15px;
+}
+.section-navigation .main-navigation {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+}
+.section-navigation .site-header-cart {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.storefront-primary-navigation {
+    margin-top: 10px;
+}
+.header-row {
+    background: url("img/yellow.png") no-repeat center center;
 }
 @media (max-width: 67.141em) {
     .col-full {
