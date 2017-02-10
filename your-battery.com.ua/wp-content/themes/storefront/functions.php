@@ -46,6 +46,40 @@ if ( storefront_is_woocommerce_activated() ) {
 if ( is_admin() ) {
 	$storefront->admin = require 'inc/admin/class-storefront-admin.php';
 }
+add_action( 'widgets_init', 'register_my_widgets' );
+function register_my_widgets(){
+    register_sidebar( array(
+        'name' => 'Номера телефонов',
+        'id' => 'header-widget',
+        'before_widget' => '<div id="%1$s" class="%2$s phone">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+}
+add_action( 'widgets_init', 'register_my_widgets_mail' );
+function register_my_widgets_mail(){
+    register_sidebar( array(
+        'name' => 'Почта header',
+        'id' => 'mail-header-widget',
+        'before_widget' => '<div id="%1$s" class="%2$s mail">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+}
+add_action( 'widgets_init', 'register_my_widgets_address_header' );
+function register_my_widgets_address_header(){
+    register_sidebar( array(
+        'name' => 'Адрес в шапке',
+        'id' => 'address-header-widget',
+        'before_widget' => '<div id="%1$s" class="%2$s address">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+}
+
 
 /**
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.

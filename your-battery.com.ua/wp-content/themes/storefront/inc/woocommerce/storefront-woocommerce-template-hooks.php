@@ -61,8 +61,8 @@ add_action( 'woocommerce_after_shop_loop_item_title',      'woocommerce_show_pro
  * @see  storefront_product_search()
  * @see  storefront_header_cart()
  */
-add_action( 'storefront_header', 'storefront_product_search', 40 );
-add_action( 'storefront_header', 'storefront_header_cart',    60 );
+//add_action( 'storefront_header', 'storefront_product_search', 40 ); Выводит поиск
+add_action( 'storefront_headernav', 'storefront_header_cart',    60 ); /*Выводит корзину*/
 
 /**
  * Structured Data
