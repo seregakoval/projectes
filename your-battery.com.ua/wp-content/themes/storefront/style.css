@@ -4191,7 +4191,7 @@ button.menu-toggle:after {
 
     .site-header .site-branding {
         display: block;
-        width: 33.3%;
+        width: 30%;
         float: left;
         margin-right: 4.347826087%;
         clear: both;
@@ -4312,13 +4312,13 @@ button.menu-toggle:after {
     }
 
     .left-sidebar .content-area {
-        width: 73.9130434783%;
+        width: 70%;
         float: right;
         margin-right: 0
     }
 
     .left-sidebar .widget-area {
-        width: 21.7391304348%;
+        width: 24%;
         float: left;
         margin-right: 4.347826087%
     }
@@ -4840,6 +4840,7 @@ button.menu-toggle:after {
 .header-widget .widget_text:hover:after {
     color: #ffd300;
 }
+
 .storefront-primary-navigation {
     height: auto;
 }
@@ -4882,6 +4883,11 @@ button.menu-toggle:after {
 .header-row {
     background: url("img/yellow.png") no-repeat center center;
 }
+.site-header .site-branding {
+    display: flex;
+
+    align-items: center;
+}
 @media (max-width: 67.141em) {
     .col-full {
         margin-left: 2.617924em;
@@ -4889,7 +4895,48 @@ button.menu-toggle:after {
         padding: 0
     }
 }
+.product-categories .cat-item {
+    transition: 0.3s;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: 3px;
+}
+.product-categories .children .cat-item:hover {
+    border-color: #ffd300;
+    color:#ffd300;
+}
+.product-categories .current-cat-parent {
+    font-size: 15px;
+}
+.product-categories .cat-item.current-cat {
+    /*border-color: #ffd300;;*/
+    /*padding-bottom: 4px;*/
+}
+.product-categories .cat-item.current-cat:before {
+    color: #eec400;
+    opacity: 1;
+}
+.product-categories .cat-item.current-cat a {
 
+}
+.product-categories .cat-item a {
+    text-decoration: none !important;
+}
+.product-categories > .cat-item > a {
+    font-weight: 600 !important;
+}
+.product-categories .cat-item a.current-cat {
+
+}
+.widget_product_categories ul li:before {
+    opacity: 0.8;
+}
+.product-categories .cat-item .children {
+    display: none;
+}
+.product-categories .cat-item.current-cat .children {
+    display: block;
+}
 @media (max-width: 568px) {
     .col-full {
         margin-left: 1.41575em;

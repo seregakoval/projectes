@@ -94,6 +94,7 @@ class WC_Product_Cat_List_Walker extends Walker {
 
 		if ( $args['current_category_ancestors'] && $args['current_category'] && in_array( $cat->term_id, $args['current_category_ancestors'] ) ) {
 			$output .= ' current-cat-parent';
+
 		}
 
 		$output .=  '"><a href="' . get_term_link( (int) $cat->term_id, $this->tree_type ) . '">' . _x( $cat->name, 'product category name', 'woocommerce' ) . '</a>';
