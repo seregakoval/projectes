@@ -31,8 +31,7 @@
 <!--		</div>-->
 <!--	</div>-->
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
-		<div class="col-full">
-
+		<div class="container">
 					<div class="header-row">
 						<?php
 						/**
@@ -47,6 +46,9 @@
 						 * @hooked storefront_primary_navigation_wrapper_close - 68
 						 */
 						do_action( 'storefront_header' ); ?>
+						<a class="button-call">
+							Заказать звонок
+						</a>
 						<div class="header-widget">
 							<div class="widget">
 								<?php if (!dynamic_sidebar("header-widget") ) : ?>
@@ -69,6 +71,10 @@
 					<?php do_action( 'storefront_headernav' ); ?>
 		</div>
 	</header><!-- #masthead -->
+	<section class="home-slider">
+		<?php if (!dynamic_sidebar("home-slider") ) : ?>
+		<?php endif; ?>
+	</section>
 <!--	<div class="section-navigation">-->
 <!--		<div class="container">-->
 <!--			--><?php //do_action( 'storefront_headernav' ); ?>
