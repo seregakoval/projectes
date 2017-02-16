@@ -5080,6 +5080,17 @@ button.menu-toggle:after {
     color: #fcd708;
     margin-top: -3px;
 }
+.block-search {
+    margin-top: 10px;
+    float: right;
+}
+.block-search form {
+    margin-bottom:0;
+}
+.block-search form .search-field {
+    height:35px;
+    background-color: #fff !important;
+}
 @media (max-width: 568px) {
     .col-full {
         margin-left: 1.41575em;

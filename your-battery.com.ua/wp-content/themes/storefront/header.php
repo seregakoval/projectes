@@ -75,11 +75,6 @@
 		<?php if (!dynamic_sidebar("home-slider") ) : ?>
 		<?php endif; ?>
 	</section>
-<!--	<div class="section-navigation">-->
-<!--		<div class="container">-->
-<!--			--><?php //do_action( 'storefront_headernav' ); ?>
-<!--		</div>-->
-<!--	</div>-->
 	<?php
 	/**
 	 * Functions hooked in to storefront_before_content

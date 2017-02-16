@@ -246,6 +246,10 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		<div class="block-search">
+			<?php if (!dynamic_sidebar("search") ) : ?>
+			<?php endif; ?>
+		</div>
 		<?php
 	}
 }
