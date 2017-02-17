@@ -4757,7 +4757,7 @@ button.menu-toggle:after {
     }
 }
 .site-header {
-    margin-bottom: 0 !important;
+    margin-bottom: 0px !important;
     border-bottom: 3px solid #fcd708;
 }
 .site-header .header-row {
@@ -4779,7 +4779,6 @@ button.menu-toggle:after {
 .header-top .header-widget {
     float: right;
 }
-
 .header-widget {
     float: right;
     max-width: 480px;
@@ -5084,12 +5083,23 @@ button.menu-toggle:after {
     margin-top: 10px;
     float: right;
 }
+.container {
+    padding: 0 15px;
+    max-width:1170px;
+    margin: 0 auto;
+}
 .block-search form {
     margin-bottom:0;
 }
 .block-search form .search-field {
     height:35px;
     background-color: #fff !important;
+}
+.wrapper {
+    margin-top: 20px;
+}
+ul.products li.product img {
+    max-width: 150px;
 }
 @media (max-width: 568px) {
     .col-full {

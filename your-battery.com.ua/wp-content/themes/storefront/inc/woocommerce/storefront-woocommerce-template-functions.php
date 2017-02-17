@@ -1,3 +1,4 @@
+
 <?php
 /**
  * WooCommerce Template Functions.
@@ -15,6 +16,9 @@ if ( ! function_exists( 'storefront_before_content' ) ) {
 	 */
 	function storefront_before_content() {
 		?>
+		<div class="wrapper">
+			<div class="container">
+		<?php do_action( 'storefront_sidebar' ); ?>
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 		<?php
@@ -33,8 +37,9 @@ if ( ! function_exists( 'storefront_after_content' ) ) {
 		?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
-		<?php do_action( 'storefront_sidebar' );
+		</div>
+		</div>
+		<?php
 	}
 }
 

@@ -102,7 +102,17 @@ function register_my_widgets_search(){
 		'after_title' => '</h3>'
 	) );
 }
-
+add_action( 'widgets_init', 'register_my_widgets_home_main_category' );
+function register_my_widgets_home_main_category(){
+    register_sidebar( array(
+        'name' => 'Категории на главной странице',
+        'id' => 'home_main_category',
+        'before_widget' => '<div id="%1$s" class="%2$s ">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+}
 /**
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations

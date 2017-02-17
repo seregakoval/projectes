@@ -22,14 +22,6 @@
 <div id="page" class="hfeed site">
 	<?php
 	do_action( 'storefront_before_header' ); ?>
-<!--	<div class="header-top">-->
-<!--		<div class="col-full">-->
-<!--			<div class="header-widget">-->
-<!--				--><?php //if (!dynamic_sidebar("header-widget") ) : ?>
-<!--				--><?php //endif; ?>
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 		<div class="container">
 					<div class="header-row">
@@ -71,25 +63,24 @@
 					<?php do_action( 'storefront_headernav' ); ?>
 		</div>
 	</header><!-- #masthead -->
-	<section class="home-slider">
-		<?php if (!dynamic_sidebar("home-slider") ) : ?>
-		<?php endif; ?>
-	</section>
-	<?php
-	/**
-	 * Functions hooked in to storefront_before_content
-	 *
-	 * @hooked storefront_header_widget_region - 10
-	 */
-	do_action( 'storefront_before_content' ); ?>
 
-	<div id="content" class="site-content" tabindex="-1">
-		<div class="col-full">
+<!--	--><?php //while ( have_posts() ) : the_post(); ?>
+<!--		--><?php //the_content() ?>
+<!--	--><?php //endwhile; // End of the loop. ?>
+<!--	--><?php
+//	/**
+//	 * Functions hooked in to storefront_before_content
+//	 *
+//	 * @hooked storefront_header_widget_region - 10
+//	 */
+//	do_action( 'storefront_before_content' ); ?>
 
-		<?php
-		/**
-		 * Functions hooked in to storefront_content_top
-		 *
-		 * @hooked woocommerce_breadcrumb - 10
-		 */
-		do_action( 'storefront_content_top' );
+<!--	<div id="content" class="site-content" tabindex="-1">-->
+<!--		<div class="col-full">-->
+<!--		--><?php
+//		/**
+//		 * Functions hooked in to storefront_content_top
+//		 *
+//		 * @hooked woocommerce_breadcrumb - 10
+//		 */
+//		do_action( 'storefront_content_top' );

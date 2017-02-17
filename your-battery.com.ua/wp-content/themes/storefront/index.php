@@ -12,6 +12,7 @@
  */
 
 get_header(); ?>
+
 <?php
 do_action( 'storefront_sidebar' ); ?>
 	<div id="primary" class="content-area">
