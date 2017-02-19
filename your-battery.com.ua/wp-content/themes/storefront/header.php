@@ -23,7 +23,7 @@
 	<?php
 	do_action( 'storefront_before_header' ); ?>
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
-		<div class="container">
+		<div class="container-header">
 					<div class="header-row">
 						<?php
 						/**
