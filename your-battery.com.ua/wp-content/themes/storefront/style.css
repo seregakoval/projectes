@@ -4022,7 +4022,7 @@ button.menu-toggle:after {
 }
 
 .widget .widget-title, .widget .widgettitle {
-    font-size: 1.41575em;
+    font-size: 16px;
     letter-spacing: 0;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     padding: 0 0 1em;
@@ -5256,6 +5256,10 @@ ul.products li.product img {
 .main-category .menu li:hover span {
     bottom: 0px;
     opacity: 1;
+}
+.yith-woocommerce-ajax-product-filter .widget-title{
+    background-color: #fff;
+    border:none;
 }
 @media(max-width: 1365px) {
     .main-category ul {
