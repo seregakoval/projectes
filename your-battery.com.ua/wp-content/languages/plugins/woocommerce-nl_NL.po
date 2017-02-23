@@ -2,14 +2,102 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-01-10 10:46:28+0000\n"
+"PO-Revision-Date: 2017-02-19 13:52:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.3.0\n"
 "Language: nl\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: includes/api/class-wc-rest-webhooks-controller.php:82
+msgid "Webhook secret."
+msgstr "Webhook geheim."
+
+#: includes/api/class-wc-rest-webhooks-controller.php:77
+msgid "Webhook delivery URL."
+msgstr "Webhook doel URL."
+
+#: includes/api/class-wc-rest-webhook-deliveries.php:46
+#: includes/api/class-wc-rest-webhook-deliveries.php:62
+msgid "Unique identifier for the webhook."
+msgstr "Unieke identifier voor de webhook."
+
+#: includes/api/class-wc-rest-tax-classes-controller.php:62
+msgid "Unique slug for the resource."
+msgstr "Unieke slug voor de gegevensbron."
+
+#: includes/api/class-wc-rest-product-reviews-controller.php:78
+msgid "Email of the reviewer."
+msgstr "E-mailadres van de beoordeler."
+
+#: includes/api/class-wc-rest-product-reviews-controller.php:73
+msgid "Name of the reviewer."
+msgstr "Naam van de beoordeler."
+
+#: includes/api/class-wc-rest-product-reviews-controller.php:68
+msgid "Review content."
+msgstr "Beoordeel inhoud."
+
+#: includes/api/class-wc-rest-product-reviews-controller.php:50
+msgid "Unique identifier for the variation."
+msgstr "Unieke identifier voor de variatie."
+
+#: includes/api/class-wc-rest-product-reviews-controller.php:46
+#: includes/api/class-wc-rest-product-reviews-controller.php:88
+msgid "Unique identifier for the variable product."
+msgstr "Unieke identifier voor het variable product."
+
+#: includes/api/class-wc-rest-product-attribute-terms-controller.php:46
+#: includes/api/class-wc-rest-product-attribute-terms-controller.php:78
+#: includes/api/class-wc-rest-product-attribute-terms-controller.php:114
+msgid "Unique identifier for the attribute of the terms."
+msgstr "Unieke identifier voor de eigenschap van de termen."
+
+#: includes/api/class-wc-rest-order-notes-controller.php:70
+msgid "Order note content."
+msgstr "Bestelnotitie inhoud"
+
+#: includes/api/class-wc-rest-order-notes-controller.php:53
+#: includes/api/class-wc-rest-order-notes-controller.php:85
+#: includes/api/class-wc-rest-order-refunds-controller.php:61
+#: includes/api/class-wc-rest-order-refunds-controller.php:83
+msgid "The order ID."
+msgstr "Het bestelnummer."
+
+#: includes/api/class-wc-rest-customers-controller.php:866
+#: includes/api/class-wc-rest-taxes-controller.php:666
+msgid "Limit result set to specific IDs."
+msgstr "Beperk resultaten set tot specifieke IDs."
+
+#: includes/api/class-wc-rest-customers-controller.php:109
+msgid "ID to reassign posts to."
+msgstr "ID om berichten aan toe te kennen."
+
+#: includes/api/class-wc-rest-customers-controller.php:67
+msgid "New user password."
+msgstr "Wachtwoord nieuwe gebruiker."
+
+#: includes/api/class-wc-rest-customers-controller.php:62
+msgid "New user username."
+msgstr "Gebruikersnaam nieuwe gebruiker."
+
+#: includes/api/class-wc-rest-customers-controller.php:58
+msgid "New user email address."
+msgstr "E-mailadres nieuwe gebruiker."
+
+#: includes/abstracts/abstract-wc-rest-terms-controller.php:49
+#: includes/api/class-wc-rest-product-attribute-terms-controller.php:63
+#: includes/api/class-wc-rest-product-attributes-controller.php:63
+msgid "Name for the resource."
+msgstr "Naam voor de gegevensbron."
+
+#: includes/abstracts/abstract-wc-rest-posts-controller.php:627
+#: includes/api/class-wc-rest-customers-controller.php:857
+#: includes/api/class-wc-rest-taxes-controller.php:657
+msgid "Ensure result set excludes specific IDs."
+msgstr "Zorg dat specifieke ID's uitgezonderd zijn in de resultaat-set."
 
 #: includes/api/class-wc-rest-products-controller.php:775
 msgid "#%s is an invalid image ID."
@@ -1971,7 +2059,7 @@ msgstr "Gegevens van belastingregels."
 
 #: includes/api/class-wc-rest-orders-controller.php:1425
 msgid "MD5 hash of cart items to ensure orders are not modified."
-msgstr "MD5-hash van producten in de winkelwagen om te voorkomen dat bestellingen niet veranderd worden."
+msgstr "MD5-hash van producten in de winkelwagen om er zeker van te zijn dat bestellingen niet aangepast zijn."
 
 #: includes/api/class-wc-rest-orders-controller.php:1419
 msgid "The date the order has been paid, in the site's timezone."
@@ -2198,7 +2286,7 @@ msgstr "Metasleutel."
 #: includes/api/class-wc-rest-order-refunds-controller.php:486
 #: includes/api/class-wc-rest-orders-controller.php:1532
 msgid "Line item meta data."
-msgstr "Productregel meta data."
+msgstr "Metadata van besteld item."
 
 #: includes/api/class-wc-rest-order-refunds-controller.php:477
 #: includes/api/class-wc-rest-orders-controller.php:1523
@@ -10458,7 +10546,7 @@ msgstr "Hier kun je het scheidingsteken instellen dat getoond wordt tussen de du
 
 #: includes/admin/settings/class-wc-settings-general.php:180
 msgid "This controls the position of the currency symbol."
-msgstr "Dit bepaalt de positie van het valutasymbool."
+msgstr "Dit bepaalt de positie van het valutateken."
 
 #: includes/admin/settings/class-wc-settings-general.php:168
 msgid "This controls what currency prices are listed at in the catalog and which currency gateways will take payments in."
@@ -13084,7 +13172,7 @@ msgstr "PayPal e-mailadres"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:646
 msgid "WooCommerce can accept both online and offline payments. %2$sAdditional payment methods%3$s can be installed later and managed from the %1$scheckout settings%3$s screen."
-msgstr "Woocommerce accepteert zowel directe en indirecte betalingen. %2$sExtra  betalingsmethoden%3$s kunnen achteraf geïnstalleerd en beheerd worden op de pagina %1$safrekeninstellingen%3$s."
+msgstr "WooCommerce accepteert zowel directe als indirecte betalingen. %2$sExtra betalingsmethoden%3$s kunnen achteraf geïnstalleerd en beheerd worden op de pagina %1$safrekeninstellingen%3$s."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:466
 msgid "Rate (%)"
@@ -13217,7 +13305,7 @@ msgstr "Links"
 #: includes/admin/settings/class-wc-settings-general.php:179
 #: includes/admin/views/html-admin-page-status-report.php:491
 msgid "Currency Position"
-msgstr "Valutasymbool-positie"
+msgstr "Valutateken-positie"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:316
 msgid "If your currency is not listed you can %sadd it later%s."
@@ -13736,11 +13824,11 @@ msgstr[1] "%d artikelen"
 
 #: includes/admin/class-wc-admin-post-types.php:626
 msgid "Y/m/d"
-msgstr "d-m-Y"
+msgstr "d/m/Y"
 
 #: includes/admin/class-wc-admin-post-types.php:625
 msgid "Y/m/d g:i:s A"
-msgstr "Y/m/d H:i:s"
+msgstr "d/m/Y H:i:s"
 
 #: includes/admin/class-wc-admin-post-types.php:623
 msgid "Unpublished"
@@ -15090,7 +15178,7 @@ msgstr "Voer een waarde in (vast of %)"
 
 #: includes/admin/class-wc-admin-assets.php:190
 msgid "Variation menu order (determines position in the list of variations)"
-msgstr "Volgorde van het variatiemenu  (bepaalt positie in de lijst van variaties)"
+msgstr "Volgorde van het variatiemenu (bepaalt positie in de lijst van variaties)"
 
 #: includes/admin/class-wc-admin-assets.php:189
 msgid "Enter a value"
@@ -15110,7 +15198,7 @@ msgstr "Vul de landcode in met 2 hoofdletters."
 
 #: includes/admin/class-wc-admin-assets.php:147
 msgid "Please enter in monetary decimal (%s) format without thousand separators and currency symbols."
-msgstr "Voer met decimale (%s) schrijfwijze in, zonder punten tussen de duizendtallen en valutasymbolen."
+msgstr "Voer met decimale (%s) schrijfwijze in, zonder punten tussen de duizendtallen en valutatekens."
 
 #: includes/admin/class-wc-admin-assets.php:146
 msgid "Please enter in decimal (%s) format without thousand separators."

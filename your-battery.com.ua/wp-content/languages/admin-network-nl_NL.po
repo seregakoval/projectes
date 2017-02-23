@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 4.7.x - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-01-08 18:37:21+0000\n"
+"PO-Revision-Date: 2017-02-04 10:08:06+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.3.0\n"
 "Language: nl\n"
 "Project-Id-Version: WordPress - 4.7.x - Administration - Network Admin\n"
 
@@ -559,7 +559,7 @@ msgstr "Dit e-mailadres zal meldingen ontvangen. Registraties en onderhoudsberic
 
 #: wp-admin/network/users.php:170
 msgid "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to their Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
-msgstr "Hover over een gebruiker in de lijst om de bewerken link te tonen. De linker bewerken link brengt je naar je eigen Profiel bewerken pagina; de bewerken link aan de rechterzijde naast een sitenaam gaat naar het Site bewerken scherm van dit site."
+msgstr "Hover over een gebruiker in de lijst om de bewerklink te tonen. De linker bewerklink brengt je naar je eigen Profielpagina; de bewerklink aan de rechterzijde naast een sitenaam gaat naar het Site bewerken scherm van deze site."
 
 #: wp-admin/network/index.php:40
 msgid "To search for a site, <strong>enter the path or domain</strong>."
@@ -891,7 +891,7 @@ msgstr "Terug naar het Dashboard"
 
 #: wp-admin/network.php:55
 msgid "Create a Network of WordPress Sites"
-msgstr "Maak een netwerk met WordPress websites"
+msgstr "Maak een netwerk van WordPress sites"
 
 #: wp-admin/network.php:59
 msgid "This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it."
@@ -1125,7 +1125,7 @@ msgstr "Als je browser de volgende pagina niet automatisch start, klik op deze l
 
 #: wp-admin/network/site-new.php:37
 msgid "Can&#8217;t create an empty site."
-msgstr "Aanmaken van een lege website niet mogelijk."
+msgstr "Aanmaken van een lege site niet mogelijk."
 
 #: wp-admin/network/settings.php:197
 msgid "If you want to ban domains from site registrations. One domain per line."
@@ -1145,7 +1145,7 @@ msgstr "Gebruikers verwijderd uit spam."
 
 #: wp-admin/network/sites.php:233
 msgid "Sites removed from spam."
-msgstr "Website verwijderd uit spam."
+msgstr "Sites verwijderd uit spam."
 
 #: wp-admin/network/sites.php:236
 msgid "Sites marked as spam."
@@ -1153,11 +1153,11 @@ msgstr "Websites gemarkeerd als spam."
 
 #: wp-admin/network/sites.php:263
 msgid "Site marked as spam."
-msgstr "Website gemarkeerd als spam."
+msgstr "Site gemarkeerd als spam."
 
 #: wp-admin/network/sites.php:248
 msgid "Site archived."
-msgstr "Website gearchiveerd."
+msgstr "Site gearchiveerd."
 
 #: wp-admin/network/users.php:206
 msgid "Users deleted."
@@ -1165,15 +1165,15 @@ msgstr "Gebruikers verwijderd."
 
 #: wp-admin/network/sites.php:251
 msgid "Site unarchived."
-msgstr "Website herstellen uit het archief."
+msgstr "Site herstellen uit het archief."
 
 #: wp-admin/network/sites.php:254
 msgid "Site activated."
-msgstr "Website geactiveerd."
+msgstr "Site geactiveerd."
 
 #: wp-admin/network/sites.php:257
 msgid "Site deactivated."
-msgstr "Website gedeactiveerd."
+msgstr "Site gedeactiveerd."
 
 #: wp-admin/network/users.php:200
 msgid "Users marked as spam."
@@ -1181,11 +1181,11 @@ msgstr "Gebruikers gemarkeerd als spam."
 
 #: wp-admin/network/sites.php:242
 msgid "Site deleted."
-msgstr "Website verwijderd."
+msgstr "Site verwijderd."
 
 #: wp-admin/network/sites.php:239
 msgid "Sites deleted."
-msgstr "Websites verwijderd."
+msgstr "Sites verwijderd."
 
 #: wp-admin/network/sites.php:91 wp-admin/network/sites.php:157
 msgid "Sorry, you are not allowed to change the current site."
@@ -1237,7 +1237,7 @@ msgstr "Gebruikersaccounts kunnen worden geregistreerd."
 
 #: wp-admin/network/settings.php:136
 msgid "Both sites and user accounts can be registered."
-msgstr "Zowel websites als gebruikersaccounts kunnen worden geregistreerd."
+msgstr "Zowel sites als gebruikersaccounts kunnen worden geregistreerd."
 
 #: wp-admin/network/settings.php:135
 msgid "Logged in users may register new sites."
