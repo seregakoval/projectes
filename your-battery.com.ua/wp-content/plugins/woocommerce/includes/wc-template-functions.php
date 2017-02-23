@@ -265,7 +265,7 @@ function wc_get_loop_class() {
  */
 function wc_get_product_cat_class( $class = '', $category = null ) {
 	$classes   = is_array( $class ) ? $class : array_map( 'trim', explode( ' ', $class ) );
-	$classes[] = 'product-category';
+	$classes[] = 'product-category item-category';
 	$classes[] = 'product';
 	$classes[] = wc_get_loop_class();
 	$classes   = apply_filters( 'product_cat_class', $classes, $class, $category );

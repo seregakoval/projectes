@@ -238,6 +238,7 @@ class WC_Widget_Product_Categories extends WC_Widget {
 			$list_args['current_category_ancestors'] = $this->cat_ancestors;
 
 			echo '<ul class="product-categories">';
+
 			wp_list_categories( apply_filters( 'woocommerce_product_categories_widget_args', $list_args ) );
 
 			echo '</ul>';

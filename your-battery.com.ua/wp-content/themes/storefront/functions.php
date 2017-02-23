@@ -113,10 +113,25 @@ function register_my_widgets_home_main_category(){
         'after_title' => '</h3>'
     ) );
 }
-
+add_action( 'widgets_init', 'register_my_widgets_home_filter' );
+function register_my_widgets_home_filter(){
+    register_sidebar( array(
+        'name' => 'Фильтр',
+        'id' => 'filter-product',
+        'before_widget' => '<div id="%1$s" class="%2$s ">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+}
 register_nav_menus(array(
 	'top'    => 'Меню категорий',    //Название месторасположения меню в шаблоне
 ));
+//DELET button add to cart
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+remove_action( 'woocommerce_simple_add_to_cart', 'woocommerce_simple_add_to_cart', 30 );
+remove_action( 'woocommerce_grouped_add_to_cart', 'woocommerce_grouped_add_to_cart', 30 );
 
 /**
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
