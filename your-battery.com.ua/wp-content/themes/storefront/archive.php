@@ -8,30 +8,32 @@
  */
 
 get_header(); ?>
+<div class="wrapper">
+	<div class="container">
+		<?php do_action( 'storefront_sidebar' ); ?>
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+				<?php if ( have_posts() ) : ?>
+					<header class="page-header">
+						<?php
+						the_archive_title( '<h1 class="page-title">', '</h1>' );
+						the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						?>
+					</header><!-- .page-header -->
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+					<?php get_template_part( 'loop' );
 
-		<?php if ( have_posts() ) : ?>
+				else :
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+					get_template_part( 'content', 'none' );
 
-			<?php get_template_part( 'loop' );
+				endif; ?>
 
-		else :
-
-			get_template_part( 'content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	</div>
+</div>
 
 <?php
-do_action( 'storefront_sidebar' );
+
 get_footer();
