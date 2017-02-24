@@ -5494,8 +5494,51 @@ ul.products li.product.product-category img {
         padding: 0
     }
 }
-
-
+.input-row {
+    width:50%;
+    float: left;
+    padding: 0 15px;
+}
+.form-row {
+    margin: 0 -15px;
+}
+.input-row input {
+    background-color: #fff;
+    box-shadow: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    transition:0.3s;
+    padding:0 15px;
+    border-radius: 3px;
+}
+.wpcf7 textarea {
+    background-color: #fff;
+    box-shadow: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 100px;
+    transition:0.3s;
+    padding:15px;
+    border-radius: 3px;
+}
+.wpcf7 textarea:focus {
+    border-color: #fcd708;
+    background:none;
+    outline: none;
+}
+.wpcf7-submit {
+    background-color: #fcd708 !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #1a1a1a !important;
+}
+.input-row input:focus {
+border-color: #fcd708;
+    background:none;
+    outline: none;
+}
 @media  (max-width: 991px){
     .header-row {
         background: none;
