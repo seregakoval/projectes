@@ -26,9 +26,8 @@ wp_enqueue_script('yith_wcas_frontend' );
                    placeholder="<?php echo get_option('yith_wcas_search_input_label') ?>"
                    data-loader-icon="<?php echo str_replace( '"', '', apply_filters('yith_wcas_ajax_search_icon', '') ) ?>"
                    data-min-chars="<?php echo get_option('yith_wcas_min_chars'); ?>" />
-            <div class="search-submit">
+           
                 <input type="submit" id="yith-searchsubmit" value="<?php echo get_option('yith_wcas_search_submit_label') ?>" />
-            </div>
             <input type="hidden" name="post_type" value="product" />
             <?php do_action( 'wpml_add_language_form_field' ); ?>
 

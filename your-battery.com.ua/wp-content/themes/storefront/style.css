@@ -3833,9 +3833,7 @@ button.menu-toggle:after {
     opacity: 0
 }
 
-.primary-navigation {
-    display: none
-}
+
 
 .main-navigation:after, .main-navigation:before {
     content: "";
@@ -4365,10 +4363,9 @@ button.menu-toggle:after {
     }
 
     .left-sidebar .widget-area {
-        width: 22%;
+        width: 25%;
         float: left;
-
-        margin-right: 4.347826087%
+        margin-right: 2%
     }
 
     .page-template-template-fullwidth-php .content-area, .page-template-template-homepage-php .content-area, .storefront-full-width-content .content-area {
@@ -5217,6 +5214,7 @@ h1,h2,h3 {
     background: #fcd708;
     box-shadow: none;
     border-radius: 3px;
+    display: none;
     transition: 0.3s;
     outline: none !important;
 }
@@ -5228,6 +5226,7 @@ h1,h2,h3 {
 .block-search form:before {
 
 }
+
 .block-search form .search-field {
     background: #474747 !important;
     height: 55px !important;
@@ -5241,9 +5240,8 @@ h1,h2,h3 {
 /*.block-search form:hover:before{*/
     /*color: #2e2d2d !important;*/
 /*}*/
-.block-search form .search-field:focus {
-    padding-right: 55px;
-    width:100% !important;
+.block-search form input[type='search'] {
+    background-position: 90% center !important;
 }
 .block-search form .search-field:focus + .search-submit {
     opacity: 1;
@@ -5540,13 +5538,59 @@ border-color: #fcd708;
     outline: none;
 }
 @media  (max-width: 991px){
+    .primary-navigation {
+        display: none
+    }
     .header-row {
         background: none;
+    }
+    .header-widget {
+        width:100%;
+    }
+    .header-widget {
+        max-width:100%;
+        margin-top: 10px;
+        display: flex;
+        flex-flow:row wrap;
+    }
+    .header-widget .widget_text {
+        font-size:  14px !important;
+    }
+    .block-search{
+        width: 100%;
+    }
+    .storefront-primary-navigation {
+        background: none;
+    }
+    .menu-toggle {
+        border:none !important;
+        background-color: #4f4c4c !important;
+    }
+    .main-navigation.toggled .handheld-navigation {
+        background-color: #4f4c4c !important;
+    }
+    .header-widget .address-text {
+        font-size: 16px;
+    }
+    .site-header .widget {
+        width:100%;
     }
     .main-category .menu li {
         height: 212px;
     }
     .main-category .menu li a {
         height:150px;
+    }
+}
+@media  (max-width: 480px){
+    .woocommerce-active .site-branding {
+        width: 100%;
+    }
+    .site-header .custom-logo-link {
+        float: none;
+        margin: 0 auto 10px auto;
+    }
+    .button-call {
+        margin: 0 auto;
     }
 }
