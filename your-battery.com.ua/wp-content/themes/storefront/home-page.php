@@ -61,4 +61,5 @@ Template Name: Home-page
         </div><!-- #primary -->
     </div>
 </div>
+<?php get_footer(); ?>
 <?php wp_footer(); ?>
