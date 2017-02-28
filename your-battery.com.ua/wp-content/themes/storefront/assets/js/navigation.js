@@ -1,3 +1,4 @@
+
 /**
  * navigation.js
  *
@@ -63,7 +64,6 @@
 			jQuery( this ).parents().toggleClass( 'focus' );
 		});
 	});
-
 	if ( is_touch_device() && jQuery( window ).width() > 767 ) {
 		// Add an identifying class to dropdowns when on a touch device
 		// This is required to switch the dropdown hiding method from a negative `left` value to `display: none`.

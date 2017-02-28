@@ -16,4 +16,10 @@
  * @version     2.0.0
  */
 ?>
+<script>
+    jQuery(document).ready(function() {
+        jQuery(".page-product .storefront-sorting:eq(1)").addClass('sort-hidden');
+    });
+</script>
 <ul class="products">
+

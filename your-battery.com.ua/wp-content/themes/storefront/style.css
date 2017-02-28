@@ -4112,7 +4112,7 @@ button.menu-toggle:after {
 }
 .yith-woocommerce-ajax-product-filter .yith-wcan-select-wrapper {
     margin-top: -1px;
-    max-width: 250px;
+    max-width: 100%;
     padding: 0;
 }
 .yith-woocommerce-ajax-product-filter .yith-wcan-select-wrapper ul.yith-wcan-select.yith-wcan {
@@ -4126,6 +4126,9 @@ button.menu-toggle:after {
 .yith-woocommerce-ajax-product-filter .yith-wcan-select-wrapper ul.yith-wcan-select.yith-wcan li:hover {
     background-color: #fcd708;
     cursor: pointer;
+}
+.sort-hidden {
+    display: none;
 }
 .yith-woocommerce-ajax-product-filter .woocommerce-page .widget_layered_nav .yith-wcan-select-wrapper ul li.chosen a, .woocommerce-page .widget_layered_nav .yith-wcan-select-wrapper ul li.chosen a {
     background-position: right 8px;
@@ -5700,6 +5703,118 @@ border-color: #fcd708;
     max-width: 300px;
     width:100%;
 }
+.orderby {
+    background: #fff;
+    border-radius: 3px;
+    padding: 8px;
+    position: relative;
+    outline: none;
+}
+.woocommerce-result-count {
+    display: none;
+}
+.page-product .page-title {
+    float: left;
+}
+.page-product .yit-wcan-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.storefront-sorting {
+    float: right;
+    margin-top:15px;
+}
+.woocommerce-ordering:nth-child(2) {
+    display: none;
+}
+/*woocommerce tabs*/
+.page-product .woocommerce-tabs ul.tabs {
+    width:100%;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.page-product .woocommerce-tabs ul.tabs li {
+    outline: none;
+    border-bottom: 4px solid transparent;
+    float: left;
+    transition: 0.3s;
+    margin-right: 30px;
+}
+.page-product .woocommerce-tabs ul.tabs li.active {
+    border-color: #fcd708;
+}
+.page-product .woocommerce-tabs ul.tabs li.active:after {
+    right: -13px;
+}
+.page-product .woocommerce-tabs ul.tabs li a {
+    padding: 15px 0 12px 0;
+}
+.page-product #reviews .commentlist .comment_container {
+    padding: 15px;
+    background: none;
+    border: 1px solid #fcd708;
+}
+.page-product #reviews .commentlist li time {
+    font-size: 13px;
+}
+.page-product #respond {
+    padding: 15px;
+    border:none;
+    background-color: #fff;
+    border:  none;
+}
+.page-product #respond textarea {
+    background: none;
+    outline:none;
+    box-shadow: none;
+    border: 1px solid #e2e0e0;
+}
+.page-product #respond textarea:focus {
+    border-color: #fcd708;
+}
+.page-product #respond .comment-form label{
+    background: #fcd708;
+    padding: 1px 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 9px;
+    display: inline-block;
+    color: #2e2d2d;
+}
+.page-product #respond .comment-form input {
+    background: none;
+    outline:none;
+    box-shadow: none;
+    border: 1px solid #e2e0e0;
+}
+.page-product li a {
+    color: #484c51;
+    outline: none;
+}
+.page-product #respond .comment-form input[type="submit"] {
+    background-color: #fcd708;
+    color: #2e2d2d;
+    outline:none;
+    border:none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.page-product #respond .comment-form input[type="submit"]:hover {
+    background-color: #2e2d2d ;
+    color:  #fcd708;
+}
+a.button21 {
+    max-width: 200px !important;
+}
+.yith-woocommerce-ajax-product-filter {
+    position: relative;
+}
+.yith-wcan-select-wrapper {
+    max-width:100%;
+}
+.woocommerce-tabs ul.tabs li:after {
+    top: 54% !important;
+}
 @media  (max-width: 991px){
     .fl-html {
         margin-bottom: 20px;
@@ -5752,6 +5867,26 @@ border-color: #fcd708;
     }
 }
 @media(max-width: 768px) {
+    ul.products li.product {
+        margin-bottom: 15px !important;
+    }
+    .site-main ul.products li.product {
+        width: 250px;
+    }
+    ul.products:after, ul.products:before {
+        display: none !important;
+    }
+    ul.products:after, ul.products:after {
+        display: none !important;
+    }
+    ul.products {
+        display: flex;
+        flex-flow:row wrap;
+        justify-content:space-around;
+    }
+    .site-main ul.products li.product.item-category {
+        margin: 10px;
+    }
     .fl-module-content {
         margin: 0;
     }

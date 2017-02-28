@@ -31,6 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php endif; ?>
 		<?php if ( 'featured' !== $current_section && $addons = WC_Admin_Addons::get_section_data( $current_section ) ) : ?>
 			<ul class="products">
+
 			<?php foreach ( $addons as $addon ) : ?>
 				<li class="product">
 					<a href="<?php echo esc_attr( $addon->link ); ?>">
@@ -45,6 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</li>
 			<?php endforeach; ?>
 			</ul>
+
 		<?php endif; ?>
 	<?php else : ?>
 		<p><?php printf( __( 'Our catalog of WooCommerce Extensions can be found on WooCommerce.com here: <a href="%s">WooCommerce Extensions Catalog</a>', 'woocommerce' ), 'https://woocommerce.com/product-category/woocommerce-extensions/' ); ?></p>

@@ -77,7 +77,15 @@
 	<?php do_action( 'storefront_after_footer' ); ?>
 
 </div><!-- #page -->
-
+<script>
+	jQuery(document).ready(function(){
+//		jQuery(".page-product .storefront-sorting")[1].remove();
+		jQuery(".woocommerce-tabs .tabs li").on('click', function () {
+			jQuery(".woocommerce-tabs .tabs li").removeClass("active");
+			jQuery(this).addClass("active");
+		});
+	});
+</script>
 <?php wp_footer(); ?>
 
 </body>

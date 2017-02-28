@@ -20,7 +20,9 @@ if ( ! function_exists( 'storefront_before_content' ) ) {
 			<div class="container">
 		<?php do_action( 'storefront_sidebar' ); ?>
 		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+
+			<main id="main" class="site-main page-product" role="main">
+
 		<?php
 	}
 }
@@ -39,6 +41,7 @@ if ( ! function_exists( 'storefront_after_content' ) ) {
 		</div><!-- #primary -->
 		</div>
 		</div>
+
 		<?php
 	}
 }
@@ -384,3 +387,4 @@ if ( ! function_exists( 'storefront_woocommerce_init_structured_data' ) ) {
 		Storefront::set_structured_data( apply_filters( 'storefront_woocommerce_structured_data', $json ) );
 	}
 }
+?>

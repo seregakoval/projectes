@@ -136,6 +136,12 @@ function replace_excerpt($content) {
     return str_replace('Read more', '<a href="'. get_permalink() .'">Читать далее</a>',
         $content ); }
 add_filter('the_excerpt', 'replace_excerpt');
+
+
+//Убрать пополнительное описание
+//remove_action( 'woocommerce_product_tabs', 'woocommerce_product_attributes_tab', 20 );
+//remove_action( 'woocommerce_product_tab_panels', 'woocommerce_product_attributes_panel', 20 );
+//
 /**
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
