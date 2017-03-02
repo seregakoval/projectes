@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="EXPORT_FRONTEND">
+		<message>
+			<![CDATA[EXPORT_FRONTEND_DESC_MENU]]>
+		</message>
+	</layout>
+	<state>
+		<name>CSVI VirtueMart Export</name>
+		<description>EXPORT_FRONTEND_DESC_MENU</description>
+		<url addpath="/components/com_csvivirtuemart/elements">
+			<param name="template_id" type="template" default="0" label="Select Template" description="Export template" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

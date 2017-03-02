@@ -1,0 +1,16 @@
+div.current{
+	width:98% !important;
+}
+
+div.current input {
+	float:none !important;
+}
+
+div.current label {
+	float:none !important;
+	display:inline !important;
+}
+
+div.rsfirewall_tooltip p {
+	margin: 0;
+}

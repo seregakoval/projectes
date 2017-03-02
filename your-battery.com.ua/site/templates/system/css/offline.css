@@ -1,0 +1,7 @@
+body#off {
+	background: #1F1F1F url(../images/offline.png) top center no-repeat;
+	color: #888;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 1.5em;
+}

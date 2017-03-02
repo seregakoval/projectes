@@ -1,0 +1,290 @@
+.icon-48-rsfirewall
+{
+	background-image: url(../images/icon-48-rsfirewall.png);
+}
+
+.rsfirewall_clear
+{
+	display: block;
+	clear: both;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.rsfirewall_tooltip
+{
+	border: solid 1px #F5C070;
+	background-color: #FDF2E2;
+	background-image: url(../images/info.png);
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	margin: 0 10px 10px;
+	padding: 5px;
+	padding-left: 74px;
+	height: 48px;
+}
+
+.rsfirewall_warning
+{
+	border: solid 1px #990033;
+	background-color: #FFE5EE;
+	background-image: url(../images/warning.png);
+}
+
+.rsfirewall_click
+{
+	margin: 0 10px 10px;
+	padding: 5px;
+}
+
+.rsfirewall_lockdown
+{
+	background-image: url(../images/lockdown.gif);
+}
+
+div#rsfirewall_file_list
+{
+	clear: both;
+}
+
+div#rsfirewall_file_list ul li.folder
+{
+	
+}
+
+#rsfirewall_explorer
+{
+	padding: 4px;
+}
+
+ul.rsfirewall_explorer_list
+{
+	clear: both;
+}
+
+ul.rsfirewall_explorer_list li.folder
+{
+	list-style-image: url(../images/folder.gif);
+}
+
+ul.rsfirewall_explorer_list li.file
+{
+	list-style-image: url(../images/file.gif);
+}
+
+.rsfirewall_explorer_header
+{
+	text-align: left;
+	background: #FFF9E5;
+	padding: 5px;
+}
+
+.rsfirewall_high
+{
+	color: #FF6633;
+}
+
+.rsfirewall_critical
+{
+	color: #B82E00;
+}
+
+.rsfirewall_red
+{
+	color: #850021;
+	font-weight: bold;
+}
+
+.rsfirewall_green
+{
+	color: #008521;
+}
+
+.scrolling
+{
+	height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#rsfirewall_loading
+{
+	display: none;
+}
+
+.rsfirewall_margintop
+{
+	margin-top: 10px;
+}
+
+td.componentPreview{
+	width: 500px;
+}
+
+td.components{
+	width: 220px;
+}
+
+table #componentPreview{
+	width: 600px;
+}
+table.componentEdit{
+	background: #FFF;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #d8d8d8;
+	width:200px;
+}
+
+td.components a.component{
+	display: block;
+	width:200px;
+	height:20px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #d8d8d8;
+	/*background: #FFF;*/
+	padding-left: 25px;
+	padding-top: 2px;
+	background-position: 2px 2px;
+}
+
+td.components a.component:hover{
+	background-position: 3px 3px;
+}
+
+table.componentForm{
+	width:226px;
+	background: #FFF;
+	border-right: 1px solid #d8d8d8;
+}
+
+.wide{
+	width:200px;
+}
+
+table.thisform {
+	background-color: #F7F8F9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 10px;
+	border-collapse: collapse;
+}
+table.thisform tr.row0 {
+	background-color: #F7F8F9;
+}
+table.thisform tr.row1 {
+	background-color: #eeeeee;
+}
+table.thisform th {
+	font-size: 15px;
+	font-weight:normal;
+	font-variant:small-caps;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	height: 25px;
+	color: #666666;
+}
+table.thisform td {
+	padding: 3px;
+	text-align: left;
+	border: 1px;
+	border-style:solid;
+	border-bottom-color:#EFEFEF;
+	border-right-color:#EFEFEF;
+	border-left-color:#EFEFEF;
+	border-top-color:#EFEFEF;
+}
+
+table.thisform2 {
+	background-color: #F7F8F9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 5px;
+}
+table.thisform2 td {
+	padding: 5px;
+	text-align: center;
+	border: 1x;
+	border-style: solid;
+	border-bottom-color:#EFEFEF;
+	border-right-color:#EFEFEF;
+	border-left-color:#EFEFEF;
+	border-top-color:#EFEFEF;
+}
+.thisform2 td:hover {
+	background-color: #B5CDE8;
+	border:	1px solid #30559C;
+}
+
+.thisformError{
+	background-color: #FFDFDF;
+}
+
+.thisformOk{
+	background-color: #CFFFDA;
+}
+textarea.hidden {
+	display: none;
+}
+
+span.selected{
+	text-decoration: underline;
+}
+
+div.pagenav{
+	text-align:center;
+	padding: 2px;
+}
+
+div.pagenav span, div.pagenav div.statistics{
+	padding: 2px;
+	font-size:12px;
+	float:left;
+}
+
+#state{
+    top: 5px; 
+    right: 5px; 
+    left: auto; 
+    bottom: auto; 
+    position: fixed;
+    z-index:10;
+    padding-right:20px;
+    margin-top:130px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    text-align:right;
+    padding-top:6px;
+}
+
+table.plugins td{
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.rsfirewall_grade_container
+{
+	position: relative;
+}
+
+.rsfirewall_grade_container span.rsfirewall_grade
+{
+	position: absolute;
+	top: 20px;
+	width: 108px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+	margin: 0 auto;
+	@width: 49px;
+}
+
+table.adminlist td
+{
+	background: #fff;
+}

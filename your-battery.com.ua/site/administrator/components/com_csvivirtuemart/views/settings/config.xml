@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params group="general">
+		<param name="hostname" type="text" size="80" default="" label="HOSTNAME" description="HOSTNAME_TIP" />
+		<param name="csvi_license_key" type="text" size="80" default="" label="CSVI_LICENSE_KEY" description="CSVI_LICENSE_KEY_TIP" />
+		<param name="log_store" type="radio" default="1" label="LOG_STORE" description="LOG_STORE_TIP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="category_separator" type="text" size="5" default="/" label="CATEGORY_SEPARATOR" description="CATEGORY_SEPARATOR_TIP" />
+	</params>
+	<params group="import">
+		<param name="import_nolines" type="text" size="5" default="0" label="IMPORT_NOLINES" description="IMPORT_NOLINES_TIP" />
+		<param name="import_preview" type="text" size="5" default="5" label="IMPORT_PREVIEW" description="IMPORT_PREVIEW_TIP" />
+		<param name="import_wait" type="text" size="5" default="5" label="IMPORT_WAIT" description="IMPORT_WAIT_TIP" />
+	</params>
+	<params group="google_base">
+		<param name="gb_title" type="text" size="80" default="" label="GOOGLE_BASE_TITLE" description="GOOGLE_BASE_TITLE_TIP" />
+		<param name="gb_link" type="text" size="80" default="" label="GOOGLE_BASE_LINK" description="GOOGLE_BASE_LINK_TIP" />
+		<param name="gb_description" type="textarea" rows="10" cols="80" default="" label="GOOGLE_BASE_DESCRIPTION" description="GOOGLE_BASE_DESCRIPTION_TIP" />
+	</params>
+</config>

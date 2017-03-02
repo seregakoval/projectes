@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>CSVI VirtueMart</name>
+	<creationDate>07 Februari 2010</creationDate>
+	<author>RolandD Cyber Produksi</author>
+	<authorEmail>contact@csvimproved.com</authorEmail>
+	<authorUrl>http://www.csvimproved.com/</authorUrl>
+	<copyright>2006 - 2010 RolandD Cyber Produksi</copyright>
+	<license>Creative Commons Attribution-No Derivative Works 3.0 Netherlands License</license>
+	<version>2.1.3</version>
+	<description>Import/Export component for VirtueMart</description>
+	
+	<!-- Custom installer -->
+	<installfile>install.csvivirtuemart.php</installfile>
+	
+	<!-- Custom uninstaller -->
+	<uninstallfile>uninstall.csvivirtuemart.php</uninstallfile>
+	
+	<!-- SQL queries -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<!-- Uninstall SQL queries -->
+	<uninstall>
+		<sql>
+		</sql>
+	</uninstall>
+	
+	<!-- Image files -->
+	<!-- These are actually for the administrator but this is not supported by Joomla -->
+	<media folder="" destination="">
+	</media>
+	
+	<!-- Core files -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>csvivirtuemart.php</filename>
+		<folder>controllers</folder>
+		<folder>elements</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>languages</folder>
+	</files>
+	
+	<!-- Language files -->
+	<languages folder="site/languages">
+		<language tag="ru-RU">ru-RU.com_csvivirtuemart.ini</language>
+	</languages>
+	
+	<administration>
+		<!-- Menu entries -->
+		<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_logo_16.png" task="csvi">CSVI VirtueMart</menu>
+		<submenu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_template_16.png" controller="templates">TEMPLATES</menu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_import_16.png" controller="import">IMPORT</menu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_export_16.png" controller="export">EXPORT</menu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_maintenance_16.png" controller="maintenance">MAINTENANCE</menu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_log_16.png" controller="log">LOG</menu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_av_fields_16.png" controller="availablefields">AVAILABLEFIELDS</menu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_replace_16.png" controller="replacement">REPLACEMENT</menu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_settings_16.png" controller="settings">SETTINGS</menu>
+			<menu img="components/com_csvivirtuemart/assets/images/csvivirtuemart_about_16.png" controller="about">ABOUT</menu>
+		</submenu>
+		
+		<!-- Core files -->
+		<files folder="admin">
+			<filename>changelog.txt</filename>
+			<filename>csvivirtuemart.php</filename>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>install.csvivirtuemart.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>uninstall.csvivirtuemart.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>languages</folder>
+		</files>
+		
+		<!-- Language files -->
+		<languages folder="admin/languages">
+			<language tag="en-GB">en-GB.com_csvivirtuemart.ini</language>
+			<language tag="en-GB">en-GB.com_csvivirtuemart.menu.ini</language>
+			<!-- Russian -->
+			<language tag="ru-RU">ru-RU.com_csvivirtuemart.ini</language>
+			<language tag="ru-RU">ru-RU.com_csvivirtuemart.menu.ini</language>
+		</languages>
+	</administration>
+</install>

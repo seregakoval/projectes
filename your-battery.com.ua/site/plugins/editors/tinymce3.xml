@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" ?>
+<install version="1.5" type="plugin" group="editors">
+	<name>Editor - TinyMCE 3.2.2.3</name>
+	<version>3.2.2.3</version>
+	<creationDate>2009</creationDate>
+	<author>VaV</author>
+	<authorEmail>VaV@nukecode.ru</authorEmail>
+	<authorUrl>http://nukecode.ru/</authorUrl>
+	<copyright>Moxiecode Systems AB</copyright>
+	<license>LGPL</license>
+	<description>
+	<![CDATA[ 
+	<p><strong>TinyMCE 3.2.2.3</strong> <em>(Joomla Content Editor)</em> Руссифицированный визуальный редактор контента от компании <a href="http://tinymce.moxiecode.com" target="_blank" />MOXIECODE</a> </p>
+	<p><strong>Благодарности:</strong></p>
+	<p>Авторы плагина приносят свои благодарности:<br />
+		<ul>
+			<li><a href="http://nukecode.ru/" target="_blank">NukeCode Studio</a></li>
+			<li><a href="http://www.joomla.org" target="_blank">Joomla! - obviously</a></li>
+			<li><a href="http://tinymce.moxiecode.com" target="_blank">TinyMCE</a></li>
+		</ul>
+	</p>
+	<p>Данная версия плагина является первой и мало протестированной.</p>
+	<p>Пожелания, предложения, благодарности присылайте по адресу: <a href="mailto:admin@nukecode.ru?subject=plagin"/>admin@nukecode.ru</a></p>
+	]]>
+	</description>
+	<files>
+		<filename plugin="tinymce3">tinymce3.php</filename>
+		<filename>tinymce3/index.html</filename>
+		<!--  Примеры -->
+		<filename>tinymce3/examples/full.html</filename>
+		<filename>tinymce3/examples/index.html</filename>
+		<filename>tinymce3/examples/menu.html</filename>
+		<filename>tinymce3/examples/simple.html</filename>
+		<filename>tinymce3/examples/skins.html</filename>
+		<filename>tinymce3/examples/translate.html</filename>
+		<filename>tinymce3/examples/word.html</filename>
+		<filename>tinymce3/examples/css/content.css</filename>
+		<filename>tinymce3/examples/css/word.css</filename>
+		<filename>tinymce3/examples/lists/image_list.js</filename>
+		<filename>tinymce3/examples/lists/link_list.js</filename>
+		<filename>tinymce3/examples/lists/media_list.js</filename>
+		<filename>tinymce3/examples/lists/template_list.js</filename>
+		<filename>tinymce3/examples/media/logo.jpg</filename>
+		<filename>tinymce3/examples/media/logo_over.jpg</filename>
+		<filename>tinymce3/examples/media/sample.avi</filename>
+		<filename>tinymce3/examples/media/sample.dcr</filename>
+		<filename>tinymce3/examples/media/sample.mov</filename>
+		<filename>tinymce3/examples/media/sample.ram</filename>
+		<filename>tinymce3/examples/media/sample.rm</filename>
+		<filename>tinymce3/examples/media/sample.swf</filename>
+		<filename>tinymce3/examples/templates/layout1.htm</filename>
+		<filename>tinymce3/examples/templates/snippet1.htm</filename>
+		<!--  TinyMCE -->
+		<filename>tinymce3/jscripts/index.html</filename>
+		<filename>tinymce3/jscripts/tiny_mce/blank.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/index.html</filename>
+		<filename>tinymce3/jscripts/tiny_mce/license.txt</filename>
+		<filename>tinymce3/jscripts/tiny_mce/tiny_mce.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/tiny_mce_popup.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/tiny_mce_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/langs/en.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/langs/ru.js</filename>
+		
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advhr/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advhr/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advhr/rule.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advhr/css/advhr.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advhr/js/rule.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advhr/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advhr/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advimage/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advimage/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advimage/image.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advimage/css/advimage.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advimage/img/sample.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advimage/js/image.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advimage/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advimage/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advlink/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advlink/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advlink/link.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advlink/css/advlink.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advlink/js/advlink.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advlink/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/advlink/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/autosave/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/autosave/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/bbcode/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/bbcode/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/compat2x/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/compat2x/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/contextmenu/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/contextmenu/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/directionality/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/directionality/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/emotions.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-cool.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-cry.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-embarassed.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-foot-in-mouth.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-frown.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-innocent.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-kiss.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-laughing.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-money-mouth.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-sealed.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-smile.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-surprised.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-tongue-out.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-undecided.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-wink.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/img/smiley-yell.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/js/emotions.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/emotions/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/example/dialog.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/example/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/example/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/example/img/example.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/example/js/dialog.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/example/langs/en.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/example/langs/en_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullpage/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullpage/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullpage/fullpage.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullpage/css/fullpage.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullpage/js/fullpage.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullpage/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullpage/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullscreen/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullscreen/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/fullscreen/fullscreen.htm</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/iespell/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/iespell/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/template.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/button.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/insertdatetime/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/insertdatetime/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/layer/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/layer/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/media.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/css/content.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/css/media.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/img/flash.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/img/flv_player.swf</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/img/quicktime.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/img/realmedia.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/img/shockwave.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/img/trans.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/img/windowsmedia.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/js/embed.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/js/media.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/media/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/nonbreaking/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/nonbreaking/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/noneditable/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/noneditable/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/pagebreak/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/pagebreak/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/pagebreak/css/content.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/pagebreak/img/pagebreak.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/pagebreak/img/trans.gif</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/blank.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/pastetext.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/pasteword.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/css/blank.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/css/pasteword.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/js/pastetext.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/js/pasteword.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/paste/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/preview/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/preview/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/preview/example.html</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/preview/preview.html</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/preview/jscripts/embed.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/print/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/print/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/safari/blank.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/safari/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/safari/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/save/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/save/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/searchreplace/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/searchreplace/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/searchreplace/searchreplace.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/searchreplace/css/searchreplace.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/searchreplace/js/searchreplace.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/searchreplace/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/searchreplace/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/spellchecker/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/spellchecker/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/spellchecker/css/content.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/spellchecker/img/wline.gif</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/style/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/style/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/style/props.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/style/css/props.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/style/js/props.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/style/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/style/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/tabfocus/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/tabfocus/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/cell.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/merge_cells.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/row.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/table.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/css/cell.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/css/row.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/css/table.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/js/cell.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/js/merge_cells.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/js/row.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/js/table.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/table/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/template/blank.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/template/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/template/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/template/template.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/template/css/template.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/template/js/template.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/template/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/template/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/visualchars/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/visualchars/editor_plugin_src.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/abbr.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/acronym.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/attributes.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/cite.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/del.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/editor_plugin.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/editor_plugin_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/ins.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/css/attributes.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/css/popup.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/js/abbr.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/js/acronym.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/js/attributes.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/js/cite.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/js/del.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/js/element_common.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/js/ins.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/plugins/xhtmlxtras/langs/ru_dlg.js</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/about.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/anchor.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/charmap.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/color_picker.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/editor_template.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/editor_template_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/image.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/link.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/source_editor.htm</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/img/colorpicker.jpg</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/img/icons.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/js/about.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/js/anchor.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/js/charmap.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/js/color_picker.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/js/image.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/js/link.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/js/source_editor.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/langs/en.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/langs/en_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/langs/ru.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/langs/ru_dlg.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/content.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/dialog.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/ui.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/img/buttons.png</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/img/items.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/img/menu_arrow.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/img/menu_check.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/img/progress.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/default/img/tabs.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/o2k7/content.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/o2k7/dialog.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/o2k7/ui.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/o2k7/ui_black.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/o2k7/ui_silver.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg.png</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_black.png</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_silver.png</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/editor_template.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/editor_template_src.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/img/icons.gif</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/langs/en.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/langs/ru.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/skins/default/content.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/skins/default/ui.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/skins/o2k7/content.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/skins/o2k7/ui.css</filename>
+		<filename>tinymce3/jscripts/tiny_mce/themes/simple/skins/o2k7/img/button_bg.png</filename>
+
+		<filename>tinymce3/jscripts/tiny_mce/utils/editable_selects.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/utils/form_utils.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/utils/mctabs.js</filename>
+		<filename>tinymce3/jscripts/tiny_mce/utils/validate.js</filename>
+	</files>
+		
+	<params>
+		<param name="theme" type="list" default="advanced" label="Functionality" description="Select functionality">
+			<option value="simple">Simple</option>
+			<option value="advanced">Advanced</option>
+		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="cleanup_startup" type="radio" default="0" label="Code Cleanup on startup" description="Cleans code on editor load">
+ 			<option value="0">Off</option>
+ 			<option value="1">On</option>
+ 		</param>
+        <param name="cleanup_save" type="radio" default="2" label="Code Cleanup on Save" description="Code Cleanup upon saving article">
+            <option value="0">Never</option>
+            <option value="1">Front Only</option>
+            <option value="2">Always</option>
+        </param>
+ 		<param name="cleanup_entities" type="radio" default="1" label="Do not clean entities" description="PARAMENTITIECLEANUP">
+ 			<option value="0">Yes</option>
+ 			<option value="1">No</option>
+ 		</param>
+ 		<param name="autosave" type="radio" default="1" label="Save Warning" description="Save warning - gives warning if you cancel without saving changes">
+ 			<option value="0">Off</option>
+ 			<option value="1">On</option>
+ 		</param>
+ 		<param name="compressed" type="radio" default="0" label="Compressed Version" description="PARAMCOMPRESSEDVERSION">
+ 			<option value="0">Off</option>
+ 			<option value="1">On</option>
+ 		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+  		<param name="relative_urls" type="list" default="0" label="Urls" description="URL behaviour">
+ 			<option value="0">Absolute</option>
+ 			<option value="1">Relative</option>
+ 		</param>
+ 		<param name="text_direction" type="list" default="ltr" label="Text Direction" description="Ability to change text direction">
+ 			<option value="ltr">Left to Right</option>
+ 			<option value="rtl">Right to Left</option>
+ 		</param>
+  		<param name="lang_mode" type="radio" default="1" label="Automatic Language Selection" description="DESCLANGMODE">
+ 			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+ 		<param name="lang_code" type="text" default="ru" label="Language Code" description="DESCLANGCODE"/>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="invalid_elements" type="text" default="applet" label="Prohibited Elements" description="Elements that will be cleaned from the text"/>
+  		<param name="content_css" type="radio" default="1" label="Template CSS classes" description="PARAMTEMPLATECSS">
+ 			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+  		<param name="content_css_custom" type="text" default="" label="Custom CSS Classes" description="PARAMCUSTOMCSS"/>
+ 		<param name="newlines" type="list" default="0" label="Newlines" description="Newlines will be made into the selected option">
+ 			<option value="1">BR Elements</option>
+ 			<option value="0">P Elements</option>
+ 		</param>
+  		<param name="extended_elements" type="textarea" rows="3" cols="30" default="" label="Extended Valid Elements" description="PARAMEXTVALIDELEMENTS"/>
+   	</params>
+   	<params group="advanced">
+ 		<param name="toolbar" type="list" default="top" label="Toolbar" description="Position of the toolbar">
+ 			<option value="top">Top</option>
+ 			<option value="bottom">Bottom</option>
+ 		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="hr" type="radio" default="1" label="Horizontal Rule" description="Show/Hide the Horizontal Rule button">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="smilies" type="radio" default="1" label="Smilies" description="PARAMSMILIES">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="table" type="radio" default="1" label="Table" description="PARAMTABLE">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="style" type="radio" default="1" label="Style" description="PARAMSTYLE">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="layer" type="radio" default="1" label="Layer" description="PARAMLAYER">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="xhtmlxtras" type="radio" default="0" label="XHTMLxtras" description="PARAMXHTMLXTRAS">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="template" type="radio" default="0" label="Template" description="PARAMTEMPLATE">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="directionality" type="radio" default="1" label="Directionality" description="PARAMDIRECTIONALITY">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="fullscreen" type="radio" default="1" label="Fullscreen" description="PARAMFULLSCREEN">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="html_height" type="text" default="550" label="HTML Height" description="PARAMHTMLHEIGHT"/>
+ 		<param name="html_width" type="text" default="750" label="HTML Width" description="PARAMHTMLWIDTH"/>
+ 		<param name="preview" type="radio" default="1" label="Preview" description="PARAMPREVIEW">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+ 		<param name="element_path" type="radio" default="0" label="Element Path" description="PARAMELEMENTPATH">
+ 			<option value="0">Off</option>
+ 			<option value="1">On</option>
+ 		</param>
+ 		<param name="insertdate" type="radio" default="1" label="Insert Date" description="PARAMINSERTDATE">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+  		<param name="format_date" type="text" default="%Y-%m-%d" label="Date format" description="Format of inserted Date. Only works in Advanced mode"/>
+		<param name="inserttime" type="radio" default="1" label="Insert Time" description="PARAMINSERTTIME">
+ 			<option value="0">Hide</option>
+ 			<option value="1">Show</option>
+ 		</param>
+  		<param name="format_time" type="text" default="%H:%M:%S" label="Time format" description="Format of inserted Time. Only works in Advanced mode"/>
+   	</params>
+</install>

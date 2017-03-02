@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params>
+        <param name="debug" type="list" default="0" label="Debug" description="">
+            <option value="0">Off</option>
+            <option value="1">On</option>
+        </param>
+    </params>
+</config>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>RSFirewall!</name>
+	<creationDate>February 2012</creationDate>
+	<author>RSJoomla!</author>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<copyright>(C) 2009-2012 www.rsjoomla.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+	<version>1.0.0 R35</version>
+	<description>RSFirewall! adds a new layer of security to your Joomla! powered website.</description>
+	<installfile>install.rsfirewall.php</installfile>
+	<uninstallfile>uninstall.rsfirewall.php</uninstallfile>
+	<scriptfile>script.rsfirewall.php</scriptfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+			<file driver="mysql">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+		<folder>assets</folder>
+		<filename>controller.php</filename> 
+		<filename>index.html</filename> 
+		<filename>rsfirewall.php</filename>
+	</files>
+
+	<administration>
+		<menu img="../administrator/components/com_rsfirewall/assets/images/rsfirewall.gif">RSFirewall</menu>
+		<submenu>
+			  <menu link="option=com_rsfirewall">COM_RSFIREWALL_OVERVIEW</menu>
+			  <menu link="option=com_rsfirewall&amp;view=check">COM_RSFIREWALL_SYSTEM_CHECK</menu>
+			  <menu link="option=com_rsfirewall&amp;view=dbcheck">COM_RSFIREWALL_DATABASE_CHECK</menu>
+			  <menu link="option=com_rsfirewall&amp;view=logs">COM_RSFIREWALL_SYSTEM_LOGS</menu>
+			  <menu link="option=com_rsfirewall&amp;view=lockdown">COM_RSFIREWALL_SYSTEM_LOCKDOWN</menu>
+			  <menu link="option=com_rsfirewall&amp;view=configuration">COM_RSFIREWALL_FIREWALL_CONFIGURATION</menu>
+			  <menu link="option=com_rsfirewall&amp;view=feeds">COM_RSFIREWALL_RSS_FEEDS_CONFIGURATION</menu>
+			  <menu link="option=com_rsfirewall&amp;view=updates">COM_RSFIREWALL_UPDATES</menu>
+		</submenu>
+		
+		<files folder="admin">
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>install.mysql.nonutf8.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+			
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>rsfirewall.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages>
+			<language tag="en-GB">languages/en-GB.com_rsfirewall.ini</language>
+			<language tag="en-GB">languages/en-GB.com_rsfirewall.sys.ini</language>
+			<language tag="en-GB">languages/en-GB.com_rsfirewall.menu.ini</language>
+		</languages>
+	</administration>
+<params />
+</install>

@@ -1,0 +1,43 @@
+/* container */
+
+.rsfirewall_cpanel_container
+{
+	background: #fff;
+	text-align: center;
+}
+
+.rsfirewall_cpanel_container table td
+{
+	text-align: center !important;
+}
+
+/* logo */
+
+#rsfirewall_cpanel_logo
+{
+	margin: 0 auto;
+	margin: 6px;
+}
+
+/* colors */
+
+.rsfirewall_cpanel_red
+{
+	color: #990000;
+}
+
+.rsfirewall_cpanel_green
+{
+	color: #00994D;
+}
+
+/* clear */
+
+.rsfirewall_clear
+{
+	display: block;
+	clear: both;
+	height: 1px;
+	font-size: 1px;
+	line-height: 1px;
+}

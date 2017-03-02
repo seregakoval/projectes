@@ -1,5 +1,4 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); // Цикл начинается. Если есть записи в цикле, то выводим их ?>
-
     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="wrap" style="display: flex;
   justify-content: space-between;
@@ -7,7 +6,7 @@
             <div class="img" style="float: left;width:30%;">
                 <?php echo get_the_post_thumbnail( $page->ID, 'thumbnail'); ?>
                 <div class="post-info">
-                    <p style="font-size: 14px;">Опубликовано: <?php the_date(); ?></p>
+                    <p style="font-size: 14px;">Опубликовано: <?php echo get_the_date(); ?></p>
                 </div>
             </div>
             <div class="content-post" style="float: right;width:65%;">
@@ -23,6 +22,7 @@
 <?php endwhile; else: ?>
     <p><?php echo 'Извините, записей нет'; ?></p>
 <?php endif; ?>
+<?php the_posts_pagination(); ?>
 <?php
 /**
  * The loop template file.
