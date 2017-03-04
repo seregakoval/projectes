@@ -6,6 +6,9 @@
  * Also adds a focus class to parent li's for accessibility.
  * Finally adds a class required to reveal the search in the handheld footer bar.
  */
+
+
+
 ( function() {
 	// Add class to footer search when clicked
 	jQuery( window ).load( function() {

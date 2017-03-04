@@ -6,50 +6,34 @@
  */
 
 get_header(); ?>
+<div class="wrapper">
+	<div class="container">
+		<div id="primary" class="content-area">
 
-	<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-		<main id="main" class="site-main" role="main">
+				<div class="error-404 not-found">
 
-			<div class="error-404 not-found">
+					<div class="page-content">
 
-				<div class="page-content">
+						<header class="page-header">
+							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'storefront' ); ?></h1>
+						</header><!-- .page-header -->
 
-					<header class="page-header">
-						<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'storefront' ); ?></h1>
-					</header><!-- .page-header -->
+						<p><?php esc_html_e( 'Nothing was found at this location. Try searching, or check out the links below.', 'storefront' ); ?></p>
 
-					<p><?php esc_html_e( 'Nothing was found at this location. Try searching, or check out the links below.', 'storefront' ); ?></p>
+						<?php
 
-					<?php
-					echo '<section aria-label="Search">';
 
-					if ( storefront_is_woocommerce_activated() ) {
-						the_widget( 'WC_Widget_Product_Search' );
-					} else {
-						get_search_form();
-					}
+						if ( storefront_is_woocommerce_activated() ) {
 
-					echo '</section>';
+							echo '<div class="fourohfour-columns-2">';
 
-					if ( storefront_is_woocommerce_activated() ) {
 
-						echo '<div class="fourohfour-columns-2">';
-
-							echo '<section class="col-1" aria-label="Promoted Products">';
-
-								storefront_promoted_products();
-
-							echo '</section>';
 
 							echo '<nav class="col-2" aria-label="Product Categories">';
+							
 
-							echo '<h2>' . esc_html__( 'Product Categories', 'storefront' ) . '</h2>';
-
-							the_widget( 'WC_Widget_Product_Categories', array(
-																			'count'		=> 1,
-							) );
-							echo '</nav>';
 
 							echo '</div>';
 
@@ -63,13 +47,15 @@ get_header(); ?>
 							) );
 
 							echo '</section>';
-					}
-					?>
+						}
+						?>
 
-				</div><!-- .page-content -->
-			</div><!-- .error-404 -->
+					</div><!-- .page-content -->
+				</div><!-- .error-404 -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	</div>
+</div>
 
 <?php get_footer();

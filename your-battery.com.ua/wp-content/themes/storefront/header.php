@@ -38,7 +38,7 @@
 						 * @hooked storefront_primary_navigation_wrapper_close - 68
 						 */
 						do_action( 'storefront_header' ); ?>
-						<a class="button-call">
+						<a class="button-call" data-toggle="modal" data-target="#myModal">
 							Заказать звонок
 						</a>
 						<div class="header-widget">
