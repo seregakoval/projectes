@@ -42,7 +42,7 @@
 							Заказать звонок
 						</a>
 						<div class="header-widget">
-							<div class="widget">
+							<div class="widget widget-phone">
 								<?php if (!dynamic_sidebar("header-widget") ) : ?>
 								<?php endif; ?>
 							</div>

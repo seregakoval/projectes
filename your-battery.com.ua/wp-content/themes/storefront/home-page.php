@@ -1,3 +1,39 @@
+<div class="container content-container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 class="content-heading">Additional Resources</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="additional-resources-block">
+                <div class="resources-list">
+                    <div class="list-item">
+                        <a href="http://www.investmentadvisorsearch.com/" target="_blank">M&A Research Database</a>
+                        <p> Private Equity </p>
+                        <p> Hedge Funds </p>
+                        <p> Mezzanine Investors</p>
+                        <p> Small Business Investment Companies </p>
+                        <p> Valuation Firms</p>
+                        <p> Investment Banks </p>
+                        <p> Institutional Real Estate Investors</p>
+                        <p> Senior Lenders</p>
+                        <p> Public Companies </p>
+                    </div>
+                    <div class="list-item">
+                        <a href="http://www.advisoryfirms.com/" target="_blank">Registered Investment Advisors Database</a>
+                    </div>
+                    <div class="list-item">
+                        <a href="http://www.peiservices.com/" target="_blank">Broker Dealer Database</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <?php
 /*
 Template Name: Home-page
@@ -5,6 +41,11 @@ Template Name: Home-page
 ?>
 <?php get_header(); ?>
 <section class="home-slider">
+    <?php
+    echo do_shortcode("[metaslider id=2412]");
+    ?>
+    <?php wd_slider(3); ?>
+    <?php echo do_shortcode("[R-slider id='1']"); ?>
     <?php if (!dynamic_sidebar("home-slider") ) : ?>
     <?php endif; ?>
 </section>

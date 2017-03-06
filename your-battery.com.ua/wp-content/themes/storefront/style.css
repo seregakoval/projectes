@@ -11589,8 +11589,11 @@ button.menu-toggle:after {
 }
 .header-widget {
     float: right;
-    max-width: 500px;
+    max-width: 5px;
     text-align: right;
+}
+.header-widget .widget-phone {
+    width: 100%;
 }
 .site-header .container-header {
     padding: 0 15px;
