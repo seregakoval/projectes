@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSPINIA | Flot Charts</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link href="/angular/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/angular/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="/angular/web/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="/angular/web/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <span class="nav-label">Roadblocks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">Anomalies</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="#">Anomalies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                        <span class="nav-label">Reports</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="metric.html">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Metric</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" >
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="/angular/assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper-admin">
+            <div class="wrapper-admin__head">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="wrapper-admin__title">Roadblocks & anomalies</h2>
+                        <div class="wrapper-admin__graphics">
+                            <div class="box">
+                                <div class="head">
+                                    <p class="title">Roadblocks</p>
+                                </div>
+                                <div class="box-body border">
+                                    <div class="graphics">
+                                        <img src="/angular/web/img/graphics.png" alt="">
+                                    </div>
+                                    <p class="bottom-text">1 New</p>
+                                </div> <!--./box-body-->
+                            </div> <!--./box-->
+                            <div class="box">
+                                <div class="head">
+                                    <p class="title">Anomalies</p>
+                                </div> <!--head-->
+                                <div class="box-body">
+                                    <div class="graphics">
+                                        <img src="/angular/web/img/5.png" alt="">
+                                    </div>
+                                    <p class="bottom-text">1 New</p>
+                                </div> <!--./box-body-->
+                            </div> <!--./box-->
+                        </div> <!--graphics-->
+                    </div>
+                    <div class="col-md-8">
+                        <div class="top-actions">
+                            <h2 class="wrapper-admin__title">My actions (5)</h2>
+                            <a href="#" class="name">This week <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="wrapper-admin__actions">
+                            <div class="loader"></div>
+                            <div class="scroll">
+                                <div class="wrapper-admin__string green">
+                                    <div class="wrapper-admin__info">
+                                        <h3 class="title">Approve weekly sales report</h3>
+                                        <p class="sub-title">Due in 2 days</p>
+                                    </div>
+                                    <div class="wrapper-admin__progress">
+                                        <div class="line">
+                                            <span style="width: 50%;" class="status"></span>
+                                        </div>
+                                        <div class="wrapper-admin__status-number">
+                                            <p>18%</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-admin__button">
+                                        <a href="#">Approve</a>
+                                    </div>
+                                    <div class="wrapper-admin__button">
+                                        <a href="#">View</a>
+                                    </div>
+                                </div> <!--./string-->
+                                <div class="wrapper-admin__string green-light">
+                                    <div class="wrapper-admin__info">
+                                        <h3 class="title">Approve weekly sales report</h3>
+                                        <p class="sub-title">Due in 2 days</p>
+                                    </div>
+                                    <div class="wrapper-admin__progress">
+                                        <div class="line">
+                                            <span style="width: 50%;" class="status"></span>
+                                        </div>
+                                        <div class="wrapper-admin__status-number">
+                                            <p>18%</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-admin__button">
+                                        <a href="#">Approve</a>
+                                    </div>
+                                    <div class="wrapper-admin__button">
+                                        <a href="#">View</a>
+                                    </div>
+                                </div> <!--./string-->
+                                <div class="wrapper-admin__string green">
+                                    <div class="wrapper-admin__info">
+                                        <h3 class="title">Approve weekly sales report</h3>
+                                        <p class="sub-title">Due in 2 days</p>
+                                    </div>
+                                    <div class="wrapper-admin__progress">
+                                        <div class="line">
+                                            <span style="width: 50%;" class="status"></span>
+                                        </div>
+                                        <div class="wrapper-admin__status-number">
+                                            <p>18%</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-admin__button">
+                                        <a href="#">Approve</a>
+                                    </div>
+                                    <div class="wrapper-admin__button">
+                                        <a href="#">View</a>
+                                    </div>
+                                </div> <!--./string-->
+                                <div class="wrapper-admin__string green-light">
+                                    <div class="wrapper-admin__info">
+                                        <h3 class="title">Approve weekly sales report</h3>
+                                        <p class="sub-title">Due in 2 days</p>
+                                    </div>
+                                    <div class="wrapper-admin__progress">
+                                        <div class="line">
+                                            <span style="width: 50%;" class="status"></span>
+                                        </div>
+                                        <div class="wrapper-admin__status-number">
+                                            <p>18%</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-admin__button">
+                                        <a href="#">Approve</a>
+                                    </div>
+                                    <div class="wrapper-admin__button">
+                                        <a href="#">View</a>
+                                    </div>
+                                </div> <!--./string-->
+                            </div> <!--./scroll-->
+                        </div> <!--./actions-->
+                    </div>
+                </div> <!--./row-->
+            </div> <!--./head-->
+            <div class="wrapper-admin__body">
+                <div class="body-top">
+                    <h2 class="wrapper-admin__title">Report board</h2>
+                </div>
+                <div class="wrapper-admin__content">
+                    <div class="wrapper-admin__box border-orange">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new orange-btn"> new</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div></div>
+                            <div>
+                                <p class="started started-icon">
+                                    not started
+                                </p>
+                                <img src="/angular/web/img/icon-started.png" class="icon" alt="">
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 50%;" class="status"></span>
+                            </div>
+                            <p class="number">18%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span>AAA</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">start</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-green-light">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Monthly Customer Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new green-light-btn"> To approve</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div>
+                                <p class="left-text exclamation">
+                                    animalies
+                                </p>
+                            </div>
+                            <div>
+                                <p class="started progress-icon">
+                                    In progress
+                                </p>
+                                <img src="/angular/web/img/icon1.png" class="icon" alt="">
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 50%;" class="status"></span>
+                            </div>
+                            <p class="number">18%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span>A</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">open</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-green">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Daily Churn Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> To approve</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div></div>
+                            <div>
+                                <a href="#" class="btn-icon">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="btn-icon">
+                                    <img src="/angular/web/img/icon2.png" alt="">
+                                </a>
+                                <p class="started">
+                                    sent
+                                </p>
+                                <img src="/angular/web/img/icon3.png" class="icon" alt="">
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 100%;" class="status"></span>
+                            </div>
+                            <p class="number">100%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span>A</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">open</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-pink">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Monthly Customer Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new pink-btn"> To approve</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div>
+                                <p class="left-text ban">
+                                    Roadblocks
+                                </p>
+                            </div>
+                            <div>
+                                <a href="#" class="btn-icon">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                </a>
+                                <p class="started">
+                                    in progress
+                                </p>
+                                <i class="fa fa-paper-plane pink icon" aria-hidden="true"></i>
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 80%;" class="status"></span>
+                            </div>
+                            <p class="number">80%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span>A</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">open</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-green">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Weekly Sales Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> To approve</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div>
+                            </div>
+                            <div>
+                                <a href="#" class="btn-icon">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="btn-icon">
+                                    <img src="/angular/web/img/icon2.png" alt="">
+                                </a>
+                                <p class="started">
+                                    Recevied
+                                </p>
+                                <i class="fa fa-sign-out green icon" aria-hidden="true"></i>
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 100%;" class="status"></span>
+                            </div>
+                            <p class="number">100%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span class="green">A</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">view</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-orange">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Weekly Sales Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new orange-btn">updated</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div>
+                                <p class="left-text exclamation">
+                                    animalies
+                                </p>
+                            </div>
+                            <div>
+                                <p class="started">
+                                    Recevied
+                                </p>
+                                <i class="fa fa-sign-out orange icon" aria-hidden="true"></i>
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 21%;" class="status"></span>
+                            </div>
+                            <p class="number">21%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span>AAA</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text hide-block">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">start </a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-pink">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Monthly Customer Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new pink-btn"> To approve</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div>
+                                <p class="left-text load">
+                                    lagging
+                                </p>
+                            </div>
+                            <div>
+                                <a href="#" class="btn-icon">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                </a>
+                                <p class="started">
+                                    in progress
+                                </p>
+                                <i class="fa fa-paper-plane pink icon" aria-hidden="true"></i>
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 33%;" class="status"></span>
+                            </div>
+                            <p class="number">33%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span>A</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">Nudge</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-pink">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Monthly Customer Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new pink-btn"> To approve</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div></div>
+                            <div>
+                                <p class="started">
+                                    overdue
+                                </p>
+                                <i class="overdue icon" aria-hidden="true"></i>
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 80%;" class="status"></span>
+                            </div>
+                            <p class="number">80%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span>A</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">Nudge</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-pink">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Monthly Customer Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                            <a href="#" class="btn-new pink-btn"> To approve</a>
+                        </div> <!--./box-head-->
+                        <div class="string info">
+                            <div></div>
+                            <div>
+                                <p class="started">
+                                    overdue
+                                </p>
+                                <i class="overdue icon" aria-hidden="true"></i>
+                            </div>
+                        </div> <!--./info-->
+                        <div class="string progress-block">
+                            <div class="line">
+                                <span style="width: 80%;" class="status"></span>
+                            </div>
+                            <p class="number">80%</p>
+                        </div> <!--./progress-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <span>A</span> Quality score
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text">
+                            <div class="content">
+                                <p class="string-text">A weekly report of how our marketing campaigns are doing including SEO and paid for ads.</p>
+                                <a href="#"  class="arrow"></a>
+                            </div>
+                        </div>
+                        <div class="button-show">
+                            <a href="#" id="show-block" class="more">More<i class="icon-arrow"></i></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="#" class="button">Nudge</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                    <div class="wrapper-admin__box border-green-light">
+                        <div class="box-head string">
+                            <div class="name">
+                                <h4 class="title">Monthly Customer Report</h4>
+                                <p class="date">Due on: dd/mm/yyyy</p>
+                            </div>
+                        </div> <!--./box-head-->
+                        <div class="string user">
+                            <div class="user">
+                                <a href="#" class="user-img">
+                                    <img src="/angular/web/img/user.png" alt="">
+                                </a>
+                                <p class="name-user">by <span>William Jackson</span></p>
+                            </div>
+                            <p class="user-text">
+                                <a href="#" class="user-btn green-light-btn">Accept</a>
+                            </p>
+                        </div> <!--user-->
+                        <div class="block-text background">
+                            <p class="string-text">A weekly report of how customer additions and churn</p>
+                            <a href="#" class="arrow"></a>
+                        </div>
+                        <div class="footer-box border">
+                            <a href="#" class="button">open</a>
+                            <a href="#" class="button">accert</a>
+                            <a href="#" class="button">reject</a>
+                        </div> <!--./footer-box-->
+                    </div> <!--./box-->
+                </div> <!--./content-->
+            </div> <!--./body-->
+        </div>
+    </div>
+</div>
+
+<div class="item-box">
+    <div class="col-custom"></div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="/angular/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/angular/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/angular/assets/js/jquery.metisMenu.js"></script>
+<script src="/angular/assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="/angular/app/custom/inspinia.js"></script>
+<!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- Flot demo data -->
+<!--<script src="js/demo/flot-demo.js"></script>-->
+
+</body>
+
+</html>

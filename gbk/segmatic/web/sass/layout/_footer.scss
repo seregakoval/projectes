@@ -1,0 +1,42 @@
+// FOOTER
+.footer {
+  padding: 45px 0;
+  background: #2d333c;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  @media (max-width: 767px) {
+   padding: 15px 0;
+  }
+  &__nav {
+    display: inline-block;
+    vertical-align: middle;
+    ul {
+      li {
+        float: left;
+        @media (max-width: 991px) {
+          width: 50%;
+          margin: 7px 0;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+          margin: 11px 0;
+        }
+        a {
+          display: block;
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 0 15px;
+          text-decoration: none;
+          transition: 0.3s;
+          &:hover {
+            color: #49acef;
+          }
+        }
+      }
+    }
+  }
+}
+

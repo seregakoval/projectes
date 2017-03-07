@@ -1,0 +1,7 @@
+/* MIXINS */
+@mixin hoverBackground($blue) {
+  background: $blue;
+  &:hover {
+	background: #01bfea;
+  }
+}

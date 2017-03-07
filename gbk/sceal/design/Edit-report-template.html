@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSPINIA | Flot Charts</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link href="/angular/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/angular/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="/angular/web/css/main.css" rel="stylesheet">
+</head>
+<body class="background">
+<header class="header_print">
+    <nav class="header-wrap" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-button" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> Daily KPI Reports</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="right-header collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="flex-block">
+                <div class="block-left">
+                    <a href="#" class="btn-view">View as <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                </div>
+                <div class="menu">
+                    <button class="send">Send</button>
+                    <div class="print-nav">
+                        <ul>
+                            <li><a href="#"><span><img src="/angular/web/img/print-edit.png" alt=""></span>Edit</a></li>
+                            <li><a href="#"><span><img src="/angular/web/img/print.png" alt=""></span>Print</a></li>
+                            <li><a href="#"><span><img src="/angular/web/img/print-nav-download.png" alt=""></span>Download</a></li>
+                            <li><a href="#"><span><img src="/angular/web/img/print-nav-icon1.png" alt=""></span>Details</a></li>
+                            <li><a href="#"><img src="/angular/web/img/iconpr.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+</header> <!--./head-->
+<section class="sub-header">
+    <div class="sub-header__column">
+        <h2 class="title">Edit (Report Name here)</h2>
+    </div> <!--./column-->
+    <div class="sub-header__column">
+        <form action="#" class="sub-header__form">
+            <div class="item-select">
+                <!--Additional update options-->
+                <button class="dropdown-toggle" data-toggle="dropdown">Additional update options</button>
+                <ul class="dropdown-menu">
+                    <li><span class="caret"></span></li>
+                    <li><a href="#">None</a></li>
+                    <li><a href="#">Update original template </a></li>
+                    <li><a href="#">Update template & Linked Reports</a></li>
+                    <li><a href="#">Update linked report only</a></li>
+                </ul>
+                <i class="fa fa-angle-down" data-toggle="dropdown" aria-hidden="true"></i>
+            </div>
+            <button class="save">Save</button>
+        </form>
+    </div> <!--./column-->
+</section> <!--./sub-header-->
+<section class="panel">
+    <div class="panel__column">
+        <div class="panel__info">
+            <h2 class="title">Actual</h2>
+            <div class="main-block">
+                <div class="col-add">
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+                <div class="droup">
+                    <a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="panel__item-select">
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="dropdown-toggle">Page layout <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
+                <ul class="dropdownMenu">
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!--./column-->
+    <div class="panel__column">
+        <div class="droupdown-name">
+            <div class="content">
+                <div class="img">
+                    <img src="/angular/web/img/avatar.png" alt="">
+                </div>
+                <div class="name">
+                    <p><span>Owner:</span> John Clinesmith
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block-button">
+            <button class="print-btn"><i class="fa fa-plus" aria-hidden="true"></i>Action</button>
+        </div>
+    </div> <!--./column-->
+</section> <!--./panel-->
+<section class="wrap-layout">
+    <div class="wrap-layout__sidebar">
+        <button class="toggle-sidebar"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <div class="head">
+            <button class="print-btn"><i class="fa fa-plus" aria-hidden="true"></i>Add section</button>
+            <div class="options hideElement">
+                <p class="text">3 Selected</p>
+                <a href="#" class="btnRemove">
+                    <img src="/angular/web/img/btnRemove.png" alt="">
+                </a>
+            </div>
+        </div> <!--./head-->
+       <div class="siderbar-body">
+           <div class="main-scroll">
+               <div class="wrap-layout__box selected">
+                   <div class="check">
+                       <i class="fa fa-check-circle" aria-hidden="true"></i>
+                   </div>
+                   <p class="text">p1</p>
+               </div>
+               <div class="wrap-layout__box">
+                    <div class="top-panel">
+                        <div class="icons">
+                            <a href="#"><img src="/angular/web/img/add-icon.png" alt=""></a>
+                            <a href="#"><img src="/angular/web/img/remove.png" alt=""></a>
+                        </div>
+                    </div>
+                   <p class="text">p2</p>
+               </div>
+               <div class="block-name">
+                   <span class="line"></span>
+               </div>
+               <div class="wrap-layout__box full-width selected">
+                   <div class="check">
+                       <i class="fa fa-check-circle" aria-hidden="true"></i>
+                   </div>
+                   <div class="block-message">
+                       <div class="text">
+                           <p>Move 3 pages</p>
+                       </div>
+                   </div>
+                   <p class="text">p1</p>
+               </div>
+               <div class="wrap-layout__box ">
+                   <div class="check">
+                       <span class="white"><i class="fa fa-check" aria-hidden="true"></i></span>
+                   </div>
+                   <div class="top-panel">
+                       <div class="icons">
+                           <a href="#"><img src="/angular/web/img/add-icon.png" alt=""></a>
+                           <a href="#"><img src="/angular/web/img/remove.png" alt=""></a>
+                       </div>
+                   </div>
+                   <p class="text">p4</p>
+               </div>
+               <div class="block-name">
+                   <span class="line"></span>
+                   <p class="name">Section Name<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+               </div>
+               <div class="wrap-layout__box-new">
+                   <a href="#">
+                       <i class="fa fa-plus" aria-hidden="true"></i>
+                       <p class="title">New Page</p>
+                   </a>
+               </div>
+           </div>
+       </div>
+    </div> <!--./sidebar-->
+    <main class="content-layout">
+        <div class="content-layout__head">
+            <h1 class="title">Page title here</h1>
+        </div> <!--./head-->
+        <div class="content-layout__posts">
+            <div class="col">
+                <div class="content-layout__panel-top">
+                    <a href="#" class="icon-nav">
+                        <img src="/angular/web/img/icon-nav.png" alt="">
+                    </a>
+                    <div class="icons">
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/icon-change.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/add-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/remove.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-layout__panel-bottom">
+                    <button class="print-btn"><i class="fa fa-plus" aria-hidden="true"></i>Action</button>
+                    <div class="content-layout__number">
+                        <p class="text-number">2</p>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac augue feugiat, dictum neque vel, malesuada turpis. Integer non leo volutpat, pellentesque purus eu, efficitur ex. Donec nibh libero, efficitur tincidunt vestibulum quis, semper vitae arcu. Vivamus ac volutpat mi. Praesent eros ex, tempor ac tristique ac, hendrerit ac erat. Nullam tincidunt iaculis dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi et blandit ipsum. Phasellus aliquam tincidunt orci, eu finibus lorem lobortis et. Curabitur ut ultrices felis.</p>
+            </div>
+            <div class="col right">
+                <div class="content-layout__panel-top">
+                    <a href="#" class="icon-nav">
+                        <img src="/angular/web/img/icon-nav.png" alt="">
+                    </a>
+                    <div class="icons">
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/open-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/add-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/remove.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-layout__panel-bottom">
+                    <button class="print-btn"><i class="fa fa-plus" aria-hidden="true"></i>Action</button>
+                </div>
+                <div class="img">
+                    <img src="/angular/web/img/icon-image.png" alt="">
+                </div>
+                <p class="title-video">Add image or video</p>
+            </div>
+        </div> <!--./posts-->
+        <div class="content-layout__head">
+            <h2 class="title">Subtitle header</h2>
+        </div> <!--./head-->
+        <div class="content-layout__metrics">
+            <div class="col">
+                <div class="content-layout__panel-top">
+                    <a href="#" class="icon-nav">
+                        <img src="/angular/web/img/icon-nav.png" alt="">
+                    </a>
+                    <div class="icons">
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/icon-metric.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/open-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/add-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/remove.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-layout__panel-bottom">
+                    <button class="print-btn"><i class="fa fa-plus" aria-hidden="true"></i>Action</button>
+                </div>
+                <div class="img">
+                    <img src="/angular/web/img/metric.png" alt="">
+                </div>
+                <p class="title-metric">Add imetric</p>
+            </div>
+            <div class="col">
+                <div class="content-layout__panel-top">
+                    <a href="#" class="icon-nav">
+                        <img src="/angular/web/img/icon-nav.png" alt="">
+                    </a>
+                    <div class="icons">
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/icon-metric.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/open-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/add-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/remove.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-layout__panel-bottom">
+                    <button class="print-btn"><i class="fa fa-plus" aria-hidden="true"></i>Action</button>
+                </div>
+                <div class="img">
+                    <img src="/angular/web/img/metric.png" alt="">
+                </div>
+                <p class="title-metric">Add metric</p>
+            </div>
+            <div class="col">
+                <div class="content-layout__panel-top">
+                    <a href="#" class="icon-nav">
+                        <img src="/angular/web/img/icon-nav.png" alt="">
+                    </a>
+                    <div class="icons">
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/icon-metric.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/open-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/add-icon.png" alt="">
+                        </a>
+                        <a href="#" class="icon">
+                            <img src="/angular/web/img/remove.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-layout__panel-bottom">
+                    <button class="print-btn"><i class="fa fa-plus" aria-hidden="true"></i>Action</button>
+                </div>
+                <div class="img">
+                    <img src="/angular/web/img/metric.png" alt="">
+                </div>
+                <p class="title-metric">Add metric</p>
+            </div>
+        </div>
+        <div class="content-layout__table active">
+            <div class="content-layout__panel-top">
+                <a href="#" class="icon-nav">
+                    <img src="/angular/web/img/icon-nav.png" alt="">
+                </a>
+                <div class="icons">
+                    <a href="#" class="icon">
+                        <img src="/angular/web/img/icon-calendar.png" alt="">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="/angular/web/img/icon-change.png" alt="">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="/angular/web/img/add-icon.png" alt="">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="/angular/web/img/remove.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="content-layout__panel-bottom">
+                <button class="print-btn"><i class="fa fa-plus" aria-hidden="true"></i>Action</button>
+            </div>
+            <div class="table-row">
+                <div class="table-col">
+                    <div class="col head">
+                        <p class="text">Feb 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">32,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">32,187</p>
+                    </div>
+                </div>
+                <div class="table-col ">
+                    <div class="col head">
+                        <p class="text">May 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">33,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">33,187</p>
+                    </div>
+                </div>
+                <div class="table-col ">
+                    <div class="col head">
+                        <p class="text">Apr 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">36,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">36,187</p>
+                    </div>
+                </div>
+                <div class="table-col ">
+                    <div class="col head">
+                        <p class="text">My 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">36,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">36,187</p>
+                    </div>
+                </div>
+                <div class="table-col">
+                    <div class="col head">
+                        <p class="text">Jun 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">45,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">45,187</p>
+                    </div>
+                </div>
+                <div class="table-col ">
+                    <div class="col head">
+                        <p class="text">Jun 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">45,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">45,187</p>
+                    </div>
+                </div>
+                <div class="table-col">
+                    <div class="col head">
+                        <p class="text">Agu 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">52,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">52,187</p>
+                    </div>
+                </div>
+                <div class="table-col">
+                    <div class="col head">
+                        <p class="text">Sep 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">62,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">62,187</p>
+                    </div>
+                </div>
+                <div class="table-col">
+                    <div class="col head">
+                        <p class="text">Oct 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">72,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">72,187</p>
+                    </div>
+                </div>
+                <div class="table-col">
+                    <div class="col head">
+                        <p class="text">Nov 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">78,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">78,187</p>
+                    </div>
+                </div>
+                <div class="table-col">
+                    <div class="col head">
+                        <p class="text">Dec 16</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">82,187</p>
+                    </div>
+                    <div class="col">
+                        <p class="text">82,187</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!--./table-->
+        <div class="content-layout__head">
+            <h2 class="title">Footer</h2>
+        </div> <!--./head-->
+    </main>
+</section> <!--./wrap-layout-->
+<!-- Mainly scripts -->
+<script src="/angular/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/angular/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/angular/assets/js/jquery.metisMenu.js"></script>
+<script src="/angular/assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="/angular/app/custom/inspinia.js"></script>
+<script src="/angular/resources/js/main_js.js"></script>
+<!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- Flot demo data -->
+<!--<script src="js/demo/flot-demo.js"></script>-->
+</body>
+</html>

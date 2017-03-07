@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} \ /(.+)\.html
+RewriteRule ^ /%1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php

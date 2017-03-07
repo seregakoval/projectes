@@ -1,0 +1,27 @@
+//BUTTONS-ROW
+.row-input-avatar, .itemInput  {
+  .buttons-row {
+    position: absolute;
+    right:5px;
+    transform: translateY(-50%);
+    top: 50%;
+    .btn {
+      background-color: $blue;
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+}
+.row-input-avatar {
+  &.indent {
+    padding-right: 100px;
+  }
+}
+.itemInput {
+  &.indent {
+    input[type='text'] {
+      padding-right: 50px;
+    }
+  }
+}
+/*AND BUTTONS ROW*/

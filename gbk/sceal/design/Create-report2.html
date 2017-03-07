@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kmap</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link href="/angular/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/angular/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/angular/resources/css/owl.carousel.min.css">
+    <link href="/angular/web/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation" style="display: none;">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="/angular/web/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <span class="nav-label">Roadblocks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">Anomalies</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="#">Anomalies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                        <span class="nav-label">Reports</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="metric.html">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Metric</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation" style=" display: none; margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" >
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="/angular/assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper createReports">
+            <div class="createReports__head">
+                <h1 class="title"><i class="fa fa-angle-left" aria-hidden="true"></i>All Reports</h1>
+                <h2 class="sub-title">Report Creation</h2>
+            </div> <!--./head-->
+            <div class="createReports__body">
+                <div class="createReports__wrap">
+                    <div class="createReports__col left">
+                        <div class="createReports__menu-tabs">
+                            <div class="tab-row">
+                                <div class="icon">
+                                    <div class="number active">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <p>1</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <a href="">Basic information</a>
+                                </div>
+                            </div> <!--tab-row-->
+                            <div class="tab-row">
+                                <div class="icon">
+                                    <div class="number">
+                                        <p>2</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <a href="">Layout</a>
+                                </div>
+                            </div>
+                            <div class="tab-row">
+                                <div class="icon">
+                                    <div class="number">
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <a href="#tab3" data-toggle="tab">Content</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="createReports__col right">
+                        <div class="createReports__content">
+                            <form class="createReports__form" action="#">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="label-title">
+                                                <label class="title-input ">Section</label>
+                                            </div>
+                                            <div class="dropdown-row">
+                                                <button class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Nasted table
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">test</a></li>
+                                                    <li><a href="#">test</a></li>
+                                                    <li><a href="#">test</a></li>
+                                                    <li><a href="#">test</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="label-title">
+                                                <label class="title-input ">Assign</label>
+                                            </div>
+                                            <div class="row-input-avatar">
+                                                <div class="avatar">
+                                                    <img src="/angular/web/img/avatar.png" alt="">
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Jonh Smith">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label-title">
+                                    <p class="title-row">Table of content</p>
+                                </div>
+                                <div class="createReports__nested-lists">
+                                    <div class="createReports__lists-row">
+                                        <div class="createReports__main-row">
+                                            <div class="createReports__item-list-row">
+                                                <div class="createReports__section-text"  data-toggle="collapse" data-target="#demo">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    <div class="text">
+                                                        <p class="title-list">Lorem ipsum dolor</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="button-block">
+                                                <button class="createReports__add-summary">Add control</button>
+                                            </div>
+                                            <div class="createReports__user-tag active">
+                                                <p class="user-text">Assign to 2+</p>
+                                                <img src="/angular/web/img/avatar.png" class="img-avatar" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="createReports__sub-row collapse" id="demo">
+                                            <div class="createReports__main-row sub-boxes">
+                                                <div class="createReports__item-list-row">
+                                                    <div class="createReports__section-text">
+                                                        <div class="text">
+                                                            <p class="title-list">Lorem ipsum dolor</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-block">
+                                                    <button class="createReports__add-summary">Add control</button>
+                                                </div>
+                                                <div class="createReports__user-tag">
+                                                    <p class="user-text">Assign to 2+</p>
+                                                    <img src="/angular/web/img/avatar.png" class="img-avatar" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="createReports__main-row sub-boxes">
+                                                <div class="createReports__item-list-row">
+                                                    <div class="createReports__section-text">
+                                                        <div class="text">
+                                                            <p class="title-list">Lorem ipsum dolor</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-block">
+                                                    <button class="createReports__add-summary">Add control</button>
+                                                </div>
+                                                <div class="createReports__user-tag">
+                                                    <p class="user-text">Assign to 2+</p>
+                                                    <img src="/angular/web/img/avatar.png" class="img-avatar" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="createReports__main-row sub-boxes">
+                                                <div class="createReports__item-list-row">
+                                                    <div class="createReports__section-text">
+                                                        <div class="text">
+                                                            <p class="title-list">Lorem ipsum dolor</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-block">
+                                                    <button class="createReports__add-summary">Add control</button>
+                                                </div>
+                                                <div class="createReports__user-tag">
+                                                    <p class="user-text">Assign to 2+</p>
+                                                    <img src="/angular/web/img/avatar.png" class="img-avatar" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="createReports__main-row sub-boxes">
+                                                <div class="createReports__item-list-row">
+                                                    <div class="createReports__section-text">
+                                                        <div class="text">
+                                                            <p class="title-list">Lorem ipsum dolor</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-block">
+                                                    <button class="createReports__add-summary">Add control</button>
+                                                </div>
+                                                <div class="createReports__user-tag">
+                                                    <p class="user-text">Assign to 2+</p>
+                                                    <img src="/angular/web/img/avatar.png" class="img-avatar" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="createReports__lists-row">
+                                        <div class="createReports__main-row">
+                                            <div class="createReports__item-list-row">
+                                                <div class="createReports__section-text">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    <div class="text">
+                                                        <p class="title-list">Lorem ipsum dolor</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="button-block">
+                                                <button class="createReports__add-summary">Add control</button>
+                                            </div>
+                                            <div class="createReports__user-tag">
+                                                <p class="user-text">Assign to 2+</p>
+                                                <img src="/angular/web/img/avatar.png" class="img-avatar" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="createReports__lists-row">
+                                        <div class="createReports__main-row">
+                                            <div class="createReports__item-list-row">
+                                                <div class="createReports__section-text">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    <div class="text">
+                                                        <p class="title-list">Lorem ipsum dolor</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="button-block">
+                                                <button class="createReports__add-summary">Add control</button>
+                                            </div>
+                                            <div class="createReports__user-tag">
+                                                <p class="user-text">Assign to 2+</p>
+                                                <img src="/angular/web/img/avatar.png" class="img-avatar" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!--./lists-->
+                                <div class="createReports__strings">
+                                    <div class="string-row">
+                                        <div class="string-text">
+                                            <p class="text">Add text <span>(text box sound)</span></p>
+                                        </div>
+                                        <div class="switch right">
+                                            <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                            <label for="cmn-toggle-3"></label>
+                                        </div>
+                                    </div>
+                                    <div class="string-row">
+                                        <div class="string-text">
+                                            <p class="text">Add text <span>(text box sound)</span></p>
+                                        </div>
+                                        <div class="switch right">
+                                            <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                            <label for="cmn-toggle-4"></label>
+                                        </div>
+                                    </div>
+                                    <div class="string-row">
+                                        <div class="string-text">
+                                            <p class="text">Add text <span>(text box sound)</span></p>
+                                        </div>
+                                        <div class="switch right">
+                                            <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                            <label for="cmn-toggle-5"></label>
+                                        </div>
+                                    </div>
+                                    <div class="string-row">
+                                        <div class="string-text">
+                                            <p class="text">Add text <span>(text box sound)</span></p>
+                                        </div>
+                                        <div class="switch right">
+                                            <input id="cmn-toggle-6" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                            <label for="cmn-toggle-6"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="createReports__form-buttons">
+                                    <div class="message-text"></div>
+                                    <div class="form-group-button">
+                                        <button class="btn-group gray">Send</button>
+                                        <button class="btn-group">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./body-->
+        </div>
+    </div>
+</div>
+<div class="item-box">
+    <div class="col-custom"></div>
+</div>
+<!-- Modal -->
+<!--<div id="myModal" class="modal fade in" role="dialog">-->
+    <!--<div class="modal-dialog">-->
+
+        <!--&lt;!&ndash; Modal content&ndash;&gt;-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                <!--<h4 class="modal-title">Modal Header</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--<p>Some text in the modal.</p>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
+<!-- Mainly scripts -->
+<script src="/angular/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/angular/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/angular/assets/js/jquery.metisMenu.js"></script>
+<script src="/angular/assets/js/jquery.slimscroll.min.js"></script>
+<script src="/angular/assets/js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:6,
+            nav:true
+        });
+    });
+</script>
+</body>
+
+</html>

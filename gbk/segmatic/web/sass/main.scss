@@ -1,0 +1,100 @@
+
+/***********************/
+/*      BASE STYLES    */
+
+@import "base/_base.scss";
+
+/***********************/
+/*        LAYOUT       */
+
+// HEADER
+@import "layout/_header.scss"; 
+
+// CONTENT
+@import "layout/_content.scss";
+
+//FOOTER 
+@import "layout/_footer.scss";
+
+
+
+/***********************/
+/*       MODULES       */
+/*-------menu-----*/
+@import "modules/_menu.scss";
+/*-------home-screen-----*/
+@import "modules/_headline-banner.scss";
+/*-------home-text-----*/
+@import "modules/_home-text.scss";
+/*-------extra-content-----*/
+@import "modules/_Content-ExtraContent-Boxes.scss";
+/*-------Left-RightContent-----*/
+@import "modules/_Left-RightContent.scss";
+
+
+
+/***********************/
+/*        PAGES DEEPDIVE       */
+/*-------head-text-----*/
+@import "pages/head-text.scss";
+/*------statistic------*/
+@import "pages/statistics.scss";
+
+/*       About page modules        */
+
+/*------boxes------*/
+@import "pages/_boxes-about.scss";
+/*------standart------*/
+@import "pages/_standart-about.scss";
+/*------sub-points-about------*/
+@import "pages/_sub-points-about.scss";
+/***********************/
+/*----------tagline-text-about----------*/
+@import "pages/_tagline-text-about.scss";
+
+/*      PRICE PAGE  */
+
+@import "pages/price/_Pricing-Slider.scss";
+/*------ plan--------*/
+@import "pages/price/_Pricing-Grid.scss";
+/*------ ContentStyle-BarChart--------*/
+@import "pages/clients/ContentStyle-BarChart";
+/***********************/
+
+/*        CLIENTS PAGE   */
+
+/*------ Clients-LogoGrid--------*/
+@import "pages/clients/_Clients-LogoGrid.scss";
+/*-------ClientsCaseStudyLinks--------*/
+@import "pages/clients/_ClientsCaseStudyLinks.scss";
+/*-------Linking-Section--------*/
+@import "pages/clients/_Linking-Section.scss";
+
+/*        CASE   */
+
+/*-------ClientsCaseStudyLinks--------*/
+@import "pages/case/_Headline-Banner-2.scss";
+/*-------ContentStyle-Screenshot--------*/
+@import "pages/case/_ContentStyle-Screenshot.scss";
+/*-------ContentStyle-Table--------*/
+@import "pages/case/_ContentStyle-Table.scss";
+/*-------ContentStyle--------*/
+@import "pages/case/_ContentStyle.scss";
+
+/*      Whattodonext page */
+
+/*------Content-Columns-ImageTextCTA----*/
+@import "modules/_Content-Columns-ImageTextCTA.scss";
+
+/*     CONTACT-US PAGE    */
+/*------Contact-us----*/
+@import "pages/contact-us/_contact-us.scss";
+
+/* TERMS CONDITONS */
+
+/*---Terms Conditons-----*/
+@import "modules/_Terms-Conditons.scss";
+
+/*        MEDIA        */
+
+@import "_media.scss";

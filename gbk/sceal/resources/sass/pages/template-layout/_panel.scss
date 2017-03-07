@@ -1,0 +1,225 @@
+/*Panel*/
+
+@keyframes showdropdown2 {
+  from {}
+  to {
+    top: 38px;
+    opacity: 1;
+  }
+}
+.panel {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  &__column {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__info {
+    border-right: 1px solid #edeff5;
+    width: 280px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #676a6c;
+      margin: 0;
+    }
+    .main-block {
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      background-color: #eaedf3;
+      position: relative;
+      padding: 3px 0 ;
+      .col-add {
+        border-right: 1px solid #dadce2;
+        float: left;
+        padding: 0 15px;
+        i {
+          color: #b0b3b7;
+          font-size: 17px;
+        }
+      }
+      .droup {
+        text-align: center;
+        width: 20px;
+        i {
+          font-size: 17px;
+          color: #b0b3b7;
+        }
+      }
+    }
+  }
+  &__item-select {
+    border-right: 1px solid #edeff5;
+    display: flex;
+    align-items:center;
+    .dropdown-toggle {
+      background: none;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      box-shadow: none !important;
+      .fa-angle-down {
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 22px;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 23px;
+        color: #b1b1b1;
+      }
+    }
+    .dropdownMenu {
+      display: none;
+      position: absolute;
+      z-index: 1000;
+      border-radius: 3px;
+      box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+      top: 18px;
+      box-shadow: none;
+      left: 0;
+      width:100%;
+      background-color: #fff;
+      border: 1px solid #d9dce2;
+      padding: 3px 10px;
+      li {
+        list-style: none;
+        a {
+          margin: 4px;
+          display: block;
+          color: #303f69;
+          padding:3px 5px 3px 5px;
+          border-radius:0;
+          position: relative;
+          border-bottom: 1px solid #e5e4e5;
+          &:after {
+            transition: all 0.3s;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            content: '';
+            background-color: #1fb9f1;
+          }
+          &:hover {
+            background: none;
+            //border-bottom-color: #1fb9f1;
+          }
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .dropdown-toggle::-ms-expand {
+      display: none;
+    }
+    .btn-group {
+      min-width:  160px;
+      padding: 0px 25px;
+      &.open {
+        .dropdownMenu {
+          animation: showdropdown2 0.3s forwards;
+        }
+        .fa-angle-down {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    }
+  }
+  .droupdown-name {
+    border-left: 1px solid #edeff5;
+    border-right: 1px solid #edeff5;
+    padding: 15px;
+   .content {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     .img {
+       margin-right: 10px;
+       img {
+         width: 32px;
+         height: 32px;
+       }
+     }
+     .name {
+       p {
+         font-size: 14px;
+         color: #676a6c;
+          i {
+            font-size: 20px;
+            margin-left: 5px;
+            vertical-align: middle;
+          }
+         span {
+           font-weight: bold;
+         }
+       }
+     }
+   }
+  }
+  .block-button {
+    padding: 15px 15px 15px 10px;
+    i {
+      margin-right: 8px;
+    }
+  }
+  @media(max-width: 991px) {
+    display: block;
+    &__column {
+      justify-content: space-between;
+      border-bottom: 1px solid #edeff5
+    }
+    &__info {
+      flex:1;
+    }
+  }
+  @media(max-width: 480px) {
+    &__column {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    .block-button {
+      text-align: center;
+    }
+    &__item-select {
+      display: block;
+      text-align: center;
+      padding: 15px 0;
+    }
+    &__info {
+      width: 100%;
+      flex:inherit;
+    }
+  }
+}
+.open>.dropdownMenu {
+  display: block;
+}
+.container-tabs {
+  .panel-body {
+    label {
+      margin-bottom: 5px;
+    }
+    .ng-scope {
+      margin-bottom: 5px;
+    }
+  }
+  .panel {
+    display: block;
+  }
+}

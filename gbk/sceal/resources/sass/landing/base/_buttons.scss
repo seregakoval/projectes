@@ -1,0 +1,70 @@
+//BUTTONS
+
+/*SELECT DROPDOWN*/
+
+.dropdown-block {
+  position: relative;
+  .arrow {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	color: #fff;
+	width: 25px;
+	height: 25px;
+	border: none;
+	background: none;
+	justify-content: center;
+	transform: translateY(-50%);
+	&.active {
+	  &:before {
+		transform: rotate(180deg);
+	  }
+	}
+	&:before {
+	  transition: all 0.3s;
+	  width: 26px;
+	  height: 26px;
+	  left: 0;
+	  -webkit-border-radius: 50%;
+	  -moz-border-radius: 50%;
+	  border-radius: 50%;
+	  border: 2px solid #fff;
+	  top: 0px;
+	  display: inline-block;
+	  position: absolute;
+	  content: "\f107";
+	  font:normal normal normal 23px/1 FontAwesome;
+	}
+  }
+  .dropdown {
+	cursor: pointer;
+	background:  none;
+	border: none;
+	box-shadow: none;
+	color: #a7a4a4;
+	outline: none;
+	height: 40px;
+	border-bottom: 1px solid #404142;
+	font-weight: 600;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance:  none;
+	display: block;
+	position: relative;
+  }
+  .options-block {
+	position: absolute;
+	top:  40px;
+	width: 100%;
+	background: #191919;
+	padding: 15px;
+	z-index: 100;
+	a {
+	  cursor: pointer;
+	  display: block;
+	  color: #fff;
+	  font-size: 14px;
+	  padding:5px 0;
+	}
+  }
+}

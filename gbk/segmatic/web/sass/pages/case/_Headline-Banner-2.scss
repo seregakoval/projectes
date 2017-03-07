@@ -1,0 +1,126 @@
+//Headline-Banner-2
+.Content-Image-Boxes1 {
+  padding: 10px 0 10px 0;
+}
+.Headline-Banner-2 {
+  background: #fff;
+  padding: 0 0 2% 0;
+  &__head {
+    background: #49acef;
+    padding: 30px 0 99px 0;
+    [class^="col"] {
+      margin: 0 auto;
+      float: none;
+    }
+  }
+  &__title {
+    color: #fff;
+    font-size: 31px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+    @media (max-width: 360px) {
+      font-size: 19px;
+    }
+  }
+  &__h2 {
+    font-size: 28px;
+    color: #545d63;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  &__sub-text {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 360px) {
+      font-size: 14px;
+    }
+  }
+  &__head-logo {
+    max-width: 250px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto 50px auto;
+  }
+  .banner-indent {
+    margin: 0 auto 0px auto;
+  }
+  &__img {
+    max-width: 541px;
+    margin: -113px auto 30px auto;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      @media (max-width: 768px) {
+        max-width: 70%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+  .banner-img {
+    margin: -80px auto 30px auto;
+  }
+  .img-osper {
+    margin: -118px auto 0px auto !important;
+  }
+  &__text {
+    color: #b6bcc0;
+    font-size: 19px;
+    line-height: 2;
+    margin-bottom: 20px;
+    text-align: center;
+    &:last-child {
+      margin:0;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  &__content {
+    .block-text {
+      max-width: 900px;
+      margin:0 auto;
+    }
+  }
+}
+
+div[dir="ltr"] {
+  width: 100% !important;
+}
+
+@media (max-width: 480px) {
+  .image-TMLewin {
+    margin: -62px auto 30px auto;
+  }
+  .head-TMLewin {
+    padding: 30px 0 37px 0;
+  }
+  .head-mehanic {
+    padding: 30px 0 62px 0;
+  }
+  .Headline-Banner-2 .img-osper {
+    img {
+      @media (max-width: 480px) {
+        max-width:100% !important;
+      }
+    }
+  }
+  .Headline-Banner-2 .banner-img {
+    margin: -37px auto 30px auto;
+    img {
+      max-width: 100% !important;
+    }
+  }
+}

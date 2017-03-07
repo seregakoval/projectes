@@ -1,0 +1,242 @@
+.comment-recived {
+  .input {
+	margin-bottom: 25px;
+	display: flex;
+	border: 1px solid #d3d3d3;
+	padding: 3px;
+	border-radius: 3px;
+	position: relative;
+	.tag {
+	  flex:auto;
+	  border-radius: 25px;
+	  padding: 4px;
+	  display: inline-block;
+	  vertical-align: middle;
+	  background: #dfe2eb;
+	  .name {
+		padding-left: 5px;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 13px;
+	  }
+	  .btn-close {
+		display: inline-block;
+		vertical-align: middle;
+		.close {
+		  display: flex;
+		  background: #fff;
+		  height: 20px;
+		  width: 20px;
+		  margin-left: 15px;
+		  border-radius: 50%;
+
+		  align-items: center;
+		  i {
+			font-size: 12px;
+			color: #dfe2eb;
+			position: relative;
+			left: 5px;
+		  }
+		}
+	  }
+	  .avatar {
+		display: inline-block;
+		vertical-align: middle;
+		img {
+		  width: 24px;
+		}
+	  }
+	}
+	.block-input {
+	  width: 100%;
+	  flex: 90;
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  .dropdown {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 39px;
+		z-index:100;
+		border-radius: 8px;
+		background: #fff;
+		box-shadow:0 0 20px -7px rgba(0,0,0,0.5);
+		&.active {
+		  display: block;
+		}
+		.user {
+		  align-items: center;
+		  display: flex;
+		  min-width: 215px;
+		  padding: 10px 15px;
+		  border-bottom: 1px solid #f2f2f2;
+		  .img {
+			display: inline-block;
+			vertical-align: middle;
+		  }
+		  .user-text {
+			display: inline-block;
+			vertical-align: middle;
+			padding-left: 12px;
+		  }
+		  .name {
+			color: #a9a4a4;
+		  }
+		}
+	  }
+	}
+	input {
+	  border: none;
+	}
+  }
+  .comment-body {
+	display: flex;
+	.left-avatar {
+	  padding-right: 15px;
+	  @media(max-width: 480px) {
+		padding-right: 5px;
+		img {
+		  width: 20px;
+		}
+	  }
+	}
+	.content {
+	  width: 100%;
+	  @media(max-width: 340px) {
+		width: 85%;
+	  }
+	  .main-comment {
+		background: #f7f7f7;
+		padding: 10px 15px;
+		border-radius: 5px 5px 5px 0;
+		border-left: 4px solid $green;
+		.comment-head {
+		  display: flex;
+		  justify-content: space-between;
+		  margin-bottom: 5px;
+		  .name {
+			font-size: 13px;
+			font-weight: bold;
+			color: #4d4d4d;
+			margin-bottom: 0 !important;
+		  }
+		  .date {
+			font-size: 13px;
+			color: #c4c4c4;
+			font-weight: 300;
+			margin-bottom: 0 !important;
+		  }
+		}
+		.comment-text {
+		  font-size: 13px;
+		  color: #4d4d4d;
+		  @media(max-width: 480px) {
+			font-size: 11px;
+		  }
+		}
+	  }
+	  .footer-comment {
+		border: 1px solid #e8e8e8;
+		.string {
+		  border: none;
+		  border-top: 1px solid #e8e8e8;
+		}
+		.sub-comment {
+		  padding: 15px;
+		  display: flex;
+		  align-items:center;
+		  .avatar {
+			padding-right: 15px;
+		  }
+		  .message {
+			border: none;
+			padding: 10px 3px;
+			.name {
+			  font-size: 13px;
+			  font-weight: bold;
+			  color: #4d4d4d;
+			  margin-bottom: 0 !important;
+			}
+			.text-comment {
+			  font-size: 13px;
+			  color: #4d4d4d;
+			  @media(max-width: 480px) {
+				font-size: 11px;
+			  }
+			}
+		  }
+		}
+		.textarea-block {
+		  border-top: 1px solid #e8e8e8;
+		  .textarea {
+			padding: 15px;
+			resize: vertical;
+			height: 80px;
+			width: 100%;
+			background: #fff;
+			border: none;
+			outline: none;
+		  }
+		}
+	  }
+	}
+  }
+  .title-form {
+	font-weight: bold;
+	font-size: 14px;
+  }
+  .string {
+	position: relative;
+	display: flex;
+	border: 1px solid #d3d3d3;
+	border-radius: 3px;
+	.left {
+	  background: url("../../../assets/img/icon-message.png") no-repeat center center;
+	  display: inline-block;
+	  vertical-align: middle;
+	  width: 70px;
+	  height: 40px;
+	  border-right: 1px solid #e7e7e7;
+	}
+	.input-message {
+	  width: 100%;
+	  padding: 0 15px 0 15px;
+	  border: none;
+	  outline: none;
+	}
+	.navigation {
+	  display: flex;
+	  align-items: center;
+	  float: right;
+	  padding-right: 15px;
+	  a {
+		margin: 0 5px;
+		@media(max-width: 767px) {
+		  margin: 0 3px;
+		}
+		i {
+		  color: #b0b0b0;
+		  font-size: 15px;
+		  transition:  all 0.3s;
+		  @media(max-width: 767px) {
+			font-size: 13px;
+		  }
+		  @media(max-width: 340px) {
+			font-size: 11px;
+		  }
+		}
+		&:hover {
+		  i {
+			color: $blue;
+		  }
+		}
+		&.active {
+		  i {
+			color: $blue;
+		  }
+		}
+	  }
+	}
+  }
+}

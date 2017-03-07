@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CS3-CurrencyFair</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<link href="path/to/font" />-->
+    <!-- COMPONENTS -->
+    <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- STYLES -->
+    <link href=".././node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+<!-- Google Tag Manager --> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PQPXSP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PQPXSP');</script> <!-- End Google Tag Manager -->
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="header__log">
+                <img src="../img/logo.jpg" alt="">
+            </a>
+        </div> <!--./header__logo-->
+        <div class="header__block-nav collapse navbar-collapse" id="navigation">
+            <nav class="header__nav">
+                <ul class="list-left">
+                    <li><a href="index.html">Overview</a></li>
+                </ul>
+                <ul class="list-right">
+                    <li><a href="https://tomus.segmatic.io/">Login</a></li>
+                    <li><a href="https://analyser.segmatic.io/index">Free AdWords Audit</a></li>
+                </ul>
+            </nav> <!--./nav-->
+            <!--<form action="#" class="header__search">-->
+            <!--<input type="text" placeholder="search">-->
+            <!--<i class="fa fa-search" aria-hidden="true"></i>-->
+            <!--</form> &lt;!&ndash;./form&ndash;&gt;-->
+            <script>
+                (function() {
+                    var cx = '010293336371254282527:tcpi5mea-fc';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:search></gcse:search>
+        </div> <!--./header__block-nav-->
+    </div>
+</header> <!--.header-->
+<section class="menu" data-scroll-nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <ul class="menu__navigation">
+                    <li><a href="index.html">Product</a></li>
+                    <li class="dropdown">
+                        <a href="Features.html" class="dropdown-toggle">Features</a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Features.html" class="dropdown-toggle">Features</a></li>
+                            <li><a href="Features.html#scroll-Builder">Account Builder</a></li>
+                            <li><a href="Features.html#scroll-copy">Ad Copy</a></li>
+                            <li><a href="Features.html#scroll-analyster">Search Term Analyser</a></li>
+                            <li><a href="Features.html#scroll-reporting">Reporting</a></li>
+                            <li><a href="Features.html#scroll-bidding">Bidding</a></li>
+                            <li><a href="Features.html#scroll-mini-optimisers">Mini-Optimisers</a></li>
+                            <li><a href="Features.html#scroll-shopping">Shopping</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Clients-Results-Page.html" class="dropdown-toggle">Clients & Results </a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Clients-Results-Page.html" class="dropdown-toggle">Clients & Results </a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-clients">Our Clients</a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-results">Our Results</a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-testimonials">Testimonials & Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Pricing-page.html"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pricing </a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Pricing-page.html" class="dropdown-toggle">Pricing </a></li>
+                            <li><a href="Pricing-page.html#scroll-segmatic">Why Segmatic?</a></li>
+                            <li><a href="Pricing-page.html#scroll-pricing">Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="About-page.html"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> About</a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="About-page.html" class="dropdown-toggle">About</a></li>
+                            <li><a href="About-page#scroll-our-team">Our Team</a></li>
+                            <li><a href="About-page#scroll-people">Why People Choose Us</a></li>
+                            <li><a href="About-page#scroll-our-history">Our History</a></li>
+                            <li><a href="About-page#scroll-our-values">Our Values</a></li>
+                        </ul>
+                    </li>
+                </ul> <!--./navigation-->
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="menu__start">
+                    <a href="Sign-up.html">Start your 30-day free trial now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./menu-->
+<script>
+    /* Graphs Args */
+
+    function getBrandWeek() {
+        return [
+            {x: 1, y: 137, y2: 68.51},
+            {x: 2, y: 217, y2: 49.21},
+            {x: 3, y: 114, y2: 96.39},
+            {x: 4, y: 138, y2: 71.27},
+            {x: 5, y: 92, y2: 107.81},
+            {x: 6, y: 119, y2: 89.14},
+            {x: 7, y: 87, y2: 104.94},
+            {x: 8, y: 191, y2: 54.49},
+            {x: 9, y: 115, y2: 97.11},
+            {x: 10, y: 197, y2: 45.84},
+            {x: 11, y: 110, y2: 90.15},
+        ];
+    }
+    function getGenericWeek() {
+        return [
+            {x: 1, y: 69, y2: 115.73},
+            {x: 2, y: 49, y2: 141.15},
+            {x: 3, y: 87, y2: 87.58},
+            {x: 4, y: 47, y2: 157.37},
+            {x: 5, y: 54, y2: 142.68},
+            {x: 6, y: 41, y2: 194.52},
+            {x: 7, y: 27, y2: 289.23},
+            {x: 8, y: 67, y2: 119.15},
+            {x: 9, y: 55, y2: 127.86},
+            {x: 10, y: 61, y2: 124.56},
+            {x: 11, y: 94, y2: 78.55},
+        ];
+    }
+    function getBrandMonth() {
+        return [
+            {x: 1, y: 606, y2: 66.05},
+            {x: 2, y: 422, y2: 99.2},
+            {x: 3, y: 189, y2: 212.36},
+        ];
+    }
+    function getGenericMonth() {
+        return [
+            {x: 1, y: 356.38, y2: 82.82},
+            {x: 2, y: 252, y2: 121.6},
+            {x: 3, y: 210, y2: 142.45},
+        ];
+    }
+</script>
+<section class="Headline-Banner-2">
+    <div class="Headline-Banner-2__head">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="Headline-Banner-2__title">How We Increased Performance by 500% For a Currency Exchange Company</h1>
+                    <p class="Headline-Banner-2__sub-text">Delivered excellent results!" - Simon Walsh, Marketing Manager </p>
+                    <div class="Headline-Banner-2__head-logo">
+                        <img src="../img/clients-image1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--./head-->
+    <div class="Headline-Banner-2__content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="Headline-Banner-2__img">
+                        <img src="../img/CurrencyFair.jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <p class="Headline-Banner-2__text ">CurrencyFair.com is a currency exchange company offering cheap foreign currency exchange through a peer-to-peer model. Within three months of working with Segmatic, its paid search (Non Brand) performance increased almost fivefold.</p>
+                        <p class="Headline-Banner-2__text ">Segmatic achieved this increase despite the fact that rivals were spending huge budgets on above the line spend; traditional banks were pushing back, and the product, while significantly cheaper, required a significant amount of information on registration. So, despite these issues, how did CurrencyFair.com increase its paid search performance so dramatically?</p>
+                        <p class="Headline-Banner-2__text">In this article, we will show you how we did it.</p>
+                    </div>
+                </div>
+                    <div class="col-md-12 ">
+                        <div class="btn-group mobil">
+                            <div class="active_btn" style="width: 180px; height: 32px;"><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i></div>
+                            <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-segment generic is_active" data-hover-text="The keywords that define or explain your company’s products or services, excluding your brand term(s)" data-type="segment" data-segment="Generic" style="width: 180px;">
+                                Generic
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="btn-group mobil">
+                            <div class="active_btn" style="width: 180px; height: 32px;"><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i></div>
+                            <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-date weekly is_active" data-hover-text="Displays the data broken down by week" data-type="date" data-date="Week" style="width: 180px;">
+                                Weekly
+                            </a>
+                            <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-date monthly" data-hover-text="Displays the data broken down by month" data-type="date" data-date="Month" style="width: 180px;">
+                                Monthly
+                            </a>
+                        </div>
+
+                    <!-- Generic / Weekly -->
+                    <div class="col-lg-11 col-lg-offset-1">
+                        <div class="campaign-per">
+                            <div class="campaign-per_graph" id="chart_div_first" style="width: 100%; height: 400px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 800px; height: 400px; padding: 0px;"><svg style="position: absolute; width: 800px; height: 400px; top: -0.400024px; left: -0.25px;" version="1.1"><desc>JavaScript chart by amCharts 3.19.6</desc><g><path stroke-opacity="0" stroke-width="1" fill-opacity="0" stroke="#000000" fill="#FFFFFF" d="M0.5,0.5 L799.5,0.5 L799.5,399.5 L0.5,399.5 Z" cs="100,100"></path><path transform="translate(45,20)" stroke-opacity="0" stroke-width="1" fill-opacity="0" stroke="#000000" fill="#FFFFFF" d="M0.5,0.5 L655.5,0.5 L655.5,343.5 L0.5,343.5 L0.5,0.5 Z" cs="100,100"></path></g><g><g transform="translate(45,20)"><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M30.5,0.5 L30.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M30.5,343.5 L30.5,343.5 L30.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M89.5,0.5 L89.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M89.5,343.5 L89.5,343.5 L89.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M149.5,0.5 L149.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M149.5,343.5 L149.5,343.5 L149.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M208.5,0.5 L208.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M208.5,343.5 L208.5,343.5 L208.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M268.5,0.5 L268.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M268.5,343.5 L268.5,343.5 L268.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M328.5,0.5 L328.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M328.5,343.5 L328.5,343.5 L328.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M387.5,0.5 L387.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M387.5,343.5 L387.5,343.5 L387.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M447.5,0.5 L447.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M447.5,343.5 L447.5,343.5 L447.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M506.5,0.5 L506.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M506.5,343.5 L506.5,343.5 L506.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M566.5,0.5 L566.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M566.5,343.5 L566.5,343.5 L566.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M625.5,0.5 L625.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M625.5,343.5 L625.5,343.5 L625.5,0.5" cs="100,100"></path></g></g><g visibility="visible" transform="translate(45,20)"><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,343.5 L6.5,343.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,300.5 L6.5,300.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,257.5 L6.5,257.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,214.5 L6.5,214.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,172.5 L6.5,172.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,129.5 L6.5,129.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,86.5 L6.5,86.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,43.5 L6.5,43.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L6.5,0.5" cs="100,100"></path></g></g><g visibility="visible" transform="translate(45,20)"><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,343.5 L6.5,343.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,343.5 L0.5,343.5 L655.5,343.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,286.5 L6.5,286.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,286.5 L0.5,286.5 L655.5,286.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,229.5 L6.5,229.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,229.5 L0.5,229.5 L655.5,229.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,172.5 L6.5,172.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,172.5 L0.5,172.5 L655.5,172.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,114.5 L6.5,114.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,114.5 L0.5,114.5 L655.5,114.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,57.5 L6.5,57.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,57.5 L0.5,57.5 L655.5,57.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L6.5,0.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,0.5 L0.5,0.5 L655.5,0.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,343.5 L6.5,343.5" cs="100,100"></path><path stroke="#fc6051" stroke-opacity="1" stroke-dasharray="6" stroke-width="1" fill="none" d="M0.5,343.5 L0.5,343.5 L655.5,343.5" cs="100,100"></path></g><g><rect transform="translate(0,340)" stroke-opacity="0" fill-opacity="0" stroke-width="0" ry="0" rx="0" height="3" width="655" y="0.5" x="0.5"></rect></g></g></g><g clip-path="url(#AmChartsEl-21)" transform="translate(45,20)"><g visibility="hidden"></g></g><g></g><g></g><g></g><g><g transform="translate(45,20)"><g></g><g clip-path="url(#AmChartsEl-23)"><path stroke="#49acef" stroke-opacity="1" stroke-width="1" fill="none" d="M30.5,133.4125 L89.5,219.1625 L149.5,56.2375 L208.5,227.7375 L268.5,197.725 L328.5,253.4625 L387.5,313.4875 L447.5,141.9875 L506.5,193.4375 L566.5,167.7125 L625.5,26.225 M0,0 L0,0" cs="100,100"></path></g><clipPath id="AmChartsEl-23"><rect stroke-width="0" ry="0" rx="0" height="343" width="655" y="0" x="0"></rect></clipPath><g></g></g><g transform="translate(45,20)"><g></g><g clip-path="url(#AmChartsEl-24)"><path stroke="#fc6051" stroke-opacity="1" stroke-width="1" fill="none" d="M30.5,211.18203 L89.5,182.1185 L149.5,243.36687 L208.5,163.57363 L268.5,180.3692 L328.5,121.0988 L387.5,12.8137 L447.5,207.27183 L506.5,197.3134 L566.5,201.0864 L625.5,253.69117 M0,0 L0,0" cs="100,100"></path></g><clipPath id="AmChartsEl-24"><rect stroke-width="0" ry="0" rx="0" height="343" width="655" y="0" x="0"></rect></clipPath><g></g></g></g><g></g><g><path transform="translate(45,20)" stroke="#000000" stroke-opacity="0.2" stroke-width="1" fill="none" d="M0.5,343.5 L655.5,343.5 L655.5,343.5" cs="100,100"></path><g><path transform="translate(45,363)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L655.5,0.5" cs="100,100"></path></g><g><path visibility="visible" transform="translate(45,20)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L0.5,343.5" cs="100,100"></path></g><g><path visibility="visible" transform="translate(700,20)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L0.5,343.5 L0.5,343.5" cs="100,100"></path></g></g><g><g clip-path="url(#AmChartsEl-22)" style="pointer-events: none;" transform="translate(45,20)"><path visibility="hidden" stroke="#CC0000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L0.5,0.5 L0.5,343.5" cs="100,100"></path><path visibility="hidden" stroke="#CC0000" stroke-width="1" fill="none" d="M0.5,0.5 L655.5,0.5 L655.5,0.5" cs="100,100"></path></g><clipPath id="AmChartsEl-22"><rect stroke-width="0" ry="0" rx="0" height="343" width="655" y="0" x="0"></rect></clipPath></g><g></g><g><g transform="translate(45,20)"></g><g transform="translate(45,20)"></g></g><g><g></g></g><g><g visibility="visible" transform="translate(45,20)"><text transform="translate(30,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">1</tspan></text><text transform="translate(89,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">2</tspan></text><text transform="translate(149,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">3</tspan></text><text transform="translate(208,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">4</tspan></text><text transform="translate(268,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">5</tspan></text><text transform="translate(328,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">6</tspan></text><text transform="translate(387,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">7</tspan></text><text transform="translate(447,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">8</tspan></text><text transform="translate(506,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">9</tspan></text><text transform="translate(566,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">10</tspan></text><text transform="translate(625,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">11</tspan></text></g><g visibility="visible" transform="translate(45,20)"><text transform="translate(-12,341)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">20</tspan></text><text transform="translate(-12,298)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">30</tspan></text><text transform="translate(-12,255)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">40</tspan></text><text transform="translate(-12,212)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">50</tspan></text><text transform="translate(-12,170)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">60</tspan></text><text transform="translate(-12,127)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">70</tspan></text><text transform="translate(-12,84)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">80</tspan></text><text transform="translate(-12,41)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">90</tspan></text><text transform="translate(-12,-2)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">100</tspan></text></g><g visibility="visible" transform="translate(45,20)"><text transform="translate(665,341)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">0</tspan></text><text transform="translate(665,284)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">50</tspan></text><text transform="translate(665,227)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">100</tspan></text><text transform="translate(665,170)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">150</tspan></text><text transform="translate(665,112)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">200</tspan></text><text transform="translate(665,55)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">250</tspan></text><text transform="translate(665,-2)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">300</tspan></text><text transform="translate(665,340.5)" text-anchor="start" opacity="1" font-size="14px" font-family="myriad-pro" fill="#fc6051" y="7"><tspan x="15" y="7">CPA TARGET</tspan></text></g></g><g></g><g transform="translate(45,20)"></g><g></g><g></g><clipPath id="AmChartsEl-21"><rect stroke-width="0" ry="0" rx="0" height="343" width="655" y="0" x="0"></rect></clipPath></svg><a style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: myriad-pro; font-size: 11px; opacity: 0.7; display: block; left: 50px; top: 25px;" title="JavaScript charts" href="http://www.amcharts.com/javascript-charts/">JS chart by amCharts</a></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--./content-->
+    </div>
+</section>
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Controlled Advertising Builds a Virtuous Circle</h2>
+                    <p class="block-content__text">Account Structure is the Bedrock of a Successful Paid Search Campaign</p>
+                     <p class="block-content__text ">
+                         Paid search advertising is not just about ad copy and bidding strategy. At its most fundamental level, online advertising is about controlling who sees your ad, what ad they see and when exactly they see it.
+                     </p>
+                    <p class="block-content__text ">Control is at the core of Segmatic’s approach to paid search advertising. Control allows us to understand what our ads are doing, develop actionable insight, and use these insights to improve performance. Our virtuous circle gives clients confidence that their marketing budgets are providing Return On Investment (ROI) and encouraging growth and re-investment.</p>
+                    <p class="block-content__text">When Segmatic took over the Currency Fair account, the client was unable to exercise an appropriate level of control over their advertising. This lack of control manifested itself in a two primary ways; confusion of campaign segmentation and misunderstanding of match-types.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">The Importance of Effectively Segmented Campaigns and How to Build Them </h2>
+                    <p class="block-content__text ">
+                        The real power of paid search advertising is that there is a large amount of data available to advertisers which allows for effective testing and optimisation. The value of this data, however, can be lost if companies begin to view their customers as simply numbers on a page – forgetting that behind each search is a human with a different level of purchasing intent or brand loyalty. These potential customers need to be treated differently to maximise the possibility that they will complete an online purchase. This is why campaign segmentation is a vital part of any account build.
+                    </p>
+                    <p class="block-content__text "> Any search advertising professional should tell you that there are two basic types of campaigns: branded and non branded. Non branded campaigns can be further segmented by distinguishing between competitor and product terms.</p>
+                    <p class="block-content__text">As you can see form Table 1, these three campaign segments have radically distinct characteristics – a potential customer who searches for the term “Send Money with Currency Fair” needs to be treated very differently to one who searches for the term “Send Money Internationally” and differently again to a potential customer who searches for “Send Money with Bank ABC”.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table">
+                    <div class="table-5col">
+                        <div class="table-head">
+                            <p>Segment</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Branded</p>
+                        </div>
+                        <div class="table-content">
+                            <p>NB - Product</p>
+                        </div>
+                        <div class="table-content">
+                            <p> NB Competitors</p>
+                        </div>
+
+                    </div>
+                    <div class="table-5col">
+                        <div class="table-head">
+                            <p>Example</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Currency Fair</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Bank Transfer</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Bank ABC Currency Transfer</p>
+                        </div>
+                    </div>
+                    <div class="table-5col">
+                        <div class="table-head">
+                            <p>Description</p>
+                        </div>
+                        <div class="table-content">
+                            <p>The search terms related to the Brand</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Search terms related to the products</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Search terms related to Competitors</p>
+                        </div>
+                    </div>
+                    <div class="table-5col">
+                        <div class="table-head">
+                            <p>Click Through Rate</p>
+                        </div>
+                        <div class="table-content">
+                            <p>High</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Medium</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Extremely Low</p>
+                        </div>
+                    </div>
+                    <div class="table-5col">
+                        <div class="table-head">
+                            <p>Conversion Rate</p>
+                        </div>
+                        <div class="table-content">
+                            <p>High</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Medium</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Low</p>
+                        </div>
+                    </div>
+                </div> <!--./table-->
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Understanding Match Types Saves Money and Builds Value</h2>
+                    <p class="block-content__text">While Google offers four different match types, well-run campaigns                         should only use Exact Match and Broad Match Modified. </p>
+                    <p class="block-content__text">Google offers four different match types with an example of the type                          of search term that they would appear for.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Match Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Broad</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Broad Match Modified</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phrase</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Keyword</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Womens Hats</p>
+                        </div>
+                        <div class="table-content">
+                            <p>+Womens +Hats</p>
+                        </div>
+                        <div class="table-content">
+                            <p>“Women’s Hats”</p>
+                        </div>
+                        <div class="table-content">
+                            <p>[Women’s Hats]</p>
+                        </div>
+                    </div>
+                <div class="table-col">
+                    <div class="table-head">
+                        <p>Search Term</p>
+                    </div>
+                    <div class="table-content">
+                        <p>Buy Ladies Hats</p>
+                    </div>
+                    <div class="table-content">
+                        <p>Hats for Women</p>
+                    </div>
+                    <div class="table-content">
+                        <p>Buy Women’s Hats</p>
+                    </div>
+                    <div class="table-content">
+                        <p>Women’s Hats</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ContentStyle-Screenshot__block-text">
+                <p class="ContentStyle-Screenshot__text">That’s why separating your brand and non-brand programmes is an essential                      first step in analysing and revitalising your Paid Search programme. This is a reflection of a simple truth -                      brand Paid Search is easy. Sure you can mess it up but the skill in PPC is getting non-brand to work for you.                        That is why Segmatic have completely different billing models for brand and non-brand search. </p>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Understanding Match Types Saves Money and Builds Value</h2>
+                    <p class="block-content__text">Key Lessons:</p>
+                    <p class="block-content__text">You can’t trust Google to identify relevant synonyms                       by using Broad Match.</p>
+                    <ul class="list">
+                        <li> A keyword like Womens Hats will result in ads showing search terms as varied as baby                           clothes, scouts caps, top hats, etc.
+                            Broad Match Modified (BMM) </li>
+                        <li>This is what Google claims Broad Match is intended to be, but it covers significantly                           more keywords that you realise.</li>
+                    </ul>
+                    <p class="block-content__text"> Phrase and Broad Match Modified do very similar                           things.</p>
+                    <ul class="list">
+                        <li>They don’t attempt to find similar words. They just search for phrases / words within                           longer search terms, like “I want to buy some hats for women today”.</li>
+                        <li>Phrase is not that useful anymore because BMM allows you to catch people who search                                 for “buy hats for women” and “buy womens hats” within one keyword. Building out                                 Phrase match campaigns for all combinations is extremely cumbersome and                                         provides no benefit.</li>
+                    </ul>
+                    <p class="block-content__text"> A combination of Exact and BMM match is the best                          system to use.</p>
+                    <p class="block-content__text"> Not only were Currency Fair advertising on Broad                      Match, but also the account was extremely reliant on this match type.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Match Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Broad</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phrase</p>
+                        </div>
+                        <div class="table-content">
+                            <p>BMM</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>% of Spend</p>
+                        </div>
+                        <div class="table-content">
+                            <p>62%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>30%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>2%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>6%</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text ">Billing for Performance Aligns our Incentives with Yours</p>
+                    <p class="block-content__text">Most agencies bill based on a percentage of media spend or hourly fees. This means that their incentives are either to increase media spend or to increase the number of hours for which they can bill you. But that’s not what Currency Fair wanted, they wanted sustainable ROI-positive growth.</p>
+                    <p class="block-content__text">Segmatic’s approach was different to other agencies. We wanted to align our incentives with Currency Fair, so we developed a billing model based on sustainable ROI-positive growth.</p>
+                    <p class="block-content__text">We split the campaigns into two: Branded and Non Branded. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table cols3">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Campaign Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Branded</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Non Branded</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Currency Fair Incentives</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Drive down CPA</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Drive up growth within CPA</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Segmatic Billing Model</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Decrease in CPA</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Incremental acquisition within CPA targets</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">Branded Billing Model:</p>
+                    <ul class="list">
+                        <li>We established a baseline CPA. We have no influence over the number of people searching, only on the CPA on those                              impressions. As such, Segmatic agreed to only bill Curreny Fair for the decrease in CPA that we achieved. </li>
+                    </ul>
+                    <p class="block-content__text">Non Branded Billing Model</p>
+                    <ul class="list">
+                        <li>We established a baseline, the average number of customers Currency Fair had gotten per month at an average CPA. We                             would then only bill them for any additional customers above that baseline. This meant that we had identical objectives                             to Currency Fair.  If their average number of customers did not increase, Segmatic would not bill them. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Building Currency Fair’s Account From Scratch</h2>
+                    <p class="block-content__text">Control is Paramount</p>
+                    <p class="block-content__text">In order to get the level of control that Segmatic wanted over Currency Fair’s ads we knew that we needed to rebuild their entire account. The focus of the rebuild would be granularity. Campaigns need to be structured in very specific ways to ensure effective keyword management. In order to achieve this goal we use a layered approach to campaign building. How does this work?</p>
+                    <ul class="list-step">
+                        <li>Step 1 - Identify geographic areas and languages [English UK & English US]</li>
+                        <li> Step 2 - Separate Match Types [Exact and Broad Match Modified]</li>
+                        <li>Step 3 - Identify key product terms [Currency Transfer, Currency Exchange, etc.]</li>
+                        <li>Step 4 - Identify modifiers that will affect conversion rate [Online, International, etc.]</li>
+                    </ul>
+                    <p class="block-content__text">An example of this approach is shown below:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Tier</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Tier 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Tier 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Tier 3</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Tier 4</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Total</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Geographic & Location</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Match Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifiers</p>
+                        </div>
+                        <div class="table-content">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Example</p>
+                        </div>
+                        <div class="table-content">
+                            <p>English UK, English US, Spanish US</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact, Broad Match Modified</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Currency Transfer/Exchange</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Online, Web, International</p>
+                        </div>
+                        <div class="table-content">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Number</p>
+                        </div>
+                        <div class="table-content">
+                            <p>3</p>
+                        </div>
+                        <div class="table-content">
+                            <p>2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>3</p>
+                        </div>
+                        <div class="table-content">
+                            <p>36</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">In this example there would be a total of 36 separate campaigns to be created – though naturally a real campaign build would require many more than this. The first two campaigns in this example would be:</p>
+                    <p class="block-content__text">[UK & EN | Exact | Currency Transfer | Online], [US & EN | Exact | Currency Transfer | Web]</p>
+                    <p class="block-content__text">[US & EN | Exact | Currency Transfer | International] would be the first generated.</p>
+                    <p  class="block-content__text">While this approach is essential to allow for full control over campaigns – and visibility into their results – it poses obvious challenges. Each additional location, core term or modifier that is added increases the number of campaigns that need to be created, and reported on, exponentially. However, this type of attention to detail is essential for maintaining control. Currency Fair has over 9,800 different online campaigns running simultaneously.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">In a World of Big and Small Data, Effective Reporting Requires Advanced Analysis Techniques</p>
+                    <p class="block-content__text">This approach to campaign building also allows for full visibility into the performance of Segmatic’s advertising. In the world of big and small data, however, effective reporting requires advanced analysis techniques. Our layered approach to campaign building allows us to perform two necessary types of analysis: vertical & horizontal:</p>
+                    <p class="block-content__text">Vertical analysis allows you to identify the overall performance of an individual campaign relative to another one. In the example below, you can see the various performance of campaigns, noting that Campaign 3 is performing particularly poorly. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table col7">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Targeting</p>
+                        </div>
+                        <div class="table-content">
+                            <p>"Geographic
+                                & Language"</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Match Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier/p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Campaign 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>EN & UK</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 1</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Campaign 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>EN & UK</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 2</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Campaign 3</p>
+                        </div>
+                        <div class="table-content">
+                            <p>EN & UK</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 3</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Campaign 4</p>
+                        </div>
+                        <div class="table-content">
+                            <p>EN & UK</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 1</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Campaign 5</p>
+                        </div>
+                        <div class="table-content">
+                            <p>EN & UK</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 2</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Campaign 6</p>
+                        </div>
+                        <div class="table-content">
+                            <p>EN & UK</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Exact</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table col7">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Campaign</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Campaign 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Campaign 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Campaign 3</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Campaign 4</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Campaign 5</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Campaign 6</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Clicks</p>
+                        </div>
+                        <div class="table-content">
+                            <p>6204</p>
+                        </div>
+                        <div class="table-content">
+                            <p>8624</p>
+                        </div>
+                        <div class="table-content">
+                            <p>506</p>
+                        </div>
+                        <div class="table-content">
+                            <p>45600</p>
+                        </div>
+                        <div class="table-content">
+                            <p>21000</p>
+                        </div>
+                        <div class="table-content">
+                            <p>2603</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Cost</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£3,102</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£4,312</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£1,214</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£9,120</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£3,761</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£3,124</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Conv. Rate</p>
+                        </div>
+                        <div class="table-content">
+                            <p>0.03</p>
+                        </div>
+                        <div class="table-content">
+                            <p>0.012</p>
+                        </div>
+                        <div class="table-content">
+                            <p>0.04</p>
+                        </div>
+                        <div class="table-content">
+                            <p>0.01</p>
+                        </div>
+                        <div class="table-content">
+                            <p>0.01</p>
+                        </div>
+                        <div class="table-content">
+                            <p>0.005</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Registrations</p>
+                        </div>
+                        <div class="table-content">
+                            <p>186</p>
+                        </div>
+                        <div class="table-content">
+                            <p>103</p>
+                        </div>
+                        <div class="table-content">
+                            <p>4</p>
+                        </div>
+                        <div class="table-content">
+                            <p>456</p>
+                        </div>
+                        <div class="table-content">
+                            <p>197</p>
+                        </div>
+                        <div class="table-content">
+                            <p>17</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>CPA</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£17</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£42</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£304</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£20</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£19</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£184</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>vs. Target</p>
+                        </div>
+                        <div class="table-content">
+                            <p>42%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>104%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>759%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>50%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>48%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>459%</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">The real insight into marketing performance, however, is provided by layering a horizontal analysis of the layered campaigns on top of this vertical analysis.</p>
+                    <p class="block-content__text">Horizontal analysis provides greater insight than a simple vertical analysis ever could. By grouping common characteristics of the various campaigns together, we can achieve statistical significance in order tp generate insights that would otherwise be delayed, all while running campaigns that target niche groups of potential customers. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table col7">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Product</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Product Term 1</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Clicks</p>
+                        </div>
+                        <div class="table-content">
+                            <p>15,334</p>
+                        </div>
+                        <div class="table-content">
+                            <p>69,203</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Cost</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£8,628</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£16,005</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Conv. Rate</p>
+                        </div>
+                        <div class="table-content">
+                            <p>1.90%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>1.00%</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Registrations</p>
+                        </div>
+                        <div class="table-content">
+                            <p>294</p>
+                        </div>
+                        <div class="table-content">
+                            <p>670</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>CPA</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£29</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£24</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>vs. Target</p>
+                        </div>
+                        <div class="table-content">
+                            <p>73%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>60%</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table col7">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Modifier</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Modifier 3</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Clicks</p>
+                        </div>
+                        <div class="table-content">
+                            <p>51,804</p>
+                        </div>
+                        <div class="table-content">
+                            <p>29,624</p>
+                        </div>
+                        <div class="table-content">
+                            <p>3,109</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Cost</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£12,222</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£8,073</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£4,338</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Conv. Rate</p>
+                        </div>
+                        <div class="table-content">
+                            <p>3.00%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>1.20%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>1.20%</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Registrations</p>
+                        </div>
+                        <div class="table-content">
+                            <p>642</p>
+                        </div>
+                        <div class="table-content">
+                            <p>300</p>
+                        </div>
+                        <div class="table-content">
+                            <p>21</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>CPA</p>
+                        </div>
+                        <div class="table-content">
+                            <p>642</p>
+                        </div>
+                        <div class="table-content">
+                            <p>300</p>
+                        </div>
+                        <div class="table-content">
+                            <p>21</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>vs. Target</p>
+                        </div>
+                        <div class="table-content">
+                            <p>48%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>67%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>516%</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--./row-->
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">Horizontal analysis shows that the modifier “international” performs significantly worse than other modifiers, allowing us to make improvements to both campaign 3 and 6. We have also identified that Currency Exchange outperforms Currency Transfer in both volume and CPA, so there is an opportunity to push the bids up. This opportunity would have been hidden if you looked at each campaign individually. </p>
+                    <p class="block-content__text">Quality Score is the Most Important Factor in How Much Your Advertising Costs, and it is Fundamentally Based on Account Structure</p>
+                    <p class="block-content__text">Google rewards good advertising through a system known as Quality Score. At its most simple. Quality Score is designed to reward advertisers for the relevance of their ad to the search term entered by the individual user. From Google’s point of view, this improves user experience - members of the general public are more likely to continue using the platform if their searches are more effective. From an advertiser’s point of view, Quality Score provides a great opportunity to gain a competitive advantage simply by implementing good practice.</p>
+                    <p class="block-content__text">Quality Score management is about the click-through-rate (CTR) of your ads. The better your click-through-rate, the cheaper your ads will be. If your account has a strong CTR, everything will be cheaper, so every decision you make will affect your overall cost per click.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ContentStyle-Screenshot__slider">
+                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <p class="ContentStyle-Screenshot__title-text">Impact of Quality Score on CPC</p>
+                                <div class="images">
+                                    <img src="../img/screen1.png">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="ContentStyle-Screenshot__title-text">Impact CPC of 1-Pt QS Change</p>
+                                <div class="images">
+                                    <img src="../img/screen2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">The idea behind Quality Score management is a simple one – deliver ads relevant to the customer. Once again however, the devil is in the detail. If two potential customers search for “online currency exchange” and “international currency exchange” they should get different ad copy with online and international in the headlines. Being able to replicate this approach for many keywords across several thousand campaigns requires real skill – this is where Segmatic comes in. </p>
+                    <p class="block-content__text">Our layered approach to account structure ensure we can deliver the most relevant ad to each audience, thereby improving CTRs and driving down advertising costs. You can see how effective this approach was for Currency Fair – with Quality Score performance doubling after Segmatic took over the account. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<!--test sldier-->
+<section class="ContentStyle-Screenshot">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ContentStyle-Screenshot__slider">
+                    <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <p class="ContentStyle-Screenshot__title-text">Click Through Rate</p>
+                                <div class="images">
+                                    <div class="brand-influence">
+                                        <div id="chart-results2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="ContentStyle-Screenshot__title-text">Wieghted Quality Score</p>
+                               <div class="images">
+                                   <div class="brand-influence">
+                                       <div id="chart-results3"></div>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">Paid Search Gives the Advertiser a Lot of Data. What You do With That Data is What Counts.</p>
+                    <p class="block-content__text">One of the most common mistakes that people make when working on data driven marketing is to use numbers to justify their decisions, even if the numbers don’t support the decision. Let’s explain with an example: </p>
+                    <p class="block-content__text">If you tossed a coin 10 times, and you got 7 heads and 3 tails, which side would you pick on the 11th toss? As almost everyone knows, both sides have an equal chance of occurring, so you would simply pick at random.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__title">If you don’t Achieve Statistical Significance Then Your Approach is ‘Faux Quantitative’</p>
+                    <p class="block-content__text">One of the most common mistakes that people make when working on data driven marketing is to use numbers to justify their decisions, even if the numbers don’t support the decision. Let’s explain with an example:</p>
+                    <p class="block-content__text">If you tossed a coin 10 times, and you got 7 heads and 3 tails, which side would you pick on the 11th toss? As almost everyone knows, both sides have an equal chance of occurring, so you would simply pick at random.</p>
+                    <p class="block-content__text">If you set up two new campaigns, with the same bids, and over the first few days, one has 7 conversions for £100 spend and one has 3 conversion for £100 spend, which campaign do you  increase the bids on? Just as in the above example, we still do not have enough data to make any decisions, so any changes are being decided at random.</p>
+                    <p class="block-content__text">How do you determine when there is enough data to make a decision? Using statistical methods, you can determine what is known as “statistical confidence”. This allows you to determine when there is enough of a difference between campaigns to make decisions.</p>
+                    <p class="block-content__text">Lots of advertisers will simply change their strategy every day, following whatever the most recent “data” tells them. While this approach might get lucky and increase performance for a small number of campaigns, it is impossible to apply the ‘lessons’ of a faux quantitative test to any account that has ambitions to scale.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__title">Ad Copy Testing</p>
+                    <p class="block-content__text">Ad copy testing is the most common example where people are ‘”faux quantitative”. Testing will be run on lots of individual campaigns, with the “results” showing that X ad or Y ad is better. Most ad copy tests if run through statistical significance calculators do not reach enough data. That’s why one ad that works great for one Keyword seems to work so badly in another.</p>
+                    <p class="block-content__text">The Segmatic approach allows us to perform large scale ad copy tests across all of the campaigns. The tests can answer key questions like “Should you use your brand term in Non Brand ads”, “What is the best way to incorporate the relevant product and modifier into your ad?” and “What is the best promotional offer to run?” Above all, these grouped tests allow us to deliver results significantly quicker.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__title">Bidding Optimisation</p>
+                    <p class="block-content__text">Bidding often falls into the same trap of faux quantitative. Each individual Keywords is analysed and then the appropriate bid is determined. However, it is likely that only 5-10% of your Keywords will ever have enough data to determine their own conversion rate. Most of the decisions being made by automated bidding platforms are based on this flawed understanding of statistics.</p>
+                    <p class="block-content__text">Leveraging our vertical and horizontal analysis, Segmatic is able to work out the different conversion rate uplifts for each product term and modifier. These percentages are then applied across all campaigns, resulting in thousands of different bids, all based on strong statistical evidence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__title">New Campaign Creation</p>
+                    <p class="block-content__text">In Paid Search advertising, there is a distinction between Search Queries and Keywords. Keywords are used to trigger ads on search terms. The keyword “+Currency +Transfer,” for example, will trigger ads on the search query “I want to make a currency transfer” and “I want to make a currency transfer online immediately”. Search Engines offer you the ability to see the search queries that your keywords are generating.</p>
+                    <p class="block-content__text">Segmatic performs continuous search query reports on our layered campaign structure to identify new product terms or modifiers that can be added to the account. This approach allows us to develop out long-tail keywords, which are significantly cheaper as they are less competitive. Combined with our layered approach, which allows for highly relevant ads to each search term, this gives us a further advantage on long-tail. The extent of this shift can be seen in the graph below.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-BarChart" id="scroll-results">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="ContentStyle-BarChart__title title2">% of Conversions from Top 10 Keywords</h2>
+                <div class="row chart info-block">
+                    <div class="brand-influence">
+                        <div id="chart-results4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">The table below shows the process by which this shift towards long-tail took place for Currency Fair.Each search query report gave us additional insight into the campaigns, allowing us to steadily improve the structure, making it more refined and targeted.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Build Version</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Version 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Version 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Version 3</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Version 4</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Time</p>
+                        </div>
+                        <div class="table-content">
+                            <p>-</p>
+                        </div>
+                        <div class="table-content">
+                            <p>30 Days</p>
+                        </div>
+                        <div class="table-content">
+                            <p>B70 Days</p>
+                        </div>
+                        <div class="table-content">
+                            <p>180 Days</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Number of Keywords</p>
+                        </div>
+                        <div class="table-content">
+                            <p>200</p>
+                        </div>
+                        <div class="table-content">
+                            <p>1200</p>
+                        </div>
+                        <div class="table-content">
+                            <p>3000</p>
+                        </div>
+                        <div class="table-content">
+                            <p>8000</p>
+                        </div>
+                    </div>
+                </div> <!--./table-->
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__title">What This All Meant for Currency Fair</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<!--test3-->
+<section class="Content-X-Standard ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">"Segmatic were able to decrease CPA for Currency Fair – while dramatically increasing the number of conversions happening every month.</p>
+                    <p class="block-content__text">If you would like to find out how Segmatic could help your company to do the same, get in touch!</p>
+                    <p class="block-content__text">Many thanks to Currency Fair for allowing us to use their account as a case study.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-Columns-ImageTextCTA">
+    <div class="Content-Columns-ImageTextCTA__head">
+        <p>What to do next?</p>
+    </div>
+    <div class="Content-Columns-ImageTextCTA__content">
+        <div class="Content-Columns-ImageTextCTA__table-row">
+            <div class="Content-Columns-ImageTextCTA__table-col  left">
+                <div class="col-lg-7 col-lg-offset-5">
+                    <div class="Content-Columns-ImageTextCTA__img">
+                        <img src="../img/rocket-2.png" alt="">
+                    </div>
+                    <p class="Content-Columns-ImageTextCTA__text">Try our account analyser to find out how your Google Adwords account is performing. </p>
+                    <a href="https://analyser.segmatic.io/index" class="button">Free Account Audit</a>
+                </div>
+            </div>
+            <div class="Content-Columns-ImageTextCTA__table-col right">
+                <div class="col-lg-7 pull-left">
+                    <div class="Content-Columns-ImageTextCTA__img">
+                        <img src="../img/col-images.png" alt="">
+                    </div>
+                    <p class="Content-Columns-ImageTextCTA__text">Try our 30-day free trial to see what Segmatic can do for your business.</p>
+                    <a href="Sign-up.html" class="button">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-ExtraContent-Boxes">
+    <div class="container">
+        <div class="row">
+            <h5 class="Content-ExtraContent-Boxes__title">The Segmatic Difference</h5>
+            <div class="Content-ExtraContent-Boxes__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="img/analyster.png" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box">The All-in-one Paid Search Tool</h6>
+                </div>
+            </div>
+            <div class="extra-content__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="img/copy-img.png" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box">The Tool your In-house Team Needs to get Results</h6>
+                </div>
+            </div>
+            <div class="Content-ExtraContent-Boxes__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="../img/footer-img.jpg" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box"> Built to Perform </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./extra-content-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="Terms-Conditons.html"Terms & Conditions </a></li>
+                    <li><a href="Privacy-Statement.html">Privacy Statement</a></li>
+                    <li><a href="Cookie-Policy.html">How we use cookies</a></li>
+                    <li><a href="../contact_us.html">Contact Us </a></li>
+                    <li><a href="Testimonial-Policy.html">Testimonial Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer> <!--./footer-->
+<!-- COMPONENTS SCRIPTS -->
+<script type="text/javascript" src="../vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../External Analyser Results_files/jquery.js"></script>
+<script src="../External Analyser Results_files/amcharts.js"></script>
+<script src="../External Analyser Results_files/serial.js"></script>
+<script src="../External Analyser Results_files/loader.js"></script>
+<script src="../External Analyser Results_files/second-graph.js"></script>
+<script src="../External Analyser Results_files/third-graph2.js"></script>
+<script src="../External Analyser Results_files/fourth-graph.js"></script>
+<script src="../External Analyser Results_files/ad-extension.js"></script>
+<!--<script src="./External Analyser Results_files/results-page.js"></script>-->
+<!--<script src="./External Analyser Results_files/bootstrap.min.js"></script>-->
+<script src="../External Analyser Results_files/wow.min.js"></script>
+<script src="../External Analyser Results_files/wow.js"></script>
+<script src="../External Analyser Results_files/first-graph.js"></script>
+<script src="../External Analyser Results_files/ea-show-hidden-rows.js"></script>
+<script src="../External Analyser Results_files/yii.js"></script>
+<script src="../External Analyser Results_files/ewa2dgt.js"></script>
+<script src="../External Analyser Results_files/ea.js"></script>
+<script src="../js/main_js.js"></script>
+</body>
+</html>

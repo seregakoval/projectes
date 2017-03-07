@@ -1,0 +1,127 @@
+//modal_delete-user.
+
+.delete-title {
+  .title {
+	font-size: 22px;
+	color: #fff;
+	font-weight: 500;
+	margin: 0;
+	i {
+	  margin-right: 10px;
+	}
+  }
+}
+.form {
+  label {
+	font-weight: 500;
+	font-size: 14px;
+  }
+}
+.delete-content {
+	.form {
+	  input,select {
+		border-radius: 4px;
+		&:focus {
+		  border-color: $blue !important;
+		}
+	  }
+	  .search {
+		position: relative;
+		input {
+		  padding-right: 40px;
+		}
+		i {
+		  position: absolute;
+		  right: 15px;
+		  top: 8px;
+		  font-size: 16px;
+		}
+	  }
+	}
+  .table-title {
+	p {
+	  font-size: 16px;
+	}
+  }
+  .table {
+	display: table;
+	border: none;
+	.table-row {
+	  height: 40px;
+	  display: table-row;
+	  @media(max-width: 480px) {
+		height: 50px;
+	  }
+	  .table-col {
+		vertical-align: middle;
+		display: table-cell;
+		p {
+		  margin: 0;
+		}
+		.name {
+		  font-size: 15px;
+		  text-overflow: ellipsis;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  max-width: 219px;
+		}
+		.avatar {
+		  width: 32px;
+		  height: 32px;
+		  background: #2f4050;
+		  -webkit-border-radius: 50%;
+		  -moz-border-radius: 50%;
+		  border-radius: 50%;
+		  @media(max-width: 480px) {
+			margin-right: 15px;
+		  }
+		  img {
+			max-width: 100%;
+		  }
+		}
+		&.block-name {
+                    .name {
+                       user-select: none; 
+                    }
+
+		  @media(max-width: 480px) {
+			display: block;
+		  }
+		}
+		&.block-mail {
+		  @media(max-width: 480px) {
+			display: block;
+		  }
+		}
+	  }
+	  .col-avatar {
+		width: 43px;
+	  }
+	  .check {
+		padding-right: 10px;
+	  }
+	}
+	.title {
+	  font-size: 15px;
+	  color:  $gray;
+	  margin-bottom: 10px;
+	  padding-top: 0 ;
+	  font-weight: 600;
+	}
+	.avatar-table {
+	  display: inline-block;
+	  width: 20px;
+	  height: 20px;
+	  background: #000;
+	}
+	.check {
+	  width: 10px;
+		&.hidden {
+			display: none;
+		}
+	}
+  }
+  .del {
+	justify-content: flex-start;
+  }
+}

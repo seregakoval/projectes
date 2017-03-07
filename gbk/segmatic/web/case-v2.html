@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>case</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext" rel="stylesheet">
+    <!--<link href="path/to/font" />-->
+    <!-- COMPONENTS -->
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- STYLES -->
+    <link href="./node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<!-- Google Tag Manager --> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PQPXSP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PQPXSP');</script> <!-- End Google Tag Manager -->
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="header__log">
+                <img src="img/logo.jpg" alt="">
+            </a>
+        </div> <!--./header__logo-->
+        <div class="header__block-nav collapse navbar-collapse" id="navigation">
+            <nav class="header__nav">
+                <ul class="list-left">
+                    <li><a href="#">Platform  </a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul class="list-right">
+                    <li><a href="#">Segmatic</a></li>
+                    <li><a href="#">Free AdWords Audit</a></li>
+                </ul>
+            </nav> <!--./nav-->
+            <form action="#" class="header__search">
+                <input type="text" placeholder="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </form> <!--./form-->
+        </div> <!--./header__block-nav-->
+    </div>
+</header> <!--.header-->
+<section class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <ul class="menu__navigation">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Clients & Results </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Example</a></li>
+                            <li><a href="#">Example sub menu</a></li>
+                            <li><a href="#">Example II</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pricing </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Example</a></li>
+                            <li><a href="#">Example sub menu</a></li>
+                            <li><a href="#">Example II</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Example</a></li>
+                            <li><a href="#">Example sub menu</a></li>
+                            <li><a href="#">Example II</a></li>
+                        </ul>
+                    </li>
+                </ul> <!--./navigation-->
+            </div>
+            <div class="col-md-4">
+                <div class="menu__start">
+                    <p>Start my <span>Free 30 days</span>trial</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./menu-->
+<script>
+    /* Graphs Args */
+
+    function getBrandWeek() {
+        return [
+            {x: 1, y: 137, y2: 68.51},
+            {x: 2, y: 217, y2: 49.21},
+            {x: 3, y: 114, y2: 96.39},
+            {x: 4, y: 138, y2: 71.27},
+            {x: 5, y: 92, y2: 107.81},
+            {x: 6, y: 119, y2: 89.14},
+            {x: 7, y: 87, y2: 104.94},
+            {x: 8, y: 191, y2: 54.49},
+            {x: 9, y: 115, y2: 97.11},
+            {x: 10, y: 197, y2: 45.84},
+            {x: 11, y: 110, y2: 90.15},
+        ];
+    }
+    function getGenericWeek() {
+        return [
+            {x: 1, y: 69, y2: 115.73},
+            {x: 2, y: 49, y2: 141.15},
+            {x: 3, y: 87, y2: 87.58},
+            {x: 4, y: 47, y2: 157.37},
+            {x: 5, y: 54, y2: 142.68},
+            {x: 6, y: 41, y2: 194.52},
+            {x: 7, y: 27, y2: 289.23},
+            {x: 8, y: 67, y2: 119.15},
+            {x: 9, y: 55, y2: 127.86},
+            {x: 10, y: 61, y2: 124.56},
+            {x: 11, y: 94, y2: 78.55},
+        ];
+    }
+    function getBrandMonth() {
+        return [
+            {x: 1, y: 606, y2: 66.05},
+            {x: 2, y: 422, y2: 99.2},
+            {x: 3, y: 189, y2: 212.36},
+        ];
+    }
+    function getGenericMonth() {
+        return [
+            {x: 1, y: 356.38, y2: 82.82},
+            {x: 2, y: 252, y2: 121.6},
+            {x: 3, y: 210, y2: 142.45},
+        ];
+    }
+</script>
+<section class="Headline-Banner-2">
+    <div class="Headline-Banner-2__head">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="Headline-Banner-2__title">How start-ups should approach paid search: Grabbing 60% of the Paid Search Market for a New Industry</h1>
+                    <p class="Headline-Banner-2__sub-text">"Really extraordinary 'off-the-chart' results." <br>- Cormac Folan, Digital Marketing Manager </p>
+                    <div class="Headline-Banner-2__head-logo">
+                        <img src="img/head-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--./head-->
+    <div class="Headline-Banner-2__content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="Headline-Banner-2__img">
+                        <img src="img/image-center.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <p class="Headline-Banner-2__text">T.M. Lewin is a tailoring chain supplying shirts, suits and accessories for men and women. They maintain just under 100 stores in the UK, with new outlets opening rapidly throughout the world, including Europe, Singapore and Australia. </p>
+                        <p class="Headline-Banner-2__text">T.M. Lewin’s biggest concern was their over-reliance on branded Paid Search, which they believed prevented them from achieving the market share they desired. This is where Segmatic came in; we revitalised their non-branded Paid Search and then went through their existing campaigns and databases with a fine tooth comb to uncover any hidden inefficiencies. Over the next 12 months, our influence was clear - Paid Search was delivering  600% more return on investment. </p>
+                        <p class="Headline-Banner-2__text">How did we do it? Here are the four key lessons we learnt from working on their account. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="btn-group mobil">
+                        <div class="active_btn" style="width: 180px; height: 32px;"><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i></div>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-segment generic is_active" data-hover-text="The keywords that define or explain your company’s products or services, excluding your brand term(s)" data-type="segment" data-segment="Generic" style="width: 180px;">
+                            Generic
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="btn-group mobil">
+                        <div class="active_btn" style="width: 180px; height: 32px;"><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i></div>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-date weekly is_active" data-hover-text="Displays the data broken down by week" data-type="date" data-date="Week" style="width: 180px;">
+                            Weekly
+                        </a>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-date monthly" data-hover-text="Displays the data broken down by month" data-type="date" data-date="Month" style="width: 180px;">
+                            Monthly
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Generic / Weekly -->
+                <div class="col-lg-11 col-lg-offset-1">
+                    <div class="campaign-per">
+                        <div class="campaign-per_graph" id="chart_div_first" style="width: 100%; height: 400px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 797px; height: 400px; padding: 0px; cursor: default; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 797px; height: 400px; top: 0px; left: 0.15625px;"><desc>JavaScript chart by amCharts 3.19.6</desc><g><path cs="100,100" d="M0.5,0.5 L796.5,0.5 L796.5,399.5 L0.5,399.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path><path cs="100,100" d="M0.5,0.5 L654.5,0.5 L654.5,343.5 L0.5,343.5 L0.5,0.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0" transform="translate(44,20)"></path></g><g><g transform="translate(44,20)"><g><path cs="100,100" d="M30.5,0.5 L30.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M30.5,343.5 L30.5,343.5 L30.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M89.5,0.5 L89.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M89.5,343.5 L89.5,343.5 L89.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M149.5,0.5 L149.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M149.5,343.5 L149.5,343.5 L149.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M208.5,0.5 L208.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M208.5,343.5 L208.5,343.5 L208.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M268.5,0.5 L268.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M268.5,343.5 L268.5,343.5 L268.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M327.5,0.5 L327.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M327.5,343.5 L327.5,343.5 L327.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M386.5,0.5 L386.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M386.5,343.5 L386.5,343.5 L386.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M446.5,0.5 L446.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M446.5,343.5 L446.5,343.5 L446.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M505.5,0.5 L505.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M505.5,343.5 L505.5,343.5 L505.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M565.5,0.5 L565.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M565.5,343.5 L565.5,343.5 L565.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g><g><path cs="100,100" d="M624.5,0.5 L624.5,5.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(0,343)"></path><path cs="100,100" d="M624.5,343.5 L624.5,343.5 L624.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#000000"></path></g></g><g transform="translate(44,20)" visibility="visible"><g><path cs="100,100" d="M0.5,343.5 L6.5,343.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g><g><path cs="100,100" d="M0.5,300.5 L6.5,300.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g><g><path cs="100,100" d="M0.5,257.5 L6.5,257.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g><g><path cs="100,100" d="M0.5,214.5 L6.5,214.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g><g><path cs="100,100" d="M0.5,172.5 L6.5,172.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g><g><path cs="100,100" d="M0.5,129.5 L6.5,129.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g><g><path cs="100,100" d="M0.5,86.5 L6.5,86.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g><g><path cs="100,100" d="M0.5,43.5 L6.5,43.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g><g><path cs="100,100" d="M0.5,0.5 L6.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(-6,0)"></path></g></g><g transform="translate(44,20)" visibility="visible"><g><path cs="100,100" d="M0.5,343.5 L6.5,343.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(654,0)"></path><path cs="100,100" d="M0.5,343.5 L0.5,343.5 L654.5,343.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,286.5 L6.5,286.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(654,0)"></path><path cs="100,100" d="M0.5,286.5 L0.5,286.5 L654.5,286.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,229.5 L6.5,229.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(654,0)"></path><path cs="100,100" d="M0.5,229.5 L0.5,229.5 L654.5,229.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,172.5 L6.5,172.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(654,0)"></path><path cs="100,100" d="M0.5,172.5 L0.5,172.5 L654.5,172.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,114.5 L6.5,114.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(654,0)"></path><path cs="100,100" d="M0.5,114.5 L0.5,114.5 L654.5,114.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,57.5 L6.5,57.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(654,0)"></path><path cs="100,100" d="M0.5,57.5 L0.5,57.5 L654.5,57.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,0.5 L6.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(654,0)"></path><path cs="100,100" d="M0.5,0.5 L0.5,0.5 L654.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.1" stroke="#000000"></path></g><g><path cs="100,100" d="M0.5,286.5 L6.5,286.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(654,0)"></path><path cs="100,100" d="M0.5,286.5 L0.5,286.5 L654.5,286.5" fill="none" stroke-width="1" stroke-dasharray="6" stroke-opacity="1" stroke="#fc6051"></path></g><g><rect x="0.5" y="0.5" width="654" height="3" rx="0" ry="0" stroke-width="0" fill-opacity="0" stroke-opacity="0" transform="translate(0,283)"></rect></g></g></g><g transform="translate(44,20)" clip-path="url(#AmChartsEl-15)"><g visibility="hidden"></g></g><g></g><g></g><g></g><g><g transform="translate(44,20)"><g></g><g clip-path="url(#AmChartsEl-17)"><path cs="100,100" d="M30.5,133.4125 L89.5,219.1625 L149.5,56.2375 L208.5,227.7375 L268.5,197.725 L327.5,253.4625 L386.5,313.4875 L446.5,141.9875 L505.5,193.4375 L565.5,167.7125 L624.5,26.225 M0,0 L0,0" fill="none" stroke-width="1" stroke-opacity="1" stroke="#49acef"></path></g><clipPath id="AmChartsEl-17"><rect x="0" y="0" width="654" height="343" rx="0" ry="0" stroke-width="0"></rect></clipPath><g></g></g><g transform="translate(44,20)"><g></g><g clip-path="url(#AmChartsEl-18)"><path cs="100,100" d="M30.5,211.18203 L89.5,182.1185 L149.5,243.36687 L208.5,163.57363 L268.5,180.3692 L327.5,121.0988 L386.5,12.8137 L446.5,207.27183 L505.5,197.3134 L565.5,201.0864 L624.5,253.69117 M0,0 L0,0" fill="none" stroke-width="1" stroke-opacity="1" stroke="#fc6051"></path></g><clipPath id="AmChartsEl-18"><rect x="0" y="0" width="654" height="343" rx="0" ry="0" stroke-width="0"></rect></clipPath><g></g></g></g><g></g><g><path cs="100,100" d="M0.5,343.5 L654.5,343.5 L654.5,343.5" fill="none" stroke-width="1" stroke-opacity="0.2" stroke="#000000" transform="translate(44,20)"></path><g><path cs="100,100" d="M0.5,0.5 L654.5,0.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#DADADA" transform="translate(44,363)"></path></g><g><path cs="100,100" d="M0.5,0.5 L0.5,343.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(44,20)" visibility="visible"></path></g><g><path cs="100,100" d="M0.5,0.5 L0.5,343.5 L0.5,343.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#000000" transform="translate(698,20)" visibility="visible"></path></g></g><g><g transform="translate(44,20)" clip-path="url(#AmChartsEl-16)" style="pointer-events: none;"><path cs="100,100" d="M0.5,0.5 L0.5,0.5 L0.5,343.5" fill="none" stroke-width="1" stroke-opacity="1" stroke="#CC0000" visibility="hidden" transform="translate(431,0)"></path><path cs="100,100" d="M0.5,0.5 L654.5,0.5 L654.5,0.5" fill="none" stroke-width="1" stroke="#CC0000" visibility="hidden" transform="translate(0,191)"></path></g><clipPath id="AmChartsEl-16"><rect x="0" y="0" width="654" height="343" rx="0" ry="0" stroke-width="0"></rect></clipPath></g><g></g><g><g transform="translate(44,20)"></g><g transform="translate(44,20)"></g></g><g><g></g></g><g><g transform="translate(44,20)" visibility="visible"><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(30,360.5)"><tspan y="6" x="0">1</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(89,360.5)"><tspan y="6" x="0">2</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(149,360.5)"><tspan y="6" x="0">3</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(208,360.5)"><tspan y="6" x="0">4</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(268,360.5)"><tspan y="6" x="0">5</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(327,360.5)"><tspan y="6" x="0">6</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(386,360.5)"><tspan y="6" x="0">7</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(446,360.5)"><tspan y="6" x="0">8</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(505,360.5)"><tspan y="6" x="0">9</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(565,360.5)"><tspan y="6" x="0">10</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="middle" transform="translate(624,360.5)"><tspan y="6" x="0">11</tspan></text></g><g transform="translate(44,20)" visibility="visible"><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,341.5)"><tspan y="6" x="0">20</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,298.5)"><tspan y="6" x="0">30</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,255.5)"><tspan y="6" x="0">40</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,212.5)"><tspan y="6" x="0">50</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,170.5)"><tspan y="6" x="0">60</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,127.5)"><tspan y="6" x="0">70</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,84.5)"><tspan y="6" x="0">80</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,41.5)"><tspan y="6" x="0">90</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,-1.5)"><tspan y="6" x="0">100</tspan></text></g><g transform="translate(44,20)" visibility="visible"><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="start" transform="translate(664,341.5)"><tspan y="6" x="0">0</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="start" transform="translate(664,284.5)"><tspan y="6" x="0">50</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="start" transform="translate(664,227.5)"><tspan y="6" x="0">100</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="start" transform="translate(664,170.5)"><tspan y="6" x="0">150</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="start" transform="translate(664,112.5)"><tspan y="6" x="0">200</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="start" transform="translate(664,55.5)"><tspan y="6" x="0">250</tspan></text><text y="6" fill="#000000" font-family="myriad-pro" font-size="11px" opacity="1" text-anchor="start" transform="translate(664,-1.5)"><tspan y="6" x="0">300</tspan></text><text y="7" fill="#fc6051" font-family="myriad-pro" font-size="14px" opacity="1" text-anchor="start" transform="translate(664,284)"><tspan y="7" x="15">CPA TARGET</tspan></text></g></g><g></g><g transform="translate(44,20)"></g><g></g><g></g><clipPath id="AmChartsEl-15"><rect x="0" y="0" width="654" height="343" rx="0" ry="0" stroke-width="0"></rect></clipPath></svg><a href="http://www.amcharts.com/javascript-charts/" title="JavaScript charts" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: myriad-pro; font-size: 11px; opacity: 0.7; display: block; left: 49px; top: 25px;">JS chart by amCharts</a></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--./content-->
+</section> <!--./Headline-Banner-2-->
+
+<section class="ContentStyle-Screenshot">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               <div class="ContentStyle-Screenshot__block-text">
+                    <h2 class="ContentStyle-Screenshot__title">Lesson One - Know the difference between brand and non-brand search</h2>
+                    <p class="ContentStyle-Screenshot__sub-text">Are you structuring your brand and non-brand Paid Search
+                        <br> distinctly? If not, you should be. Here’s why:</p>
+                   <h3 class="ContentStyle-Screenshot__sub-title">1. The individual audiences you’re reaching are unique:</h3>
+                   <p class="ContentStyle-Screenshot__text-head">We can assume different things about customers based off what they search. </p>
+                    <p class="ContentStyle-Screenshot__text">Someone searching with a brand term, in this instance “T.M. Lewin”, is more familiar with T.M. Lewin than someone searching with a more ambiguous non-brand term like “mens shirts” or just “shirts”. You should treat these searches differently not only because it’ll help you establish more effective, and cheaper, Paid Search campaigns - more on that below - but also because it’s a smarter sales move. </p>
+                   <p class="ContentStyle-Screenshot__text">You wouldn’t give the same sales pitch to a devotee as you would a newcomer, and neither should your Paid Search. So take what you’ve learned from a customer by their search term and use it to your advantage. </p>
+               </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="ContentStyle-Screenshot__title-text">Brand Search</p>
+                <div class="ContentStyle-Screenshot__slider">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                               <div class="images">
+                                   <img src="img/slider1.png">
+                               </div>
+                            </div>
+                            <div class="item">
+                                <div class="images">
+                                    <img src="img/slider1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+        </div> <!--./row-->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Screenshot__block-text">
+                    <h3 class="ContentStyle-Screenshot__sub-title">2. Don’t let branded searches inflate your results and misdirect your ad spend. </h3>
+                    <p class="ContentStyle-Screenshot__text">If you don’t distinguish your Paid Search campaigns between brand and non-brand, the inevitable success of your brand search campaigns will muddle the data from your other campaigns, with the potential of making you think you’re doing much better than you are.</p>
+                    <p class="ContentStyle-Screenshot__text">With non-brand search, you’re fighting a battle on two fronts; you have to find the customers and make them aware of your brand, but you also have to work on gaining their conversion. With brand search, the customer is searching for you directly, so that’s half the battle won. That’s why brand search campaigns are usually so much more successful than non-brand. If you don’t separate them out when reviewing the effectiveness of your Paid Search programme, the strong ROI on brand search can compensate for poor non-brand campaigns. You’ll often see mediocre agencies using this tactic to hide their substandard non-brand results. </p>
+                    <p class="ContentStyle-Screenshot__text">At T.M. Lewin, this was one of the first issues we resolved. Before we signed on to revitalise their Paid Search, T.M. Lewin’s non-brand and competitor Paid Search was costly and ineffective. As you can see below in the first table, without segmenting out the different Paid Search campaigns, it appeared like T.M. Lewin was spending 32% less than their target CPA. When broken into distinct campaigns (second table, below), however, you can see a different story emerge:</p>
+                </div>
+            </div>
+        </div>
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Reported 'Non Brand'</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Cost</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£23,834</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Orders</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£39,602</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>ROI Multiplier</p>
+                        </div>
+                        <div class="table-content">
+                            <p>166%</p>
+                        </div>
+                    </div>
+                </div> <!--./table-->
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Reported 'Non Brand'</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Actual Non Brand</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Cost</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£23,834</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£1,530</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Orders</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£39,602</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£34,872</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>ROI Multiplier</p>
+                        </div>
+                        <div class="table-content">
+                            <p>166%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>2279%</p>
+                        </div>
+                    </div>
+                </div> <!--./table-->
+                <div class="ContentStyle-Screenshot__block-text">
+                   <p class="ContentStyle-Screenshot__text">That’s why separating your brand and non-brand programmes is an essential first step in analysing and revitalising your Paid Search programme. This is a reflection of a simple truth - brand Paid Search is easy. Sure you can mess it up but the skill in PPC is getting non-brand to work for you. That is why Segmatic have completely different billing models for brand and non-brand search. </p>
+                </div>
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+<section class="ContentStyle">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <p class="ContentStyle-Screenshot__title">Lesson Two - Know how to maximise your brand search, <br> but be mindful of its limitations: </p>
+                <p class="ContentStyle-Screenshot__sub-title">Brand campaigns are easy to run well. Beware the agency telling you otherwise. </p>
+                <p class="ContentStyle-Screenshot__text">Brand campaigns require very little effort; they have great click through rates and quality scores, cheap CPCs and excellent overall conversion rates. Even the effort required to set them up is miniscule compared to non-brand campaigns. Accordingly, seasoned agencies like us always charge differently for them. </p>
+                <p class="ContentStyle-Screenshot__text">It’s not all good news though -- you can mess up brand search campaigns. Lots of people do by ignoring search term analysis. When we took over the T.M. Lewin account, for example, we noticed that they had a couple of big mistakes reducing the effectiveness of their brand search campaigns. They were running a brand search campaign on the keyword “Lewin”.  </p>
+                <div class="ContentStyle__img">
+                    <img src="img/image9.png" alt="">
+                </div>
+                <p class="ContentStyle-Screenshot__text">However, when you look at the search terms that this keyword was triggering, this was returning the search term “Lewin Farm” (highlighted in red). This meant that T.M. Lewin was spending £3,500 a year advertising to people in New England looking to pick apples ; hardly their target market. They were also spending money on famous people whose surnames were Lewin, highlighted in yellow.</p>
+            </div>
+        </div>
+    </div>
+</section> <!--./ContentStyle-->
+<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./External Analyser Results_files/jquery.js"></script>
+<script src="./External Analyser Results_files/amcharts.js"></script>
+<script src="./External Analyser Results_files/serial.js"></script>
+<script src="./External Analyser Results_files/loader.js"></script>
+<script src="./External Analyser Results_files/second-graph.js"></script>
+<script src="./External Analyser Results_files/third-graph.js"></script>
+<script src="./External Analyser Results_files/fourth-graph.js"></script>
+<script src="./External Analyser Results_files/ad-extension.js"></script>
+<!--<script src="./External Analyser Results_files/results-page.js"></script>-->
+<!--<script src="./External Analyser Results_files/bootstrap.min.js"></script>-->
+<script src="./External Analyser Results_files/wow.min.js"></script>
+<script src="./External Analyser Results_files/wow.js"></script>
+<script src="./External Analyser Results_files/first-graph.js"></script>
+<script src="./External Analyser Results_files/ea-show-hidden-rows.js"></script>
+<script src="./External Analyser Results_files/yii.js"></script>
+<script src="./External Analyser Results_files/ewa2dgt.js"></script>
+<script src="./External Analyser Results_files/ea.js"></script>
+<!-- COMPONENTS SCRIPTS -->
+
+</body>
+</html>

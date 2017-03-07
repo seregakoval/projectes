@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSPINIA | Flot Charts</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="../web/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="../assets/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="layouts.html">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Status</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">To do</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="graph_flot.html">Flot Charts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span class="nav-label">Library</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Analytics</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <minimaliza-sidebar><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="" ng-click="minimalize()"><i class="fa fa-bars"></i></a></minimaliza-sidebar>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" _lpchecked="1">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="subscription">
+            <div class="home-container">
+                <h1 class="title">Home > Sunscription</h1>
+                <div class="wrap">
+                    <div class="subscription__head row">
+                        <div class="col-md-12">
+                            <button class="add-btn">Add subscriptions</button>
+                        </div>
+                    </div> <!--head-->
+                    <div class="content">
+                        <div class="content__sidebar">
+                            <div class="tab">
+                                <p class="status active">Active</p>
+                                <p class="text">Office 365 Bisiness Premium  Trial</p>
+                            </div>
+                            <div class="tab">
+                                <p class="status disable">expired</p>
+                                <p class="text">Office 365 Bisiness Premium  Trial</p>
+                            </div>
+                        </div> <!--sidebar-->
+                        <div class="body">
+                            <div class="body__head">
+                                <div class="col">
+                                    <h2 class="title">Office 365 Business Essentials</h2>
+                                    <p class="price">
+                                        €420 <span>user/month</span>
+                                    </p>
+                                </div> <!--col-->
+                                <div class="col">
+                                    <div class="col-active">
+                                        <p class="text">Active</p>
+                                    </div>
+                                    <p class="date"> Auto-renews July 15, 2017 </p>
+                                    <p class="sub-text"> Auto-renew</p>
+                                </div> <!--col-->
+                            </div> <!--head-->
+                            <div class="row">
+                                <div class="body__main-boxes">
+                                    <div class="box">
+                                        <h3 class="box-title">Licenses</h3>
+                                        <div class="line">
+                                            <p class="text">Purshased</p>
+                                            <span>3</span>
+                                        </div>
+                                        <div class="line">
+                                            <a href="#" class="btn-infoo">Assigned</a>
+                                            <span>3</span>
+                                        </div>
+                                        <div class="box-footer">
+                                            <a href="#" class="link">Add/Remove licenses</a>
+                                            <a href="#" class="link">Assign to users</a>
+                                        </div>
+                                    </div> <!--./box-->
+                                    <div class="box">
+                                        <h3 class="box-title">My bill</h3>
+                                        <div class="line">
+                                            <p class="text">Total balance</p>
+                                            <span class="balance"> €42</span>
+                                        </div>
+                                        <div class="box-footer">
+                                            <a href="#" class="link">View my bill</a>
+                                        </div>
+                                    </div> <!--./box-->
+                                    <div class="box">
+                                        <h3 class="box-title">Payment method</h3>
+                                        <p class="text">Credit card</p>
+                                        <p class="card">
+                                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                                            <span>***********4262</span>
+                                        </p>
+                                        <p class="sub-text-card">
+                                            Commitment: annual <br>Payment: monthly
+                                        </p>
+                                        <div class="box-footer">
+                                            <a href="#" class="link">Change payment details</a>
+                                        </div>
+                                    </div> <!--./box-->
+                                    <div class="box">
+                                       <div class="block-switch">
+                                           <p class="status">on</p>
+                                           <label class="switch">
+                                               <input type="checkbox">
+                                               <div class="slider"></div>
+                                           </label>
+                                       </div>
+                                        <button class="switch-btn">Switch plans</button>
+                                        <div class="box-footer">
+                                            <a href="#" class="more">More actions</a>
+                                        </div>
+                                    </div> <!--./box-->
+                                </div> <!--./main-boxes-->
+                                <a href="#" class="button">Add-ons</a>
+                            </div>
+                        </div> <!--./body-->
+                    </div> <!--./content-->
+                </div> <!--home-container -->
+            </div> <!--./subscription-->
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2015
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Mainly scripts -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<!--<script src="template/js/bootstrap.min.js"></script>-->
+<script src="../assets/js/jquery.metisMenu.js"></script>
+<script src="../assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="../assets/js/inspinia.js"></script>
+<!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- Flot demo data -->
+<!--<script src="js/demo/flot-demo.js"></script>-->
+
+</body>
+
+</html>

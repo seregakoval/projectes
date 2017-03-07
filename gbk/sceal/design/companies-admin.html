@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSPINIA | Flot Charts</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="../assets/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="layouts.html">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Status</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">To do</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="graph_flot.html">Flot Charts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span class="nav-label">Library</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Analytics</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="" ><i class="fa fa-bars"></i></a>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" >
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="home-users">
+            <div class="container-home">
+                <h1 class="title">Companies</h1>
+                <form class="home-users__table-users companies-admin">
+                    <div class="content-table">
+                        <table class="table home-users__tableUser" border="0" callspacing="0" callpadding="0">
+                            <tr class="head">
+                                <td class="check">
+
+                                </td>
+                                <td>
+                                    <p>Company name</p>
+                                </td>
+                                <td>
+                                    <p>Domain</p>
+                                </td>
+                                <td>
+                                    <p>Technical contact</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>Allan Raferty</p>
+                                </td>
+                                <td>
+                                    <p>Allan Raferty@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Office 365 Bussines Essentials</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>Claire Heaslip</p>
+                                </td>
+                                <td>
+                                    <p>Claireheaslip_hotmail.com#EXT#@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Unlicensed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>elena montes </p>
+                                </td>
+                                <td>
+                                    <p>eleniuskka_gmail.com#EXT#@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Unlicensed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>Eoin Mckenna </p>
+                                </td>
+                                <td>
+                                    <p>eoinmckenna_gmail.com#EXT#@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Unlicensed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>help </p>
+                                </td>
+                                <td>
+                                    <p>help@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Unlicensed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>info</p>
+                                </td>
+                                <td>
+                                    <p>info@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Unlicensed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>jeanmount@mail.com</p>
+                                </td>
+                                <td>
+                                    <p>jeanmount@mail.com#EXT#@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Unlicensed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>Russell Banks</p>
+                                </td>
+                                <td>
+                                    <p>Russell.Banks@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Office 365 Bussines Essentials</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input type="checkbox" class="form-control">
+                                </td>
+                                <td>
+                                    <p>Yanna Vogizaou</p>
+                                </td>
+                                <td>
+                                    <p>Yanna_gmail.com#EXT#@kmap.io</p>
+                                </td>
+                                <td>
+                                    <p>Unlicensed</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2015
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mainly scripts -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<!--<script src="template/js/bootstrap.min.js"></script>-->
+<script src="../assets/js/jquery.metisMenu.js"></script>
+<script src="../assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="../assets/js/inspinia.js"></script>
+<script src="../assets/js/plugins/pace/pace.min.js"></script>
+
+<!-- Flot demo data -->
+<script src="js/demo/flot-demo.js"></script>
+
+</body>
+
+</html>

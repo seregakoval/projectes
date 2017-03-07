@@ -1,0 +1,103 @@
+//SLIDER
+.section {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 80px 50px 15px;
+  @media (max-width: 1024px) {
+    padding: 50px 15px 50px 15px;
+    br {
+      display: none;
+    }
+  }
+}
+.full-screen__footer-slide {
+  padding: 0 !important; }
+.full-screen {
+  &__slider {
+    background: url("../img/landing-page/slider.jpg") no-repeat;
+    background-size: cover;
+
+    @media (max-width: 991px) {
+      padding: 30px 0px;
+    }
+    .test {
+      @media(max-width:  991px) {
+        padding: 0 15px;
+      }
+    }
+	.title {
+      font-size: 100px;
+      color: #cdd3d5;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 100px;
+      @media(max-width: 991px)  {
+        font-size: 70px;
+      }
+      @media(max-width: 768px) {
+        font-size: 60px;
+      }
+      @media(max-width: 480px) {
+        padding: 0 17px;
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+    }
+    .text-slider {
+      font-size: 25px;
+      color: #fff;
+      font-weight: bold;
+      text-align: left;
+      line-height: 35px;
+	  display: inline-block;
+	  padding: 10px;
+	  margin-bottom: 10px;
+	  background: rgba(0,0,0,0.7);
+      @media(max-width: 767px) {
+        line-height: 26px;
+        font-size: 16px;
+      }
+      .black {
+
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        display: inline-block;
+      }
+      &.main {
+        margin-bottom: 30px;
+      }
+      &.right {
+		float: right;
+        text-align: right !important;
+      }
+    }
+    .carousel {
+	  padding: 0 200px;
+      min-height: 500px;
+      @media(max-width: 767px) {
+        min-height: inherit;
+      }
+      .carousel-inner {
+        max-width: 1300px;
+        margin: 0 auto;
+		.carousel-control {
+		  width: 5%; }
+        .item {
+          .item-content {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-height: 600px;
+            @media(max-width:  991px) {
+              min-height: 400px;
+            }
+          }
+        }
+      }
+      a {
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

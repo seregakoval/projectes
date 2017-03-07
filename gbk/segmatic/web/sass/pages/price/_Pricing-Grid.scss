@@ -1,0 +1,127 @@
+// PLAn
+.Pricing-Grid {
+ padding: 30px 0;
+  &__title {
+    font-size: 35px;
+    color: #545d63;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.3;
+    position: relative;
+    margin-bottom: 58px;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+}
+.plan {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  background: #e7f1f8;
+  @media (max-width: 767px) {
+    display: block;
+    background: none;
+  }
+
+  &__col {
+    width: 33.3%;
+    position: relative;
+    transition: 0.3s;
+    border-right: 2px solid #f6f7fa;
+    padding-bottom: 74px;
+    background: #e7f1f8;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      width: 300px;
+      margin: 0 auto;
+      float: none;
+      margin-bottom: 56px;
+    }
+    .hide-block {
+      transition: 0.3s;
+      opacity: 0;
+      position: absolute;
+      top: -60px;
+      text-align: center;
+      font-size: 18px;
+      padding: 12px 10px;
+      background: #2571a5;
+      color: #bdcede;
+      width: 100%;
+    }
+    &:hover .hide-block{
+      top: -45px;
+      opacity: 1;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+  &__head {
+    transition: 0.3s;
+    text-align: center;
+    padding: 15px 10px;
+    background: #dee9f1;
+    @media (max-width: 767px) {
+      padding: 17px 10px;
+    }
+  }
+  &__content {
+    transition: 0.3s;
+    //min-height: 150px;
+    padding: 10px 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #f6f7fa;
+    @media (max-width: 767px) {
+    }
+  }
+  &__content-text {
+    font-size: 18px;
+    color: #8a9399;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    color: #545d63;
+  }
+  &__content-cols {
+    transition: 0.3s;
+    min-height: 173px;
+    position: relative;
+    @media (max-width: 480px) {
+      min-height: inherit;
+    }
+    &.button {
+
+    }
+  }
+}
+.plan__col:hover  .plan__head{
+  background: #49acef;
+}
+.plan__col:hover .plan__title {
+  color: #fff;
+}
+.plan__col:hover .plan__content {
+    background: #fff;
+}
+.plan__col:hover .plan__content-cols {
+  background: #fff;
+}
+.plan__col:hover {
+  background: #fff;
+}
+
+

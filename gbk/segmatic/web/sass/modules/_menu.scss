@@ -1,0 +1,114 @@
+/*MENU*/
+.grey {
+  background: #f6f7fa !important;
+}
+.menu {
+  background: #2571a5;
+  text-align: center;
+  .row {
+    display: flex;
+    align-items: center;
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
+  &__navigation {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    @media (max-width: 991px) {
+      float: none;
+    }
+    > li {
+      float: left;
+      border-right: 1px dashed #49acef;
+      position: relative;
+      @media (max-width: 991px) {
+        width: 100%;
+        border-right: none;
+      }
+      > a {
+        padding: 24px 30px;
+        border-bottom: 5px solid #2571a5;
+        transition: 0.3s;
+        color: #fff;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        @media (max-width: 1200px) {
+          padding: 24px 20px;
+          border-bottom: 3px solid #2571a5;
+        }
+        @media (max-width: 991px) {
+          padding: 10px 0;
+          border-bottom: 3px solid #2571a5;
+        }
+      }
+      > ul {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        background: #2571a5;
+        min-width: 180px;
+        z-index: 5;
+        box-shadow: none;
+        border: none;
+        @media (max-width:991px) {
+          left: 24%;
+          border: 1px solid rgba(255,255,255,0.1);
+        }
+        > li {
+          border-bottom: 1px solid #5d92b6;
+          a {
+            text-align: left;
+            display: block;
+            padding: 5px 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+          }
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+      &:hover a {
+        border-color: #fff;
+      }
+      &:last-child  {
+        border-right: none;
+      }
+      &:hover > ul { display: block; }
+    }
+  }
+  &__start {
+    display: inline-block;
+    background: #eec400;
+    padding: 15px 20px;
+    float: right;
+    border-radius: 25px;
+    transition:0.3s;
+    @media(max-width: 991px) {
+      float: none;
+    }
+    &:hover {
+      background: #ffd511;
+    }
+    @media (max-width: 991px) {
+      margin: 10px 0 20px 0;
+    }
+     a {
+       text-transform: uppercase;
+       color: #fff;
+       display: block;
+       text-decoration: none;
+       font-size: 14px;
+       font-weight:bold;
+       span {
+         margin: 0 4px;
+         color: #c99b09;
+       }
+     }
+  }
+}

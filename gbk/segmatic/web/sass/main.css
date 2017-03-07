@@ -1,0 +1,78 @@
+/*
+Syntax error: Invalid CSS after "  &": expected "{", was "__logo {"
+              
+              "__logo" may only be used at the beginning of a compound selector.
+        on line 7 of layout/_header.scss
+        from line 11 of main.scss
+
+2: 
+3: .header {
+4:   min-height: 88px;
+5:   padding: 10px 0;
+6:   background: #fff;
+7:   &__logo {
+8:     float: left;
+9:     display: inline-block;
+10:     vertical-align: middle;
+11:     padding: 0;
+12:     width: 20%;
+
+Backtrace:
+layout/_header.scss:7
+main.scss:11
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1148:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1084:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:691:in `block in simple_selector_sequence'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1094:in `throw_error'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:691:in `simple_selector_sequence'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:639:in `_selector'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:618:in `selector'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:602:in `selector_sequence'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:527:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1104:in `block in catch_error'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1104:in `catch'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1104:in `catch_error'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:590:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:553:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:545:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:534:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:528:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:552:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:542:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:82:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:342:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:274:in `to_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:225:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:128:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:81:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:439:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:326:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:21:in `parse!'
+/usr/bin/scss:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"  &\": expected \"{\", was \"__logo {\"\A               \A               \"__logo\" may only be used at the beginning of a compound selector.\A         on line 7 of layout/_header.scss\A         from line 11 of main.scss\A \A 2: \A 3: .header {\A 4:   min-height: 88px;\A 5:   padding: 10px 0;\A 6:   background: #fff;\A 7:   &__logo {\A 8:     float: left;\A 9:     display: inline-block;\A 10:     vertical-align: middle;\A 11:     padding: 0;\A 12:     width: 20%;"; }

@@ -1,0 +1,83 @@
+//ContentStyle
+.ContentStyle {
+  background: #fff;
+  padding: 20px 0 0 0;
+  &__title {
+    color: #545d63;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      font-size: 23px;
+    }
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+  &__text {
+    font-size: 19px;
+    color: #b6bcc0;
+    text-align: center;
+    line-height: 1.8;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  &__sub-title {
+    color: #545d63;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 4%;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  &__img {
+    max-width: 780px;
+    margin: 0 auto 25px auto;
+    overflow: hidden;
+    @media (max-width:767px) {
+      margin: 0 auto 18px auto;
+    }
+    img {
+      max-width: 100%;
+      @media (max-width: 768px) {
+        display: block;
+        max-width: 70%;
+        margin:0 auto;
+      }
+    }
+  }
+}
+.ContentStyle-fix {
+  padding: 0;
+}
+.ContentScreenshot-indent {
+  padding: 0;
+}
+.ContentStyle-indent {
+  @media (max-width: 767px) {
+    padding:0 ;
+  }
+}
+.slide-indent {
+  margin-bottom: 15px;
+}
+.ContentStyle-indent2 { padding: 0; }
+.first-img {
+  margin-top: 25px;
+}
+.standart-indent {
+  @media(max-width:767px) {
+    padding-top: 0;
+  }
+}
+.e4-img {
+  @media(max-width: 767px) {
+    margin: 0;
+  }
+}

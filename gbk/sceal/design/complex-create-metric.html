@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSPINIA | Flot Charts</title>
+    <link href="/angular/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/angular/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="/angular/web/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="/angular/web/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="road-blocks.html">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <span class="nav-label">Roadblocks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">Anomalies</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="#">Anomalies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                        <span class="nav-label">Reports</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Metric</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" >
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="/angular/assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrap-metric">
+            <div class="wrap-metric__head">
+                <h1 class="title"><i class="fa fa-angle-left" aria-hidden="true"></i>All Metrics</h1>
+                <h2 class="sub-title">Create new metric</h2>
+            </div> <!--head-->
+            <div class="wrap-tabs">
+                <div class="col left">
+                    <ul class="nav_tabs">
+                        <li class="active">
+                            <a href="#home" data-toggle="tab">
+                                <div class="main-number">
+                                    <span class="number"><i class="fa fa-check" aria-hidden="true"></i></span>
+                               </div>
+                                <span class="menu">Metric Type</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#tab2" data-toggle="tab">
+                                <div class="main-number">
+                                    <span class="number">2</span>
+                                </div>
+                                <span class="menu">Metric Value</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab3" data-toggle="tab">
+                                <div class="main-number">
+                                    <span class="number">3</span>
+                                </div>
+                                <span class="menu">Display Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab4" data-toggle="tab">
+                                <div class="main-number">
+                                    <span class="number">4</span>
+                                </div>
+                                <span class="menu">Ownership & Access</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col right">
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade ">
+                            <form action="#" class="tab-content__tab-form">
+                               <div class="row">
+                                   <div class="col-sm-6">
+                                       <div class="form-group">
+                                           <label class="required">Metric name</label>
+                                            <div class="group validation-errors">
+                                                <input type="text" placeholder="Sales" class="form_control">
+                                                <div class="error-tip">
+                                                    <span>This is required field!</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <div class="form-group">
+                                           <label class="required">Function</label>
+                                           <div class="group">
+                                               <select class="">
+                                                   <option value="">Curren</option>
+                                                   <option value="">Curren</option>
+
+                                               </select>
+                                               <!--<input type="text" placeholder="Current" class="form_control">-->
+                                               <!--<div class="error-tip">-->
+                                                   <!--<span>This is required field!</span>-->
+                                               <!--</div>-->
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-sm-6">
+                                       <div class="form-group">
+                                           <label class="required">Measured</label>
+                                           <div class="group">
+                                               <input type="text" placeholder="Daily" class="form_control">
+                                               <div class="error-tip">
+                                                   <span>This is required field!</span>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="form-group">
+                                           <label class="required">Display as</label>
+                                           <div class="group">
+                                               <input type="text" placeholder="Current daily sales" class="form_control">
+                                               <div class="error-tip">
+                                                   <span>This is required field!</span>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                                <div class="radio-button">
+                                    <p class="title-radio-button">What kind of metric is it? </p>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-5">
+                                            <div class="col">
+                                                <div class="radio">
+                                                    <label class="allips">
+                                                        <input type="radio" name="q1">
+                                                        <i class="icon"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="title-content">Simple</p>
+                                                    <p class="text">
+                                                        Metric is made up of a single set of values
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 col-sm-7">
+                                            <div class="col">
+                                                <div class="radio">
+                                                    <label class="allips">
+                                                        <input type="radio" name="q1">
+                                                        <i class="icon"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="title-content">Complex</p>
+                                                    <p class="text">
+                                                        Metric is made up of more of one set of values
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!--radio-button-->
+                                <div class="description">
+                                    <div class="form-group">
+                                        <label>Metric Description</label>
+                                        <input type="text" placeholder="...add a brief description">
+                                    </div>
+                                </div> <!--description-->
+                                <button class="submit" type="submit">Next</button>
+                            </form>
+                        </div>
+                        <div id="tab2" class="tab-pane fade in active">
+                            <div class="wrap-tab">
+                                <p class="title-tab required">How is this complex metric calculated <span class="required">*</span> <i class="fa fa-question-circle" aria-hidden="true"></i></p>
+                                <form class="form-tab">
+                                    <div class="form-group">
+                                        <p class="text-group">Sales IS</p>
+                                        <div class="itemSelect">
+                                            <select>
+                                                <option value="">Select metric</option>
+                                                <option value="">Select metric</option>
+                                                <option value="">Select metric</option>
+                                            </select>
+                                        </div> <!--item-select-->
+                                        <p class="text-group left">OF:</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="item-input margin-r">
+                                            <input type="text" placeholder="Metric name or value">
+                                        </div>
+                                        <p class="text-group margin-r">+</p>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="Metric name or value">
+                                            <div class="plus">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="title-group-radio">Value type <span class="required">*</span></label>
+                                               <div class="itemSelect full-select">
+                                                   <select>
+                                                       <option value="">Numeric</option>
+                                                       <option value="">Numeric</option>
+                                                   </select>
+                                               </div>
+                                            </div>
+                                        </div> <!--col-->
+                                        <div class="col-sm-6">
+                                            <p class="title-group-radio">Is an increase positive <span class="required">*</span></p>
+                                            <div class="main-radio">
+                                                <div class="col">
+                                                    <div class="radio">
+                                                        <label class="allips">
+                                                            <input type="radio">
+                                                            <i class="icon"></i>
+                                                        </label>
+                                                    </div> <!--radio-->
+                                                    <label class="title-radio">Yes</label>
+                                                </div> <!--col-->
+                                                <div class="col">
+                                                    <div class="radio">
+                                                        <label class="allips">
+                                                            <input type="radio">
+                                                            <i class="icon"></i>
+                                                        </label>
+                                                    </div> <!--radio-->
+                                                    <label class="title-radio">No</label>
+                                                </div> <!--col-->
+                                            </div>
+                                        </div> <!--col-->
+                                    </div>
+                                   <div class="row">
+                                       <div class="col-sm-6">
+                                           <div class="form-group">
+                                               <label class="title-group-radio">Decimal Places <span class="required">*</span></label>
+                                               <div class="itemSelect full-select"">
+                                                   <select>
+                                                       <option value="">No decimal places</option>
+                                                   </select>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                    <div class="form-group-button">
+                                        <button class="btn-group disable">Previous</button>
+                                        <button class="btn-group">Next</button>
+                                    </div>
+                                </form>
+                            </div> <!--wrap-tab-->
+                        </div> <!--tab2-->
+                        <div id="tab3" class="tab-pane fade ">
+                            <form class="wrap-metric__graphics">
+                                <p class="title-tab">Select your preferred chart to display <span class="required">*</span></p>
+                                <div class="table-graphics">
+                                    <div class="graphics-row">
+                                        <div class="col">
+                                            <div class="item">
+                                                <img src="/img/graphic-col.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="item">
+                                                <img src="/img/graphic-col.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="item">
+                                                <img src="/img/graphic-col.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="item">
+                                                <img src="/img/graphic-col.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="item">
+                                                <img src="/img/graphic-col.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="item">
+                                                <img src="/img/graphic-col.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="item">
+                                                <img src="/img/graphic-col.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="item">
+                                                <img src="/img/graphic-col.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div> <!--graphics-row-->
+                                </div>
+                                <div class="wrap-metric__group-row">
+                                    <p class="title-tab">Value type to display <span class="required">*</span></p>
+                                    <div class="itemSelect">
+                                        <select class="select">
+                                            <option>Total</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="wrap-metric__group-row">
+                                    <p class="title-tab">Additional values to display<span class="required">*</span></p>
+                                    <div class="itemSelect">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                YoY
+                                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                             </div>
+                                            <div class="tag">
+                                                YoY
+                                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="tag">
+                                                YoY
+                                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="tag">
+                                                YoY
+                                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <select class="select">
+                                            <option>Total</option>
+                                        </select>
+                                    </div>
+                                </div> <!--group-row-->
+                                <div class="form-group-button">
+                                    <button class="btn-group disable">Previous</button>
+                                    <button class="btn-group">Next</button>
+                                </div>
+                            </form> <!--graphics-->
+                        </div>
+                        <div id="tab4" class="tab-pane fade ">
+                            <form class="wrap-metric__wrapTab row">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                           <div class="label-title">
+                                               <label class="title-input ">Give your function a name <span class="required">*</span></label>
+                                           </div>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="My name here">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <div class="label-title">
+                                                <label class="title-input ">Start date <span class="required">*</span></label>
+                                            </div>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="dd/mm/yyyy" class="date">
+                                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="text">The metric will no be visible before this date</p>
+                                        </div>
+                                    </div>
+                                </div> <!--form-row-->
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <div class="label-title">
+                                                <label class="title-input">Is the metric reported to someone <span class="required">*</span></label>
+                                            </div>
+                                            <div class="item-select">
+                                                <select class="select">
+                                                    <option> Assign Receiver</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <div class="label-title">
+                                                <label class="title-input">If yes, in which report? <span class="required">*</span></label>
+                                            </div>
+                                            <div class="item-input">
+                                                <input type="text" placeholder="Weekly sales report">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!--form-row-->
+                                <div class="button">
+                                    <button class="item-btn">Advanced</button>
+                                </div>
+                                <div class="form-group-button">
+                                    <button class="btn-group disable">Previous</button>
+                                    <button class="btn-group">Next</button>
+                                </div>
+                            </form> <!--wrapTab-->
+                        </div>
+                    </div>
+                </div>
+            </div> <!--wrapper-tabls-->
+        </div> <!--wrap-graphic-->
+    </div>
+<div class="wrapper-modal metric3">
+    <div class="complex-modal">
+        <div class="complex-modal__head">
+            <h1 class="title">Create edit/custom</h1>
+            <button class="btn-close">
+                <i class="fa fa-times" aria-hidden="true"></i
+            </button>
+        </div>
+        <div class="complex-modal__body">
+            <label class="title-input">Give your function a name <span class="required">*</span></label>
+            <div class="complex-modal__block-row">
+                <div class="col-left">
+                    <input type="text" class="input">
+                </div>
+                <div class="col-right">
+                    <p class="max-text">Max 15 characters</p>
+                </div>
+            </div> <!--block-row-->
+            <label class="title-input">Select & arrange characters  below the box to create a custum function</label>
+            <div class="complex-modal__input-row">
+                <div class="item-input">
+                    <input type="text" class="input" placeholder="Metric name or value">
+                </div>
+                <div class="buttons">
+                    <a class="item-btn">+</a>
+                    <a class="item-btn">-</a>
+                    <a class="item-btn">(</a>
+                    <a class="item-btn">)</a>
+                    <a class="item-btn">X</a>
+                    <a class="item-btn">/</a>
+                    <a class="item-btn">%</a>
+                </div>
+            </div> <!--./input-row-->
+        </div> <!--./complex-modal-->
+    </div> <!--./complex-modal-->
+</div> <!--wrapper-modal-->
+    <div class="wrapper-modal metric4">
+        <div class="complex-modal">
+            <div class="complex-modal__head">
+                <h1 class="title">Advance Settings</h1>
+                <button class="btn-close">
+                    <i class="fa fa-times" aria-hidden="true"></i
+                </button>
+            </div> <!--head-->
+            <div class="complex-modal__body">
+                <div class="head-text">
+                    <p class="sub-title">Access rights</p>
+                    <p class="text">The following users have permission to reate or write this metric</p>
+                </div>
+                <div class="complex-modal__main">
+                    <div class="complex-modal__user-row">
+                        <div class="item-user">
+                            <div class="img">
+                                <img src="/img/avatar.png" alt="">
+                            </div>
+                            <div class="name">
+                                <p>Jonh Swith</p>
+                            </div>
+                        </div>
+                    </div> <!--user-row-->
+                    <div class="complex-modal__select">
+                        <div class="item-select">
+                            <select class="select">
+                                <option>Can read</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="complex-modal__btn-add">Add</button>
+                </div> <!--./main-->
+                <div class="complex-modal__tags">
+                    <div class="tag">
+                        <span class="name">Martin Clines</span>
+                        <a href="#" class="close-tag"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="tag">
+                        <span class="name">Martin Clines</span>
+                        <a href="#" class="close-tag"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="tag">
+                        <span class="name">Martin Clines</span>
+                        <a href="#" class="close-tag"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="wrapper-modal__group-buttons">
+                    <button class="btn-group disable">Cancel</button>
+                    <button class="btn-group">Save</button>
+                </div>
+            </div>
+        </div> <!--complex-modal-->
+    </div> <!--settings-modal-->
+</div>
+
+<div class="item-box">
+    <div class="col-custom"></div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="/angular/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/angular/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/angular/assets/js/jquery.metisMenu.js"></script>
+<script src="/angular/assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="/angular/app/custom/inspinia.js"></script>
+<!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- Flot demo data -->
+<!--<script src="js/demo/flot-demo.js"></script>-->
+
+</body>
+
+</html>

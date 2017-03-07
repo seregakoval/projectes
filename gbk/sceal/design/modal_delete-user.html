@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSPINIA | Flot Charts</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="../web/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="../assets/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="layouts.html">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Status</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">To do</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="graph_flot.html">Flot Charts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span class="nav-label">Library</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Analytics</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <minimaliza-sidebar><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="" ng-click="minimalize()"><i class="fa fa-bars"></i></a></minimaliza-sidebar>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" _lpchecked="1">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="home-boxes">
+            <div class="home-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-box">
+                            <div class="box active">
+                                <div class="home-boxes__head-box">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <h1 class="title">User</h1>
+                                    <i class="fa icon-2 fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                        <span class="text">Add a user</span>
+                                    </a>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        <span class="text">Delete a user</span>
+                                    </a>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <span class="text">Edit a user</span>
+                                    </a>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-key" aria-hidden="true"></i>
+                                        <span class="text">Reset a password</span>
+                                    </a>
+                                </div>
+                            </div> <!--./box-->
+                            <div class="box">
+                                <div class="home-boxes__head-box">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <h1 class="title">Company</h1>
+                                    <i class="fa icon-2 fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                        <span class="text">Add a company</span>
+                                    </a>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        <span class="text">Delete a company</span>
+                                    </a>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <span class="text">Edit a company</span>
+                                    </a>
+                                </div>
+                            </div> <!--./box-->
+                            <div class="box">
+                                <div class="home-boxes__head-box">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <h1 class="title">Billing</h1>
+                                    <i class="fa icon-2 fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <p class="balance">Total balance: 0.00</p>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <span class="text">Change payment details</span>
+                                    </a>
+                                </div>
+                                <div class="home-boxes__item">
+                                    <a href="#">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                        <span class="text">View my bill</span>
+                                    </a>
+                                </div>
+                            </div> <!--./box-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2015
+            </div>
+        </div>
+    </div>
+    <div class="modal-window">
+        <div class="modal-new">
+            <div class="modal-new__head">
+                <a href="#" class="modal_close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="delete-title">
+                            <h1 class="title"><i class="fa fa-trash-o" aria-hidden="true"></i>Delete user</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-new__content-modal">
+                <a href="#" class="modal-new__btn">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <span>FeedBack </span>
+                </a>
+                <div class="row delete-content">
+                    <div class="col-md-12 col-sm-12">
+                        <form action="#" class="form">
+                            <div class="form-group">
+                                <label>Search for a user</label>
+                                <div class="search">
+                                    <input type="text" class="form-control">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div> <!--./search-->
+                            </div>
+                            <div class="table-title">
+                                <p class="">Users (9)</p>
+                            </div>
+                            <div class="table">
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                                <div class="table-row">
+                                    <div class="table-col check">
+                                    <span class="input-group">
+                                        <input type="checkbox">
+                                    </span>
+                                    </div>
+                                    <div class="table-col col-avatar">
+                                        <div class="avatar">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table-col block-name">
+                                        <p class="name">Alan Rafferty</p>
+                                    </div>
+                                    <div class="table-col block-mail">
+                                        <p class="mail">sdfgdfg@gmail.com</p>
+                                    </div>
+                                </div> <!--./table--row-->
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="modal-new__buttons">
+                                    <button class="button">Add</button>
+                                    <button class="button close-btn">Close</button>
+                                </div> <!--./buttons-->
+                            </div>
+                        </form> <!--./form-->
+                    </div>
+                </div> <!--./selete-content-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mainly scripts -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<!--<script src="template/js/bootstrap.min.js"></script>-->
+<script src="../assets/js/jquery.metisMenu.js"></script>
+<script src="../assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="../assets/js/inspinia.js"></script>
+<!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- Flot demo data -->
+<!--<script src="js/demo/flot-demo.js"></script>-->
+
+</body>
+
+</html>

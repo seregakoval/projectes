@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CS4-AdRoll</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<link href="path/to/font" />-->
+    <!-- COMPONENTS -->
+    <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- STYLES -->
+    <link href=".././node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+<!-- Google Tag Manager --> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PQPXSP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PQPXSP');</script> <!-- End Google Tag Manager -->
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="header__log">
+                <img src="../img/logo.jpg" alt="">
+            </a>
+        </div> <!--./header__logo-->
+        <div class="header__block-nav collapse navbar-collapse" id="navigation">
+            <nav class="header__nav">
+                <ul class="list-left">
+                    <li><a href="index.html">Overview</a></li>
+                </ul>
+                <ul class="list-right">
+                    <li><a href="https://tomus.segmatic.io/">Login</a></li>
+                    <li><a href="https://analyser.segmatic.io/index">Free AdWords Audit</a></li>
+                </ul>
+            </nav> <!--./nav-->
+            <script>
+                (function() {
+                    var cx = '010293336371254282527:tcpi5mea-fc';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:search></gcse:search>
+        </div> <!--./header__block-nav-->
+    </div>
+</header> <!--.header-->
+<section class="menu" data-scroll-nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <ul class="menu__navigation">
+                    <li><a href="index.html">Product</a></li>
+                    <li class="dropdown">
+                        <a href="Features.html" class="dropdown-toggle">Features</a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Features.html" class="dropdown-toggle">Features</a></li>
+                            <li><a href="Features.html#scroll-Builder">Account Builder</a></li>
+                            <li><a href="Features.html#scroll-copy">Ad Copy</a></li>
+                            <li><a href="Features.html#scroll-analyster">Search Term Analyser</a></li>
+                            <li><a href="Features.html#scroll-reporting">Reporting</a></li>
+                            <li><a href="Features.html#scroll-bidding">Bidding</a></li>
+                            <li><a href="Features.html#scroll-mini-optimisers">Mini-Optimisers</a></li>
+                            <li><a href="Features.html#scroll-shopping">Shopping</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Clients-Results-Page.html" class="dropdown-toggle">Clients & Results </a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Clients-Results-Page.html" class="dropdown-toggle">Clients & Results </a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-clients">Our Clients</a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-results">Our Results</a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-testimonials">Testimonials & Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Pricing-page.html"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pricing </a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Pricing-page.html" class="dropdown-toggle">Pricing </a></li>
+                            <li><a href="Pricing-page.html#scroll-segmatic">Why Segmatic?</a></li>
+                            <li><a href="Pricing-page.html#scroll-pricing">Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="About-page.html"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> About</a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="About-page.html" class="dropdown-toggle">About</a></li>
+                            <li><a href="About-page#scroll-our-team">Our Team</a></li>
+                            <li><a href="About-page#scroll-people">Why People Choose Us</a></li>
+                            <li><a href="About-page#scroll-our-history">Our History</a></li>
+                            <li><a href="About-page#scroll-our-values">Our Values</a></li>
+                        </ul>
+                    </li>
+                </ul> <!--./navigation-->
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="menu__start">
+                    <a href="Sign-up.html">Start your 30-day free trial now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./menu-->
+<script>
+    /* Graphs Args */
+
+    function getBrandWeek() {
+        return [
+            {x: 1, y: 137, y2: 68.51},
+            {x: 2, y: 217, y2: 49.21},
+            {x: 3, y: 114, y2: 96.39},
+            {x: 4, y: 138, y2: 71.27},
+            {x: 5, y: 92, y2: 107.81},
+            {x: 6, y: 119, y2: 89.14},
+            {x: 7, y: 87, y2: 104.94},
+            {x: 8, y: 191, y2: 54.49},
+            {x: 9, y: 115, y2: 97.11},
+            /*  {x: 10, y: 197, y2: 45.84},
+             {x: 11, y: 110, y2: 90.15},*/
+        ];
+    }
+    function getGenericWeek() {
+        return [
+            {x: "Month 1", y: 100, y2: 300},
+            {x: "Month 2", y: 119, y2: 193},
+            {x: "Month 3", y: 114, y2: 144},
+            {x: "Month 4", y: 164, y2: 122},
+            {x: "Month 5", y: 166, y2: 100}
+//            {x: "Oct-2015", y: 503, y2: 99},
+//            {x: "Nov-2015", y: 1171, y2: 90},
+//            {x: "Jan-2016", y: 711, y2: 90},
+//            {x:"Feb-2016", y: 641, y2: 95}
+            /* {x: 10, y: 61, y2: 124.56}*/
+            /* {x: 11, y: 94, y2: 78.55},*/
+        ];
+    }
+    function getBrandMonth() {
+        return [
+            {x: 1, y: 606, y2: 66.05},
+            {x: 2, y: 422, y2: 99.2},
+            {x: 3, y: 189, y2: 212.36},
+        ];
+    }
+    function getGenericMonth() {
+        return [
+            {x: 1, y: 356.38, y2: 82.82},
+            {x: 2, y: 252, y2: 121.6},
+            {x: 3, y: 210, y2: 142.45},
+        ];
+    }
+</script>
+<section class="Headline-Banner-2">
+    <div class="Headline-Banner-2__head head-TMLewin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="Headline-Banner-2__title">How Our Tailored Strategy Optimised Paid Search Campaigns for a B2B Company</h1>
+                    <div class="Headline-Banner-2__head-logo">
+                        <img src="../img/ClientLogo-AdRoll2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--./head-->
+    <div class="Headline-Banner-2__content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="Headline-Banner-2__img banner-img2">
+                        <img src="../img/head-img.jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <p class="Headline-Banner-2__text ">T.M. Lewin is a tailoring chain supplying shirts, suits and accessories for men and women. They maintain just under 100 stores in the UK, with new outlets opening rapidly throughout the world, including Europe, Singapore and Australia.</p>
+                        <p class="Headline-Banner-2__text " > T.M. Lewin’s biggest concern was their over-reliance on branded Paid Search, which they believed prevented them from achieving the market share they desired. This is where Segmatic came in; we revitalised their non-branded Paid Search and then went through their existing campaigns and databases with a fine tooth comb to uncover any hidden inefficiencies. Over the next 12 months, our influence was clear - Paid Search was delivering  600% more return on investment.</p>
+                        <p class="Headline-Banner-2__text"> How did we do it? Here are the four key lessons we learnt from working on their account.</p>
+                        <!--<p class="Headline-Banner-2__text">T.M. Lewin’s biggest concern was their over-reliance on branded Paid Search, which they believed prevented them from achieving the market share they desired. This is where Segmatic came in; we revitalised their non-branded Paid Search and then went through their existing campaigns and databases with a fine tooth comb to uncover any hidden inefficiencies. Over the next 12 months, our influence was clear - Paid Search was delivering  600% more return on investment. </p>-->
+                        <!--<p class="Headline-Banner-2__text">How did we do it? Here are the four key lessons we learnt from working on their account. </p>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="btn-group mobil">
+                        <div class="active_btn" style="width: 180px; height: 32px;"><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i></div>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-segment generic is_active" data-hover-text="The keywords that define or explain your company’s products or services, excluding your brand term(s)" data-type="segment" data-segment="Generic" style="width: 180px;">
+                            Generic
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="btn-group mobil">
+                        <div class="active_btn" style="width: 180px; height: 32px;"><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i></div>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-date weekly is_active" data-hover-text="Displays the data broken down by week" data-type="date" data-date="Week" style="width: 180px;">
+                            Weekly
+                        </a>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-date monthly" data-hover-text="Displays the data broken down by month" data-type="date" data-date="Month" style="width: 180px;">
+                            Monthly
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Generic / Weekly -->
+                <div class="col-lg-11 col-lg-offset-1">
+                    <div class="campaign-per">
+                        <div class="campaign-per_graph" id="chart_div_first" style="width: 100%; height: 400px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 800px; height: 400px; padding: 0px;"><svg style="position: absolute; width: 800px; height: 400px; top: -0.400024px; left: -0.25px;" version="1.1"><desc>JavaScript chart by amCharts 3.19.6</desc><g><path stroke-opacity="0" stroke-width="1" fill-opacity="0" stroke="#000000" fill="#FFFFFF" d="M0.5,0.5 L799.5,0.5 L799.5,399.5 L0.5,399.5 Z" cs="100,100"></path><path transform="translate(45,20)" stroke-opacity="0" stroke-width="1" fill-opacity="0" stroke="#000000" fill="#FFFFFF" d="M0.5,0.5 L655.5,0.5 L655.5,343.5 L0.5,343.5 L0.5,0.5 Z" cs="100,100"></path></g><g><g transform="translate(45,20)"><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M30.5,0.5 L30.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M30.5,343.5 L30.5,343.5 L30.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M89.5,0.5 L89.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M89.5,343.5 L89.5,343.5 L89.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M149.5,0.5 L149.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M149.5,343.5 L149.5,343.5 L149.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M208.5,0.5 L208.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M208.5,343.5 L208.5,343.5 L208.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M268.5,0.5 L268.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M268.5,343.5 L268.5,343.5 L268.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M328.5,0.5 L328.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M328.5,343.5 L328.5,343.5 L328.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M387.5,0.5 L387.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M387.5,343.5 L387.5,343.5 L387.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M447.5,0.5 L447.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M447.5,343.5 L447.5,343.5 L447.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M506.5,0.5 L506.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M506.5,343.5 L506.5,343.5 L506.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M566.5,0.5 L566.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M566.5,343.5 L566.5,343.5 L566.5,0.5" cs="100,100"></path></g><g><path transform="translate(0,343)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M625.5,0.5 L625.5,5.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.15" stroke-width="1" fill="none" d="M625.5,343.5 L625.5,343.5 L625.5,0.5" cs="100,100"></path></g></g><g visibility="visible" transform="translate(45,20)"><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,343.5 L6.5,343.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,300.5 L6.5,300.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,257.5 L6.5,257.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,214.5 L6.5,214.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,172.5 L6.5,172.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,129.5 L6.5,129.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,86.5 L6.5,86.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,43.5 L6.5,43.5" cs="100,100"></path></g><g><path transform="translate(-6,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L6.5,0.5" cs="100,100"></path></g></g><g visibility="visible" transform="translate(45,20)"><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,343.5 L6.5,343.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,343.5 L0.5,343.5 L655.5,343.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,286.5 L6.5,286.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,286.5 L0.5,286.5 L655.5,286.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,229.5 L6.5,229.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,229.5 L0.5,229.5 L655.5,229.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,172.5 L6.5,172.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,172.5 L0.5,172.5 L655.5,172.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,114.5 L6.5,114.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,114.5 L0.5,114.5 L655.5,114.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,57.5 L6.5,57.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,57.5 L0.5,57.5 L655.5,57.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L6.5,0.5" cs="100,100"></path><path stroke="#000000" stroke-opacity="0.1" stroke-width="1" fill="none" d="M0.5,0.5 L0.5,0.5 L655.5,0.5" cs="100,100"></path></g><g><path transform="translate(655,0)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,343.5 L6.5,343.5" cs="100,100"></path><path stroke="#fc6051" stroke-opacity="1" stroke-dasharray="6" stroke-width="1" fill="none" d="M0.5,343.5 L0.5,343.5 L655.5,343.5" cs="100,100"></path></g><g><rect transform="translate(0,340)" stroke-opacity="0" fill-opacity="0" stroke-width="0" ry="0" rx="0" height="3" width="655" y="0.5" x="0.5"></rect></g></g></g><g clip-path="url(#AmChartsEl-21)" transform="translate(45,20)"><g visibility="hidden"></g></g><g></g><g></g><g></g><g><g transform="translate(45,20)"><g></g><g clip-path="url(#AmChartsEl-23)"><path stroke="#49acef" stroke-opacity="1" stroke-width="1" fill="none" d="M30.5,133.4125 L89.5,219.1625 L149.5,56.2375 L208.5,227.7375 L268.5,197.725 L328.5,253.4625 L387.5,313.4875 L447.5,141.9875 L506.5,193.4375 L566.5,167.7125 L625.5,26.225 M0,0 L0,0" cs="100,100"></path></g><clipPath id="AmChartsEl-23"><rect stroke-width="0" ry="0" rx="0" height="343" width="655" y="0" x="0"></rect></clipPath><g></g></g><g transform="translate(45,20)"><g></g><g clip-path="url(#AmChartsEl-24)"><path stroke="#fc6051" stroke-opacity="1" stroke-width="1" fill="none" d="M30.5,211.18203 L89.5,182.1185 L149.5,243.36687 L208.5,163.57363 L268.5,180.3692 L328.5,121.0988 L387.5,12.8137 L447.5,207.27183 L506.5,197.3134 L566.5,201.0864 L625.5,253.69117 M0,0 L0,0" cs="100,100"></path></g><clipPath id="AmChartsEl-24"><rect stroke-width="0" ry="0" rx="0" height="343" width="655" y="0" x="0"></rect></clipPath><g></g></g></g><g></g><g><path transform="translate(45,20)" stroke="#000000" stroke-opacity="0.2" stroke-width="1" fill="none" d="M0.5,343.5 L655.5,343.5 L655.5,343.5" cs="100,100"></path><g><path transform="translate(45,363)" stroke="#DADADA" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L655.5,0.5" cs="100,100"></path></g><g><path visibility="visible" transform="translate(45,20)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L0.5,343.5" cs="100,100"></path></g><g><path visibility="visible" transform="translate(700,20)" stroke="#000000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L0.5,343.5 L0.5,343.5" cs="100,100"></path></g></g><g><g clip-path="url(#AmChartsEl-22)" style="pointer-events: none;" transform="translate(45,20)"><path visibility="hidden" stroke="#CC0000" stroke-opacity="1" stroke-width="1" fill="none" d="M0.5,0.5 L0.5,0.5 L0.5,343.5" cs="100,100"></path><path visibility="hidden" stroke="#CC0000" stroke-width="1" fill="none" d="M0.5,0.5 L655.5,0.5 L655.5,0.5" cs="100,100"></path></g><clipPath id="AmChartsEl-22"><rect stroke-width="0" ry="0" rx="0" height="343" width="655" y="0" x="0"></rect></clipPath></g><g></g><g><g transform="translate(45,20)"></g><g transform="translate(45,20)"></g></g><g><g></g></g><g><g visibility="visible" transform="translate(45,20)"><text transform="translate(30,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">1</tspan></text><text transform="translate(89,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">2</tspan></text><text transform="translate(149,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">3</tspan></text><text transform="translate(208,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">4</tspan></text><text transform="translate(268,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">5</tspan></text><text transform="translate(328,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">6</tspan></text><text transform="translate(387,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">7</tspan></text><text transform="translate(447,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">8</tspan></text><text transform="translate(506,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">9</tspan></text><text transform="translate(566,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">10</tspan></text><text transform="translate(625,360.5)" text-anchor="middle" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">11</tspan></text></g><g visibility="visible" transform="translate(45,20)"><text transform="translate(-12,341)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">20</tspan></text><text transform="translate(-12,298)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">30</tspan></text><text transform="translate(-12,255)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">40</tspan></text><text transform="translate(-12,212)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">50</tspan></text><text transform="translate(-12,170)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">60</tspan></text><text transform="translate(-12,127)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">70</tspan></text><text transform="translate(-12,84)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">80</tspan></text><text transform="translate(-12,41)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">90</tspan></text><text transform="translate(-12,-2)" text-anchor="end" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">100</tspan></text></g><g visibility="visible" transform="translate(45,20)"><text transform="translate(665,341)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">0</tspan></text><text transform="translate(665,284)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">50</tspan></text><text transform="translate(665,227)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">100</tspan></text><text transform="translate(665,170)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">150</tspan></text><text transform="translate(665,112)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">200</tspan></text><text transform="translate(665,55)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">250</tspan></text><text transform="translate(665,-2)" text-anchor="start" opacity="1" font-size="11px" font-family="myriad-pro" fill="#000000" y="6"><tspan x="0" y="6">300</tspan></text><text transform="translate(665,340.5)" text-anchor="start" opacity="1" font-size="14px" font-family="myriad-pro" fill="#fc6051" y="7"><tspan x="15" y="7">CPA TARGET</tspan></text></g></g><g></g><g transform="translate(45,20)"></g><g></g><g></g><clipPath id="AmChartsEl-21"><rect stroke-width="0" ry="0" rx="0" height="343" width="655" y="0" x="0"></rect></clipPath></svg><a style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: myriad-pro; font-size: 11px; opacity: 0.7; display: block; left: 50px; top: 25px;" title="JavaScript charts" href="http://www.amcharts.com/javascript-charts/">JS chart by amCharts</a></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--./content-->
+    </div>
+</section>
+<section class="Content-X-Standard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                   <p class="block-content__text">AdRoll provides retargeting products to advertisers. Working with them posed a new challenge for us because they are 100% business to business. Because of this, we didn’t have the same volume of data to play with as we do for other clients. So we had to adapt our approach. </p>
+                    <p class="block-content__text">We were happy with how this worked out, mostly because we were able to decrease AdRoll’s CPA by 200% in the first four months, but also because in tailoring strategy that brought us these results, we learned a lot about how to optimise paid search campaigns for B2B companies. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Segmatic's Three Pronged Strategy</h2>
+                    <p class="block-content__text">What we came up with for AdRoll is a three-pronged strategy that would work for any B2B company, or really for any company that isn’t generating massive volumes of data from its paid search campaigns. Here’s what we did - </p>
+                    <ul class="list-step">
+                        <li>1. Two Speed Decision Making <br>
+                            We developed a two-speed tracking system that allowed us to make both short- and longer-term decisions based on the data available to us</li>
+                        <li>2. Best Practice Account Structure <br>
+                            Best practice, best practice, best practice - well-designed account structure is much more important when you’re working with small data, because you can’t paper over the cracks of poor account structure using feedback loops if you don’t have the volume of feedback.</li>
+                        <li>3. Clue Based Search Term Analysis <br>
+                            Clue-based search term analysis and negative matching - we had to be very smart about how we interpreted our search term data, used it to project broader trends into the future and fed that into our negative matching. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Two-Speed Decision-Making</h2>
+                    <p class="block-content__text ">We needed to track performance from keyword to lifetime value, calculate the return on investment for each keyword we were bidding on and determine which keywords were providing good quality leads and which weren’t. The problem here is that there’s a long time delay between someone clicking on an ad and us having a real sense of their lifetime value. And until we have that data for lots of users we can’t calculate things like drop-off rate. </p>
+                    <p class="block-content__text ">To be able to take action while we waited for this to play out, we needed a metric that would allow us to make quicker decisions. We could then use this metric to make both short- and long-term decisions based on what in the initial stages was short-term data. </p>
+                    <p class="block-content__text">
+                        We developed a two-speed decision-making strategy:</p>
+                    <p class="block-content__text">
+                        For day-to-day tracking and decision-making, we used what we call proxy metrics - basically ‘did we get a lead, yes or no?’ The proxy metric should give you an answer to that question within a day. For this we used the Google Adwords conversion pixel. </p>
+                    <p class="block-content__text">
+                        For longer-term management we used complete metrics, based on UTM Parameters, the results of which you then pass into the database. Complete tells you how your campaigns were performing six months ago, using the data from the last six months It’s a more accurate long-term view that takes into account the time delay between first contact and lifetime value, and drop-off rates. </p>
+                    <p class="block-content__text">
+                        For this we use a parameter passed in the destination URL. Each advert that we create uses a custom parameter, something like ‘&utm_campaign=campaign1’. This parameter provides us with information that’s then passed into the database for each individual user at the point of first interaction with the database, which in the case of AdRoll was an online form that potential customers filled out. So when someone fills out the form we know not just the information they enter, but also which of our ads had brought them to the form.</p>
+                    <p class="block-content__text">
+                        Once we got this up and running we were working efficiently at two speeds of tracking and decision-making - proxy and complete. Over time, as the proxy data is built into the complete data, the complete data is improved and we update our targets and our approach based on this better data.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Best Practice Account Structure</h2>
+                    <p class="block-content__text">Compared to retail, paid search campaigns for B2B companies give you smaller data. Usually we like to have big data sets to play with, learn from and use to test theories and generate feedback loops for our campaigns. This just wasn’t possible for AdRoll. </p>
+                    <p class="block-content__text">
+                        We’re passionate about good, solid account structure. It’s the foundation of everything we do. A lot of companies can get by with account structure that’s not great. We’ve noticed in some of the accounts we’ve taken over that have lots of data to work with, and the people managing the accounts have been able to use that data to generate lots of feedback loops and paper over the cracks of their poor account structure. </p>
+                    <p class="block-content__text">That doesn’t work when you’re dealing with small data. Your only option is to build solid account structure, based on best practice, from the ground up. You have to get it exactly right from day one because you can’t rely on your feedback loops to tell you where you’re going wrong and steer you back in the right direction. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Clue-based Search Term Analysis</h2>
+                    <p class="block-content__text">Most companies look at their search term data and take action - positive or negative, in response to the data. We take a clue-based, proactive approach to search term data. This means that we scour the data for search terms that suggest broader trends and we use these clues to make projections and take action today on things that we can predict are going to appear in our search term data in the future. </p>
+                    <p class="block-content__text">
+                        With AdRoll, one problematic trend we spotted was classified ads. We wanted to bid on ‘online ads’, but we realised that people searching for (for example) ‘London online ads’ were looking for classified ads in the London area, not the services of AdRoll. This was true of ‘Cardiff online ads’ and ‘Manchester online ads’ too, so we used our list of place names in the UK to proactively negative out all of these keywords. </p>
+                    <p class="block-content__text">TSimilarly, people searching for ‘Heineken ads online’ wanted to watch a funny Heineken ad, so we negatived out all brand names. </p>
+                    <p class="block-content__text">To do this well, and to scale, you need to manipulate your search term data in two ways - disaggregate the search terms by individual words, and re-aggregate them into lists. Our Segmatic platform automates this, using the data generated by AdWords but presenting it in a usable way using word frequency analysis that tells us, for each individual word within our search terms in a given period, how many clicks and how many impressions the word has.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Clue-based Search Term Analysis</h2>
+                    <p class="block-content__text">This proactive, clue-based approach to search term analysis was particularly useful for AdRoll - it accelerated our learning, so instead of waiting for google to tell us on a case-by-case basis what we should negative out, we were able to make accurate projections and take action before it cost us money. </p>
+                    <p class="block-content__text">
+                        And that’s it - two-speed decision-making, best practice account structure and clue-based, proactive search term analysis got us, and Ad Roll, a 200% decrease in CPA in just four months.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-Columns-ImageTextCTA">
+    <div class="Content-Columns-ImageTextCTA__head">
+        <p>What to do next?</p>
+    </div>
+    <div class="Content-Columns-ImageTextCTA__content">
+        <div class="Content-Columns-ImageTextCTA__table-row">
+            <div class="Content-Columns-ImageTextCTA__table-col  left">
+                <div class="col-lg-7 col-lg-offset-5">
+                    <div class="Content-Columns-ImageTextCTA__img">
+                        <img src="../img/rocket-2.png" alt="">
+                    </div>
+                    <p class="Content-Columns-ImageTextCTA__text">Try our account analyser to find out how your Google Adwords account is performing.</p>
+                    <a href="https://analyser.segmatic.io/index" class="button">Free Account Audit</a>
+                </div>
+            </div>
+            <div class="Content-Columns-ImageTextCTA__table-col right">
+                <div class="col-lg-7 pull-left">
+                    <div class="Content-Columns-ImageTextCTA__img">
+                        <img src="../img/col-images.png" alt="">
+                    </div>
+                    <p class="Content-Columns-ImageTextCTA__text">Try our 30-day free trial to see what Segmatic can do for your business.</p>
+                    <a href="Sign-up.html" class="button">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-ExtraContent-Boxes">
+    <div class="container">
+        <div class="row">
+            <h5 class="Content-ExtraContent-Boxes__title">The Segmatic Difference</h5>
+            <div class="Content-ExtraContent-Boxes__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="img/analyster.png" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box">The All-in-one Paid Search Tool</h6>
+                </div>
+            </div>
+            <div class="extra-content__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="img/copy-img.png" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box">The Tool your In-house Team Needs to get Results</h6>
+                </div>
+            </div>
+            <div class="Content-ExtraContent-Boxes__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="../img/footer-img.jpg" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box"> Built to Perform </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./extra-content-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="Terms-Conditons.html">Terms & Conditions </a></li>
+                    <li><a href="Privacy-Statement.html">Privacy Statement</a></li>
+                    <li><a href="Cookie-Policy.html">How we use cookies</a></li>
+                    <li><a href="../contact_us.html">Contact Us </a></li>
+                    <li><a href="Testimonial-Policy.html">Testimonial Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer> <!--./footer-->
+<!-- COMPONENTS SCRIPTS -->
+<script type="text/javascript" src="../vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../External Analyser Results_files/jquery.js"></script>
+<script src="../External Analyser Results_files/amcharts.js"></script>
+<script src="../External Analyser Results_files/serial.js"></script>
+<script src="../External Analyser Results_files/loader.js"></script>
+<script src="../External Analyser Results_files/second-graph.js"></script>
+<script src="../External Analyser Results_files/third-graph.js"></script>
+<script src="../External Analyser Results_files/fourth-graph.js"></script>
+<script src="../External Analyser Results_files/ad-extension.js"></script>
+<!--<script src="./External Analyser Results_files/results-page.js"></script>-->
+<!--<script src="./External Analyser Results_files/bootstrap.min.js"></script>-->
+<script src="../External Analyser Results_files/wow.min.js"></script>
+<script src="../External Analyser Results_files/wow.js"></script>
+<script src="../External Analyser Results_files/first-graph.js"></script>
+<script src="../External Analyser Results_files/ea-show-hidden-rows.js"></script>
+<script src="../External Analyser Results_files/yii.js"></script>
+<script src="../External Analyser Results_files/ewa2dgt.js"></script>
+<script src="../External Analyser Results_files/ea.js"></script>
+<script src="../js/main_js.js"></script>
+</body>
+</html>

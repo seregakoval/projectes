@@ -1,0 +1,13 @@
+/*header media*/
+@media (max-width: 991px) {
+  .header__log { width: 60%; display: block; }
+  .header__log img { max-width: 100%; }
+  .header__logo { width: 100%; display: flex; align-items: center; flex-direction: row-reverse;justify-content: space-between;
+  }
+}
+/*and header media*/
+
+@media (max-width: 768px) {
+  .block-content__title br { display: none; }
+  .Clients-LogoGrid__sub-title br { display: none;font-size: 16px; }
+}

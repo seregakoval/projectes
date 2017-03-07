@@ -1,0 +1,28 @@
+$blue: #1fb9f1;
+$gray: #676a6c;
+$red: #ec4758;
+$orange: #ffb80d;
+$green-light: #4be8d7;
+$texttitle: #1d1d1d;
+$text-color: #676a6c;
+$green: #32d251;
+$pink: #f50962;
+$black: #1d1d1d;
+$green2: #1AB394;
+
+.border-green {
+  border-top: 5px solid #32d251;
+}
+
+$grid-breakpoints: (
+        xs:540px,
+        sm:768px,
+        md:992px,
+        lg:1200px
+);
+@function max-w($gbp) {
+  @return "max-width:" + ( map_get($grid-breakpoints, $gbp) - 1px);
+}
+@function min-w($gbp) {
+  @return "min-width:" + map_get($grid-breakpoints, $gbp);
+}

@@ -1,0 +1,112 @@
+//BOXES
+.fix-standard {
+  padding: 0 !important;
+}
+.Content-X-4Boxes {
+  padding: 30px 0;
+  background: #fff;
+  .box {
+    min-height: 306px;
+    text-align: center;
+    padding: 0 10%;
+    @media (max-width: 991px) {
+      padding: 0 5%;
+    }
+    @media (max-width: 768px) {
+      min-height: 280px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 767px) {
+      min-height: inherit;
+      margin-bottom: 20px;
+    }
+    &__image {
+      max-width: 71px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+      display: inline-block;
+      img {
+        max-width: 71px;
+      }
+    }
+    &__title{
+      font-size: 22px;
+      color: #7c7c7c;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 16px;
+        color: #b7b7b7;
+        line-height: 1.6;
+    }
+  }
+  &__main-box {
+    max-width: 1118px;
+    margin: 40px auto 0 auto;
+  }
+}
+.block-content {
+  max-width: 1170px;
+  margin: 0 auto 0 auto;
+  &__title {
+    font-size: 28px;
+    color: #545d63;
+    line-height: 1.2;
+    font-weight: bold;
+    margin:0 0  20px 0;
+    text-align: center;
+    @media (max-width: 991px) {
+      font-size: 27px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  &__text {
+    font-size: 19px;
+    color: #b6bcc0;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 15px;
+    &:last-child {
+      margin: 0;
+    }
+    @media (max-width: 991px) {
+      font-size: 18px;
+    }
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+  }
+  .list{
+
+    li {
+      list-style: none;
+      font-size: 19px;
+      color: #b6bcc0;
+      text-align: left;
+      line-height: 1.8;
+    }
+  }
+  ul {
+    margin-left: 6.5%;
+    li {
+      list-style: disc;
+      font-size: 19px;
+      color: #b6bcc0;
+      line-height: 1.8;
+      &:last-child {
+        list-style: none;
+      }
+      @media (max-width: 767px) {
+        font-size: 15px !important;
+      }
+    }
+  }
+}
+
+.title-fix {
+  margin-bottom: 0;
+}

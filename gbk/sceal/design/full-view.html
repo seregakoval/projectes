@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSPINIA | Flot Charts</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link href="/angular/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/angular/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="/angular/web/css/main.css" rel="stylesheet">
+</head>
+<body>
+<header class="header-print">
+    <nav class="header-wrap" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-button" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> Daily KPI Reports</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="right-header collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="flex-block">
+                <div class="block-left">
+                    <a href="#" class="btn-view">View as <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#"><img src="/angular/web/img/print.png" alt=""></a></li>
+                        <li><a href="#"><img src="/angular/web/img/icon-print.png" alt=""></a></li>
+                        <li><a href="#"><img src="/angular/web/img/icon-print2.png" alt=""></a></li>
+                        <li><a href="#"><img src="/angular/web/img/iconpr.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+</header> <!--./head-->
+    <div class="wrapper-print">
+        <div class="print-body">
+            <div class="body-wrap">
+                <div class="body-head">
+                    <h1 class="title"> Daily KPI Report 15/08/2016</h1>
+                    <div class="logo">
+                        <a href="#"><img src="/angular/web/img/Kmap.png" alt=""></a>
+                    </div>
+                </div> <!--./body-head-->
+                <div class="sub-head">
+                    <div class="block-title">
+                        <h2 class="title">Total Revenue: <span class="price">$3,350</span></h2>
+                    </div> <!--./box-->
+                    <div class="box">
+                        <div class="col">
+                            <p class="title-col">Budget</p>
+                            <p class="text color-green"> + 4$</p>
+                        </div>
+                        <div class="col">
+                            <p class="title-col">forecast</p>
+                            <p class="text"> 1$</p>
+                        </div>
+                    </div> <!--./box-->
+                    <div class="box last-col">
+                        <div class="col">
+                            <p class="title-col">yoy</p>
+                            <p class="text color-red"> -1$</p>
+                        </div>
+                        <div class="col right">
+                            <p class="title-col">mom</p>
+                            <p class="text color-green"> +$110</p>
+                        </div>
+                        <div class="button">
+                            <a href="#" class="dropdown-r">
+                                <img src="/angular/web/img/iconpr-black.png" alt="">
+                            </a>
+                        </div>
+                    </div> <!--./box-->
+                </div> <!--/.sub-head-->
+                <div class="print-content">
+                    <div class="main-block">
+                        <div class="print-content__box">
+                            <div class="box-head">
+                                <h3 class="title-box">Prepaid</h3>
+                                <a href="#" class="right-menu">
+                                    <img src="/angular/web/img/iconpr-black.png" alt="">
+                                </a>
+                            </div>  <!--./box-head-->
+                            <div class="box-body">
+                               <div class="body-content">
+                                   <div class="col">
+                                       <p class="price">$1,065</p>
+                                       <p class="sub-price">budget <span class="number color-green">+$52</span></p>
+                                   </div>
+                                   <div class="col graphic">
+                                       <img src="/angular/web/img/graphic.png" alt="">
+                                   </div>
+                               </div>
+                                <div class="block-arrow">
+                                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div> <!--./box-body-->
+                            <div class="footer-box">
+                                <div class="col">
+                                    <p class="col-text">forecast</p>
+                                    <p class="col-money color-green">+$3</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">yoy</p>
+                                    <p class="col-money color-red">-$164</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">mom</p>
+                                    <p class="col-money color-red">-$6</p>
+                                </div>
+                            </div>
+                        </div> <!--box-->
+                    </div> <!--./main-block-->
+                    <div class="main-block">
+                        <div class="print-content__box">
+                            <div class="box-head">
+                                <h3 class="title-box">Postpaid Cunsumer</h3>
+                                <a href="#" class="right-menu">
+                                    <img src="/angular/web/img/iconpr-black.png" alt="">
+                                </a>
+                            </div>  <!--./box-head-->
+                            <div class="box-body">
+                                <div class="body-content">
+                                    <div class="col">
+                                        <p class="price">$695</p>
+                                        <p class="sub-price">budget <span class="number color-green">$75</span></p>
+                                    </div>
+                                    <div class="col graphic">
+                                        <img src="/angular/web/img/graphic.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="block-arrow">
+                                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div> <!--./box-body-->
+                            <div class="footer-box">
+                                <div class="col">
+                                    <p class="col-text">forecast</p>
+                                    <p class="col-money color-green">+$4</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">yoy</p>
+                                    <p class="col-money color-green">+$320</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">mom</p>
+                                    <p class="col-money color-red">-$8</p>
+                                </div>
+                            </div>
+                        </div> <!--box-->
+                    </div> <!--./main-block-->
+                    <div class="main-block">
+                        <div class="print-content__box">
+                            <div class="box-head">
+                                <h3 class="title-box">Postpaid Corporate</h3>
+                                <a href="#" class="right-menu">
+                                    <img src="/angular/web/img/iconpr-black.png" alt="">
+                                </a>
+                            </div>  <!--./box-head-->
+                            <div class="box-body">
+                                <div class="body-content">
+                                    <div class="col">
+                                        <p class="price">$570</p>
+                                        <p class="sub-price">budget <span class="number color-red">$2</span></p>
+                                    </div>
+                                    <div class="col graphic">
+                                        <img src="/angular/web/img/graphic.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="block-arrow">
+                                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div> <!--./box-body-->
+                            <div class="footer-box">
+                                <div class="col">
+                                    <p class="col-text">forecast</p>
+                                    <p class="col-money color-green">+$0</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">yoy</p>
+                                    <p class="col-money color-red">-$63</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">mom</p>
+                                    <p class="col-money color-red">-$6</p>
+                                </div>
+                            </div>
+                        </div> <!--box-->
+                    </div> <!--./main-block-->
+                    <div class="main-block">
+                        <div class="print-content__box">
+                            <div class="box-head">
+                                <h3 class="title-box">Incoming</h3>
+                                <a href="#" class="right-menu">
+                                    <img src="/angular/web/img/iconpr-black.png" alt="">
+                                </a>
+                            </div>  <!--./box-head-->
+                            <div class="box-body">
+                                <div class="body-content">
+                                    <div class="col">
+                                        <p class="price">$234</p>
+                                        <p class="sub-price">budget <span class="number color-red">-$2</span></p>
+                                    </div>
+                                    <div class="col graphic">
+                                        <img src="/angular/web/img/graphic.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="block-arrow">
+                                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div> <!--./box-body-->
+                            <div class="footer-box">
+                                <div class="col">
+                                    <p class="col-text">forecast</p>
+                                    <p class="col-money color-red">-$6</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">yoy</p>
+                                    <p class="col-money color-red">-$39</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">mom</p>
+                                    <p class="col-money color-green">+$20</p>
+                                </div>
+                            </div>
+                        </div> <!--box-->
+                    </div> <!--./main-block-->
+                    <div class="main-block">
+                        <div class="print-content__box">
+                            <div class="box-head">
+                                <h3 class="title-box">Inbound Roaming</h3>
+                                <a href="#" class="right-menu">
+                                    <img src="/angular/web/img/iconpr-black.png" alt="">
+                                </a>
+                            </div>  <!--./box-head-->
+                            <div class="box-body">
+                                <div class="body-content">
+                                    <div class="col">
+                                        <p class="price">$80</p>
+                                        <p class="sub-price">budget <span class="number color-red">-$2</span></p>
+                                    </div>
+                                    <div class="col graphic">
+                                        <img src="/angular/web/img/graphic.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="block-arrow">
+                                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div> <!--./box-body-->
+                            <div class="footer-box">
+                                <div class="col">
+                                    <p class="col-text">forecast</p>
+                                    <p class="col-money color-orange">$0</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">yoy</p>
+                                    <p class="col-money color-red">-$25</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">mom</p>
+                                    <p class="col-money color-green">+$25</p>
+                                </div>
+                            </div>
+                        </div> <!--box-->
+                    </div> <!--./main-block-->
+                    <div class="main-block">
+                        <div class="print-content__box">
+                            <div class="box-head">
+                                <h3 class="title-box">Business Solution</h3>
+                                <a href="#" class="right-menu">
+                                    <img src="/angular/web/img/iconpr-black.png" alt="">
+                                </a>
+                            </div>  <!--./box-head-->
+                            <div class="box-body">
+                                <div class="body-content">
+                                    <div class="col">
+                                        <p class="price">$676</p>
+                                        <p class="sub-price">budget <span class="number color-red">-$2</span></p>
+                                    </div>
+                                    <div class="col graphic">
+                                        <img src="/angular/web/img/graphic.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="block-arrow">
+                                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div> <!--./box-body-->
+                            <div class="footer-box">
+                                <div class="col">
+                                    <p class="col-text">forecast</p>
+                                    <p class="col-money color-orange">$0</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">yoy</p>
+                                    <p class="col-money color-green">+$167</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">mom</p>
+                                    <p class="col-money color-red">-$1</p>
+                                </div>
+                            </div>
+                        </div> <!--box-->
+                    </div> <!--./main-block-->
+                    <div class="main-block">
+                        <div class="print-content__box">
+                            <div class="box-head">
+                                <h3 class="title-box">Mobile Advertising</h3>
+                                <a href="#" class="right-menu">
+                                    <img src="/angular/web/img/iconpr-black.png" alt="">
+                                </a>
+                            </div>  <!--./box-head-->
+                            <div class="box-body">
+                                <div class="body-content">
+                                    <div class="col">
+                                        <p class="price">$26</p>
+                                        <p class="sub-price">budget <span class="number color-red">-$2</span></p>
+                                    </div>
+                                    <div class="col graphic">
+                                        <img src="/angular/web/img/graphic.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="block-arrow">
+                                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div> <!--./box-body-->
+                            <div class="footer-box">
+                                <div class="col">
+                                    <p class="col-text">forecast</p>
+                                    <p class="col-money color-orange">$0</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">yoy</p>
+                                    <p class="col-money color-green">+$3</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">mom</p>
+                                    <p class="col-money color-red">-$5</p>
+                                </div>
+                            </div>
+                        </div> <!--box-->
+                    </div> <!--./main-block-->
+                    <div class="main-block">
+                        <div class="print-content__box">
+                            <div class="box-head">
+                                <h3 class="title-box">Mobile Advertising</h3>
+                                <a href="#" class="right-menu">
+                                    <img src="/angular/web/img/iconpr-black.png" alt="">
+                                </a>
+                            </div>  <!--./box-head-->
+                            <div class="box-body">
+                                <div class="body-content">
+                                    <div class="col">
+                                        <p class="price">$26</p>
+                                        <p class="sub-price">budget <span class="number color-red">-$2</span></p>
+                                    </div>
+                                    <div class="col graphic">
+                                        <img src="/angular/web/img/graphic.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="block-arrow">
+                                    <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div> <!--./box-body-->
+                            <div class="footer-box">
+                                <div class="col">
+                                    <p class="col-text">forecast</p>
+                                    <p class="col-money color-orange">$0</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">yoy</p>
+                                    <p class="col-money color-green">+$3</p>
+                                </div>
+                                <div class="col">
+                                    <p class="col-text">mom</p>
+                                    <p class="col-money color-red">-$5</p>
+                                </div>
+                            </div>
+                        </div> <!--box-->
+                    </div> <!--./main-block-->
+                </div> <!--./pront-content-->
+                <div class="main-info">
+                    <div class="top">
+                        <a href="#">
+                            <img src="/angular/web/img/icon-print4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="info-block">
+                        <div class="info-col">
+                            <p class="info-title">Recharge</p>
+                        </div>
+                        <div class="info-col">
+                            <p class="title-text">Actual</p>
+                            <p class="price">$1,040</p>
+                        </div>
+                        <div class="info-col">
+                            <p class="title-text">budget</p>
+                            <p class="price color-red">-$36</p>
+                        </div>
+                        <div class="info-col">
+                            <p class="title-text">forcast</p>
+                            <p class="price color-red">-$1</p>
+                        </div>
+                        <div class="info-col">
+                            <p class="title-text">yoy</p>
+                            <p class="price color-red">-$146</p>
+                        </div>
+                        <div class="info-col">
+                            <p class="title-text">mom</p>
+                            <p class="price color-red">-$13</p>
+                        </div>
+                        <div class="col-menu">
+                            <a href="#" class="right-menu">
+                                <img src="/angular/web/img/iconpr-black.png" alt="">
+                            </a>
+                        </div>
+                    </div> <!--info-block-->
+                </div> <!--./main-info-->
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="/angular/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/angular/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/angular/assets/js/jquery.metisMenu.js"></script>
+    <script src="/angular/assets/js/jquery.slimscroll.min.js"></script>
+    <!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+    <!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+    <!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+    <!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+    <!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+    <script src="/angular/app/custom/inspinia.js"></script>
+    <!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+    <!-- Flot demo data -->
+    <!--<script src="js/demo/flot-demo.js"></script>-->
+</body>
+</html>

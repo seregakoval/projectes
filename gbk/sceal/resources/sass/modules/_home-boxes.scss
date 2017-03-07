@@ -1,0 +1,145 @@
+//HOME-BOSES
+.home-boxes {
+  .home-container {
+	max-width: 1170px;
+	margin: 0 auto;
+  }
+  padding: 30px;
+  @media (max-width: 480px) {
+	padding: 15px;
+  }
+  &__head-box {
+	padding: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgb(189, 189, 189);
+	@media (max-width: 480px) {
+	  padding: 10px 15px;
+	}
+	i {
+	  margin-left: 10px;
+	  font-size: 25px;
+	  color:  #676a6c;
+	  transition: 0.3s;
+	  vertical-align: middle;
+	  @media (max-width: 480px) {
+		font-size: 19px;
+	  }
+	}
+	.title {
+	  display: inline-block;
+	  vertical-align: middle;
+	  font-size: 25px;
+	  color: #676a6c;
+	  margin: 0 0 0 10px;
+	  font-weight: 500;
+	  transition: 0.3s;
+		background:none;
+	  @media (max-width: 480px) {
+		font-size: 18px;
+	  }
+	}
+	.icon-2 {
+	  height: 28px;
+	  font-size: 29px;
+	  @media (max-width: 480px) {
+		font-size: 23px;
+		height: auto;
+	  }
+	}
+  }
+  .main-box {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	//justify-content: center;
+	@media (max-width: 1450px) {
+	  justify-content: center;
+	}
+	.box {
+	  transition: 0.3s;
+	  background: #fff;
+	  margin: 0 15px 30px 15px;
+	  width: 359px;
+	  border: 1px solid rgb(189, 189, 189);
+	  -webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+	  border-radius: 3px;
+	  //@media (max-width: 1450px) {
+		//width: 47%;
+		//min-width: 300px;
+	  //}
+	  @media (max-width: 480px) {
+		margin: 0 0 15px 0;
+		width: 100%;
+	  }
+		.balance {
+		  font-size: 14px;
+		  color:  #676a6c;
+		  margin: 0 ;
+		}
+	  &.active {
+		border: 1px solid #03baf4;
+		.home-boxes__head-box {
+		  border-radius: 3px 3px 0 0;
+		  background: #03baf4;
+		  .title {
+			color: #fff;
+		  }
+		  i {
+			color: #fff;
+		  }
+		}
+	  }
+	  &:hover {
+		border: 1px solid #03baf4;
+		.home-boxes__head-box {
+		  border-radius: 3px 3px 0 0;
+		  background: #03baf4;
+		  .title {
+			color: #fff;
+		  }
+		  i {
+			color: #fff;
+		  }
+		}
+	  }
+	}
+  }
+
+  &__item {
+	margin-bottom: 15px;
+	padding: 0 15px 0 35px;
+	@media (max-width: 480px) {
+	  padding: 0 15px 0 15px;
+	}
+	a {
+	  display: block;
+	  text-decoration: none;
+	  i {
+		font-size: 16px;
+		display: inline-block;
+		vertical-align: middle;
+		transition: 0.3s;
+		color: #676a6c;
+	  }
+	  .text {
+		margin: 0 0 0 10px;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 17px;
+		color:  #676a6c;
+		outline: none;
+		transition: 0.3s;
+		@media (max-width: 480px) {
+		  font-size: 15px;
+		}
+		@media (max-width: 350px) {
+		  max-width: 140px;
+		}
+	  }
+	  &:hover i,&:hover .text {
+		color: #03baf4;
+	  }
+	}
+  }
+}

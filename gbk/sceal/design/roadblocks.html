@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSPINIA | Flot Charts</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link href="/angular/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/angular/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="/angular/web/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="/angular/web/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="dashboard.html">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <!--<ul class="nav nav-second-level collapse">-->
+                    <!--<li><a href="#">Test</a></li>-->
+                    <!--<li><a href="#">Test</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li>
+                    <a href="road-blocks.html">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <span class="nav-label">Roadblocks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">Anomalies</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="#">Anomalies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                        <span class="nav-label">Reports</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Analytics</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" >
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="/angular/assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrap-reports">
+            <div class="wrap-reports__head">
+                <div class="wrap-reports__col">
+                    <h1 class="wrap-reports__title">All RoadBlocks<i class="fa fa-angle-down" aria-hidden="true"></i></h1>
+                </div>
+                <div class="wrap-reports__col">
+                    <div class="wrap-reports__calendar">
+                        <a href="#">Day</a>
+                        <a href="#">Week</a>
+                        <a href="#" class="active">Month</a>
+                        <a href="#">Quarter</a>
+                        <a href="#">Year</a>
+                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                    </div> <!--./calendar-->
+                    <div class="wrap-reports__filter">
+                        <form action="" class="select">
+                            <select class="form-control">
+                                <option value="">Filter by...</option>
+                                <option value="">test</option>
+                                <option value="">test</option>
+                            </select>
+                        </form>
+                    </div> <!--./filter-->
+                </div> <!--./col-->
+            </div> <!--./head-->
+    </div>
+        <div class="wrap-road">
+            <div class="wrap-road__box">
+                <div class="box-col left">
+                    <p class="title-box">
+                        Bob Lyons <span>Prepaid Metric is late</span> and stalling your <span>Daily KPI Report</span>
+                    </p>
+                    <div class="string">
+                        <div class="blocked">
+                            <div class="block-blocked">
+                                <div class="img">
+                                    <img src="/angular/web/img/blocked-icon.png" alt="">
+                                </div>
+                                <p class="text-blocked">
+                                    you are <br>
+                                    blocked
+                                </p>
+                            </div> <!--block-blockred-->
+                            <div class="user">
+                                <div class="img">
+                                    <img src="/angular/web/img/bob-avatar.png" alt="">
+                                </div>
+                                <p class="user-name">
+                                    Bob
+                                    Lyons
+                                </p>
+                            </div> <!--user-->
+                        </div> <!--blocked-->
+                        <div class="scheme">
+                            <div class="line">
+                                <div class="left-text">
+                                    <p>not started</p>
+                                </div>
+                                <div class="right-text">
+                                    <p>complete</p>
+                                </div>
+                                <span class="stat"></span>
+                                <span class="stat" style="left:17%;"></span>
+                                <span class="stat" style="left:33.3%;"></span>
+                                <span class="stat" style="left:67%;"></span>
+                                <span class="stat" style="left:83.3%;"></span>
+                                <span class="stat" style="left:100%;"></span>
+                                <div class="progress-status">
+                                    <span class="status"></span>
+                                    <span class="text">in progress</span>
+                                </div>
+                            </div> <!--line-->
+                        </div>
+                    </div> <!--./string-->
+                </div> <!--box-col-->
+                <div class="box-col right">
+                    <div class="buttons">
+                        <button class="button">View</button>
+                        <button class="button">Nudge</button>
+                    </div>
+                </div>
+            </div> <!--wra-road_box-->
+            <div class="wrap-road__box">
+                <div class="box-col left">
+                    <p class="title-box">
+                        Bob Lyons <span>Prepaid Metric is late</span> and stalling your <span>Daily KPI Report</span>
+                    </p>
+                    <div class="string">
+                        <div class="blocked">
+                            <div class="block-blocked">
+                                <div class="img">
+                                    <img src="/angular/web/img/blocked-icon.png" alt="">
+                                </div>
+                                <p class="text-blocked">
+                                    you are <br>
+                                    blocked
+                                </p>
+                            </div> <!--block-blockred-->
+                            <div class="user">
+                                <div class="img">
+                                    <img src="/angular/web/img/sheena-stanely.png" alt="">
+                                </div>
+                                <p class="user-name">
+                                    Sheena
+                                    Stanley
+                                </p>
+                            </div> <!--user-->
+                        </div> <!--blocked-->
+                        <div class="scheme">
+                            <div class="line">
+                                <div class="left-text">
+                                    <p>not started</p>
+                                </div>
+                                <div class="right-text">
+                                    <p>complete</p>
+                                </div>
+                                <span class="stat"></span>
+                                <span class="stat" style="left:17%;"></span>
+                                <span class="stat" style="left:33.3%;"></span>
+                                <span class="stat" style="left:67%;"></span>
+                                <span class="stat" style="left:83.3%;"></span>
+                                <span class="stat" style="left:100%;"></span>
+                                <div class="progress-status">
+                                    <span class="status"></span>
+                                    <span class="text">in progress</span>
+                                </div>
+                            </div> <!--line-->
+                        </div>
+                    </div> <!--./string-->
+                </div> <!--box-col-->
+                <div class="box-col right">
+                    <div class="buttons">
+                        <button class="button">View</button>
+                        <button class="button">Nudge</button>
+                    </div>
+                </div>
+            </div> <!--wra-road_box-->
+            <div class="wrap-road__box">
+                <div class="box-col left">
+                    <p class="title-box">
+                        Bob Lyons <span>Prepaid Metric is late</span> and stalling your <span>Daily KPI Report</span>
+                    </p>
+                    <div class="string">
+                        <div class="blocked">
+                            <div class="block-blocked">
+                                <div class="img">
+                                    <img src="/angular/web/img/blocked-icon.png" alt="">
+                                </div>
+                                <p class="text-blocked">
+                                    lagging
+                                </p>
+                            </div> <!--block-blockred-->
+                            <div class="user">
+                                <div class="img">
+                                    <img src="/angular/web/img/bob-avatar.png" alt="">
+                                </div>
+                                <p class="user-name">
+                                    Bob
+                                    Lyons
+                                </p>
+                            </div> <!--user-->
+                        </div> <!--blocked-->
+                        <div class="scheme">
+                            <div class="line">
+                                <div class="left-text">
+                                    <p>not started</p>
+                                </div>
+                                <div class="right-text">
+                                    <p>complete</p>
+                                </div>
+                                <span class="stat"></span>
+                                <span class="stat" style="left:17%;"></span>
+                                <span class="stat" style="left:33.3%;"></span>
+                                <span class="stat" style="left:67%;"></span>
+                                <span class="stat" style="left:83.3%;"></span>
+                                <span class="stat" style="left:100%;"></span>
+                                <div class="progress-status">
+                                    <span class="status"></span>
+                                    <span class="text">in progress</span>
+                                </div>
+                            </div> <!--line-->
+                        </div>
+                    </div> <!--./string-->
+                </div> <!--box-col-->
+                <div class="box-col right">
+                    <div class="buttons">
+                        <button class="button">View</button>
+                        <button class="button">Nudge</button>
+                    </div>
+                </div>
+            </div> <!--wra-road_box-->
+        </div> <!--wrap-road-->
+</div>
+</div>
+
+<div class="item-box">
+    <div class="col-custom"></div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="/angular/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/angular/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/angular/assets/js/jquery.metisMenu.js"></script>
+<script src="/angular/assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="/angular/app/custom/inspinia.js"></script>
+<!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- Flot demo data -->
+<!--<script src="js/demo/flot-demo.js"></script>-->
+
+</body>
+</html>

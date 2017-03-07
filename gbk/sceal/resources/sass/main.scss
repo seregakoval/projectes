@@ -1,0 +1,69 @@
+/***********************/
+/*      BASE STYLES    */
+
+@import "base/base";
+/* BUTTONS */
+@import "base/_buttons.scss";
+
+/***********************/
+/*        LAYOUT       */
+
+@import "layout/_header";
+@import "layout/_content";
+@import "layout/_footer";
+@import "layout/_sidebar";
+
+/***********************/
+/*       MODULES       */
+@import "modules/_home-boxes.scss";
+@import "modules/_modal_new-user.scss";
+@import "modules/_modal_delete-user.scss";
+@import "modules/_modal-claire.scss";
+@import "modules/_modal_reset-password.scss";
+@import "modules/_modal-reset-table.scss";
+@import "modules/_active-users.scss";
+@import "modules/_modal_organization.scss";
+@import "modules/_organization-profile.scss";
+@import "modules/_subscription.scss";
+@import "modules/_login.scss";
+@import "modules/_admin.scss";
+@import "modules/_reports.scss";
+@import "modules/_roadblocks.scss";
+@import "modules/_full-view.scss";
+@import "modules/_metric.scss";
+@import "modules/_request-update-prior.scss";
+@import "modules/_comment-recived.scss";
+@import "modules/_metric-graph.scss";
+@import "modules/_network-graph.scss";
+@import "modules/_complex-create-metric.scss";
+@import "modules/_create-reports.scss";
+@import "modules/_modal-metric.scss";
+@import "modules/_style-report-page.scss";
+@import "modules/_modal-quick.scss";
+@import "modules/notification.scss";
+@import "blocks/_blocks.scss";
+
+
+/* Page edit-template*/
+@import "pages/template-layout/_header.scss";
+@import "pages/template-layout/_sub-header.scss";
+@import "pages/template-layout/_panel.scss";
+@import "pages/template-layout/_sidebar.scss";
+@import "pages/template-layout/_content.scss";
+
+@import "pages/_modal-metric-change.scss";
+@import "pages/Create-report-pages.scss";
+@import "pages/_report-list.scss";
+
+
+/***********************/
+/*        PAGES        */
+
+
+
+/***********************/
+/*        MEDIA        */
+
+@import "_media.scss";
+
+@import "custom";

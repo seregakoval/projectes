@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSPINIA | Flot Charts</title>
+    <link href="/angular/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/angular/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="/angular/web/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="/angular/web/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="road-blocks.html">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <span class="nav-label">Roadblocks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">Anomalies</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="#">Anomalies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                        <span class="nav-label">Reports</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Metric</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" >
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="/angular/assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrap-metric">
+            <div class="wrap-metric__head">
+                <h1 class="title"><i class="fa fa-angle-left" aria-hidden="true"></i>All Metrics</h1>
+                <div class="sub-head">
+                    <div class="left">
+                        <h2 class="title-sub-head">Total Base <a href="#">Show details</a></h2>
+                    </div>
+                    <div class="select-date">
+                        <div class="select">
+                            <select class="form-control">
+                                <option>dd/mm/yyyyy to dd/mm/yyyy</option>
+                                <option>dd/mm/yyyyy to dd/mm/yyyy</option>
+                            </select>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div> <!--sub-head-->
+            </div> <!--head-->
+            <div class="wrap-metric__content-head">
+                <div class="head-row">
+                    <div class="col border-right">
+                        <div class="col-content">
+                            <div class="col-6">
+                                <h3 class="title-col">Current</h3>
+                            </div>
+                            <div class="col-6">
+                                <p class="number">
+                                    40,467
+                                </p>
+                                <p class="update">
+                                    Last updated 18/09/2016
+                                </p>
+                            </div>
+                        </div> <!--./col-content -->
+                        <div class="row-select">
+                            <div class="col-select">
+                                <div class="select">
+                                    <select class="form-control">
+                                        <option>Budget</option>
+                                        <option>Budget</option>
+                                    </select>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                            </div><!--./col-select-->
+                            <div class="col-select">
+                                <div class="select">
+                                    <select class="form-control disable">
+                                        <option>Forecast</option>
+                                        <option>Forecas</option>
+                                    </select>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                            </div> <!--./col-select-->
+                        </div> <!--row-select-->
+                        <div class="row-number">
+                            <div class="col-number">
+                                <p class="text">798</p>
+                            </div>
+                            <div class="col-number">
+                                <p class="text">111</p>
+                            </div>
+                        </div> <!--./row-number-->
+                    </div> <!--./col-->
+                    <div class="col">
+                        <div class="col-content">
+                            <div class="col-6">
+                                <p class="statistic">+6.5%</p>
+                                <p class="sub-text">Since last month</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="select-col">
+                                    <select class="form-control">
+                                        <option>Actions</option>
+                                        <option>Test</option>
+                                        <option>Test</option>
+                                        <option>Test</option>
+                                    </select>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div> <!--./col-content-->
+                        <div class="row-select">
+                            <div class="col-select">
+                                <div class="select">
+                                    <select class="form-control">
+                                        <option>YoY</option>
+                                        <option>YoY</option>
+                                    </select>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                            </div><!--./col-select-->
+                            <div class="col-select">
+                                <div class="select">
+                                    <select class="form-control disable">
+                                        <option>MoM</option>
+                                        <option>MoM</option>
+                                    </select>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                            </div> <!--./col-select-->
+                        </div> <!--row-select-->
+                        <div class="row-number">
+                            <div class="col-number">
+                                <p class="text">983</p>
+                            </div>
+                            <div class="col-number">
+                                <p class="text">342</p>
+                            </div>
+                        </div> <!--./row-number-->
+                    </div> <!--col-->
+                </div> <!--head-row-->
+            </div> <!--content-head-->
+            <div class="wrap-metric__body">
+                <div class="wrap-metric__graphic">
+                    <div class="head">
+                        <ul class="navigation">
+                            <li><a href="#" class="active">Day</a></li>
+                            <li><a href="#">Week</a></li>
+                            <li><a href="#">Month</a></li>
+                            <li><a href="#">Quarter</a></li>
+                        </ul>
+                    </div> <!--head-->
+                    <div class="graphic-body">
+                       <div class="graph-box">
+                           <img src="/angular/web/img/graph.png" alt="">
+                       </div>
+                        <div class="wrap-metric__graph-table">
+                            <div class="table-col">
+                                <div class="head none"></div>
+                                <div class="body">
+                                    <p class="title">Total</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                            <div class="table-col">
+                                <div class="head">
+                                    <p class="title">Jun 16</p>
+                                </div>
+                                <div class="body">
+                                    <p class="text">22.187</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--graphic-->
+            </div> <!--body-->
+        </div> <!--wrap-graphic-->
+    </div>
+</div>
+<div class="modal fade in metric-modal">
+    <div class="modalContent">
+        <button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <h1 class="metric-modal__title">Confirm Change</h1>
+        <div class="block-text">
+            <p class="metric-modal__sub-text">You are about to change <span>4 values</span>  of this metic  </p>
+            <p class="metric-modal__sub-text">This  will be visible to everyone</p>
+        </div>
+        <form action="#">
+            <div class="blockMessage">
+                <label class="title-form">Reason for change (optional)</label>
+                <div class="string">
+                    <div class="left">
+                    </div>
+                    <input type="text" class="input-message">
+                    <div class="navigation">
+                        <a href="#" active><i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+                        <a href="#" active><img src="/angular/web/img/icon-form.png" alt=""></a>
+                        <a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div> <!--form-group-->
+            <div class="buttonsForm">
+                <button class="modal-btn">Cancel</button>
+                <button class="modal-btn active">Confirm</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="item-box">
+    <div class="col-custom"></div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="/angular/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/angular/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/angular/assets/js/jquery.metisMenu.js"></script>
+<script src="/angular/assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="/angular/app/custom/inspinia.js"></script>
+<!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- Flot demo data -->
+<!--<script src="js/demo/flot-demo.js"></script>-->
+
+</body>
+
+</html>

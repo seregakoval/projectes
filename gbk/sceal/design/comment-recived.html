@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSPINIA | Flot Charts</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link href="/angular/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/angular/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
+    <link href="/angular/web/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="sidebar navbar-default navbar-static-side" role="navigation">
+        <div class="test sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center" ui-sref="root.about" href="/about">
+                        <img alt="image" src="/angular/web/img/logo-free.png">
+                        <a href="#">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">KMap</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="admin.html">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">Home</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <span class="nav-label">Roadblocks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i> <span class="nav-label">Anomalies</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="#">Anomalies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                        <span class="nav-label">Reports</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="nav-label">Analytics</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul  class="nav bottom-nav js-fading-menu">
+                <li ui-sref-active="active" ui-sref="root.settings" i-class="fa fa-cogs" class="ng-isolate-scope" href="/settings">
+                    <a href="/settings" ui-sref="root.settings"><i class="fa fa-cogs"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar white-bg site-navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+                    <form role="search" class="navbar-form-custom ng-pristine ng-valid" >
+                        <div class="form-group">
+                            <input type="text" placeholder="Search..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-plus"></i>
+                                <span class="bold text-uppercase">Quick add</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="/reports/add" ui-sref="root.report.add">Report</a></li>
+                                <li class="disabled"><a href="#">Task</a></li>
+                                <li><a href="#" ng-click="addMetric()">Metric</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="count-info" href="#" ng-click="$root.rightSidebar = !$root.rightSidebar">
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <img alt="image" class="img-circle" src="/angular/assets/img/profile_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrap-reports">
+            <div class="wrap-reports__head">
+                <div class="wrap-reports__col">
+                    <h1 class="wrap-reports__title">All Reports <i class="fa fa-angle-down" aria-hidden="true"></i></h1>
+                </div>
+                <div class="wrap-reports__col">
+                    <div class="wrap-reports__calendar">
+                        <a href="#">Day</a>
+                        <a href="#">Week</a>
+                        <a href="#" class="active">Month</a>
+                        <a href="#">Quarter</a>
+                        <a href="#">Year</a>
+                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                    </div> <!--./calendar-->
+                    <div class="wrap-reports__filter">
+                        <div class="list">
+                            <button><i class="fa fa-th-large" aria-hidden="true"></i></button>
+                            <button class="active"><i class="fa fa-list" aria-hidden="true"></i></button>
+                        </div>
+                        <button class="btn-new">New</button>
+                        <form action="" class="select">
+                            <select class="form-control">
+                                <option value="">Filter by...</option>
+                                <option value="">test</option>
+                                <option value="">test</option>
+                            </select>
+                        </form>
+                    </div> <!--./filter-->
+                </div> <!--./col-->
+            </div> <!--./head-->
+            <div class="wrap-reports__body">
+                <div class="wrap-reports__content">
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                    <div class="wrap-reports__box border-green">
+                        <div class="head">
+                            <div class="name">
+                                <h4 class="title">Weekly Marketing Report</h4>
+                                <p class="date">2 days ago</p>
+                            </div>
+                            <a href="#" class="btn-new green-btn"> new</a>
+                        </div> <!--head-->
+                        <div class="box-body">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio est, venenatis eu hendrerit sit amet
+                                <a href="#" class="next">More</a></p>
+                        </div> <!--box-body-->
+                    </div> <!--box-->
+                </div>
+            </div> <!--./body-->
+        </div> <!--./wrapper--repost-->
+        <!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">-->
+        <!--demo modal-->
+        <!--</button>-->
+    </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal-request modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h4 class="modal-title" id="myModalLabel">Comment</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal_body">
+                <div class="modal-avatar">
+                    <a href="#"><img src="/angular/web/img/avatar.png" alt=""></a>
+                </div>
+                <p class="text">
+                    You are  <span class="bold">requesting evidence </span> component <br>  <span class="blue">"Components name"</span>
+                </p>
+                <form action="#" class="comment-recived">
+                    <div class="form-group">
+                        <div class="comment-body">
+                            <div class="left-avatar">
+                                <a href="#"><img src="/angular/web/img/avatar.png" alt=""></a>
+                            </div>
+                            <div class="content">
+                                <div class="main-comment">
+                                    <div class="comment-head">
+                                        <p class="name">Jonh Smith</p>
+                                        <p class="date">14.03.16</p>
+                                    </div>
+                                    <p class="comment-text">
+                                        Reports of all monthly activity by the sales team, including KPI's. Reports of all monthly activity by the sales team, including KPI's.
+                                    </p>
+                                </div> <!--./main-comment-->
+                                <div class="footer-comment">
+                                    <div class="sub-comment">
+                                        <div class="avatar">
+                                            <a href="#"><img src="/angular/web/img/avatar2.png" alt=""></a>
+                                        </div>
+                                        <div class="message">
+                                            <p class="name">Alicia Rend</p>
+                                            <p class="text-comment">Reports of all monthly activity by the sales team, including KPI's</p>
+                                        </div>
+                                    </div> <!--sub-comment-->
+                                    <div class="textarea-block">
+                                        <textarea class="textarea" placeholder="Type here"></textarea>
+                                    </div>
+                                    <div class="string">
+                                        <div class="left">
+                                        </div>
+                                        <input type="text" class="input-message">
+                                        <div class="navigation">
+                                            <a href="#" active><i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+                                            <a href="#" active><img src="/angular/web/img/icon-form.png" alt=""></a>
+                                            <a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div> <!--string-->
+                                </div> <!--./footer-comment-->
+                            </div>
+                        </div>
+                    </div> <!--fprm-group-->
+                    <div class="buttons-form">
+                        <button class="modal-btn">Cancel</button>
+                        <button class="modal-btn active">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item-box">
+    <div class="col-custom"></div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="/angular/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/angular/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/angular/assets/js/jquery.metisMenu.js"></script>
+<script src="/angular/assets/js/jquery.slimscroll.min.js"></script>
+<!--<script src="template/js/plugins/flot/jquery.flot.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.resize.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="template/js/plugins/flot/jquery.flot.time.js"></script>-->
+<script src="/angular/app/custom/inspinia.js"></script>
+<!--<script src="../assets/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- Flot demo data -->
+<!--<script src="js/demo/flot-demo.js"></script>-->
+
+</body>
+</html>

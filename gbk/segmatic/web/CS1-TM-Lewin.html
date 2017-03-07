@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CS1-TM-Lewin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<link href="path/to/font" />-->
+    <!-- COMPONENTS -->
+    <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- STYLES -->
+    <link href=".././node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+<!-- Google Tag Manager --> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PQPXSP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PQPXSP');</script> <!-- End Google Tag Manager -->
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="header__log">
+                <img src="../img/logo.jpg" alt="">
+            </a>
+        </div> <!--./header__logo-->
+        <div class="header__block-nav collapse navbar-collapse" id="navigation">
+            <nav class="header__nav">
+                <ul class="list-left">
+                    <li><a href="index.html">Overview</a></li>
+                </ul>
+                <ul class="list-right">
+                    <li><a href="https://tomus.segmatic.io/">Login</a></li>
+                    <li><a href="https://analyser.segmatic.io/index">Free AdWords Audit</a></li>
+                </ul>
+            </nav> <!--./nav-->
+            <script>
+                (function() {
+                    var cx = '010293336371254282527:tcpi5mea-fc';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:search></gcse:search>
+        </div> <!--./header__block-nav-->
+    </div>
+</header> <!--.header-->
+<section class="menu" data-scroll-nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <ul class="menu__navigation">
+                    <li><a href="index.html">Product</a></li>
+                    <li class="dropdown">
+                        <a href="Features.html" class="dropdown-toggle">Features</a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Features.html" class="dropdown-toggle">Features</a></li>
+                            <li><a href="Features.html#scroll-Builder">Account Builder</a></li>
+                            <li><a href="Features.html#scroll-copy">Ad Copy</a></li>
+                            <li><a href="Features.html#scroll-analyster">Search Term Analyser</a></li>
+                            <li><a href="Features.html#scroll-reporting">Reporting</a></li>
+                            <li><a href="Features.html#scroll-bidding">Bidding</a></li>
+                            <li><a href="Features.html#scroll-mini-optimisers">Mini-Optimisers</a></li>
+                            <li><a href="Features.html#scroll-shopping">Shopping</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Clients-Results-Page.html" class="dropdown-toggle">Clients & Results </a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Clients-Results-Page.html" class="dropdown-toggle">Clients & Results </a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-clients">Our Clients</a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-results">Our Results</a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-testimonials">Testimonials & Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Pricing-page.html"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pricing </a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Pricing-page.html" class="dropdown-toggle">Pricing </a></li>
+                            <li><a href="Pricing-page.html#scroll-segmatic">Why Segmatic?</a></li>
+                            <li><a href="Pricing-page.html#scroll-pricing">Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="About-page.html"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> About</a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="About-page.html" class="dropdown-toggle">About</a></li>
+                            <li><a href="About-page#scroll-our-team">Our Team</a></li>
+                            <li><a href="About-page#scroll-people">Why People Choose Us</a></li>
+                            <li><a href="About-page#scroll-our-history">Our History</a></li>
+                            <li><a href="About-page#scroll-our-values">Our Values</a></li>
+                        </ul>
+                    </li>
+                </ul> <!--./navigation-->
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="menu__start">
+                    <a href="Sign-up.html">Start your 30-day free trial now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./menu-->
+<script>
+    /* Graphs Args */
+
+    function getBrandWeek() {
+        return [
+            {x: 1, y: 137, y2: 68.51},
+            {x: 2, y: 217, y2: 49.21},
+            {x: 3, y: 114, y2: 96.39},
+            {x: 4, y: 138, y2: 71.27},
+            {x: 5, y: 92, y2: 107.81},
+            {x: 6, y: 119, y2: 89.14},
+            {x: 7, y: 87, y2: 104.94},
+            {x: 8, y: 191, y2: 54.49},
+            {x: 9, y: 115, y2: 97.11},
+          /*  {x: 10, y: 197, y2: 45.84},
+            {x: 11, y: 110, y2: 90.15},*/
+        ];
+    }
+    function getGenericWeek() {
+        return [
+            {x: "Feb-2015", y: 121, y2: 131},
+            {x: "Apr-2015", y: 100, y2: 97},
+            {x: "Jun-2015", y: 388, y2: 102},
+            {x: "Jul-2015", y: 279, y2: 106},
+            {x: "Aug-2015", y: 426, y2: 87},
+            {x: "Oct-2015", y: 503, y2: 99},
+            {x: "Nov-2015", y: 1171, y2: 90},
+            {x: "Jan-2016", y: 711, y2: 90},
+            {x:"Feb-2016", y: 641, y2: 95}
+           /* {x: 10, y: 61, y2: 124.56}*/
+           /* {x: 11, y: 94, y2: 78.55},*/
+        ];
+    }
+
+</script>
+<section class="Headline-Banner-2">
+    <div class="Headline-Banner-2__head head-TMLewin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="Headline-Banner-2__title">How we increased the return on investment of TM Lewin by over 600%</h1>
+                    <p class="Headline-Banner-2__sub-text">Really extraordinary 'off-the-chart' results. <br>- Cormac Folan, Digital Marketing Manager </p>
+                    <div class="Headline-Banner-2__head-logo">
+                        <img src="../img/head-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--./head-->
+    <div class="Headline-Banner-2__content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="Headline-Banner-2__img image-TMLewin">
+                        <img src="../img/TMLewin.jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <p class="Headline-Banner-2__text ">T.M. Lewin is a tailoring chain supplying shirts, suits and accessories for men and women. They maintain just under 100 stores in the UK, with new outlets opening rapidly throughout the world, including Europe, Singapore and Australia.</p>
+                        <p class="Headline-Banner-2__text " > T.M. Lewin’s biggest concern was their over-reliance on branded Paid Search, which they believed prevented them from achieving the market share they desired. This is where Segmatic came in; we revitalised their non-branded Paid Search and then went through their existing campaigns and databases with a fine tooth comb to uncover any hidden inefficiencies. Over the next 12 months, our influence was clear - Paid Search was delivering  600% more return on investment.</p>
+                        <p class="Headline-Banner-2__text"> How did we do it? Here are the four key lessons we learnt from working on their account.</p>
+                        <!--<p class="Headline-Banner-2__text">T.M. Lewin’s biggest concern was their over-reliance on branded Paid Search, which they believed prevented them from achieving the market share they desired. This is where Segmatic came in; we revitalised their non-branded Paid Search and then went through their existing campaigns and databases with a fine tooth comb to uncover any hidden inefficiencies. Over the next 12 months, our influence was clear - Paid Search was delivering  600% more return on investment. </p>-->
+                        <!--<p class="Headline-Banner-2__text">How did we do it? Here are the four key lessons we learnt from working on their account. </p>-->
+                    <!--</div>-->
+                </div>
+            </div>
+                <div class="col-md-12 ">
+                    <div class="btn-group mobil">
+                        <div class="active_btn" style="width: 180px; height: 32px;"><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i></div>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-segment generic is_active" data-hover-text="The keywords that define or explain your company’s products or services, excluding your brand term(s)" data-type="segment" data-segment="Generic" style="width: 180px;">
+                            Generic
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="btn-group mobil">
+                        <div class="active_btn" style="width: 180px; height: 32px;"><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i><i class="fa fa-info"></i></div>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-date weekly is_active" data-hover-text="Displays the data broken down by week" data-type="date" data-date="Week" style="width: 180px;">
+                            Weekly
+                        </a>
+                        <a class="btn btn-default text-uppercase ea-first-graph ea-first-graph-date monthly" data-hover-text="Displays the data broken down by month" data-type="date" data-date="Month" style="width: 180px;">
+                            Monthly
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Generic / Weekly -->
+                <div class="col-lg-11 col-lg-offset-1">
+                    <div class="campaign-per">
+                        <div class="campaign-per_graph" id="chart_div_first" style="width: 100%; height: 400px; overflow: hidden; text-align: left;"></div>
+                    </div>
+                </div>
+            </div>
+    </div> <!--./content-->
+</div>
+</section>
+<section class="Content-X-Standard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Lesson One - Know the difference between brand and non-brand search</h2>
+                    <p class="block-content__text ">Are you structuring your brand and non-brand Paid Search distinctly? If not, you should be. Here’s why:</p>
+                    <p class="block-content__text">The individual audiences you’re reaching are unique:</p>
+                    <p class="block-content__text">We can assume different things about customers based off what they search.</p>
+                    <p class="block-content__text ">Someone searching with a brand term, in this instance “T.M. Lewin”, is more familiar with T.M. Lewin than someone searching with a more ambiguous non-brand term like “mens shirts” or just “shirts”. You should treat these searches differently not only because it’ll help you establish more effective, and cheaper, Paid Search campaigns - more on that below - but also because it’s a smarter sales move.</p>
+                    <p class="block-content__text">You wouldn’t give the same sales pitch to a devotee as you would a newcomer, and neither should your Paid Search. So take what you’ve learned from a customer by their search term and use it to your advantage. </p>
+                    <!--<h2 class="block-content__title title2">Frustrated with tools that promise the world but don't deliver? Worried about your team missing-->
+                    <!--monthly targets?</h2>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard standart-indent">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Don’t let branded searches inflate your results and misdirect your ad spend.</h2>
+                    <p class="block-content__text ">If you don’t distinguish your Paid Search campaigns between brand and non-brand, the inevitable success of your brand search campaigns will muddle the data from your other campaigns, with the potential of making you think you’re doing much better than you are.</p>
+                    <p class="block-content__text ">With non-brand search, you’re fighting a battle on two fronts; you have to find the customers and make them aware of your brand, but you also have to work on gaining their conversion. With brand search, the customer is searching for you directly, so that’s half the battle won. That’s why brand search campaigns are usually so much more successful than non-brand. If you don’t separate them out when reviewing the effectiveness of your Paid Search programme, the strong ROI on brand search can compensate for poor non-brand campaigns. You’ll often see mediocre agencies using this tactic to hide their substandard non-brand results.</p>
+                    <p class="block-content__text">At T.M. Lewin, this was one of the first issues we resolved. Before we signed on to revitalise their Paid Search, T.M. Lewin’s non-brand and competitor Paid Search was costly and ineffective. As you can see below in the first table, without segmenting out the different Paid Search campaigns, it appeared like T.M. Lewin was spending 32% less than their target CPA. When broken into distinct campaigns (second table, below), however, you can see a different story emerge:</p>
+                    <!--<h2 class="block-content__title title2">Frustrated with tools that promise the world but don't deliver? Worried about your team missing-->
+                    <!--monthly targets?</h2>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ContentStyle-Screenshot ContentStyle-indent2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ContentStyle-Screenshot__slider slide-indent">
+                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <p class="ContentStyle-Screenshot__title-text">Brand Search</p>
+                                <div class="images">
+                                    <img src="../img/BR-1.png">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="ContentStyle-Screenshot__title-text">Non-Brand Search</p>
+                                <div class="images">
+                                    <img src="../img/NB-NGE.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+        </div> <!--./row-->
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Reported 'Non Brand'</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Cost</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£23,834</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Orders</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£39,602</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Return on Investment</p>
+                        </div>
+                        <div class="table-content">
+                            <p>166%</p>
+                        </div>
+                    </div>
+                </div> <!--./table-->
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Type</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Reported 'Non Brand'</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Actual Non Brand</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Cost</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£22,304</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£1,530</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Orders</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£4,730</p>
+                        </div>
+                        <div class="table-content">
+                            <p>£34,872</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Return on Investment</p>
+                        </div>
+                        <div class="table-content">
+                            <p>21%</p>
+                        </div>
+                        <div class="table-content">
+                            <p>2279%</p>
+                        </div>
+                    </div>
+                </div> <!--./table-->
+                <!--<div class="ContentStyle-Screenshot__block-text">-->
+                    <!--<p class="ContentStyle-Screenshot__text">That’s why separating your brand and non-brand programmes is an essential first step in analysing and revitalising your Paid Search programme. This is a reflection of a simple truth - brand Paid Search is easy. Sure you can mess it up but the skill in PPC is getting non-brand to work for you. That is why Segmatic have completely different billing models for brand and non-brand search. </p>-->
+                <!--</div>-->
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+<section class="Content-X-Standard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">That’s why separating your brand and non-brand programmes is an essential first step in analysing and revitalising your Paid Search programme. This is a reflection of a simple truth - brand Paid Search is easy. Sure you can mess it up but the skill in PPC is getting non-brand to work for you. That is why Segmatic have completely different billing models for brand and non-brand search.</p>
+                    <h2 class="block-content__title title2">Sometimes, you don’t even realise that you are running brand campaigns</h2>
+                    <p class="block-content__text ">T.M. Lewin was running a broad match logic campaign on a a leading competitor. Google is given a lot of leeway to come up with search terms in broad search – even more so as the more leeway they get the more clicks, and therefore cash, they get. In this instance synonyms for their competitor included the brand term “T.M. Lewin”. Even if the agency was trying to split between Brand & Non Brand, they would have failed because their focus was on keywords rather than search terms. Unless you are analysing search terms on an on-going basis it is difficult to notice the patterns that reveal these kind of discrepancies. </p>
+                    <p class="block-content__text">This is poor campaign management as campaigns organised in this way make it impossible to understand your search data and estimate campaign effectiveness. When campaigns overlap and cross-fertilise you cannot isolate cause and effect. And if you can’t isolate cause and effect then you can’t effectively optimise campaigns. This is one of the reasons we at Segmatic never use broad keyword types as they are rarely the most effective way to gain customers. </p>
+                    <h2 class="block-content__title title2">Don’t let finance push you around.</h2>
+                    <p class="block-content__text ">
+                        It’s a problem we see over and over again. So often, Paid Search budgets are determined by the finance department, and entire Paid Search programmes are usually lumped together on one budget line, normally because it’s one invoice.
+                    </p>
+                    <p class="block-content__text">
+                        Marketing departments need to speak up and encourage a more segmented approach to Paid Search - one where branded and non-branded campaigns are designed and operated separately and with distinct goals and budgets. This is one of the most common mistakes that finance staff make, and it’s because they haven’t been explained the fundamental differences between brand and non-brand.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title title2">Lesson Two - Know how to maximise your brand search, but be mindful of its limitations</h2>
+                    <p class="block-content__text">Brand campaigns are easy to run well. Beware the agency telling you otherwise.</p>
+                    <h2 class="block-content__title title2">Don’t let finance push you around.</h2>
+                    <p class="block-content__text ">
+                        Brand campaigns require very little effort; they have great click through rates and quality scores, cheap CPCs and excellent overall conversion rates. Even the effort required to set them up is miniscule compared to non-brand campaigns. Accordingly, seasoned agencies like us always charge differently for them.
+                        </p>
+                    <p class="block-content__text">It’s not all good news though -- you can mess up brand search campaigns. Lots of people do by ignoring search term analysis. When we took over the T.M. Lewin account, for example, we noticed that they had a couple of big mistakes reducing the effectiveness of their brand search campaigns. They were running a brand search campaign on the keyword “Lewin”.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--.Content-X-Standard-->
+<section class="ContentStyle full-image">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <div class="ContentStyle__img">
+                    <img src="../img/2-A-KW.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">
+                        However, when you look at the search terms that this keyword was triggering, this was returning the search term “Lewin Farm” (highlighted in red). This meant that T.M. Lewin was spending £3,500 a year advertising to people in New England looking to pick apples ; hardly their target market. They were also spending money on famous people whose surnames were Lewin, highlighted in yellow.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle ContentStyle-indent">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <div class="ContentStyle__img">
+                    <img src="../img/2-A-ST.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Don’t try to run brand Paid Search like non-brand campaigns - Watch out for the “Google Tax”:</h2>
+                    <p class="block-content__text">You need to be aware of your competitors’ actions when designing your brand Paid Search campaigns. If your competitors are advertising against you, you need to make sure your ad shows too. If there is no competition, you can be more flexible in your bidding. Keep in mind that a lot of people use Google search instead of typing in a site’s URL. So if someone looking for you specifically types your name into Google and uses your ad to get to your site, you’re basically paying a “Google Tax” on your name. To avoid paying a heavy Google Tax, be aware of your competitors to see if they are advertising and allow your SEO to pick up the traffic when you decide an ad isn’t necessary. You only need to run brand advertising when a competitor is advertising on your brand.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--.Content-X-Standard-->
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ContentStyle-Screenshot__slider">
+                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <p class="ContentStyle-Screenshot__title-text">Google Tax - Wasted Spend</p>
+                                <div class="images">
+                                    <img src="../img/BR-1.png">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="ContentStyle-Screenshot__title-text">Google Tax - Required Spend</p>
+                                <div class="images">
+                                    <img src="../img/BR-1-B.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                   <p class="block-content__text">Brand Paid Search is a unique beast, because it is really a reflection of the health of your business overall and how much competitors are bidding against your brand. There are some best practices within brand Paid Search, but by and large, you can’t grow your brand Paid Search without growing your business as a whole. So while you can tinker with your individual campaigns, you can’t radially improve them. Non-brand campaigns are where growth is really possible. We’ll tell you more below about how we helped transform T.M. Lewin’s non-brand Paid Search too.  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--.Content-X-Standard-->
+<section class="Content-X-Standard full-image">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Lesson Three - Non Brand - keywords ≠ search terms</h2>
+                    <p class="block-content__text">Misunderstanding the function of keywords, search terms, and search logic will cost you</p>
+                    <p class="block-content__text">
+                        When we first began reviewing T.M. Lewin’s Paid Search programme, we noticed many of their mistakes were based on confused understandings of Paid Search basics. The best way to highlight the effect of these errors is to review the campaigns surrounding one specific keyword - “shirts”. This was the highest spending keyword on the account, and it highlighted nearly all of T.M. Lewin’s major problems. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <div class="ContentStyle__img first-img">
+                    <img src="../img/3-A.jpg" alt="">
+                </div>
+                <div class="ContentStyle__img">
+                    <img src="../img/3-B.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section> <!--.Content-X-Standard-->
+<section class="Content-X-Standard fix-standard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">Understand and mitigate against the breadth of your keywords</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--.Content-X-Standard-->
+<section class="ContentStyle grey ">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <h2 class="ContentStyle__title">Products You Don't Sell</h2>
+                <div class="ContentStyle__img">
+                    <img src="../img/4-A.jpg" alt="">
+                </div>
+                <p class="block-content__text ">People assume the keywords they think of are the same everyone thinks of, however “shirts” can mean many different things to many different audiences. At T.M. Lewin, you might imagine men’s formal shirts, because that’s one of your big products, however in reality, it could mean many things - “ maternity shirts”, “t-shirts”, “shirt rental”, etc.
+                </p>
+                <p class="block-content__text">So, if you’re not using keywords and search terms correctly, chances are you’re advertising to people searching for products you don’t even sell. When we took over T.M. Lewin’s Paid Search, we removed a number of unrelated matches that were wasting the company money.</p>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="ContentStyle grey full-image">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <h2 class="ContentStyle__title">Using Clues Proactively</h2>
+                <div class="ContentStyle__img">
+                    <img src="../img/4-B.jpg" alt="">
+                </div>
+                <p class="ContentStyle__text">Looking at their search term data we spotted the term ‘Football shirt’. That’s a type of shirt we don’t sell. The approach most people would take is  to this is to negative out those keywords and leave it at that. In a few months you might see ‘Arsenal shirt’ in your data and negative that out as well. We call that the reactive approach. Our approach is to see ‘Manchester United shirt’ as a clue - it tells us that people are and will continue to search for that type of shirt and click on our ad, which loses us money. Once we had identified the clue we made a list of all of the football teams in the world, and most of the other professional sports teams, and we negatived them all out. To do this well, and to do it to scale, you need to manipulate your search term data in two ways - disaggregate the search terms by individual words, and re-aggregate them into lists. </p>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="ContentStyle grey full-image">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <h2 class="ContentStyle__title">Target Your Competitors Effectively</h2>
+                <div class="ContentStyle__img">
+                    <img src="../img/4-C.jpg" alt="">
+                </div>
+                <p class="ContentStyle__text">
+                    It’s important to consider competitors when building your Paid Search campaigns. T.M. Lewin was running a campaign with the keyword “shirts,” which showed with the search term “Ralph Lauren shirts”. This meant T.M. Lewin was bidding the same and showing the same ad copy to customers searching “shirts” as “Ralph Lauren” shirts, when in practice, you really want to target and pay for these individuals differently. We were able to segment out competitor search terms to prevent this kind of mistake.
+                </p>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="ContentStyle grey full-image">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <h2 class="ContentStyle__title">Better Ad Copy</h2>
+                <div class="ContentStyle__img">
+                    <img src="../img/4-D.jpg" alt="">
+                </div>
+                <p class="ContentStyle__text">These three examples highlight an opportunity. If the user searches for paisley shirt, you will get a better performance if your ad says paisley shirt, rather than just men's shirts.</p>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="ContentStyle grey full-image">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <h2 class="ContentStyle__title">Avoid Overlapping Ads</h2>
+                <div class="ContentStyle__img e4-img">
+                    <img src="../img/4-E.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="Content-X-Standard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">As we mentioned above, broad match logic leaves you open to many possible Paid Search errors. When we started with T.M. Lewin, they were running conflicting campaigns, which again, meant that two customers searching the same thing were shown different ads. In this instance, a broad match campaign on “shirts” was returning the keywords “men’s shirts”, while a separate campaign on “men’s shirts” was also running. With campaigns organised in this manner, you lose control over your data and not know how each customer arrived at your site - an important piece of knowledge for any company running a sophisticated Paid Search programme. </p>
+                    <h2 class="block-content__title title2">Creating detailed and succinct campaigns are key</h2>
+                    <p class="block-content__text ">It’s easy to miss these things if you’re not a Paid Search guru. After all, the “shirts” campaign for T.M. Lewin was still an ROI positive campaign, despite the poorly matched search terms. It shows that even if you think you’ve got Paid Search figured out, chances are there’s money saving to be had.</p>
+                    <p class="block-content__text ">This is why creating detailed and succinct campaigns are key. You need to take charge of your ad campaigns and remove the guesswork that Google broad match campaigns bring. This allows you to write better ads; someone searching for pink shirts needs to see an ad for pink shirts. Simply using a combination of broad match keywords and generic ad copy means you are missing an opportunity to take advantage of Google’s virtuous cycle.</p>
+                    <p class="block-content__text">And for every new keyword you find through analysing the Search Term Reports, a new campaign and ad group need to be developed. It’s granular and time consuming, but that’s why our results are so great.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title title2">Lesson Four - Non Brand - Making Paid Search campaigns as defined as possible: Combination Building</h2>
+                    <p class="block-content__text ">At Segmatic, we focus on the customer and their journey. If we keep their search term habits in mind when developing our Paid Search keywords, we develop more distinct and effective campaigns, from which we’re better able to isolate cause and effect. If you can interpret and rely on your Paid Search data, you’re in a much better position to understand what’s working and what’s not.
+                    </p>
+                    <p class="block-content__text"> When we worked with T.M. Lewin, we made sure each ad campaign was as defined and limited as possible. It’s a more painstaking process, beyond the remit of most in-house online marketing departments, but it’s the best way to increase your ROI and develop reliable marketing data.</p>
+                    <h2 class="block-content__title title2">How do you make sure your Paid Search campaigns are as precise as possible? Use a search term matrix to uncover every search term combination.</h2>
+                    <p class="block-content__text ">This is one of the realms where our expertise and attention to   detail really delivers for you. While designing a Paid Search strategy for T.M. Lewin, we developed a matrix of search terminology, which allows us to determine every possible combination of search terms a customer might use to find you.
+                    </p>
+                    <p class="block-content__text "> We broke things down even further by taking match type, location and language, among other things, into consideration. This matrix allows us to make each combination a fundamentally separate entity.</p>
+                    <p class="block-content__text">This led to the creation of over 15,000 different keywords & ads within unique Ad groups. Try now on google, search for any type of shirt and see what advert comes up. You can see the campaign in action!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ContentStyle-Screenshot__slider">
+                    <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="images">
+                                    <img src="../img/NB---Blue.jpg">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="images">
+                                    <img src="../img/NB---Dress.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">With T.M. Lewin, we were able to design better user experiences, with ad copy and landing pages tailored to their unique searches, because our Paid Search campaign was set up in a way that told us what each potential customer wanted. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+
+<section class="ContentStyle-LineGraph-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 col-lg-offset-1">
+                    <div class="campaign-per">
+                        <div class="campaign-per_graph" id="chart_div_first6" style="width: 100%; height: 400px; overflow: hidden; text-align: left;"></div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--./content-->
+</section>
+<section class="Content-X-Standard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text">Segmatic were able to decrease CPA for TM Lewin  – while dramatically increasing the number of conversions happening every month.
+
+                        If you would like to find out how Segmatic could help your company to do the same, get in touch!</p>
+                    <p class="block-content__text">"Many thanks to TM Lewin for allowing us to use their account as a case study – and for continuing to be outstanding clients! </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-Columns-ImageTextCTA">
+    <div class="Content-Columns-ImageTextCTA__head">
+        <p>What to do next?</p>
+    </div>
+    <div class="Content-Columns-ImageTextCTA__content">
+        <div class="Content-Columns-ImageTextCTA__table-row">
+            <div class="Content-Columns-ImageTextCTA__table-col  left">
+                <div class="col-lg-7 col-lg-offset-5">
+                    <div class="Content-Columns-ImageTextCTA__img">
+                        <img src="../img/rocket-2.png" alt="">
+                    </div>
+                    <p class="Content-Columns-ImageTextCTA__text">Try our account analyser to find out how your Google Adwords account is performing. </p>
+                    <a href="https://analyser.segmatic.io/index" class="button">Free Account Audit</a>
+                </div>
+            </div>
+            <div class="Content-Columns-ImageTextCTA__table-col right">
+                <div class="col-lg-7 pull-left">
+                    <div class="Content-Columns-ImageTextCTA__img">
+                        <img src="../img/col-images.png" alt="">
+                    </div>
+                    <p class="Content-Columns-ImageTextCTA__text">Try our 30-day free trial to see what Segmatic can do for your business.</p>
+                    <a href="Sign-up.html" class="button">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Content-ExtraContent-Boxes">
+    <div class="container">
+        <div class="row">
+            <h5 class="Content-ExtraContent-Boxes__title">The Segmatic Difference</h5>
+            <div class="Content-ExtraContent-Boxes__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="img/analyster.png" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box">The All-in-one Paid Search Tool</h6>
+                </div>
+            </div>
+            <div class="extra-content__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="img/copy-img.png" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box">The Tool your In-house Team Needs to get Results</h6>
+                </div>
+            </div>
+            <div class="Content-ExtraContent-Boxes__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="../img/footer-img.jpg" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box"> Built to Perform </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./extra-content-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="Terms-Conditons.html">Terms & Conditions </a></li>
+                    <li><a href="Privacy-Statement.html">Privacy Statement</a></li>
+                    <li><a href="Cookie-Policy.html">How we use cookies</a></li>
+                    <li><a href="../contact_us.html">Contact Us </a></li>
+                    <li><a href="Testimonial-Policy.html">Testimonial Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer> <!--./footer-->
+<!-- COMPONENTS SCRIPTS -->
+<script type="text/javascript" src="../vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../External Analyser Results_files/jquery.js"></script>
+<script src="../External Analyser Results_files/amcharts.js"></script>
+<script src="../External Analyser Results_files/serial.js"></script>
+<script src="../External Analyser Results_files/loader.js"></script>
+<script src="../External Analyser Results_files/second-graph.js"></script>
+<script src="../External Analyser Results_files/third-graph.js"></script>
+<script src="../External Analyser Results_files/fourth-graph.js"></script>
+<script src="../External Analyser Results_files/ad-extension.js"></script>
+<!--<script src="./External Analyser Results_files/results-page.js"></script>-->
+<!--<script src="./External Analyser Results_files/bootstrap.min.js"></script>-->
+<script src="../External Analyser Results_files/wow.min.js"></script>
+<script src="../External Analyser Results_files/wow.js"></script>
+<script src="../External Analyser Results_files/first-graph.js"></script>
+<script src="../External Analyser Results_files/ea-show-hidden-rows.js"></script>
+<script src="../External Analyser Results_files/yii.js"></script>
+<script src="../External Analyser Results_files/ewa2dgt.js"></script>
+<script src="../External Analyser Results_files/ea.js"></script>
+<script src="../js/main_js.js"></script>
+</body>
+</html>

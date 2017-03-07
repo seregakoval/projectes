@@ -1,0 +1,63 @@
+.Clients-LogoGrid {
+  padding: 15px 0;
+  &__title {
+    color: #545d63;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      font-size: 23px;
+    }
+  }
+  &__sub-title {
+    text-align: center;
+    color: #b2b8be;
+
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      font-size: 17px;
+    }
+  }
+  &__logo-grid {
+    display: table;
+    width:  100%;
+    border-collapse: collapse;
+    .grid-row {
+      display: table-row;
+      .grid-col {
+        border: 1px solid #e0e1e3;
+        padding: 17px 10px;
+        text-align: center;
+        vertical-align: middle;
+        width:  20%;
+        display: table-cell;
+        @media(max-width:767px) {
+          max-height: 100%;
+        }
+        img {
+          max-width: 100%;
+          max-width: 81%;
+          height: 80%;
+          object-fit: contain;
+          width: 100%;
+          @media (max-width: 768px) {
+            max-width: 22%;
+            min-width: 130px;
+          }
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+          border: none;
+          border-top: 1px solid #e0e1e3;
+          padding: 20px 10px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+.chart {
+  width: 100%;
+}

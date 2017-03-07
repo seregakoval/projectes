@@ -1,0 +1,120 @@
+//Content-Columns-ImageTextCTA
+.fix-block {
+  padding-bottom: 35px !important;
+}
+.Content-Columns-ImageTextCTA {
+  /*margin: 50px 0;*/
+  &__head {
+    background: #2571a5;
+    text-align: center;
+    padding: 31px 15px;
+    p {
+      font-size: 34px;
+      color: #fff;
+      @media (max-width: 991px) {
+        font-size: 30px;
+      }
+      @media (max-width: 767px) {
+        font-size: 25px;
+      }
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__content {
+    display: table;
+    width: 100%;
+  }
+  &__table {
+    display: table;
+  }
+  &__table-row  {
+    display: table-row;
+  }
+  &__table-col {
+    padding: 30px;
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    @media (max-width: 767px) {
+      width: 100%;
+      display: block;
+    }
+    &.left {
+      background: #49acef;
+      .button {
+        background: #f1c40f;
+        &:hover {
+          background: #ffcc00;
+        }
+      }
+    }
+    &.right {
+      background: #44a2e2;
+      .pull-left {
+        @media (max-width: 767px ) {
+          float: none !important;
+        }
+      }
+      .button {
+        background: #2571a5;
+        color: #fff;
+        &:hover {
+          background: #116198;
+        }
+      }
+    }
+  }
+  &__img {
+    margin: 0 auto 25px auto;
+    text-align: center;
+    max-width: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 210px;
+    justify-content: center;
+    @media (max-width: 768px) {
+      min-height: 110px;
+    }
+    img {
+      /*max-width: 80%;*/
+      @media (max-width: 768px) {
+        max-width: 50%
+      }
+    }
+  }
+  &__text{
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 56px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (max-width: 991px) {
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .button {
+    font-size: 20px;
+    color: #896c12;
+    cursor: pointer;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none !important;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 10px 31px
+    }
+  }
+}

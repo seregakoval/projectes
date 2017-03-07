@@ -1,0 +1,108 @@
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index:1000;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  min-height: 90px;
+  @media (max-width: 991px ) {
+  min-height: 55px;
+}
+  .navbar-brand {
+	height: 40px;
+	padding: 0;
+	@media (max-width: 991px ) {
+	  padding: 7px 0;
+	  img { width: 100px;} }
+  }
+  .container-fluid {
+    width: 100%;
+	display: inline-block;
+    .navbar-toggle {
+      background: #1b4f61 !important;
+      .icon-bar {
+        background: #fff;
+      }
+    }
+    .navigation {
+      .nav {
+        li {
+          a {
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 10px 15px;
+            margin-right: 10px;
+            transition: all 0.3s;
+            &.active {
+              color: #03baf4;
+            }
+            &:hover {
+              color: #03baf4;
+              background: none;
+            }
+            &.sign {
+              padding: 8px 25px;
+              border: 2px solid #fff;
+              text-transform: uppercase;
+              background: #237ac6;
+			  -webkit-border-radius: 2px;
+			  -moz-border-radius: 2px;
+              font-weight: 600;
+			  border-radius: 2px;
+              &:hover {
+                color: #03baf4;
+                background: none;
+                border-color: #03baf4;
+              }
+            }
+          }
+        }
+      }
+      @media(max-width: 991px) {
+        position: absolute;
+        background: #0f272f;
+        z-index: 100;
+        top: 55px;
+        width: 100%;
+        left: 0;
+        margin: 0 !important;
+        ul {
+          padding: 20px 0;
+          li {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse.collapse.in { display: inline-block !important; }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+	margin-right: 0;
+
+  }
+  .navbar-nav { margin: 0; width: 100%;}
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Osper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<link href="path/to/font" />-->
+    <!-- COMPONENTS -->
+    <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- STYLES -->
+    <link href=".././node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+<!-- Google Tag Manager --> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PQPXSP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PQPXSP');</script> <!-- End Google Tag Manager -->
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="header__log">
+                <img src="../img/logo.jpg" alt="">
+            </a>
+        </div> <!--./header__logo-->
+        <div class="header__block-nav collapse navbar-collapse" id="navigation">
+            <nav class="header__nav">
+                <ul class="list-left">
+                    <li><a href="index.html">Overview</a></li>
+                </ul>
+                <ul class="list-right">
+                    <li><a href="https://tomus.segmatic.io/">Login</a></li>
+                    <li><a href="https://analyser.segmatic.io/index">Free AdWords Audit</a></li>
+                </ul>
+            </nav> <!--./nav-->
+            <!--<form action="#" class="header__search">-->
+            <!--<input type="text" placeholder="search">-->
+            <!--<i class="fa fa-search" aria-hidden="true"></i>-->
+            <!--</form> &lt;!&ndash;./form&ndash;&gt;-->
+            <script>
+                (function() {
+                    var cx = '010293336371254282527:tcpi5mea-fc';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:search></gcse:search>
+        </div> <!--./header__block-nav-->
+    </div>
+</header> <!--.header-->
+<section class="menu" data-scroll-nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <ul class="menu__navigation">
+                    <li><a href="index.html">Product</a></li>
+                    <li class="dropdown">
+                        <a href="Features.html" class="dropdown-toggle">Features</a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Features.html" class="dropdown-toggle">Features</a></li>
+                            <li><a href="Features.html#scroll-Builder">Account Builder</a></li>
+                            <li><a href="Features.html#scroll-copy">Ad Copy</a></li>
+                            <li><a href="Features.html#scroll-analyster">Search Term Analyser</a></li>
+                            <li><a href="Features.html#scroll-reporting">Reporting</a></li>
+                            <li><a href="Features.html#scroll-bidding">Bidding</a></li>
+                            <li><a href="Features.html#scroll-mini-optimisers">Mini-Optimisers</a></li>
+                            <li><a href="Features.html#scroll-shopping">Shopping</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Clients-Results-Page.html" class="dropdown-toggle">Clients & Results </a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Clients-Results-Page.html" class="dropdown-toggle">Clients & Results </a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-clients">Our Clients</a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-results">Our Results</a></li>
+                            <li><a href="Clients-Results-Page.html#scroll-testimonials">Testimonials & Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Pricing-page.html"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pricing </a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="Pricing-page.html" class="dropdown-toggle">Pricing </a></li>
+                            <li><a href="Pricing-page.html#scroll-segmatic">Why Segmatic?</a></li>
+                            <li><a href="Pricing-page.html#scroll-pricing">Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="About-page.html"  class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"> About</a>
+                        <ul class="dropdown-menu">
+                            <li class="hidden-lg hidden-md"><a href="About-page.html" class="dropdown-toggle">About</a></li>
+                            <li><a href="About-page#scroll-our-team">Our Team</a></li>
+                            <li><a href="About-page#scroll-people">Why People Choose Us</a></li>
+                            <li><a href="About-page#scroll-our-history">Our History</a></li>
+                            <li><a href="About-page#scroll-our-values">Our Values</a></li>
+                        </ul>
+                    </li>
+                </ul> <!--./navigation-->
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="menu__start">
+                    <a href="Sign-up.html">Start your 30-day free trial now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./menu-->
+<section class="Headline-Banner-2">
+    <div class="Headline-Banner-2__head">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="Headline-Banner-2__title">How Start-ups Should Approach Paid Search: Grabbing 60% of the Paid Search Market for a New Industry</h1>
+                    <p class="Headline-Banner-2__sub-text">"Segmatic Delivered excellent results!" - Harry Irby, Head of Marketing </p>
+                    <div class="Headline-Banner-2__head-logo ">
+                        <img src="img/ClientLogo-Osper.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--./head-->
+    <div class="Headline-Banner-2__content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="Headline-Banner-2__img img-osper">
+                        <img src="../img/Osper.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> <!--./content-->
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                   <p class="block-content__text item-text">
+                        Osper provides mobile banking for young people. As a new player in a nascent industry their search advertising faces a particular set of challenges. By acknowledging these challenges and confronting them head on Segmatic were able to capture 60% of the available clicks on Paid Search for one operator.
+                    </p>
+                    <p class="block-content__text"> New businesses are typically at a point in their growth where it makes sense to focus attention on sure things - search terms that told us that the searcher intended to purchase our product. In this blog post we’re going to explain why that was our starting point, how we built profitability from there, and why the approach we took with Osper should be the default approach for start-ups. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Business Profitability</h2>
+                  <p class="block-content__text item-text">The way we approach a new client’s PPC campaigns depends on a whole range of factors. We look at things like how established the company is in their industry, how developed that industry is and how good they are at selling what they’re selling. One of the metrics we’ve developed to measure these things is called ‘business profitability’.</p>
+                    <p class="block-content__text item-text">'Business profitability' measures post-click success - how much value your business manages to squeeze out of the customer once they’ve clicked on your ad. It brings together conversion rate, investment principles, revenue generated, margin on that revenue, churn, cost base and more. Everything that goes into determining the success or failure of your paid search advertising that are outside your paid search strategy.</p>
+                    <p class="block-content__text">The sort of factors that determine your 'business profitability' improve over time as your business evolves and expands and you tweak and improve things like your email marketing and the deal you get from your payment processor. As this happens, you move through different 'business profitability' phases.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Start Niche and Build From There, Little by Little</h2>
+                     <p class="block-content__text">The phase of business profitability you’re in will determine the keywords you’re bidding on. Start with keywords that you know will give you a good return because they signal super high intent, and move from there, little by little, to broader keywords that signal lower levels of intent. In the case of Osper, super high intent meant search terms like ‘children’s debit card’.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle ContentStyle-fix white ">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <div class="ContentStyle__img full-image">
+                    <img src="../img/Table---1---Keywords.png" alt="">
+                </div>
+              </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text item-text">When Osper took us on to run their paid search advertising, they were at phase 1, their 'business profitability' wasn’t high enough to operate and succeed on anything short of super high intent.</p>
+                    <p class="block-content__text item-text">We went live on very niche keywords like ‘children’s debit card’ or ‘children’s credit card’ and left ‘credit card’ and ‘bank account’ for later when Osper had developed and their 'business profitability' had improved.</p>
+                    <p class="block-content__text"> Here’s the framework we use for deciding level of intent based on business profitability:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot ">
+    <div class="container">
+        <div class="row ContentStyle-Table">
+            <div class="col-lg-12">
+                <div class="ContentStyle-Table__table">
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Business profitability'</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 1</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 2</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 3</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 3</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Phase 3</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>Level of intent</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Super High</p>
+                        </div>
+                        <div class="table-content">
+                            <p>High</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Medium</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Super High</p>
+                        </div>
+                        <div class="table-content">
+                            <p>High</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Medium</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Super High</p>
+                        </div>
+                        <div class="table-content">
+                            <p>High</p>
+                        </div>
+                        <div class="table-content">
+                            <p>Medium</p>
+                        </div>
+                    </div>
+                    <div class="table-col">
+                        <div class="table-head">
+                            <p>vs. CPA target</p>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Green Tick.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Orange Middle.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Red-X.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Green Tick.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Green Tick.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Orange Middle.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Green Tick.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Green Tick.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table-content table-insert">
+                            <div class="img">
+                                <img src="../img/Green Tick.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="table-col">-->
+                        <!--<div class="table-head">-->
+                            <!--<p>ROI Multiplier</p>-->
+                        <!--</div>-->
+                        <!--<div class="table-content">-->
+                            <!--<p>166%</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div> <!--./table-->
+                <div class="ContentStyle-Screenshot__block-text">
+                    <p class="ContentStyle-Screenshot__text">That’s why separating your brand and non-brand programmes is an essential first step in analysing and revitalising your Paid Search programme. This is a reflection of a simple truth - brand Paid Search is easy. Sure you can mess it up but the skill in PPC is getting non-brand to work for you. That is why Segmatic have completely different billing models for brand and non-brand search. </p>
+                </div>
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Mixed Intent Can Trip You Up</h2>
+                    <p class="block-content__text item-text">"So you need to be mindful not just of the level of intent but of how mixed that intent is</p>
+                    <p class="block-content__text item-text"> You also have to exercise some healthy skepticism, and ask yourself ‘Is my product really right for this search term?’ Companies, and startups especially, can have a blind spot when it comes to their product offering that leads them to think that it’s the answer to all sorts of questions that really it’s not the answer to.</p>
+                    <p class="block-content__text item-text">If you sell antique postage stamps, you might fall into the trap of thinking that everyone searching for ‘stamps’ is looking for what you’re selling, because that’s what stamps mean to you. So you bid on +buy +stamps and wait for that sweet sweet stamp money to start pouring in. But people searching for ‘buy stamps’ might be looking for rubber stamps, or stamps that you can actually use to send a letter, or to have someone come over to their house late some night and stamp for them.</p>
+                    <p class="block-content__text> High intent is your friend, especially when your 'business profitability' is low, but high intent will only work for you if you understand the nature of that inten"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Don’t go Chasing Waterfalls</h2>
+                    <p class="block-content__text item-text">The trickiest part of all is deciding when to move away from the safe harbour of super high intent and into the choppier waters of high and medium intent.</p>
+                    <p class="block-content__text">There is an optimal level of intent that you will reach, and at which you should stay put and keep bidding on keywords at the same level of specificity. You stay on those keywords until your 'business profitability' has increased to the point where you can start to push the boat out. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle ContentStyle-indent  grey">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <div class="ContentStyle__img full-image">
+                    <img src="../img/Table-2-Decision.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">Don’t go Chasing Waterfalls</h2>
+                    <p class="block-content__text item-text">This graph shows changes in the number of keywords Osper was bidding on over time, from their first forays into paid search. Over the first ninety days we steadily increased the number of keywords we were bidding on from the super super high intent - ‘children’s debit card online’ to super high intent - things like ‘children’s debit card’. Then we reached a sweet spot, denoted by the decision point.</p>
+                    <p class="block-content__text item-text">At that sweet spot, you are live on the optimal number of keywords for your company’s level of 'business profitability'. With Osper we knew we were at the sweet spot because we had 60% of the total clickshare across all of the keywords they were bidding on within the CPA Targets. 60%!</p>
+                    <p class="block-content__text item-text">At this point you have two options -</p>
+                    <ul class="list">
+                        <li>1. You can try to graduate to high and then medium intent <br></li>
+                        <li>2. You can sit pretty</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle-Screenshot ContentScreenshot-indent">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ContentStyle-Screenshot__slider">
+                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <p class="ContentStyle-Screenshot__title-text">Option 1</p>
+                                <div class="images">
+                                    <img src="../img/Table-3-Option1.png">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="ContentStyle-Screenshot__title-text">Option 2</p>
+                                <div class="images">
+                                    <img src="../img/Table-4-Option 2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+        </div> <!--./row-->
+    </div>
+</section>
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text item-text">We advocate sitting pretty. It helps that we are pretty, but even if you’re not, this is still the smart move. Smart because there’s a cost to pushing the boat out at this point. An actual cost - you go live and you’re not profitable on the keywords, and an opportunity cost - that’s money you could have used for another marketing channel, or to improve your 'business profitability' for example by investing in a conversion project. </p>
+                    <p class="block-content__text">Even when you’re sitting pretty, if your industry is growing the total number of searches on your keywords is growing. So even though you’re not increasing the number of keywords you’re searching on, you’re growing your business through paid search. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-X-Standard white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <h2 class="block-content__title">The Sailing Metaphor Continues</h2>
+                    <p class="block-content__text item-text">Ultimately you want to push the boat out and go live on keywords with lower intent, but this needs to be done gradually.  </p>
+                    <p class="block-content__text item-text">We do some small testing once we feel like we’ve maxed out the layer of intent we’re on. With Osper when we reached 60% click share on ‘children’s debit card’ we did a small test on ‘kids bank account’ and ‘pocket money’, just to test the waters. </p>
+                    <p class="block-content__text item-text">If those aren’t profitable, they’re not going to be profitable until you improve your 'business profitability', so go away and work on improving something in your business outside your paid search advertising. </p>
+                    <p class="block-content__text item-text">And improving your 'business profitability' is exactly what you should be focused on at this point, because you’ve reached a theoretical limit, a point in the search market where your 'business profitability' dictates the ceiling to which you should spend.</p>
+                    <p class="block-content__text item-text">You’ll know you’re at that ceiling because your performance will flat line and your CPA will be falling in line with improvements to your 'business profitability'. At that point you do another small test, pushing the boat out just a little, and that will tell you whether you should move to the next stage of intent. </p>
+                    <p class="block-content__text">Once you’ve built up your 'business profitability' to Phase 2, you continue to push the boat out until you hit the sweet spot for Phase 2, and then repeat. With each new phase, you’re building up a stock of 'business profitability' and, based on that, moving to lower and lower levels of intent. Ultimately your 'business profitability' will be so good that you’ll be live and profitable on ‘+stuff’. That’s the dream. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="ContentStyle ContentStyle-fix">
+    <div class="container">
+        <div class="row container-text">
+            <div class="col-lg-12">
+                <div class="ContentStyle__img full-image">
+                    <img src="../img/Table-5-Future.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./"ContentStyle-->
+<section class="Content-X-Standard grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block-content">
+                    <p class="block-content__text item-text item-text">Segmatic were able to grab over 60% of the Paid Search Market for Osper.</p>
+                    <p class="block-content__text item-text item-text">Segmatic were able to grab over 60% of the Paid Search Market for Osper.</p>
+                    <p class="block-content__text item-text">Many thanks to Osper for allowing us to use their account as a case study!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-X-Standard-->
+<section class="Content-Columns-ImageTextCTA">
+    <div class="Content-Columns-ImageTextCTA__head">
+        <p>What to do next?</p>
+    </div>
+    <div class="Content-Columns-ImageTextCTA__content">
+        <div class="Content-Columns-ImageTextCTA__table-row">
+            <div class="Content-Columns-ImageTextCTA__table-col  left">
+                <div class="col-lg-7 col-lg-offset-5">
+                    <div class="Content-Columns-ImageTextCTA__img">
+                        <img src="../img/rocket-2.png" alt="">
+                    </div>
+                    <p class="Content-Columns-ImageTextCTA__text">Try our account analyser to find out how your Google Adwords account is performing.</p>
+                    <a href="https://analyser.segmatic.io/index" class="button">Free Account Audit</a>
+                </div>
+            </div>
+            <div class="Content-Columns-ImageTextCTA__table-col right">
+                <div class="col-lg-7 pull-left">
+                    <div class="Content-Columns-ImageTextCTA__img">
+                        <img src="../img/col-images.png" alt="">
+                    </div>
+                    <p class="Content-Columns-ImageTextCTA__text">Try our 30-day free trial to see what Segmatic can do for your business.</p>
+                    <a href="Sign-up.html" class="button">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./Content-Columns-ImageTextCTA-->
+<section class="Content-ExtraContent-Boxes">
+    <div class="container">
+        <div class="row">
+            <h5 class="Content-ExtraContent-Boxes__title">The Segmatic Difference</h5>
+            <div class="Content-ExtraContent-Boxes__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="img/analyster.png" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box">The All-in-one Paid Search Tool</h6>
+                </div>
+            </div>
+            <div class="extra-content__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="img/copy-img.png" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box">The Tool your In-house Team Needs to get Results</h6>
+                </div>
+            </div>
+            <div class="Content-ExtraContent-Boxes__box col-lg-4 col-md-4 col-sm-4">
+                <div class="Content-ExtraContent-Boxes__img">
+                    <img src="../img/footer-img.jpg" alt="">
+                </div>
+                <div class="Content-ExtraContent-Boxes__block-title">
+                    <h6 class="Content-ExtraContent-Boxes__title-box"> Built to Perform </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--./extra-content-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="Terms-Conditons.html">Terms & Conditions </a></li>
+                    <li><a href="Privacy-Statement.html">Privacy Statement</a></li>
+                    <li><a href="Cookie-Policy.html">How we use cookies</a></li>
+                    <li><a href="../contact_us.html">Contact Us </a></li>
+                    <li><a href="Testimonial-Policy.html">Testimonial Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer> <!--./footer-->
+<!-- COMPONENTS SCRIPTS -->
+<script type="text/javascript" src="../vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/main_js.js"></script>
+</body>
+</html>

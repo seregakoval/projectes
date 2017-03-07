@@ -1,0 +1,25 @@
+{
+  "name": "gulp_config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gbksoft.net:gbksoft-html-start.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.6.3"
+  }
+}

@@ -1,0 +1,60 @@
+.nav.navbar-top-links { float: right; }
+.nav.navbar-top-links li.dropdown {
+  display: inline-block !important;
+}
+.profile {
+  .title {
+    font-size: 23px;
+    font-weight: 500;
+  }
+  &__info {
+    position: relative;
+    margin: 0;
+    background: #fff;
+    padding: 15px 0;
+    max-width: 600px;
+    .btn-info {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      font-size: 14px;
+      padding: 5px 20px 5px 30px;
+      background: none;
+      color:  $blue;
+      display: block;
+      border: 1px solid $blue;
+      outline: none;
+      transition: 0.3s;
+      &:before {
+        content: "\f040";
+        font: normal normal normal 14px/1 FontAwesome;
+        position: absolute;
+        left: 9px;
+        top: 8px;
+      }
+      &:hover {
+        background: $blue;
+        color: #fff;
+      }
+    }
+    .string {
+      padding: 0 30px;
+      width: 100%;
+      display: table;
+      .string-row {
+        display: table-row;
+      }
+      .col-string {
+        display: table-cell;
+      }
+    }
+    .title {
+      margin-bottom: 30px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .text {
+      font-size: 13px;
+    }
+  }
+}

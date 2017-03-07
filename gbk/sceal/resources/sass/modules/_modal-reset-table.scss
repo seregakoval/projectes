@@ -1,0 +1,75 @@
+
+.reset-table {
+  @media(max-width: 480px) {
+	overflow-x: scroll;
+	margin-bottom: 20px;
+  }
+ .table-reset {
+   @media(max-width: 480px) {
+	 width: 490px;
+   }
+}
+  &__buttons-reset {
+	margin: 0 0 10px 84px;
+	@media(max-width: 480px) {
+	  margin: 0;
+	  text-align: center;
+	}
+	button {
+	  outline: none;
+	  display: inline-block;
+	  vertical-align: middle;
+	  margin-right: 10px;
+	  padding: 5px 15px;
+	  font-size: 14px;
+	  color: $blue;
+	  transition:0.3s;
+	  border: 1px solid $blue;
+	  background-color: #fff;
+	  @media(max-width: 480px) {
+		margin-bottom: 10px;
+	  }
+	  i {
+		margin-right: 5px;
+	  }
+	  span {
+		display: inline-block;
+		vertical-align: middle;
+	  }
+	  &:hover {
+		color: #fff;
+		background: $blue;
+	  }
+	}
+  }
+	&__table-reset {
+	  margin-bottom: 30px;
+	  width: 100%;
+	  tr {
+		border-bottom: 1px solid rgba(103, 106, 108, 0.08);
+	  }
+	  td {
+		padding: 10px;
+		font-size: 13px;
+	  }
+		.name {
+		  color: $gray;
+		  padding: 10px;
+		}
+	  .btn-table {
+		border: none;
+		outline: none;
+		color: $blue;
+		background: none;
+		&.disable {
+		  color: rgba(70, 73, 74, 0.64);
+		}
+	  }
+	  .link-text {
+		color: $blue;
+		font-size: 13px;
+		display: block;
+		text-decoration: none;
+	  }
+	}
+}

@@ -1,0 +1,84 @@
+//contact-us
+.contact-us {
+  padding:  30px 0 30px 0;
+  &__title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(84, 93, 99);
+    @media (max-width: 480px) {
+      font-size: 22px;
+    }
+  }
+  .form-row {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+  }
+  form {
+    .form-group {
+      margin-bottom: 25px;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+    }
+    label {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #7d848a;
+      @media (max-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      span {
+        font-weight: normal;
+      }
+    }
+    input {
+      font-size: 18px;
+      border-color: #d9d9d9;
+      padding: 7px 10px;
+      box-shadow: none;
+      height: auto;
+      @media (max-width: 768px) {
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+    textarea {
+      border-color: #d9d9d9;
+      width: 100%;
+      padding: 15px;
+      height: 100px;
+      box-shadow: none;
+      resize: vertical;
+    }
+    button {
+      border:none;
+      border-radius: 25px;
+      color: #fff;
+      display: block;
+      float: right;
+      padding: 15px 60px;
+      text-transform: uppercase;
+      background-color: #49acef;
+      transition: 0.3s;
+      @media (max-width: 767px) {
+        display: inline-block;
+        float: none;
+      }
+      @media (max-width: 480px) {
+        padding: 15px 50px;
+      }
+      &:hover {
+        background: #1191e8;
+      }
+    }
+    .submit {
+      @media (max-width: 767px) {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
