@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+    <div id='content'></div>
+
+    <script type="text/babel">
+        var myNews = [
+            {
+                author: 'serega',
+                text: 'text1'
+            },
+            {
+                author: 'serega2',
+                text: 'text2'
+            }
+        ];
+        var News = React.createClass({
+            render : function() {
+                var data = this.props.data;
+                var newsTemplate = data.map(function (item, index) {
+                    return (
+                        <div key={index}>
+                            <p className="author">{item.author}</p>
+                            <p className="text">{item.text}</p>
+                        </div>
+                    )
+                })
+                return (
+                    <div className="news">
+                        {newsTemplate}
+                        Всего новостей - {data.length}
+                    </div>
+                )
+            }
+        });
+        var App = React.createClass({
+            render: function() {
+                return (
+                    <div className="app">
+                        This is App
+                        <News data={myNews} />
+                    </div>
+                )
+            }
+        });
+       
+        
+         ReactDOM.render(
+                <App />,
+            document.getElementById('content')
+        );    
+         </script>
+</body>
+</html>

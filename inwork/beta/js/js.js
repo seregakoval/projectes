@@ -219,22 +219,23 @@ $(document).ready(function(){
         }
 
     });
+    $('#home').parallax("30%", 0.1);
     $(".pt-trigger").on("click", function() {
         $('html, body').animate({scrollTop: 0}, 0);
-        $(".pt-page").each(function() {
-            if($(this).hasClass("pt-page-current")) {
-                $(".header").animate({top: "15px"},200);
-                $("body").addClass("activePage");
-                // $(".background, .background.scroll, .parallax-mirror").css({"display":"none"});
-                // var ElementBody = $("body");
-                // ElementBody.addClass("hidden-body");
-                var homeButton = $(".pt-trigger").first();
-                homeButton.on("click", function() {
-                    $("body").removeClass("activePage");
-                    // $(".background, .background.scroll, .parallax-mirror").css({"display":"block"});
-                });
-            }
-        });
+        // $(".pt-page").each(function() {
+        //     if($(this).hasClass("pt-page-current")) {
+        //         $(".header").animate({top: "15px"},200);
+        //         $("body").addClass("activePage");
+        //         // $(".background, .background.scroll, .parallax-mirror").css({"display":"none"});
+        //         // var ElementBody = $("body");
+        //         // ElementBody.addClass("hidden-body");
+        //         var homeButton = $(".pt-trigger").first();
+        //         homeButton.on("click", function() {
+        //             $("body").removeClass("activePage");
+        //             // $(".background, .background.scroll, .parallax-mirror").css({"display":"block"});
+        //         });
+        //     }
+        // });
         var numberPage = this.getAttribute('data-goto');
         if(numberPage == 2) {
             $(".pt-page-2 .portfolio__box").removeClass("fadeOutLeft");

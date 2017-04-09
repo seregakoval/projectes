@@ -87,7 +87,16 @@
     </header><!--./header-->
        <div class="main-block pt-page ">
            <section class="background animated up-scroll">
-               <div class="parallax"  data-parallax="scroll" data-image-src="img/image-bg2.jpg"  >
+               <div class="parallax" id="home">
+                <style type="text/css">
+                #home {
+                  background: url("img/image-bg2.jpg");
+                  background-attachment: fixed !important;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: cover; 
+                }
+                </style>
                    <div class="parallax__title-head">
                        <h2 id="caption">Portfolio Developer</h2>
                        <span id="cursorr">|</span>
