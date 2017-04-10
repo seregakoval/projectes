@@ -191,7 +191,7 @@ $(document).ready(function(){
      dotColor: 'rgba(24,159,208,0.5)',
      lineColor: 'rgba(24,159,208,0.5)'
      });*/
-    
+
     /*Toggle Menu*/
     var nav;
     var btnMenu = document.querySelector("#open-button");
@@ -219,7 +219,7 @@ $(document).ready(function(){
         }
 
     });
-    $('#home').parallax("30%", 0.1);
+    $('#home').parallax("0%", 0.1);
     $(".pt-trigger").on("click", function() {
         $('html, body').animate({scrollTop: 0}, 0);
         // $(".pt-page").each(function() {

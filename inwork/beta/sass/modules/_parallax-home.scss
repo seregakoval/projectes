@@ -7,6 +7,13 @@
 .background.scroll {
   padding-top: 7vh;
 }
+#home {
+  background: url("../img/image-bg.jpg");
+  background-attachment: fixed !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .parallax {
   padding: 20px 0;
   height: 100vh;

@@ -18,8 +18,21 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglifyjs": "^0.6.2",
-    "remodal":"^1.1.0",
-    "waypoints":"^4.0.1"
-
+    "remodal": "^1.1.0",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "browser": "^0.2.6",
+    "browser-sync": "^2.14.3",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "remodal": "^1.1.0",
+    "waypoints": "^4.0.1"
   }
 }
