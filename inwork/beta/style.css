@@ -2406,6 +2406,13 @@ Text animation
 .section-bg {
     overflow-x: hidden; 
 }
+.section-bg {
+        background: url("img/footer.jpg");
+      background-attachment: fixed !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
 @media  (max-width: 1024px) {
 
     .parallax-mobile {
