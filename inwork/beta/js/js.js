@@ -442,6 +442,28 @@ $(document).ready(function(){
     if(widthWindow <= 991) {
         $(".servises-animation").removeClass("animated");
     }
+    $(".header").waypoint(function(direction){
+        if (direction === 'down') {
+            $(this.element).css({"transform":"translateX(0)"});
+        }
+        else {
+           $(this.element).css({"transform":"translateX(-100%)"});
+        }
+        // $(".container-about")
+    },{
+        offset: "70%"
+    });
+    $(".header").waypoint(function(direction){
+        if (direction === 'down') {
+            $(this.element).css({"position":"fixed",});
+        }
+        else {
+            $(this.element).css({"position":"absolute"})  
+        }
+        // $(".container-about")
+    },{
+        offset: "10%"
+    });
     $(".main-block .servises .item").each(function(index, el) {
         new Waypoint({
             element: el,

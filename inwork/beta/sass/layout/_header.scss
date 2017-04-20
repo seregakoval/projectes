@@ -1,20 +1,22 @@
 /*Header style*/
 
 .header {
-    top:0;
+    transition: 0.8s;
+    top: 100%;
     left: 0;
     width:100%;
-    position: fixed;
+    position: absolute;
     z-index:1000;
-    background: #fff;
+    background: #0773BA;
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    transform: translateX(-100%);
     &__sniper {
         border-radius: 50%;
         border: 2px solid #FD5F54;
         border-right-color: #1AD280;
         border-bottom-color: #1AD280;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         -webkit-animation-name: spin;
         -webkit-animation-duration: 2100ms;
@@ -36,13 +38,13 @@
       &__avatar {
         display: inline-block;
         vertical-align: middle;
-        width: 60px;
+        width: 50px;
         border-radius: 50%;
       } /*avatar*/
       &__avatar-img {
         border-radius: 50%;
         display: block;
-        width: 60px;
+        width: 50px;
       }
       &__logo-link {
         margin: 0 auto;
@@ -85,17 +87,17 @@
         display: inline-block;
         margin: 0 0 0 20px;
         .name {
-          font-size: 23px;
+          font-size: 20px;
           font-weight: 400;
           text-align: center;
           color: #fff;
-          margin: 0 0 8px 0;
+          margin: 0 0 5px 0;
         }
         .position {
         text-align: left;
         color: #fff;
         font-weight: 300;
-        font-size: 14px; 
+        font-size: 13px; 
       }
     } /*logo-text*/
     .logo {
@@ -150,8 +152,20 @@
             text-decoration: none;
             display: block;
             cursor: pointer;
-            color: #323232;
-            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 13px;
+            padding:10px;
+            margin: 0 10px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            &:hover {
+              border-top: 2px solid #fff;
+              border-bottom: 2px solid  #fff;
+              color:  #fff;
+            }
             .icon {
                 display: inline-block;
                 vertical-align: middle;
@@ -164,17 +178,13 @@
                   i {
                     transition: 0.8s;
                   }
-                  &:hover {
-                    i {
-                      color: #0773ba;
-                    }
-                  }
+                  
                 }
             }
             i {
                position: relative;
               display: inline-block;
-              margin: 12px 10px;
+              margin: 7px 10px;
               padding: 0.4em;
               float: left;
               border-radius: 50%;
@@ -184,14 +194,8 @@
               transition: box-shadow .6s ease-in-out;
             }
             &:hover {
-              .icon {
-                + span {
-                  color: #0773ba;
-                }
-              }
               i {
                 box-shadow: 0 0 0px 0px  rgba(7,115,186,0.5);
-                color: #0773ba;
               }
             }
           }
