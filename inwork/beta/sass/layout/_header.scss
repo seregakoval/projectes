@@ -2,14 +2,13 @@
 
 .header {
     transition: 0.8s;
-    top: 100%;
     left: 0;
+    top: 0;
     width:100%;
-    position: absolute;
+    position: relative;
     z-index:1000;
     background: #0773BA;
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
-    transform: translateX(-100%);
     &__sniper {
         border-radius: 50%;
         border: 2px solid #FD5F54;

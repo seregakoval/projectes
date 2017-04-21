@@ -169,47 +169,6 @@ jQuery(document).ready(function($){
     }
 });
 
-/*    ANIMATION-TEXT   */
-var index = 0;
-var captionLength = 0;
-var captionOptions = ["Portfolio Developer :)", "Portfolio Developer :)", "Portfolio Developer :)","Protfolio Developer :)","Portfolio Developer :)"]
-
-// this will make the cursor blink at 400ms per cycle
-function cursorAnimation() {
-    $('#cursor').animate({
-        opacity: 0
-    }, 400).animate({
-        opacity: 1
-    }, 400);
-}
-// this types the caption
-function type() {
-    $caption.html(caption.substr(0, captionLength++));
-    if(captionLength < caption.length+1) {
-        setTimeout('type()', 70);
-    }
-}
-// this erases the caption
-function erase() {
-    $caption.html(caption.substr(0, captionLength--));
-    if(captionLength >= 0) {
-        setTimeout('erase()', 50);
-    }
-}
-// this instigates the cycle of typing the captions
-function showCaptions() {
-    caption = captionOptions[index];
-    type();
-    if (index < (captionOptions.length - 1)) {
-        index++
-        setTimeout('erase()', 4000);
-        setTimeout('showCaptions()', 6000)
-    } else {
-        setTimeout(function(){
-            $('#cursor').remove()
-        }, 1500)
-    }
-}
 function resizeWindow() {
     var widthResize = $(this).width();
     if(widthResize <= 991) {
@@ -222,12 +181,6 @@ $(window).resize(function() {
 });
 $(document).ready(function(){
     resizeWindow();
-    // use setInterval so that it will repeat itself
-    setInterval('cursorAnimation()', 600);
-    $caption = $('#caption');
-
-    // use setTimeout so that it only gets called once
-    setTimeout('showCaptions()', 1000);
 });
 
 /*---AND ANIMATION TEXT---*/
@@ -339,13 +292,6 @@ $(document).ready(function(){
         }
         return false;
     });
-
-    /*$('#particles').particleground({
-     dotColor: 'rgba(24,159,208,0.5)',
-     lineColor: 'rgba(24,159,208,0.5)'
-     });*/
-
-    /*Toggle Menu*/
     var nav;
     var btnMenu = document.querySelector("#open-button");
     btnMenu.addEventListener('click', function() {
@@ -372,8 +318,6 @@ $(document).ready(function(){
         }
 
     });
-    $('#home').parallax("0%", 0.1);
-    $('.section-bg').parallax("0%", 0.1);
     $(".pt-trigger").on("click", function() {
         $('html, body').animate({scrollTop: 0}, 0);
         // $(".pt-page").each(function() {
@@ -442,27 +386,16 @@ $(document).ready(function(){
     if(widthWindow <= 991) {
         $(".servises-animation").removeClass("animated");
     }
+   
     $(".header").waypoint(function(direction){
         if (direction === 'down') {
-            $(this.element).css({"transform":"translateX(0)"});
+            $(this.element).css({"position":"fixed"});
         }
         else {
-           $(this.element).css({"transform":"translateX(-100%)"});
+            $(this.element).css({"position":"relative"});  
         }
-        // $(".container-about")
     },{
-        offset: "70%"
-    });
-    $(".header").waypoint(function(direction){
-        if (direction === 'down') {
-            $(this.element).css({"position":"fixed",});
-        }
-        else {
-            $(this.element).css({"position":"absolute"})  
-        }
-        // $(".container-about")
-    },{
-        offset: "10%"
+        offset: "1%"
     });
     $(".main-block .servises .item").each(function(index, el) {
         new Waypoint({

@@ -41,14 +41,13 @@ body {
 /*Header style*/
 .header {
   transition: 0.8s;
-  top: 100%;
   left: 0;
+  top: 0;
   width: 100%;
-  position: absolute;
+  position: relative;
   z-index: 1000;
   background: #0773BA;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  transform: translateX(-100%);
   /*avatar*/
   /*logo-text*/
   /*logo*/
@@ -787,47 +786,6 @@ body {
     .portfolio__box figure {
       margin: 0;
       position: relative; }
-      .portfolio__box figure img {
-        z-index: 10;
-        transition: transform 0.4s;
-        max-width: 100%;
-        display: block;
-        position: relative; }
-      .portfolio__box figure figcaption {
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transform: scale(0.7);
-        backface-visibility: hidden;
-        transition: transform 0.4s, opacity 0.4s;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 20px;
-        background: #2c3f52;
-        color: #ed4e6e; }
-        .portfolio__box figure figcaption h3 {
-          margin: 0;
-          padding: 0;
-          color: #fff; }
-        .portfolio__box figure figcaption span:before {
-          content: 'by '; }
-        .portfolio__box figure figcaption a {
-          text-align: center;
-          padding: 5px 10px;
-          border-radius: 2px;
-          display: inline-block;
-          background: #ed4e6e;
-          color: #fff;
-          position: absolute;
-          bottom: 20px;
-          right: 20px; }
-      .portfolio__box figure:hover img {
-        cursor: pointer;
-        transform: scale(0.8); }
-      .portfolio__box figure:hover figcaption {
-        transform: scale(1);
-        opacity: 1; }
     .portfolio__box .scale-img {
       -webkit-transition: 0.5s;
       -moz-transition: 0.5s;
@@ -875,3 +833,44 @@ body {
         padding: 15px 30px; }
     .portfolio__box:hover .screen {
       transform: translate(0px, calc(-100% + 280px)); }
+
+figure.effect-goliath {
+  background: #df4e4e; }
+
+figure.effect-goliath img,
+figure.effect-goliath h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s; }
+
+figure.effect-goliath img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+figure.effect-goliath h2,
+figure.effect-goliath p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px; }
+
+figure.effect-goliath p {
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0); }
+
+figure.effect-goliath:hover img {
+  -webkit-transform: translate3d(0, -80px, 0);
+  /* transform: translate3d(0,-80px,0); */ }
+
+figure.effect-goliath:hover h2 {
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0); }
+
+figure.effect-goliath:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }

@@ -2407,7 +2407,7 @@ Text animation
     overflow-x: hidden; 
 }
 .section-bg {
-        background: url("img/footer.jpg");
+        /*background: url("img/footer.jpg");*/
       background-attachment: fixed !important;
       background-position: center center;
       background-repeat: no-repeat;
