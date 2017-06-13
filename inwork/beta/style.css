@@ -1781,8 +1781,9 @@ Text animation
     /*float: left;*/
     max-width: 250px;
     display: block;
-    margin: 1em;
-    padding: 1em 2em;
+    font-weight: 300;
+    padding: 10px;
+    font-size: 13px;
     border: none;
     background: none;
     color: inherit;
@@ -1835,9 +1836,6 @@ Text animation
 .button--text-medium {
     font-weight: 500;
 }
-.button--text-thick {
-    font-weight: 600;
-}
 .button--round-s {
     border-radius: 5px;
 }
@@ -1863,7 +1861,6 @@ Text animation
 
 .button--nuka {
     color: #fff;
-
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -1877,15 +1874,15 @@ Text animation
     content: '';
     position: absolute;
     border-radius: inherit;
-    background: #0773BA;
+    background: #0e8fe4;
     z-index: -1;
 }
 .button--nuka::before {
-    top: -4px;
-    bottom: -4px;
-    left: -4px;
-    right: -4px;
-    opacity: 0.2;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    opacity: 0.4;
     -webkit-transform: scale3d(0.7, 1, 1);
     transform: scale3d(0.7, 1, 1);
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -2407,12 +2404,103 @@ Text animation
     overflow-x: hidden; 
 }
 .section-bg {
-        /*background: url("img/footer.jpg");*/
-      background-attachment: fixed !important;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
+        background: url("img/footer.jpg");
+  background-attachment: fixed !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+#section-bg {
+        background: url("img/244.jpg");
+  background-attachment: fixed !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*------------*/
+.stack {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	transform-style: preserve-3d;
+}
+
+.stack__deco {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: currentColor;
+	transform-origin: 50% 100%;
+}
+
+.stack__deco:first-child {
+	opacity: 0.2;
+}
+
+.stack__deco:nth-child(2) {
+	opacity: 0.4;
+}
+
+.stack__deco:nth-child(3) {
+	opacity: 0.6;
+}
+
+.stack__deco:nth-child(4) {
+	opacity: 0.8;
+}
+#section-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background: url(http://themewinter.com/html/bizcraft/onepage/images/overaly.png);
+    width: 100%;
+    height: 100%;
+}
+.stack__figure {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transform-origin: 50% 100%;
+}
+
+.stack__img {
+	position: relative;
+	display: block;
+	flex: none;
+}
+/* Individual effects */
+
+/* Vega */
+.grid--effect-vega .column {
+	opacity: 1;
+}
+
+/* deneb */
+.grid--effect-deneb {
+	perspective: none;
+}
+
+.grid--effect-deneb .stack__figure,
+.grid--effect-deneb .stack__deco {
+	transform-origin: 50% 50%;
+}
+
+.grid--effect-deneb .column {
+	opacity: 1;
+}
+
+
+
 @media  (max-width: 1024px) {
 
     .parallax-mobile {
